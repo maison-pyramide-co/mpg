@@ -12,7 +12,7 @@
 	</div>
 	<ul>
 		{#each services as srvc}
-			<li>
+			<li class="srvc">
 				<Accordion title={srvc.name}>
 					<div class="acc_b">
 						<figure>
@@ -47,11 +47,11 @@
 		aspect-ratio: 100/35;
 		background-color: #ededed;
 	}
-	ul {
+	main > ul {
 		margin-top: 120rem;
 		padding-inline: var(--p-i);
 	}
-	li {
+	.srvc {
 		border-top: 1px solid black;
 		&:last-of-type {
 			border-bottom: 1px solid black;
