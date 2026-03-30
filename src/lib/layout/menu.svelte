@@ -2,7 +2,7 @@
 	import Iarrow from '$lib/assets/icons/diag-arrow.svelte';
 	import Iig from '$lib/assets/icons/ig.svelte';
 	import Iin from '$lib/assets/icons/in.svelte';
-	import companies from '$lib/data/companies';
+	import agencies from '$lib/data/agencies';
 
 	const menu = [
 		{
@@ -26,13 +26,12 @@
 			link: '/contact' as const
 		}
 	];
-	
 </script>
 
 <div class="menu">
 	<div class="t">
 		<ul>
-			{#each companies as company}
+			{#each agencies as company}
 				<li>
 					<a href={company.link} target="_blank">
 						<Iarrow />

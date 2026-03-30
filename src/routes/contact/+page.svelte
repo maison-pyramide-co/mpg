@@ -1,5 +1,5 @@
 <script>
-	import companies from '$lib/data/companies';
+	import agencies from '$lib/data/agencies';
 	import Iarrow from '$lib/assets/icons/diag-arrow.svelte';
 </script>
 
@@ -8,7 +8,7 @@
 	<div>
 		<div class="l">
 			<ul>
-				{#each companies as company}
+				{#each agencies as company}
 					<li>
 						<a href={company.link} target="_blank">
 							<Iarrow />
