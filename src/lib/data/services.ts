@@ -2,143 +2,115 @@ import srvcI from '$lib/assets/images/srvc1.png';
 
 const services = [
 	{
-		name: 'PR and Communication',
+		name: 'Branding & Brand Strategy',
 		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
+			'We define the foundations of a brand, from its positioning and identity to the message it brings to market.',
 		image: srvcI,
 		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
+			'Brand positioning',
+			'Brand identity',
+			'Brand architecture',
+			'Messaging and tone of voice',
+			'Audience and competitor analysis',
+			'Go-to-market planning'
 		]
 	},
 	{
-		name: 'Programming',
+		name: 'Marketing Campaigns & Brand Marketing',
 		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
+			'We develop marketing strategies and campaign frameworks that build awareness, drive momentum, and support commercial goals.',
 		image: srvcI,
 		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
+			'Marketing strategy',
+			'Campaign planning',
+			'Product and seasonal launches',
+			'360 campaigns',
+			'Retail and traffic-driving campaigns',
+			'Reporting and optimisation'
 		]
 	},
 	{
-		name: 'Marketing and Strategy Consulting',
+		name: 'PR, Influencer and Communications',
 		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
+			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
 		image: srvcI,
 		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Experiential Events & Activation',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Brand Partnerships',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Talent Booking & Management',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Sales & Distribution',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Publishing',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
-		]
-	},
-	{
-		name: 'Design & Creative',
-		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
-		image: srvcI,
-		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
+			'PR strategy and media relations',
+			'Press materials and launch communications',
+			'Media gifting and seeding',
+			'Influencer strategy and outreach',
+			'Influencer campaign management',
+			'Founder and brand profiling'
 		]
 	},
 	{
 		name: 'Digital & Social Media',
 		description:
-			'Our high-impact events connect with the consumer in a unique way, to re-shape expectations about who, what, and *where* your brand is. We develop large-scale or intimate boutique events, with original concepts that make a big – and lasting – impression.',
+			'We create digital and social strategies that keep brands relevant, consistent, and connected to their audiences across platforms.',
 		image: srvcI,
 		sow: [
-			'Concept Ideation',
-			'Event Strategy',
-			'Programing',
-			'PR & Guest List Management',
-			'Operations Management',
-			'Vendor Procurement & Management'
+			'Social media strategy',
+			'Content planning and calendars',
+			'Channel and community management',
+			'Creator collaborations',
+			'Paid social support',
+			'Reporting and insights'
+		]
+	},
+	{
+		name: 'Creative & Design',
+		description:
+			'We translate brand thinking into visual worlds, campaign ideas, and design systems that are both distinctive and effective.',
+		image: srvcI,
+		sow: [
+			'Creative direction',
+			'Campaign concepts',
+			'Art direction and graphic design',
+			'Visual identity systems',
+			'Packaging and collateral',
+			'Presentations and branded materials'
+		]
+	},
+	{
+		name: 'Content Production',
+		description:
+			'We produce content that brings campaigns and brands to life across digital, social, retail, and editorial touchpoints.',
+		image: srvcI,
+		sow: [
+			'Photography and videography',
+			'Campaign and social shoots',
+			'Copywriting',
+			'Casting and location sourcing',
+			'Styling and shoot coordination',
+			'Asset delivery'
+		]
+	},
+	{
+		name: 'Events & Experiential Activations',
+		description:
+			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
+		image: srvcI,
+		sow: [
+			'Event concepts',
+			'Brand activations and pop-ups',
+			'Launch events and VIP experiences',
+			'Panels, talks, and workshops',
+			'Guest-list curation',
+			'On-ground management'
+		]
+	},
+	{
+		name: 'Brand Partnerships & Collaborations',
+		description:
+			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
+		image: srvcI,
+		sow: [
+			'Partnership strategy',
+			'Brand and cultural collaborations',
+			'Retail and venue partnerships',
+			'Media partnerships',
+			'Sponsorship support',
+			'Partnership outreach and negotiation'
 		]
 	}
 ];

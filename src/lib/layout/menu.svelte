@@ -46,7 +46,7 @@
 			{#each menu as item, i}
 				<a href={item.link}>
 					<div>{item.title}</div>
-					<span>0{i + 1}</span>
+					<span>0{i + 1}.</span>
 				</a>
 			{/each}
 		</nav>
@@ -112,23 +112,24 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		gap: 40rem;
+		gap: 32rem;
 	}
 	nav a {
 		display: flex;
 		align-items: center;
-		gap: 80rem;
+		gap: 50rem;
 	}
 	nav a div {
-		font-size: 70rem;
+		font-size: 60rem;
 		line-height: 1;
 		letter-spacing: 10%;
-		font-weight: bold;
+		font-weight: 500;
 		text-transform: uppercase;
 	}
 	nav a span {
-		width: 38rem;
-		font-size: 30rem;
+		text-align: right;
+		width: 28rem;
+		font-size: 18rem;
 		line-height: 1;
 	}
 	/* MENU BOTTOM */

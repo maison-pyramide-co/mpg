@@ -39,7 +39,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-block: 20rem;
-		font-size: 30rem;
+		font-size: 24rem;
 		font-weight: 600;
 	}
 	button span {

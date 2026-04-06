@@ -1,6 +1,7 @@
 <script>
 	import pI from '$lib/assets/images/slider.png';
 	import Ichev from '$lib/assets/icons/chev.svelte';
+
 </script>
 
 <main>
