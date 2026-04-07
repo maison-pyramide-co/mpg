@@ -6,20 +6,18 @@
 <main>
 	<h1>CONTACT US</h1>
 	<div>
-		<div class="l">
-			<ul>
-				{#each agencies as company}
-					<li>
-						<a href={company.link} target="_blank">
-							<Iarrow />
-							<span>
-								{company.name}
-							</span>
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</div>
+		<ul>
+			{#each agencies as agn}
+				<li>
+					<a href={agn.link} target="_blank">
+						<Iarrow />
+						<span>
+							{agn.name}
+						</span>
+					</a>
+				</li>
+			{/each}
+		</ul>
 		<div class="r">
 			<form>
 				<input type="text" placeholder="Subject" />
@@ -36,21 +34,36 @@
 	main {
 		padding-block: 80rem;
 		padding-inline: var(--p-i);
+
 	}
 	h1 {
 		font-size: 80rem;
 		margin-left: 360rem;
+		font-weight: bold;
+		@media (width < 770px) {
+			font-size: 32rem;
+			margin-left: 0;
+		}
 	}
 	main > div {
-		margin-top: 80rem;
+		margin-top: 64rem;
 		display: flex;
 		gap: 150rem;
+		@media (width < 770px) {
+			margin-top: 40rem;
+			gap: 60rem;
+			flex-direction: column;
+		}
 	}
 	ul {
 		width: 210rem;
 		display: flex;
 		flex-direction: column;
 		gap: 20rem;
+		flex-shrink: 0;
+		@media (width < 770px) {
+			order: 2;
+		}
 	}
 	ul a {
 		display: flex;
@@ -68,19 +81,22 @@
 		flex-basis: 100%;
 	}
 	form {
+		display: flex;
+		flex-direction: column;
+		gap: 40rem;
 	}
 	input {
 		width: 100%;
-		padding-bottom: 32rem;
+		padding-bottom: 16rem;
 		border-bottom: 1px solid black;
-		margin-top: 16rem;
 		font-size: 20rem;
-		&:first-of-type {
-			margin-top: unset;
-		}
 		&::placeholder {
-			font-size: 20rem;
-			font-weight: 300;
+			font-size: inherit;
+			/* font-weight: 300; */
+			opacity: 0.7;
+		}
+		@media (width < 770px) {
+			font-size: 16rem;
 		}
 	}
 	textarea {
@@ -89,10 +105,12 @@
 		font-family: 's';
 		width: 100%;
 		border: none;
-		margin-top: 16rem;
 		border-bottom: 1px solid black;
 		height: 160rem;
 		resize: none;
+		@media (width < 770px) {
+			font-size: 16rem;
+		}
 	}
 	button {
 		margin-top: 32rem;
@@ -102,5 +120,12 @@
 		margin-left: auto;
 		border: 1px solid black;
 		border-radius: 50rem;
+		@media (width < 770px) {
+			margin-left: unset;
+			width: fit-content;
+			padding: 10rem 24rem;
+			font-size: 14rem;
+			margin-top: 24rem;
+		}
 	}
 </style>

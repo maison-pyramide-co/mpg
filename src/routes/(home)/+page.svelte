@@ -6,23 +6,21 @@
 	import Swiper from 'swiper/bundle';
 	import { onMount } from 'svelte';
 
-	let activeIndex = $state(0);
-
 	onMount(() => {
-		const swiper = new Swiper('.swiper', {
+		new Swiper('.swiper', {
 			slidesPerView: 1,
+			loop: true,
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
 			},
 			pagination: {
 				el: '.pg',
-				type: 'fraction'
+				type: 'fraction',
+				formatFractionCurrent: (number) => {
+					return number < 10 ? `0${number}` : number;
+				}
 			}
-		});
-
-		swiper.on('slideChange', function () {
-			activeIndex = this.realIndex;
 		});
 	});
 </script>
@@ -44,9 +42,6 @@
 
 	<div>
 		<div class="pg"></div>
-		<h2 class="d-o">
-			{projects[activeIndex].name}
-		</h2>
 		<nav>
 			<button id="swiper-prev">
 				<Ichev />
@@ -89,7 +84,7 @@
 		margin-top: 24rem;
 		position: relative;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		@media (width < 770px) {
 			margin-top: 16rem;
 			justify-content: space-between;
@@ -97,31 +92,19 @@
 		}
 	}
 	.pg {
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
 		font-size: 16rem;
 		& :global(span:first-child) {
 			font-size: 32rem;
 			line-height: 40rem;
 		}
 		@media (width < 770px) {
-			position: static;
-			transform: none;
 			font-size: 12rem;
 		}
 	}
 	nav {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
 		display: flex;
 		gap: 12rem;
 		@media (width < 770px) {
-			position: static;
-			transform: none;
 		}
 	}
 	nav button {

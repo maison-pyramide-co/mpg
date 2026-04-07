@@ -52,16 +52,17 @@
 		padding-block: 80rem;
 		padding-inline: var(--p-i);
 	}
+
 	h1 {
 		font-size: 80rem;
 		margin-left: 360rem;
 		font-weight: 600;
-
 		@media (width < 770px) {
 			margin-left: calc(116rem - var(--p-i));
 			font-size: 32rem;
 		}
 	}
+
 	.careers {
 		margin-top: 80rem;
 		display: flex;
@@ -71,6 +72,7 @@
 			flex-direction: column;
 		}
 	}
+
 	aside {
 		width: 318rem;
 		flex-shrink: 0;
@@ -108,13 +110,17 @@
 		& > li {
 			border-bottom: 1px solid black;
 		}
+
+		@media (width < 770px) {
+			margin-left: calc(116rem - var(--p-i));
+		}
 		:global(button) {
 			padding-block: 24rem;
 			font-weight: normal;
 
 			@media (width < 770px) {
 				padding-block: 20rem;
-				font-size: 18rem;
+				font-size: 16rem;
 				font-weight: 600;
 			}
 		}
@@ -134,12 +140,17 @@
 		}
 		span {
 			font-size: 14rem;
-			opacity: 0.8;
+			font-weight: 600;
+			/* opacity: 0.8; */
 		}
 		p {
 			margin-top: 8rem;
 			font-size: 16rem;
 			line-height: 25rem;
+			@media (width < 770px) {
+				font-size: 14rem;
+				line-height: 18rem;
+			}
 		}
 		button {
 			margin-top: 24rem;
@@ -161,6 +172,10 @@
 			font-size: 16rem;
 			line-height: 25rem;
 			list-style: disc;
+			@media (width < 770px) {
+				font-size: 14rem;
+				line-height: 18rem;
+			}
 		}
 	}
 </style>

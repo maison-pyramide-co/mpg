@@ -6,11 +6,43 @@
 	import partners from '$lib/data/partners';
 	import mapI from '$lib/assets/images/map.png';
 	import offices from '$lib/data/offices';
-
 	import { onMount } from 'svelte';
 	import animation from './_animation';
+	import Swiper from 'swiper/bundle';
+	import 'swiper/css';
+	import initiatives from '$lib/data/initiatives';
+	import Ichev from '$lib/assets/icons/chev.svelte';
+	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/all';
+
+	let activeIndex = $state(0);
+	gsap.registerPlugin(ScrollTrigger);
+
+	const initSwiper = () => {
+		const swiper = new Swiper('.swiper', {
+			slidesPerView: 1.38,
+			spaceBetween: '24rem',
+			loop: true,
+			navigation: {
+				nextEl: '#swiper-next',
+				prevEl: '#swiper-prev'
+			},
+			pagination: {
+				el: '.pg',
+				type: 'fraction',
+				formatFractionCurrent: (number) => {
+					return number < 10 ? `0${number}` : number;
+				}
+			}
+		});
+		swiper.on('slideChange', function () {
+			activeIndex = this.realIndex;
+		});
+	};
+
 	onMount(() => {
 		animation();
+		initSwiper();
 	});
 
 	let activeIndustry = $state(null);
@@ -19,7 +51,7 @@
 	};
 </script>
 
-<main id="p" style:opacity="0">
+<main id="p" style:opacity="1">
 	<section class="he">
 		<div class="l">
 			<h1>
@@ -38,6 +70,7 @@
 			</figure>
 		</div>
 	</section>
+
 	<section class="ind">
 		<span data-ga="tr" class="indx">01.</span>
 		<h2 data-ga="tr" class="ti">OUR<br />INDUSTRIES</h2>
@@ -92,6 +125,7 @@
 			</ul>
 		</div>
 	</section>
+
 	<section class="prt">
 		<span data-ga="tr" class="indx">03.</span>
 		<h2 data-ga="tr" class="ti">LEADERSHIP<br />TEAM</h2>
@@ -107,6 +141,7 @@
 			{/each}
 		</ul>
 	</section>
+
 	<section class="s-cult">
 		<span data-gs="tr" class="indx">04.</span>
 		<h2 data-ga="tr" class="ti">CULTURE</h2>
@@ -123,6 +158,7 @@
 			</p>
 		</div>
 	</section>
+
 	<section class="s-imp">
 		<span data-ga="tr" class="indx">05.</span>
 		<h2 data-ga="tr" class="ti">IMPACT &<br />RESPONSIBILITY</h2>
@@ -139,9 +175,34 @@
 					children in local communities in Italy and Egypt.
 				</p>
 			</div>
-			<div class="r"></div>
+			<div class="r">
+				<div class="pg"></div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						{#each initiatives as initv}
+							<div class="swiper-slide">
+								<figure>
+									<img src={initv.image} alt="" />
+								</figure>
+							</div>
+						{/each}
+					</div>
+				</div>
+				<div class="b">
+					<h3>{initiatives[activeIndex].name}</h3>
+					<nav>
+						<button id="swiper-prev">
+							<Ichev />
+						</button>
+						<button id="swiper-next">
+							<Ichev />
+						</button>
+					</nav>
+				</div>
+			</div>
 		</div>
 	</section>
+
 	<section class="s-off">
 		<span data-ga="tr" class="indx">06.</span>
 		<h2 data-ga="tr" class="ti">OFFICE NETWORK</h2>
@@ -177,36 +238,66 @@
 </main>
 
 <style lang="scss">
+	.w1,
+	.w2 {
+		position: relative;
+	}
 	main {
 		padding-block: 80rem;
 		/* padding-inline: var(--p-i); */
+		@media (width < 770px) {
+			padding-block: 48rem;
+		}
 	}
 
 	.indx {
 		font-size: 20rem;
 		font-weight: 500;
 		line-height: 1;
+		@media (width < 770px) {
+			font-size: 14rem;
+		}
 	}
+
 	.ti {
 		font-size: 80rem;
 		line-height: 1;
+		font-weight: bold;
+		@media (width < 770px) {
+			font-size: 32rem;
+		}
 	}
+
 	.he {
 		padding-inline: var(--p-i);
 		display: flex;
 		gap: 30rem;
+		@media (width < 770px) {
+			flex-direction: column;
+			gap: 16rem;
+		}
 		.l {
 			flex: 3;
+			@media (width < 770px) {
+				order: 2;
+			}
 		}
 		h1 {
 			font-size: 80rem;
+			font-weight: bold;
+			@media (width < 770px) {
+				font-size: 40rem;
+			}
 		}
-
 		.l > span {
 			margin-top: -13rem;
 			font-size: 30rem;
 			font-weight: normal;
 			display: block;
+			@media (width < 770px) {
+				margin-top: -6rem;
+				font-size: 14rem;
+			}
 		}
 		p {
 			max-width: 350rem;
@@ -215,6 +306,12 @@
 			font-size: 20rem;
 			line-height: 24rem;
 			letter-spacing: 0.5rem;
+			@media (width < 770px) {
+				margin-top: 16rem;
+				max-width: unset;
+				font-size: 18rem;
+				line-height: 20rem;
+			}
 		}
 		.r {
 			flex: 5;
@@ -223,16 +320,26 @@
 		figure {
 			aspect-ratio: 4/2.5;
 			background-color: #ededed;
+			/* @media (width < 770px) {
+				aspect-ratio: 3.5/2;
+			} */
 		}
 	}
 
 	.ind {
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
+		@media (width < 770px) {
+			margin-top: 48rem;
+		}
 		.ind_list {
 			margin-top: 60rem;
 			display: flex;
 			gap: 24rem;
+			@media (width < 770px) {
+				margin-top: 24rem;
+				flex-direction: column;
+			}
 		}
 		.ind_i {
 			flex: 1;
@@ -268,20 +375,42 @@
 		display: flex;
 		color: white;
 		justify-content: space-between;
+
+		@media (width < 770px) {
+			margin-top: 48rem;
+			padding-block: 40rem 80rem;
+			gap: 20rem;
+			flex-direction: column;
+		}
 		.l {
 			width: 318rem;
+			@media (width < 770px) {
+				width: 100%;
+			}
 		}
 		.l p,
 		.r ul {
 			margin-top: 64rem;
+
+			@media (width < 770px) {
+				margin-top: 40rem;
+			}
 		}
 		p {
 			font-size: 20rem;
 			line-height: 140%;
+
+			@media (width < 770px) {
+				font-size: 16rem;
+				line-height: 1;
+			}
 		}
 		.r {
 			padding-top: 25.5rem;
 			width: 839rem;
+			@media (width < 770px) {
+				width: 100%;
+			}
 		}
 		li {
 			display: flex;
@@ -290,11 +419,53 @@
 			padding-block: 32rem;
 			/* border-bottom: 1px solid white; */
 			position: relative;
+			@media (width < 770px) {
+				flex-direction: column;
+				align-items: unset;
+			}
+			& > div {
+				@media (width < 770px) {
+					display: flex;
+					gap: 20rem;
+				}
+			}
 			&:first-child {
 				padding-top: 0;
 			}
+
+			h3 {
+				font-size: 30rem;
+				line-height: 110%;
+				font-weight: 600;
+				@media (width < 770px) {
+					flex-basis: 100%;
+					font-size: 18rem;
+				}
+			}
+			p {
+				@media (width < 770px) {
+					flex-basis: 100%;
+					font-size: 18rem;
+					font-size: 16rem;
+				}
+			}
+			a {
+				display: block;
+				border: 1px solid white;
+				font-size: 16rem;
+				padding: 12rem 32rem;
+				border-radius: 50rem;
+				font-weight: 500;
+				width: fit-content;
+				@media (width < 770px) {
+					margin-top: 20rem;
+					padding: 8rem 16rem;
+					font-size: 12rem;
+					margin-left: calc(210rem - 20rem);
+				}
+			}
 		}
-		li .line {
+		.line {
 			position: absolute;
 			background-color: white;
 			height: 1px;
@@ -302,22 +473,13 @@
 			bottom: 0;
 			left: 0;
 		}
-		h3 {
-			font-size: 30rem;
-			line-height: 110%;
-			font-weight: 600;
-		}
-		a {
-			border: 1px solid white;
-			font-size: 16rem;
-			padding: 12rem 32rem;
-			border-radius: 50rem;
-		}
 	}
 
 	.prt {
+		position: relative;
 		padding-inline: var(--p-i);
-		margin-top: 140rem;
+		padding-block: 80rem;
+		background: white;
 		span {
 			display: block;
 			text-align: right;
@@ -331,29 +493,53 @@
 			justify-content: space-between;
 			flex-wrap: wrap;
 			gap: 80rem;
+			@media (width < 770px) {
+				margin-top: 24rem;
+				gap: 40rem;
+			}
 		}
 		li {
 			width: 318rem;
 			flex-shrink: 0;
+			@media (width < 770px) {
+				width: 100%;
+			}
 		}
 		h3 {
 			margin-top: 24rem;
 			font-size: 24rem;
 			font-weight: 400;
+			@media (width < 770px) {
+				text-align: center;
+				margin-top: 16rem;
+				font-size: 20rem;
+			}
 		}
 		p {
 			margin-top: 6rem;
 			font-size: 18rem;
 			opacity: 70%;
+			@media (width < 770px) {
+				margin-top: 0;
+				text-align: center;
+				font-size: 16rem;
+			}
 		}
 	}
+
 	.s-cult {
 		margin-top: 120rem;
+		padding-bottom: 80rem;
 		padding-inline: var(--p-i);
+		background: white;
 		div {
 			margin-top: 48rem;
 			display: flex;
 			gap: 24rem;
+			@media (width < 770px) {
+				margin-top: 24rem;
+				flex-direction: column-reverse;
+			}
 		}
 		span {
 			display: block;
@@ -370,73 +556,175 @@
 			align-self: center;
 			font-size: 35rem;
 			line-height: 40rem;
+			@media (width < 770px) {
+				font-size: 25rem;
+				line-height: 30rem;
+			}
 		}
 	}
 
 	.s-imp {
-		margin-top: 120rem;
+		position: relative;
+		/* margin-top: 120rem; */
 		padding-block: 64rem 72rem;
-		padding-left: var(--p-i);
+		padding-inline: var(--p-i);
 		background-color: black;
 		color: white;
 		& > div {
 			display: flex;
 			gap: 24rem;
 			align-items: flex-end;
+			margin-top: 48rem;
+			@media (width < 770px) {
+				gap: 56rem;
+				flex-direction: column;
+				margin-top: 40rem;
+			}
 		}
 		.l {
-			flex: 1;
-		}
-		.l h3 {
-			font-size: 32rem;
-			font-weight: 300;
-		}
-		.l p {
-			margin-top: 24rem;
-			max-width: 520rem;
-			font-size: 18rem;
-			line-height: 1.4;
+			width: 668rem;
+			flex-shrink: 0;
+			padding-bottom: 71rem;
+			@media (width < 770px) {
+				width: unset;
+				padding-bottom: unset;
+			}
+			h3 {
+				font-size: 32rem;
+				font-weight: 300;
+				@media (width < 770px) {
+					font-size: 25rem;
+				}
+			}
+			p {
+				margin-top: 24rem;
+				max-width: 520rem;
+				font-size: 18rem;
+				line-height: 1.4;
+			}
 		}
 
 		.r {
-			flex: 1;
-			height: 600rem;
+			width: 668rem;
+			@media (width < 770px) {
+				width: 100%;
+			}
+			:global(.swiper) {
+				margin-top: 24rem;
+				margin-right: calc(-1 * var(--p-i));
+				@media (width < 770px) {
+					/* margin-right: 0; */
+				}
+			}
+			figure {
+				/* width: 495rem; */
+				aspect-ratio: 4/5;
+			}
+			h3 {
+				font-size: 24rem;
+				font-weight: bold;
+				@media (width < 770px) {
+					font-size: 18rem;
+				}
+			}
+			.b {
+				margin-top: 40rem;
+				display: flex;
+				justify-content: space-between;
+				@media (width < 770px) {
+					margin-top: 24rem;
+				}
+			}
+			nav {
+				display: flex;
+				gap: 12rem;
+				@media (width < 770px) {
+				}
+			}
+			button {
+				width: 24rem;
+				&:last-child :global(svg) {
+					transform: rotate(180deg);
+				}
+				@media (width < 770px) {
+					width: 24rem;
+				}
+			}
+			:global(svg path) {
+				fill: white;
+			}
+			:global(svg circle) {
+				stroke: white;
+			}
+			.pg {
+				width: fit-content;
+				margin-left: auto;
+				font-size: 18rem;
+				@media (width < 770px) {
+					font-size: 14rem;
+				}
+			}
 		}
 	}
+
 	.s-off {
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
+		@media (width < 770px) {
+			margin-top: 64rem;
+		}
 		.off_co {
 			margin-top: 48rem;
 			display: flex;
 			gap: 24rem;
+			@media (width < 770px) {
+				margin-top: 24rem;
+				flex-direction: column-reverse;
+				gap: 40rem;
+			}
 		}
 		figure {
 			margin-left: calc(var(--p-i) * -1);
 			flex-basis: 100%;
+			@media (width < 770px) {
+				margin-inline: calc(-1 * var(--p-i));
+			}
 		}
 		.off_co div {
 			width: 480rem;
 			flex-shrink: 0;
+			@media (width < 770px) {
+				width: unset;
+			}
 		}
 
 		.off_co h3 {
 			font-size: 25rem;
 			line-height: 120%;
 			font-weight: 500;
+			@media (width < 770px) {
+				font-size: 20rem;
+			}
 		}
 		.off_co p {
 			margin-top: 24rem;
 			font-size: 20rem;
 			line-height: 1.2;
+			@media (width < 770px) {
+				font-size: 15rem;
+			}
 		}
 		ul {
 			margin-top: 64rem;
 			display: flex;
 			gap: 24rem;
+			@media (width < 770px) {
+				margin-top: 40rem;
+				flex-wrap: wrap;
+			}
 		}
 		li {
-			flex: 1;
+			width: calc((100% - 24rem) / 2);
 			&:last-child p {
 				max-width: 150rem;
 			}
@@ -444,12 +732,21 @@
 
 		li h4 {
 			font-size: 25rem;
+			font-weight: bold;
+			@media (width < 770px) {
+				font-size: 16rem;
+			}
 		}
 		li p {
 			max-width: 140rem;
 			margin-top: 16rem;
 			font-size: 15rem;
 			line-height: 140%;
+			@media (width < 770px) {
+				max-width: 135rem;
+				margin-top: 8rem;
+				font-size: 14rem;
+			}
 		}
 	}
 </style>

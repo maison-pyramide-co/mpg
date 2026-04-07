@@ -62,6 +62,25 @@ const agenA = () => {
 	});
 };
 
+const pinA = () => {
+	ScrollTrigger.create({
+		trigger: '.agn',
+		start: 'bottom bottom',
+		end: 'top top',
+		endTrigger: '.prt',
+		pin: true,
+		pinSpacing: false
+	});
+	ScrollTrigger.create({
+		trigger: '.s-cult',
+		start: 'bottom bottom',
+		end: 'top top',
+		endTrigger: '.s-imp',
+		pin: true,
+		pinSpacing: false
+	});
+};
+
 const animation = async () => {
 	await document.fonts.ready;
 
@@ -72,6 +91,7 @@ const animation = async () => {
 	textsA();
 	anim();
 	agenA();
+	pinA();
 };
 
 export default animation;

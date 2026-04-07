@@ -91,7 +91,6 @@
 		gap: 30rem;
 		@media (width < 770px) {
 			flex-direction: column;
-		
 		}
 
 		figure {
@@ -103,6 +102,9 @@
 			flex: 2;
 			font-size: 18rem;
 			line-height: 120%;
+			@media (width < 770px) {
+				font-size: 16rem;
+			}
 		}
 		ul {
 			flex: 3;
@@ -117,11 +119,17 @@
 			display: flex;
 			align-items: center;
 			gap: 14rem;
+			@media (width < 770px) {
+				font-size: 15rem;
+			}
 		}
 		li span {
 			display: block;
 			font-size: 16rem;
 			font-weight: 400;
+			@media (width < 770px) {
+				font-size: 12rem;
+			}
 		}
 	}
 </style>
