@@ -1,26 +1,20 @@
-<script>
-	const { title, children } = $props();
+<script lang="ts">
+	const { title, sTitle = null, children, open, toggle } = $props();
 
-	let isOpen = $state(false);
-	let contentHeight = $state(0);
-	let contentEl;
-
-	const toggle = async () => {
-		isOpen = !isOpen;
-
-		if (isOpen) {
-			contentHeight = contentEl.offsetHeight;
-		}
-	};
+	let contentEl: any;
+	let contentHeight = $derived(open ? contentEl.offsetHeight : 0);
 </script>
 
-<div class="acc" class:active={isOpen}>
+<div class="acc" class:active={open}>
 	<button type="button" onclick={toggle}>
 		<h3>{title}</h3>
+		{#if sTitle}
+			<div>{sTitle}</div>
+		{/if}
 		<span>+</span>
 	</button>
 
-	<div class="acc_b_" style="height: {isOpen ? contentHeight + 'px' : '0px'}; ">
+	<div class="acc_b_" style="height: {contentHeight + 'px'}; ">
 		<div class="acc_b" bind:this={contentEl}>
 			{@render children()}
 		</div>
@@ -41,9 +35,26 @@
 		padding-block: 20rem;
 		font-size: 24rem;
 		font-weight: 600;
-	}
-	button span {
-		transition: all 0.2s ease-out;
+		position: relative;
+
+		div {
+			position: absolute;
+			left: 520rem;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 14rem;
+			font-weight: normal;
+			opacity: 0.7;
+
+			@media (width < 770px) {
+				display: none;
+				/* position: static; */
+			}
+		}
+		span {
+			font-weight: normal;
+			transition: all 0.2s ease-out;
+		}
 	}
 	.acc_b_ {
 		height: 0;

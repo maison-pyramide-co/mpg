@@ -1,9 +1,11 @@
 :root {
 	--p-i: 20rem;
-	--h-h: 82rem;
-	--f-h: 48rem;
+	--h-h: 50rem;
+	--f-h: 30rem;
 	@media (width > 770px) {
 		--p-i: 40rem;
+		--h-h: 74rem;
+	--f-h: 40rem;
 	}
 }
 
@@ -19,6 +21,9 @@
 *  UTILS  */
 /******************/
 
+.y_ {
+	overflow: hidden;
+}
 .d-s {
 	height: 100vh;
 	height: 100dvh;

@@ -1,6 +1,11 @@
-<script>
+<script lang="ts">
 	import Accordion from '$lib/components/accordion.svelte';
 	import positions from '$lib/data/positions';
+
+	let activeCareer = $state(null);
+	const toggleActiveCareer = (i: any) => {
+		activeCareer = activeCareer === i ? null : i;
+	};
 </script>
 
 <main>
@@ -10,22 +15,29 @@
 			<h3>OPEN POSITIONS</h3>
 			<p>With all application please ensure to attach your resume and portfolio</p>
 		</aside>
-		<ul>
-			{#each positions as pos}
+		<ul class="pos-list">
+			{#each positions as pos, i}
 				<li>
-					<Accordion title={pos.title}>
+					<Accordion
+						title={pos.title}
+						open={activeCareer == i}
+						toggle={() => toggleActiveCareer(i)}
+						sTitle={pos.company}
+					>
 						<div class="acc_b">
 							<div class="l">
-								<span>{pos.company}</span>
+								<span>Description</span>
 								<p>{pos.description}</p>
+								<button class="d-o">APPLY NOW</button>
 							</div>
 							<div class="r">
-								<span>REQUIREMENTS</span>
+								<span>Requirements</span>
 								<ul>
 									{#each pos.requirements as req}
 										<li>{req}</li>
 									{/each}
 								</ul>
+								<button class="m-o">APPLY NOW</button>
 							</div>
 						</div>
 					</Accordion>
@@ -43,61 +55,112 @@
 	h1 {
 		font-size: 80rem;
 		margin-left: 360rem;
-	}
-	.careers {
-		margin-top: 64rem;
-		display: flex;
-		gap: 100rem;
-	}
-	aside {
-		width: 260rem;
-		flex-shrink: 0;
-	}
-	h3 {
-		font-size: 30rem;
 		font-weight: 600;
-	}
-	aside p {
-		margin-top: 16rem;
-		font-size: 14rem;
-	}
-	.careers > ul {
-		flex-basis: 100%;
-	}
-	.careers > ul > li {
-		border-top: 1px solid black;
-		&:last-child {
-			border-bottom: 1px solid black;
+
+		@media (width < 770px) {
+			margin-left: calc(116rem - var(--p-i));
+			font-size: 32rem;
 		}
 	}
+	.careers {
+		margin-top: 80rem;
+		display: flex;
+		gap: 30rem;
+		@media (width < 770px) {
+			margin-top: 24rem;
+			flex-direction: column;
+		}
+	}
+	aside {
+		width: 318rem;
+		flex-shrink: 0;
+		padding-top: 24rem;
+		@media (width < 770px) {
+			width: unset;
+		}
+
+		h3 {
+			font-size: 16rem;
+			font-weight: 600;
+			@media (width < 770px) {
+				font-size: 14rem;
+			}
+		}
+		p {
+			margin-top: 16rem;
+			max-width: 260rem;
+			font-size: 14rem;
+			@media (width < 770px) {
+				margin-top: 0;
+				max-width: 265rem;
+			}
+		}
+
+		@media (width < 770px) {
+			display: flex;
+			justify-content: space-between;
+			gap: 20rem;
+		}
+	}
+
+	.pos-list {
+		flex-basis: 100%;
+		& > li {
+			border-bottom: 1px solid black;
+		}
+		:global(button) {
+			padding-block: 24rem;
+			font-weight: normal;
+
+			@media (width < 770px) {
+				padding-block: 20rem;
+				font-size: 18rem;
+				font-weight: 600;
+			}
+		}
+	}
+
 	.acc_b {
-		padding-block: 20rem 40rem;
+		padding-block: 0 40rem;
 		display: flex;
 		gap: 40rem;
-	}
-	.acc_b > div {
-		flex-basis: 100%;
-	}
-	.l span {
-		font-size: 20rem;
-		line-height: 1;
-		text-transform: uppercase;
-	}
-	.l p {
-		margin-top: 20rem;
-		font-size: 16rem;
-		line-height: 20rem;
-	}
-	.r span {
-		font-size: 16rem;
-		line-height: 20rem;
-	}
-	.r ul {
-		margin-top: 18rem;
-	}
-	.r li {
-		font-size: 16rem;
-		line-height: 25rem;
-		list-style: disc;
+		@media (width < 770px) {
+			flex-direction: column;
+			gap: 24rem;
+		}
+
+		& > div {
+			flex-basis: 100%;
+		}
+		span {
+			font-size: 14rem;
+			opacity: 0.8;
+		}
+		p {
+			margin-top: 8rem;
+			font-size: 16rem;
+			line-height: 25rem;
+		}
+		button {
+			margin-top: 24rem;
+			padding: 12rem 32rem;
+			border: 1px solid black;
+			border-radius: 40rem;
+			font-size: 14rem;
+			font-weight: 500;
+			letter-spacing: 1%;
+			@media (width < 770px) {
+				padding: 8rem 24rem;
+				font-size: 12rem;
+			}
+		}
+		ul {
+			margin-top: 8rem;
+		}
+		li {
+			font-size: 16rem;
+			line-height: 25rem;
+			list-style: disc;
+		}
 	}
 </style>

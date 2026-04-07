@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import indI from '$lib/assets/images/ind.png';
 	import Accordion from '$lib/components/accordion.svelte';
 	import agencies from '$lib/data/agencies';
@@ -12,6 +12,11 @@
 	onMount(() => {
 		animation();
 	});
+
+	let activeIndustry = $state(null);
+	const toggleActiveIndustry = (i: any) => {
+		activeIndustry = activeIndustry === i ? null : i;
+	};
 </script>
 
 <main id="p" style:opacity="0">
@@ -37,9 +42,13 @@
 		<span data-ga="tr" class="indx">01.</span>
 		<h2 data-ga="tr" class="ti">OUR<br />INDUSTRIES</h2>
 		<ul class="ind_list">
-			{#each industries as ind}
+			{#each industries as ind, i}
 				<li class="ind_i">
-					<Accordion title={ind.title}>
+					<Accordion
+						title={ind.title}
+						open={activeIndustry == i}
+						toggle={() => toggleActiveIndustry(i)}
+					>
 						<p>
 							{ind.description}
 						</p>

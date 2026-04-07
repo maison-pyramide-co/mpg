@@ -3,6 +3,8 @@
 	import Iig from '$lib/assets/icons/ig.svelte';
 	import Iin from '$lib/assets/icons/in.svelte';
 	import agencies from '$lib/data/agencies';
+	import { onMount } from 'svelte';
+	import animation from './_animation';
 
 	const menu = [
 		{
@@ -26,18 +28,25 @@
 			link: '/contact' as const
 		}
 	];
+	onMount(() => {
+		animation();
+	});
 </script>
 
-<div class="menu">
+<div id="menu" class="menu">
 	<div class="t">
 		<ul>
 			{#each agencies as company}
 				<li>
 					<a href={company.link} target="_blank">
-						<Iarrow />
-						<span>
-							{company.name}
-						</span>
+						<div class="y_">
+							<Iarrow />
+						</div>
+						<div class="y_">
+							<div>
+								{company.name}
+							</div>
+						</div>
 					</a>
 				</li>
 			{/each}
@@ -45,8 +54,12 @@
 		<nav>
 			{#each menu as item, i}
 				<a href={item.link}>
-					<div>{item.title}</div>
-					<span>0{i + 1}.</span>
+					<div class="y_">
+						<div class="ti">{item.title}</div>
+					</div>
+					<div class="y_">
+						<div class="indx">0{i + 1}.</div>
+					</div>
 				</a>
 			{/each}
 		</nav>
@@ -64,7 +77,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.menu {
 		position: fixed;
 		top: 0;
@@ -86,6 +99,11 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-basis: 100%;
+		@media (width < 770px) {
+			padding-top: 80rem;
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 
 	/* MENU COMPANIES */
@@ -93,18 +111,23 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20rem;
-	}
-	ul a {
-		display: flex;
-		gap: 12rem;
-	}
-	ul a span {
-		font-size: 20rem;
-		line-height: 110%;
-		font-weight: 600;
-	}
-	ul a :global svg {
-		width: 10rem;
+		@media (width < 770px) {
+			order: 2;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 12rem;
+		}
+		a div div {
+			font-size: 20rem;
+			line-height: 110%;
+			font-weight: 600;
+		}
+		a :global svg {
+			width: 10rem;
+		}
 	}
 
 	/* MENU NAV */
@@ -113,40 +136,59 @@
 		flex-direction: column;
 		align-items: flex-end;
 		gap: 32rem;
+		@media (width < 770px) {
+			width: 100%;
+			align-items: flex-start;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 50rem;
+			@media (width < 770px) {
+				width: 100%;
+				gap: unset;
+				justify-content: space-between;
+			}
+		}
+		a .ti {
+			font-size: 60rem;
+			line-height: 1;
+			letter-spacing: 10%;
+			font-weight: 500;
+			text-transform: uppercase;
+			@media (width < 770px) {
+				font-size: 38rem;
+			}
+		}
+		a .indx {
+			text-align: right;
+			width: 28rem;
+			font-size: 18rem;
+			line-height: 1;
+			@media (width < 770px) {
+				font-size: 14rem;
+			}
+		}
 	}
-	nav a {
-		display: flex;
-		align-items: center;
-		gap: 50rem;
-	}
-	nav a div {
-		font-size: 60rem;
-		line-height: 1;
-		letter-spacing: 10%;
-		font-weight: 500;
-		text-transform: uppercase;
-	}
-	nav a span {
-		text-align: right;
-		width: 28rem;
-		font-size: 18rem;
-		line-height: 1;
-	}
+
 	/* MENU BOTTOM */
 	.b {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 32rem;
-	}
-	.b p {
-		font-size: 10rem;
-		font-weight: 500;
-	}
-	.b div {
-		display: flex;
-		gap: 16rem;
-	}
-	.b a {
-		width: 16rem;
+
+		p {
+			font-size: 10rem;
+			font-weight: 500;
+		}
+
+		div {
+			display: flex;
+			gap: 16rem;
+		}
+		a {
+			width: 16rem;
+		}
 	}
 </style>

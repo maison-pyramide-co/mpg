@@ -20,7 +20,11 @@
 		display: flex;
 		justify-content: space-between;
 		padding-inline: var(--p-i);
-		padding-bottom: 32rem;
+		padding-bottom: 24rem;
+		height: var(--f-h);
+		@media (width < 770px) {
+			padding-bottom: 16rem;
+		}
 	}
 	p {
 		font-size: 10rem;
@@ -32,5 +36,8 @@
 	}
 	a {
 		width: 16rem;
+		@media (width < 770px) {
+			width: 14rem;
+		}
 	}
 </style>
