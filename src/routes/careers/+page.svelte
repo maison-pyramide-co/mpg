@@ -134,9 +134,14 @@
 			flex-direction: column;
 			gap: 24rem;
 		}
-
 		& > div {
 			flex-basis: 100%;
+		}
+
+		.l {
+			display: flex;
+			flex-direction: column;
+			/* gap: 24rem; */
 		}
 		span {
 			font-size: 14rem;
@@ -147,13 +152,16 @@
 			margin-top: 8rem;
 			font-size: 16rem;
 			line-height: 25rem;
+			padding-bottom: 24rem;
 			@media (width < 770px) {
+				padding-bottom: 0;
 				font-size: 14rem;
 				line-height: 18rem;
 			}
 		}
 		button {
-			margin-top: 24rem;
+			align-self: flex-start;
+			margin-top: auto;
 			padding: 12rem 32rem;
 			border: 1px solid black;
 			border-radius: 40rem;
@@ -161,6 +169,7 @@
 			font-weight: 500;
 			letter-spacing: 1%;
 			@media (width < 770px) {
+				margin-top: 20rem;
 				padding: 8rem 24rem;
 				font-size: 12rem;
 			}
@@ -170,9 +179,14 @@
 		}
 		li {
 			font-size: 16rem;
-			line-height: 25rem;
-			list-style: disc;
+			line-height: 22rem;
+			margin-top: 22rem;
+			font-weight: 300;
+			&:first-child {
+				margin-top: 0;
+			}
 			@media (width < 770px) {
+				margin-top: 18rem;
 				font-size: 14rem;
 				line-height: 18rem;
 			}

@@ -51,7 +51,7 @@
 	};
 </script>
 
-<main id="p" style:opacity="1">
+<main id="p" style:opacity="0">
 	<section class="he">
 		<div class="l">
 			<h1>
@@ -102,7 +102,10 @@
 	<section class="agn">
 		<div class="l">
 			<span data-ga="tr" class="indx">02.</span>
-			<h2 data-ga="tr" class="ti">MPG</h2>
+			<h2 data-ga="tr" class="ti">
+				MPG
+				<span class="m-o">AGENCIES</span>
+			</h2>
 			<p data-ga="tr">
 				We unite advisory, creative, and commercial expertise into one culture-first ecosystem. By
 				connecting insight, narrative, experience, and distribution, we move audiences and drive
@@ -110,7 +113,7 @@
 			</p>
 		</div>
 		<div class="r">
-			<h2 data-ga="tr" class="ti">AGENCIES</h2>
+			<h2 data-ga="tr" class="ti d-o">AGENCIES</h2>
 			<ul>
 				{#each agencies as agency}
 					<li data-gs="agen">
@@ -346,6 +349,10 @@
 		}
 		.ind_i :global(h3) {
 			font-size: 24rem;
+			font-weight: 500;
+		}
+		.ind_i :global(span) {
+			font-weight: 300;
 		}
 		.ind_i p {
 			font-size: 16rem;
