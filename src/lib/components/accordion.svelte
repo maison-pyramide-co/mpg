@@ -44,7 +44,7 @@
 			transform: translateY(-50%);
 			font-size: 14rem;
 			font-weight: normal;
-			opacity: 0.7;
+			/* opacity: 0.7; */
 
 			@media (width < 770px) {
 				display: none;

@@ -154,11 +154,14 @@
 			<figure data-ga="ir">
 				<img src="" alt="" />
 			</figure>
-			<p data-ga="tr">
-				Maison Pyramide Group is an international platform supporting the pace of innovation and
-				growth of young emerging and established entities looking to speak the millennial language
-				and grow internationally.
-			</p>
+
+			<div class="p_">
+				<p data-ga="tr">
+					Maison Pyramide Group is an international platform supporting the pace of innovation and
+					growth of young emerging and established entities looking to speak the millennial language
+					and grow internationally.
+				</p>
+			</div>
 		</div>
 	</section>
 
@@ -539,7 +542,7 @@
 		padding-bottom: 80rem;
 		padding-inline: var(--p-i);
 		background: white;
-		div {
+		& > div {
 			margin-top: 48rem;
 			display: flex;
 			gap: 24rem;
@@ -558,9 +561,13 @@
 			flex: 4;
 			background-color: #ddd;
 		}
-		p {
+		.p_ {
 			flex: 3;
 			align-self: center;
+		}
+
+		p {
+			max-width: 420rem;
 			font-size: 35rem;
 			line-height: 40rem;
 			@media (width < 770px) {
