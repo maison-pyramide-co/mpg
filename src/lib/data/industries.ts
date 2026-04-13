@@ -1,4 +1,4 @@
-import indI from '$lib/assets/images/ind.png';
+import indI from '$lib/assets/images/ind2.png';
 
 const industries = [
 	{
@@ -7,8 +7,6 @@ const industries = [
 			'We work with fashion brands to build visibility, shape cultural relevance, and create campaigns that connect across retail, digital, and editorial touchpoints.',
 		image: indI,
 		offerings: [
-			'Luxury and contemporary fashion',
-			'Ready-to-wear and accessories',
 			'Brand launches and repositioning',
 			'Seasonal campaigns and collections',
 			'Retail activations and events',
@@ -18,15 +16,14 @@ const industries = [
 	{
 		title: 'BEAUTY & WELLNESS',
 		description:
-			'We support beauty and wellness brands with brand storytelling, launch campaigns, content, and experiences designed to build credibility, drive awareness, and engage audiences.',
+			'We support beauty and wellness brands with brand storytelling, launch campaigns, content, and experiences designed to drive awareness, and audience engagement.',
 		image: indI,
 		offerings: [
-			'Skincare, fragrance, makeup, and haircare',
-			'Product launches, hero campaigns, and brand positioning',
+			'Product launches, hero campaigns ',
 			'Content production and social storytelling',
-			'Influencer, PR, and community-building campaigns',
+			'Influencer and PR campaigns',
 			'Retail and mall activations',
-			'Experiential activations, partnerships, and events'
+			'Brand partnerships and events'
 		]
 	},
 	{
@@ -35,8 +32,6 @@ const industries = [
 			'We help hospitality and retail brands create marketing, communications, and customer-facing experiences that drive traffic, engagement, and brand distinction.',
 		image: indI,
 		offerings: [
-			'Hotels, restaurants, cafés, and destinations',
-			'Retail concepts and lifestyle spaces',
 			'Footfall-driving campaigns',
 			'Launches, openings, and seasonal moments',
 			'Guest experience and brand activations',
@@ -44,17 +39,15 @@ const industries = [
 		]
 	},
 	{
-		title: 'ARTS & CULTURE',
+		title: 'REAL ESTATE',
 		description:
-			'We work with cultural institutions, creative platforms, and artistic brands to shape programmes, partnerships, and communications with relevance and depth.',
+			'We develop positioning, campaigns, and experiences for real estate brands and destinations that drive visibility, generate demand, and shape perception.',
 		image: indI,
 		offerings: [
-			'Art, design, and cultural initiatives',
-			'Exhibitions, talks, and public programming',
-			'Editorial and storytelling platforms',
-			'Launches and audience engagement',
-			'Partnerships and sponsorship support',
-			'Cultural positioning and communications'
+			'Launches and lead-generation campaigns',
+			'Destination marketing and placemaking',
+			'Content production and social storytelling',
+			'Partnerships, events, and communications'
 		]
 	}
 ];

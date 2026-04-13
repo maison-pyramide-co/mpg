@@ -81,8 +81,7 @@ const services = [
 			'Campaign and social shoots',
 			'Copywriting',
 			'Casting and location sourcing',
-			'Styling and shoot coordination',
-			'Asset delivery'
+			'Styling and shoot coordination'
 		]
 	},
 	{
@@ -100,13 +99,33 @@ const services = [
 		]
 	},
 	{
+		name: 'Sales & Distribution',
+		description:
+			'We develop sales and distribution strategies that help brands grow into new markets, secure the right opportunities, and expand through access to international buyers and our Paris showroom.',
+		image: srvcI,
+		sow: [
+			'Wholesale strategy',
+			'Retail and distribution',
+			'Market entry and expansion',
+			'Buyer access',
+			'Paris showroom',
+			'Digital showroom'
+		]
+	},
+	{
+		name: 'Brand Partnerships & Collaborations',
+		description:
+			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
+		image: srvcI,
+		sow: ['Partnership strategy']
+	},
+	{
 		name: 'Brand Partnerships & Collaborations',
 		description:
 			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
 		image: srvcI,
 		sow: [
 			'Partnership strategy',
-			'Brand and cultural collaborations',
 			'Retail and venue partnerships',
 			'Media partnerships',
 			'Sponsorship support',

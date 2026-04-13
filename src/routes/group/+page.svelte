@@ -349,6 +349,8 @@
 		}
 		.ind_i {
 			flex: 1;
+			height: 458rem;
+			overflow: hidden;
 		}
 		.ind_i :global(h3) {
 			font-size: 24rem;
@@ -374,6 +376,7 @@
 		}
 		.ind_i figure {
 			aspect-ratio: 5/6;
+			transition: all 0.2s ease-out;
 		}
 	}
 

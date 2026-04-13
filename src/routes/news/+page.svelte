@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
 	import news from '$lib/data/news';
+
+	// const sorted = news.sort((a, b) => new Date(b.date) - new Date(a.date));
+	// console.log(sorted);
 </script>
 
 <main>
