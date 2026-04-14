@@ -79,6 +79,9 @@
 		padding-top: 24rem;
 		@media (width < 770px) {
 			width: unset;
+			display: flex;
+			justify-content: space-between;
+			/* gap: 20rem; */
 		}
 
 		h3 {
@@ -96,12 +99,6 @@
 				margin-top: 0;
 				max-width: 265rem;
 			}
-		}
-
-		@media (width < 770px) {
-			display: flex;
-			justify-content: space-between;
-			gap: 20rem;
 		}
 	}
 
