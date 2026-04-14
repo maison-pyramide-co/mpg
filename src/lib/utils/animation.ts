@@ -1,11 +1,12 @@
 import gsap from 'gsap';
-import { SplitText, ScrollTrigger, CustomEase } from 'gsap/all';
+import { SplitText, ScrollTrigger } from 'gsap/all';
+import { CustomEase } from 'gsap/CustomEase';
 
 gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase);
 CustomEase.create('io2', '.45,0,.55,1');
 
 const imagesA = () => {
-	gsap.utils.toArray('[data-ga="ir"]').forEach((el:any) => {
+	gsap.utils.toArray('[data-ga="ir"]').forEach((el: any) => {
 		gsap.from(el, {
 			duration: 1,
 			opacity: 0,
