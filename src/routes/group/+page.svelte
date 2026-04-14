@@ -12,11 +12,8 @@
 	import 'swiper/css';
 	import initiatives from '$lib/data/initiatives';
 	import Ichev from '$lib/assets/icons/chev.svelte';
-	import gsap from 'gsap';
-	import { ScrollTrigger } from 'gsap/all';
 
 	let activeIndex = $state(0);
-	gsap.registerPlugin(ScrollTrigger);
 
 	const initSwiper = () => {
 		const swiper = new Swiper('.swiper', {
@@ -351,6 +348,10 @@
 			flex: 1;
 			height: 458rem;
 			overflow: hidden;
+			@media (width < 770px) {
+				/* flex: unset;
+			height: 505rem; */
+			}
 		}
 		.ind_i :global(h3) {
 			font-size: 24rem;
