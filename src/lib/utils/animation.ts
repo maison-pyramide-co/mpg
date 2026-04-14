@@ -1,7 +1,8 @@
 import gsap from 'gsap';
 import { SplitText, ScrollTrigger } from 'gsap/all';
-import { CustomEase } from 'gsap/CustomEase';
+import pkg from 'gsap/CustomEase';
 
+const { CustomEase } = pkg as any;
 gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase);
 CustomEase.create('io2', '.45,0,.55,1');
 
