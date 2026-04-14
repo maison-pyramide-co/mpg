@@ -1,6 +1,10 @@
 import { imagesA, textsA } from '$lib/utils/animation';
-import gsap from 'gsap';
-import { ScrollTrigger, SplitText } from 'gsap/all';
+// import gsap from 'gsap';
+// import { ScrollTrigger, SplitText } from 'gsap/all';
+
+import {gsap} from 'gsap/dist/gsap';
+import { SplitText } from 'gsap/dist/SplitText';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
