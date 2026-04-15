@@ -12,6 +12,7 @@
 	import 'swiper/css';
 	import initiatives from '$lib/data/initiatives';
 	import Ichev from '$lib/assets/icons/chev.svelte';
+	import HAccordion from './components/HAccordion.svelte';
 
 	let activeIndex = $state(0);
 
@@ -73,7 +74,31 @@
 		<h2 data-ga="tr" class="ti">OUR<br />INDUSTRIES</h2>
 		<ul class="ind_list">
 			{#each industries as ind, i}
-				<li class="ind_i">
+				<li class="m-o">
+					<HAccordion
+						title={ind.title}
+						img={ind.image}
+						open={activeIndustry == i}
+						toggle={() => toggleActiveIndustry(i)}
+						align={i % 2 === 0 ? 'right' : 'left'}
+					>
+						<div class="ha_b">
+							<p>
+								{ind.description}
+							</p>
+
+							<ul>
+								{#each ind.offerings as off}
+									<li>{off}</li>
+								{/each}
+							</ul>
+						</div>
+					</HAccordion>
+				</li>
+			{/each}
+
+			{#each industries as ind, i}
+				<li class="ind_i d-o">
 					<Accordion
 						title={ind.title}
 						open={activeIndustry == i}
@@ -242,10 +267,27 @@
 </main>
 
 <style lang="scss">
-	.w1,
-	.w2 {
-		position: relative;
+	.ha_b {
+		width: 286rem;
+		padding-right: 20rem;
+		ul {
+			margin-top: 24rem;
+			/* width: 100%; */
+		}
+		p{
+			font-weight: 500;
+		}
+		li {
+			margin-top: 10rem;
+			padding-bottom: 8rem;
+			border-bottom: 1px solid black;
+			text-transform: capitalize;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
 	}
+
 	main {
 		padding-block: 80rem;
 		/* padding-inline: var(--p-i); */
@@ -375,6 +417,7 @@
 			line-height: 1;
 			padding-block: 12rem;
 			border-bottom: 1px solid black;
+			text-transform: capitalize;
 		}
 		.ind_i figure {
 			aspect-ratio: 5/6;
