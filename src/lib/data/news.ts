@@ -5,6 +5,7 @@ import n3 from '$lib/assets/images/news/n3.png';
 import n4 from '$lib/assets/images/news/n4.png';
 import n5 from '$lib/assets/images/news/n5.png';
 import n6 from '$lib/assets/images/news/n6.png';
+import n7 from '$lib/assets/images/news/n7.png';
 
 const news = [
 	{
@@ -31,7 +32,6 @@ const news = [
 		image: newsI,
 		type: 'company updates'
 	},
-
 	{
 		title: "Reem Kanj Recognized by Billboard Arabia's 40 Under 40",
 		date: 'September 2024',
@@ -42,7 +42,7 @@ const news = [
 		title:
 			"Maison Pyramide's Paris Showroom Showcases Emerging Talent in the Heart of the Triangle d'Or",
 		date: 'January 2024',
-		image: newsI
+		image: n7
 	},
 	{
 		title:
@@ -69,4 +69,5 @@ const news = [
 		type: 'in the press'
 	}
 ];
+
 export default news;

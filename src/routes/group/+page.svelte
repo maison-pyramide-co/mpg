@@ -51,18 +51,30 @@
 
 <main id="p" style:opacity="0">
 	<section class="he">
-		<div class="l">
-			<h1>
-				<span class="g-numb">300</span>+
-			</h1>
-			<span>EVENTS</span>
-			<p data-ga="tr">
-				Maison Pyramide Group is an international platform supporting the pace of innovation and
-				growth of young emerging and established entities looking to speak the millennial language
-				and grow internationally.
-			</p>
-		</div>
-		<div class="r">
+		<h1>
+			SCALING BRANDS.
+			<br />DEFINING GLOBAL RELEVANCE.
+		</h1>
+		<div>
+			<ul>
+				<li>
+					1000+
+					<span>CLIENTS</span>
+				</li>
+				<li>
+					1B+
+					<span>CAMPAIGN REACH</span>
+				</li>
+				<li>
+					1500+
+					<span>GLOBAL PARTNERS</span>
+				</li>
+				<li>
+					200+
+					<span>EXPERIENCES</span>
+				</li>
+			</ul>
+
 			<figure data-ga="ir">
 				<img src={indI} alt="MPG" />
 			</figure>
@@ -267,27 +279,6 @@
 </main>
 
 <style lang="scss">
-	.ha_b {
-		width: 286rem;
-		padding-right: 20rem;
-		ul {
-			margin-top: 24rem;
-			/* width: 100%; */
-		}
-		p{
-			font-weight: 500;
-		}
-		li {
-			margin-top: 10rem;
-			padding-bottom: 8rem;
-			border-bottom: 1px solid black;
-			text-transform: capitalize;
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-	}
-
 	main {
 		padding-block: 80rem;
 		/* padding-inline: var(--p-i); */
@@ -295,7 +286,6 @@
 			padding-block: 48rem;
 		}
 	}
-
 	.indx {
 		font-size: 20rem;
 		font-weight: 500;
@@ -304,7 +294,6 @@
 			font-size: 14rem;
 		}
 	}
-
 	.ti {
 		font-size: 80rem;
 		line-height: 1;
@@ -316,53 +305,59 @@
 
 	.he {
 		padding-inline: var(--p-i);
-		display: flex;
-		gap: 30rem;
-		@media (width < 770px) {
-			flex-direction: column;
-			gap: 16rem;
-		}
-		.l {
-			flex: 3;
-			@media (width < 770px) {
-				order: 2;
-			}
-		}
 		h1 {
 			font-size: 80rem;
+			letter-spacing: 0.5rem;
+			line-height: 1;
 			font-weight: bold;
 			@media (width < 770px) {
-				font-size: 40rem;
+				font-size: 32rem;
 			}
 		}
-		.l > span {
-			margin-top: -13rem;
-			font-size: 30rem;
-			font-weight: normal;
-			display: block;
-			@media (width < 770px) {
-				margin-top: -6rem;
-				font-size: 14rem;
-			}
-		}
-		p {
-			max-width: 350rem;
+		> div {
+			margin-top: 100rem;
+			display: flex;
+			gap: 130rem;
 			margin-inline: auto;
-			margin-top: 88rem;
-			font-size: 20rem;
-			line-height: 24rem;
-			letter-spacing: 0.5rem;
+			align-items: center;
+			justify-content: center;
 			@media (width < 770px) {
-				margin-top: 16rem;
-				max-width: unset;
-				font-size: 18rem;
-				line-height: 20rem;
+				margin-top: 24rem;
+				flex-direction: column-reverse;
+				gap: 48rem;
+				align-items: unset;
+				justify-content: unset;
 			}
 		}
-		.r {
-			flex: 5;
-			padding-top: 30rem;
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 40rem;
+			@media (width < 770px) {
+				gap: 20rem;
+				flex-wrap: wrap;
+				flex-direction: row;
+			}
 		}
+		li {
+			font-size: 50rem;
+			font-weight: bold;
+			@media (width < 770px) {
+				font-size: 32rem;
+				flex-basis: calc((100% - 20rem) / 2);
+			}
+			& span {
+				display: block;
+				font-size: 22rem;
+				margin-top: -6rem;
+				font-weight: normal;
+				@media (width < 770px) {
+					font-size: 16rem;
+					margin-top: 4rem;
+				}
+			}
+		}
+
 		figure {
 			aspect-ratio: 4/2.5;
 			background-color: #ededed;
@@ -376,7 +371,7 @@
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
 		@media (width < 770px) {
-			margin-top: 48rem;
+			margin-top: 80rem;
 		}
 		.ind_list {
 			margin-top: 60rem;
@@ -422,6 +417,26 @@
 		.ind_i figure {
 			aspect-ratio: 5/6;
 			transition: all 0.2s ease-out;
+		}
+	}
+	.ha_b {
+		width: 286rem;
+		padding-right: 20rem;
+		ul {
+			margin-top: 24rem;
+			/* width: 100%; */
+		}
+		p {
+			font-weight: 500;
+		}
+		li {
+			margin-top: 10rem;
+			padding-bottom: 8rem;
+			border-bottom: 1px solid black;
+			text-transform: capitalize;
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 	}
 

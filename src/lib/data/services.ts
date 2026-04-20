@@ -117,13 +117,6 @@ const services = [
 		description:
 			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
 		image: srvcI,
-		sow: ['Partnership strategy']
-	},
-	{
-		name: 'Brand Partnerships & Collaborations',
-		description:
-			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
-		image: srvcI,
 		sow: [
 			'Partnership strategy',
 			'Retail and venue partnerships',

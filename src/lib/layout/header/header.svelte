@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/state';
-	import logoI from '$lib/assets/images/mpg-logo.png';
+	import logoI from '$lib/assets/images/mpg-logo-w.png';
 	import Menu from './menu.svelte';
 	let menuOpened = $state(false);
 
@@ -39,6 +39,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		mix-blend-mode: difference;
 		@media (width < 770px) {
 			padding-top: 20rem;
 		}
@@ -53,5 +54,9 @@
 		font-size: 16rem;
 		font-weight: 600;
 		letter-spacing: 10%;
+		color: white;
+		@media (width < 770px) {
+			font-size: 14rem;
+		}
 	}
 </style>

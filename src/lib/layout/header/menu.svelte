@@ -124,6 +124,9 @@
 			font-size: 20rem;
 			line-height: 110%;
 			font-weight: 600;
+			@media (width < 770px) {
+				font-size: 16rem;
+			}
 		}
 		a :global svg {
 			width: 10rem;
