@@ -20,9 +20,19 @@
 				<li>
 					<figure>
 						<img src={article.image} alt="" />
+						<figcaption>{article.type}</figcaption>
 					</figure>
 					<h4>{article.title}</h4>
 					<span>{article.date}</span>
+					<div>
+						{#if !article.link}
+							<p>{article.description}</p>
+						{:else}
+							<a href={article.link} target="_blank">
+								Read full article
+							</a>
+						{/if}
+					</div>
 				</li>
 			{/each}
 		</ul>
@@ -107,6 +117,18 @@
 	figure {
 		aspect-ratio: 3/2;
 		background-color: #ededed;
+		position: relative;
+	}
+	figcaption {
+		position: absolute;
+		left: 8rem;
+		bottom: 8rem;
+		font-size: 12rem;
+		font-weight: 500;
+		z-index: 1;
+		color: white;
+		text-transform: uppercase;
+		/* mix-blend-mode: difference; */
 	}
 	h4 {
 		margin-top: 24rem;
@@ -119,14 +141,31 @@
 			font-size: 15rem;
 		}
 	}
-	span {
+	li > span {
 		display: block;
 		margin-top: 16rem;
-		font-size: 12rem;
+		font-size: 14rem;
 		text-transform: uppercase;
 
 		@media (width < 770px) {
 			opacity: 0.7;
 		}
+	}
+	div {
+		margin-top: 16rem;
+		font-size: 16rem;
+	}
+	a {
+		font-size: 12rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid black;
+		width: fit-content;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: .02em;
+	}
+	li > p {
+		line-height: 110%;
+		white-space: pre-line;
 	}
 </style>

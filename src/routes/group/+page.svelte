@@ -50,6 +50,7 @@
 </script>
 
 <main id="p" style:opacity="0">
+
 	<section class="he">
 		<h1>
 			SCALING BRANDS.
@@ -276,6 +277,7 @@
 			{/each}
 		</ul>
 	</section>
+
 </main>
 
 <style lang="scss">
