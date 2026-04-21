@@ -50,7 +50,6 @@
 </script>
 
 <main id="p" style:opacity="0">
-
 	<section class="he">
 		<h1>
 			SCALING BRANDS.
@@ -59,19 +58,27 @@
 		<div>
 			<ul>
 				<li>
-					1000+
+					<div>
+						<span class="g-numb">1000</span>+
+					</div>
 					<span>CLIENTS</span>
 				</li>
 				<li>
-					1B+
+					<div>
+						<span class="g-numb">1</span>B+
+					</div>
 					<span>CAMPAIGN REACH</span>
 				</li>
 				<li>
-					1500+
+					<div>
+						<span class="g-numb">1000</span>+
+					</div>
 					<span>GLOBAL PARTNERS</span>
 				</li>
 				<li>
-					200+
+					<div>
+						<span class="g-numb">200</span>+
+					</div>
 					<span>EXPERIENCES</span>
 				</li>
 			</ul>
@@ -277,7 +284,6 @@
 			{/each}
 		</ul>
 	</section>
-
 </main>
 
 <style lang="scss">
@@ -348,7 +354,7 @@
 				font-size: 32rem;
 				flex-basis: calc((100% - 20rem) / 2);
 			}
-			& span {
+			> span {
 				display: block;
 				font-size: 22rem;
 				margin-top: -6rem;
