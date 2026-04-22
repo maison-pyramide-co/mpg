@@ -1,11 +1,14 @@
-import indI from '$lib/assets/images/ind2.png';
+import p1 from '$lib/assets/images/industries/ind1.png';
+import p2 from '$lib/assets/images/industries/ind2.png';
+import p3 from '$lib/assets/images/industries/ind3.png';
+import p4 from '$lib/assets/images/industries/ind4.png';
 
 const industries = [
 	{
 		title: 'FASHION',
 		description:
 			'We work with fashion brands to build visibility, shape cultural relevance, and create campaigns that connect across retail, digital, and editorial touchpoints.',
-		image: indI,
+		image: p1,
 		offerings: [
 			'Brand launches and repositioning',
 			'Seasonal campaigns and collections',
@@ -17,7 +20,7 @@ const industries = [
 		title: 'BEAUTY & WELLNESS',
 		description:
 			'We support beauty and wellness brands with brand storytelling, launch campaigns, content, and experiences designed to drive awareness, and audience engagement.',
-		image: indI,
+		image: p2,
 		offerings: [
 			'Product launches, hero campaigns ',
 			'Content production and social storytelling',
@@ -30,7 +33,7 @@ const industries = [
 		title: 'HOSPITALITY & RETAIL',
 		description:
 			'We help hospitality and retail brands create marketing, communications, and customer-facing experiences that drive traffic, engagement, and brand distinction.',
-		image: indI,
+		image: p3,
 		offerings: [
 			'Footfall-driving campaigns',
 			'Launches, openings, and seasonal moments',
@@ -42,7 +45,7 @@ const industries = [
 		title: 'REAL ESTATE',
 		description:
 			'We develop positioning, campaigns, and experiences for real estate brands and destinations that drive visibility, generate demand, and shape perception.',
-		image: indI,
+		image: p4,
 		offerings: [
 			'Launches and lead-generation campaigns',
 			'Destination marketing and placemaking',

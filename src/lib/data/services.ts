@@ -4,7 +4,7 @@ const services = [
 	{
 		name: 'Branding & Brand Strategy',
 		description:
-			'We define the foundations of a brand, from its positioning and identity to the message it brings to market.',
+			'We shape the core of a brand, from its positioning and identity to the way it is expressed and brought to life.',
 		image: srvcI,
 		sow: [
 			'Brand positioning',
@@ -12,17 +12,17 @@ const services = [
 			'Brand architecture',
 			'Messaging and tone of voice',
 			'Audience and competitor analysis',
-			'Go-to-market planning'
+			'Rebranding and go-to-market planning'
 		]
 	},
 	{
-		name: 'Marketing Campaigns & Brand Marketing',
+		name: 'Campaign Strategy & Marketing',
 		description:
-			'We develop marketing strategies and campaign frameworks that build awareness, drive momentum, and support commercial goals.',
+			'We create campaign and marketing strategies that bring brands to market through launches, awareness drives, and multi-channel activations.',
 		image: srvcI,
 		sow: [
-			'Marketing strategy',
-			'Campaign planning',
+			'Campaign strategy',
+			'Marketing planning',
 			'Product and seasonal launches',
 			'360 campaigns',
 			'Retail and traffic-driving campaigns',
@@ -35,26 +35,42 @@ const services = [
 			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
 		image: srvcI,
 		sow: [
-			'PR strategy and media relations',
-			'Press materials and launch communications',
-			'Media gifting and seeding',
-			'Influencer strategy and outreach',
-			'Influencer campaign management',
-			'Founder and brand profiling'
+			'PR strategy and communications planning',
+			'Strategic consulting and advisory',
+			'⁠Media relations and press office management',
+			'⁠Press materials and launch communications',
+			'⁠Influencer strategy and outreach',
+			'⁠Influencer campaign management',
+			'⁠Media and influencer gifting / seeding',
+			'⁠Founder and brand profiling',
+			'⁠Guest list curation and management'
 		]
 	},
 	{
 		name: 'Digital & Social Media',
 		description:
-			'We create digital and social strategies that keep brands relevant, consistent, and connected to their audiences across platforms.',
+			'We manage digital and social presence end to end, from strategy and content planning to account management, paid media, and search visibility.',
 		image: srvcI,
 		sow: [
 			'Social media strategy',
 			'Content planning and calendars',
-			'Channel and community management',
-			'Creator collaborations',
-			'Paid social support',
+			'Account and community management',
+			'Paid social and digital advertising',
+			'SEO support',
 			'Reporting and insights'
+		]
+	},
+	{
+		name: 'Talent Booking & Management',
+		description:
+			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
+		image: srvcI,
+		sow: [
+			'Talent sourcing',
+			'Booking and negotiations',
+			'Campaign and event talent',
+			'Talent management',
+			'Influencer casting and partnerships'
 		]
 	},
 	{

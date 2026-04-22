@@ -1,30 +1,40 @@
-import p1 from '$lib/assets/images/initv1.png';
-import p2 from '$lib/assets/images/initv2.png';
+import in1 from '$lib/assets/images/initiatives/in1.png';
+import in2 from '$lib/assets/images/initiatives/in2.png';
+import in3 from '$lib/assets/images/initiatives/in3.png';
+import in4 from '$lib/assets/images/initiatives/in4.png';
+import in5 from '$lib/assets/images/initiatives/in5.png';
+import in6 from '$lib/assets/images/initiatives/in6.png';
+import in7 from '$lib/assets/images/initiatives/in7.png';
 
 const initiatives = [
 	{
-		name: 'INITIATIVE 1',
-		image: p1
+		name: 'MP X JESSICA KAHAWATY X HELM FOUNDATION',
+		image: in1
 	},
 	{
-		name: 'INITIATIVE 2',
-		image: p2
+		name: 'ELISA SEDNAOUI FOUNDATION',
+		image: in2
 	},
 	{
-		name: 'INITIATIVE 3',
-		image: p1
+		name: 'MAISON PYRAMIDE X ART D’EGYPTE',
+		image: in3
 	},
 	{
-		name: 'INITIATIVE 4',
-		image: p2
+		name: 'MAISON PYRAMIDE X BANATI',
+		image: in4
 	},
 	{
-		name: 'INITIATIVE 5',
-		image: p1
+		name: 'FOOD COLLECTION FOR DISPLACED REFUGEES',
+		image: in5
 	},
 	{
-		name: 'INITIATIVE 6',
-		image: p2
+		name: 'Ramadan Food Drive for Families in Need',
+		image: in6
+	},
+	{
+		name: 'Supporting FTA Winners Through Showroom Representation',
+		image: in7
 	}
 ];
+
 export default initiatives;

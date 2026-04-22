@@ -6,6 +6,7 @@ import n4 from '$lib/assets/images/news/n4.png';
 import n5 from '$lib/assets/images/news/n5.png';
 import n6 from '$lib/assets/images/news/n6.png';
 import n7 from '$lib/assets/images/news/n7.png';
+import n8 from '$lib/assets/images/news/n8.png';
 
 const news = [
 	{
@@ -56,7 +57,7 @@ const news = [
 		title:
 			"Maison Pyramide has hired key top management to expand it's presence in Riyadh and Paris",
 		date: 'March 2023',
-		image: newsI,
+		image: n8,
 		type: 'company updates',
 		description: `Silvia is a highly experienced global sales executive with over 15 years of expertise, contributing as a driven sales leader for brands like Marc Jacobs, Michael Kors, Dsquared, and Buscemi.\nAt Maison Pyramide, she excels in identifying upcoming brands, generating new ideas, and creating unique collaboration opportunities to drive business growth.`
 	},

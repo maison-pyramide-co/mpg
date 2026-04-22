@@ -1,5 +1,5 @@
 <script lang="ts">
-	import indI from '$lib/assets/images/ind.png';
+	import groupBanI from '$lib/assets/images/group-ban.png';
 	import Accordion from '$lib/components/accordion.svelte';
 	import agencies from '$lib/data/agencies';
 	import industries from '$lib/data/industries';
@@ -33,6 +33,7 @@
 				}
 			}
 		});
+
 		swiper.on('slideChange', function () {
 			activeIndex = this.realIndex;
 		});
@@ -44,6 +45,7 @@
 	});
 
 	let activeIndustry = $state(null);
+
 	const toggleActiveIndustry = (i: any) => {
 		activeIndustry = activeIndustry === i ? null : i;
 	};
@@ -84,7 +86,7 @@
 			</ul>
 
 			<figure data-ga="ir">
-				<img src={indI} alt="MPG" />
+				<img src={groupBanI} alt="MPG" />
 			</figure>
 		</div>
 	</section>

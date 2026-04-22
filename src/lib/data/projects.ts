@@ -1,24 +1,28 @@
-import pI from '$lib/assets/images/slider.png';
+import p1 from '$lib/assets/images/projects/p1.png';
+import p2 from '$lib/assets/images/projects/p2.png';
+import p3 from '$lib/assets/images/projects/p3.png';
+import p4 from '$lib/assets/images/projects/p4.png';
+import p5 from '$lib/assets/images/projects/p5.png';
 
 const projects = [
 	{
-		image: pI,
+		image: p1,
 		name: 'Name of the project 1'
 	},
 	{
-		image: pI,
+		image: p2,
 		name: 'Name of the project 2'
 	},
 	{
-		image: pI,
+		image: p3,
 		name: 'Name of the project 3'
 	},
 	{
-		image: pI,
+		image: p4,
 		name: 'Name of the project 4'
 	},
 	{
-		image: pI,
+		image: p5,
 		name: 'Name of the project 5'
 	}
 ];
