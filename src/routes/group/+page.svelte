@@ -709,7 +709,7 @@
 				aspect-ratio: 4/5;
 			}
 			h3 {
-				font-size: 24rem;
+				font-size: 20rem;
 				font-weight: bold;
 				@media (width < 770px) {
 					font-size: 18rem;
