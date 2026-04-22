@@ -19,7 +19,7 @@ const industries = [
 	{
 		title: 'BEAUTY & WELLNESS',
 		description:
-			'We support beauty and wellness brands with brand storytelling, launch campaigns, content, and experiences designed to drive awareness, and audience engagement.',
+			'We develop campaigns, content, and experiences across beauty and wellness that drive awareness and audience connection.',
 		image: p2,
 		offerings: [
 			'Product launches, hero campaigns ',
@@ -32,7 +32,7 @@ const industries = [
 	{
 		title: 'HOSPITALITY & RETAIL',
 		description:
-			'We help hospitality and retail brands create marketing, communications, and customer-facing experiences that drive traffic, engagement, and brand distinction.',
+			'We create marketing, communications, and customer-facing experiences across hospitality and retail that drive traffic, engagement, and distinction.',
 		image: p3,
 		offerings: [
 			'Footfall-driving campaigns',
@@ -44,7 +44,7 @@ const industries = [
 	{
 		title: 'REAL ESTATE',
 		description:
-			'We develop positioning, campaigns, and experiences for real estate brands and destinations that drive visibility, generate demand, and shape perception.',
+			'We develop positioning, campaigns, and experiences across real estate and destinations that drive visibility, generate demand, and shape perception.',
 		image: p4,
 		offerings: [
 			'Launches and lead-generation campaigns',
