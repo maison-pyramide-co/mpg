@@ -212,7 +212,7 @@
 
 	<section class="s-imp">
 		<span data-ga="tr" class="indx">05.</span>
-		<h2 data-ga="tr" class="ti">IMPACT &<br />RESPONSIBILITY</h2>
+		<h2 data-ga="tr" class="ti">CSR &<br />INITIATIVES</h2>
 		<div>
 			<div class="l">
 				<h3 data-ga="tr">Values and Giving</h3>
@@ -370,6 +370,7 @@
 
 		figure {
 			aspect-ratio: 4/2.5;
+			width: 810rem;
 			background-color: #ededed;
 			/* @media (width < 770px) {
 				aspect-ratio: 3.5/2;

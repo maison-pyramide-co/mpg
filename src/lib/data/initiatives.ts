@@ -28,11 +28,11 @@ const initiatives = [
 		image: in5
 	},
 	{
-		name: 'Ramadan Food Drive for Families in Need',
+		name: 'RAMADAN FOOD DRIVE FOR FAMILIES IN NEED',
 		image: in6
 	},
 	{
-		name: 'Supporting FTA Winners Through Showroom Representation',
+		name: 'SUPPORTING FTA WINNERS THROUGH SHOWROOM REPRESENTATION',
 		image: in7
 	}
 ];
