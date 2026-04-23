@@ -7,6 +7,7 @@ import n5 from '$lib/assets/images/news/n5.png';
 import n6 from '$lib/assets/images/news/n6.png';
 import n7 from '$lib/assets/images/news/n7.png';
 import n8 from '$lib/assets/images/news/n8.png';
+import n9 from '$lib/assets/images/news/n9.png';
 
 const news = [
 	{
@@ -34,7 +35,7 @@ const news = [
 	{
 		title: 'Maison Pyramide Expands Middle East Presence with Riyadh Relocation',
 		date: 'September 2024',
-		image: newsI,
+		image: n9,
 		type: 'company updates',
 		description: `Maison Pyramide continues to expand its footprint in the Middle East. Giovanina Atieh, Co-founder & Partner, has relocated to Riyadh. This strategic move strengthens our presence in the region and allows us to better serve our clients in Saudi Arabia and beyond.\n Giovanina's expertise and leadership will be instrumental in driving our growth and team expansion in this dynamic market.`
 	},
