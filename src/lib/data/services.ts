@@ -6,7 +6,7 @@ import s5 from '$lib/assets/images/services/s5.png';
 import s6 from '$lib/assets/images/services/s6.png';
 import s7 from '$lib/assets/images/services/s7.png';
 import s8 from '$lib/assets/images/services/s8.png';
-import s9 from '$lib/assets/images/services/s8.png';
+import s9 from '$lib/assets/images/services/s9.png';
 // import s10 from '$lib/assets/images/services/s8.png';
 
 const services = [
@@ -73,7 +73,7 @@ const services = [
 		name: 'Talent Booking & Management',
 		description:
 			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
-		image: s5,
+		image: s9,
 		sow: [
 			'Talent sourcing',
 			'Booking and negotiations',
