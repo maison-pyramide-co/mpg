@@ -1,11 +1,20 @@
-import srvcI from '$lib/assets/images/srvc1.png';
+import s1 from '$lib/assets/images/services/s1.png';
+import s2 from '$lib/assets/images/services/s2.png';
+import s3 from '$lib/assets/images/services/s3.png';
+import s4 from '$lib/assets/images/services/s4.png';
+import s5 from '$lib/assets/images/services/s5.png';
+import s6 from '$lib/assets/images/services/s6.png';
+import s7 from '$lib/assets/images/services/s7.png';
+import s8 from '$lib/assets/images/services/s8.png';
+import s9 from '$lib/assets/images/services/s8.png';
+// import s10 from '$lib/assets/images/services/s8.png';
 
 const services = [
 	{
 		name: 'Branding & Brand Strategy',
 		description:
 			'We shape the core of a brand, from its positioning and identity to the way it is expressed and brought to life.',
-		image: srvcI,
+		image: s1,
 		sow: [
 			'Brand positioning',
 			'Brand identity',
@@ -19,7 +28,7 @@ const services = [
 		name: 'Campaign Strategy & Marketing',
 		description:
 			'We create campaign and marketing strategies that bring brands to market through launches, awareness drives, and multi-channel activations.',
-		image: srvcI,
+		image: s2,
 		sow: [
 			'Campaign strategy',
 			'Marketing planning',
@@ -33,7 +42,7 @@ const services = [
 		name: 'PR, Influencer and Communications',
 		description:
 			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
-		image: srvcI,
+		image: s3,
 		sow: [
 			'PR strategy and communications planning',
 			'Strategic consulting and advisory',
@@ -50,7 +59,7 @@ const services = [
 		name: 'Digital & Social Media',
 		description:
 			'We manage digital and social presence end to end, from strategy and content planning to account management, paid media, and search visibility.',
-		image: srvcI,
+		image: s4,
 		sow: [
 			'Social media strategy',
 			'Content planning and calendars',
@@ -64,7 +73,7 @@ const services = [
 		name: 'Talent Booking & Management',
 		description:
 			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
-		image: srvcI,
+		image: s5,
 		sow: [
 			'Talent sourcing',
 			'Booking and negotiations',
@@ -77,7 +86,7 @@ const services = [
 		name: 'Creative & Design',
 		description:
 			'We translate brand thinking into visual worlds, campaign ideas, and design systems that are both distinctive and effective.',
-		image: srvcI,
+		image: s6,
 		sow: [
 			'Creative direction',
 			'Campaign concepts',
@@ -91,7 +100,7 @@ const services = [
 		name: 'Content Production',
 		description:
 			'We produce content that brings campaigns and brands to life across digital, social, retail, and editorial touchpoints.',
-		image: srvcI,
+		image: s7,
 		sow: [
 			'Photography and videography',
 			'Campaign and social shoots',
@@ -104,7 +113,7 @@ const services = [
 		name: 'Events & Experiential Activations',
 		description:
 			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
-		image: srvcI,
+		image: s8,
 		sow: [
 			'Event concepts',
 			'Brand activations and pop-ups',
@@ -118,7 +127,7 @@ const services = [
 		name: 'Sales & Distribution',
 		description:
 			'We develop sales and distribution strategies that help brands grow into new markets, secure the right opportunities, and expand through access to international buyers and our Paris showroom.',
-		image: srvcI,
+		image: s9,
 		sow: [
 			'Wholesale strategy',
 			'Retail and distribution',
@@ -132,7 +141,7 @@ const services = [
 		name: 'Brand Partnerships & Collaborations',
 		description:
 			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
-		image: srvcI,
+		image: s5,
 		sow: [
 			'Partnership strategy',
 			'Retail and venue partnerships',
