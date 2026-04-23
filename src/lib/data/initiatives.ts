@@ -8,12 +8,12 @@ import in7 from '$lib/assets/images/initiatives/in7.png';
 
 const initiatives = [
 	{
-		name: 'MP X JESSICA KAHAWATY X HELM FOUNDATION',
-		image: in1
-	},
-	{
 		name: 'ELISA SEDNAOUI FOUNDATION',
 		image: in2
+	},
+	{
+		name: 'MP X JESSICA KAHAWATY X HELM FOUNDATION',
+		image: in1
 	},
 	{
 		name: 'MAISON PYRAMIDE X ART D’EGYPTE',
