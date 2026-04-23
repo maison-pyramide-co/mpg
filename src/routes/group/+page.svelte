@@ -710,7 +710,7 @@
 			}
 			h3 {
 				font-size: 20rem;
-				font-weight: bold;
+				font-weight: 500;
 				@media (width < 770px) {
 					font-size: 18rem;
 				}
