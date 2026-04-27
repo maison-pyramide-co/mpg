@@ -2,13 +2,18 @@
 	import srvcBanI from '$lib/assets/images/srvc-ban.png';
 	import Accordion from '$lib/components/accordion.svelte';
 	import services from '$lib/data/services';
+	import { onMount } from 'svelte';
+	import animation from './_animation';
 	let activeService = $state(null);
 	const toggleActiveService = (i) => {
 		activeService = activeService === i ? null : i;
 	};
+	onMount(() => {
+		animation();
+	});
 </script>
 
-<main>
+<main id="p" style:opacity="0">
 	<div class="he">
 		<figure>
 			<img src={srvcBanI} alt="" />
@@ -18,6 +23,7 @@
 	<ul>
 		{#each services as srvc, i}
 			<li class="srvc">
+				<span class="line" />
 				<Accordion
 					title={srvc.name}
 					open={activeService == i}
@@ -70,9 +76,18 @@
 		}
 	}
 	.srvc {
-		border-top: 1px solid black;
+		position: relative;
+		/* border-top: 1px solid black; */
 		&:last-of-type {
 			border-bottom: 1px solid black;
+		}
+		& > span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: black;
 		}
 	}
 	.srvc :global(button) {

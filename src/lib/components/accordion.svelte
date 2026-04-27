@@ -26,6 +26,7 @@
 	}
 	.acc:global(.active) span {
 		transform: rotate(45deg);
+		transition: all 0.2s ease-out;
 	}
 	button {
 		width: 100%;
@@ -53,7 +54,7 @@
 		}
 		span {
 			font-weight: normal;
-			transition: all 0.2s ease-out;
+			/* transition: all 0.2s ease-out; */
 		}
 	}
 	.acc_b_ {

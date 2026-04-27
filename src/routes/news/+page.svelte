@@ -1,14 +1,19 @@
 <script lang="ts">
 	import news from '$lib/data/news';
+	import { onMount } from 'svelte';
+	import animation from './_animation';
 
 	// const sorted = news.sort((a, b) => new Date(b.date) - new Date(a.date));
 	// console.log(sorted);
+	onMount(() => {
+		animation();
+	});
 </script>
 
-<main>
+<main id="p" style:opacity="0">
 	<div class="l">
-		<h2>KEEP UP WITH OUR LATEST NEWS</h2>
-		<p>
+		<h2 data-ga="tr">KEEP UP WITH OUR LATEST NEWS</h2>
+		<p data-ga="tr">
 			As a 3D visualizer, you will play a crucial role in transforming architects' concepts into
 			vibrant reality. Your responsibilities will involve interpreting plans, architectural
 			illustrations, and
@@ -18,19 +23,17 @@
 		<ul>
 			{#each news as article}
 				<li>
-					<figure>
+					<figure data-ga="ir">
 						<img src={article.image} alt="" />
 						<figcaption>{article.type}</figcaption>
 					</figure>
-					<h4>{article.title}</h4>
-					<span>{article.date}</span>
-					<div>
+					<h4 data-ga="tr">{article.title}</h4>
+					<span data-ga="tr">{article.date}</span>
+					<div data-ga="tr">
 						{#if !article.link}
-							<p>{article.description}</p>
+							<p data-ga="tr">{article.description}</p>
 						{:else}
-							<a href={article.link} target="_blank">
-								Read full article
-							</a>
+							<a data-ga="tr" href={article.link} target="_blank"> Read full article </a>
 						{/if}
 					</div>
 				</li>
@@ -162,7 +165,7 @@
 		width: fit-content;
 		font-weight: 500;
 		text-transform: uppercase;
-		letter-spacing: .02em;
+		letter-spacing: 0.02em;
 	}
 	li > p {
 		line-height: 110%;

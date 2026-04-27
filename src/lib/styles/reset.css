@@ -111,3 +111,16 @@ select {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 }
+
+/*
+GSAP TIMELINE
+*/
+.gs-dev-tools svg {
+	width: unset;
+	height: unset;
+	display: unset;
+}
+.gs-bottom {
+	gap: 16px !important;
+	height: 100% !important;
+}

@@ -53,39 +53,39 @@
 
 <main id="p" style:opacity="0">
 	<section class="he">
-		<h1>
+		<h1 class="g-he-ti">
 			SCALING BRANDS.
 			<br />DEFINING GLOBAL RELEVANCE.
 		</h1>
 		<div>
-			<ul>
+			<ul class="g-numb-list">
 				<li>
-					<div>
+					<div class="y_">
 						<span class="g-numb">1000</span>+
 					</div>
-					<span>CLIENTS</span>
+					<span class="g-numb-label">CLIENTS</span>
 				</li>
 				<li>
-					<div>
+					<div class="y_">
 						<span class="g-numb">1</span>B+
 					</div>
-					<span>CAMPAIGN REACH</span>
+					<span class="g-numb-label">CAMPAIGN REACH</span>
 				</li>
 				<li>
-					<div>
+					<div class="y_">
 						<span class="g-numb">1000</span>+
 					</div>
-					<span>GLOBAL PARTNERS</span>
+					<span class="g-numb-label">GLOBAL PARTNERS</span>
 				</li>
 				<li>
-					<div>
+					<div class="y_">
 						<span class="g-numb">200</span>+
 					</div>
-					<span>EXPERIENCES</span>
+					<span class="g-numb-label">EXPERIENCES</span>
 				</li>
 			</ul>
 
-			<figure data-ga="ir">
+			<figure class="g-he-ban">
 				<img src={groupBanI} alt="MPG" />
 			</figure>
 		</div>
@@ -195,7 +195,7 @@
 		<h2 data-ga="tr" class="ti">CULTURE</h2>
 
 		<div>
-			<span data-ga="tr">COUNTRY</span>
+			<span></span>
 			<figure data-ga="ir">
 				<img src="" alt="" />
 			</figure>
@@ -232,7 +232,7 @@
 					<div class="swiper-wrapper">
 						{#each initiatives as initv}
 							<div class="swiper-slide">
-								<figure>
+								<figure data-ga='ir'>
 									<img src={initv.image} alt="" />
 								</figure>
 							</div>

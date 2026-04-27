@@ -8,14 +8,39 @@ import n6 from '$lib/assets/images/news/n6.png';
 import n7 from '$lib/assets/images/news/n7.png';
 import n8 from '$lib/assets/images/news/n8.png';
 import n9 from '$lib/assets/images/news/n9.png';
+import n10 from '$lib/assets/images/news/n10.png';
+import n11 from '$lib/assets/images/news/n11.png';
+import n12 from '$lib/assets/images/news/n12.png';
 
 const news = [
+	{
+		title:
+			"maison pyramide's nathalie mroue reflects on how resilience matters to business leadership in the middle east",
+		date: 'April 2026',
+		image: n11,
+		type: 'in the press',
+		link: 'https://campaignme.com/what-it-means-to-build-from-the-middle-east/'
+	},
+	{
+		title: 'MAISON PYRAMIDE COLLABORATES WITH MADRID FASHION WEEK AS A STRATEGIC PARTNER.',
+		date: 'March 2026',
+		image: n10,
+		type: 'in the press',
+		link: 'https://www.voguearabia.com/article/mercedes-benz-fashion-week-madrid-middle-east'
+	},
 	{
 		title: 'Diriyah Company appoints Maison Pyramide for Jabal AlQurain Avenue retail strategy',
 		date: 'March 2026',
 		image: n4,
 		type: 'in the press',
 		link: 'https://campaignme.com/diriyah-company-picks-maison-pyramide-for-jabal-alqurain-avenue-brand-curation-retail-strategy/'
+	},
+	{
+		title: 'GIOVANINA ATIEH SPEAKS AT VISION GOLFE CONFERENCE IN PARIS',
+		date: 'July 2025',
+		image: n12,
+		type: 'company updates',
+		description: `Giovanina Atieh, co-founder of Maison Pyramide, spoke at the Vision Golfe conference in Paris on the panel “Timeless Luxury, Smart Retail: Reinventing the Franco-GCC Experience.\nAlongside industry leaders, the discussion explored cross-cultural collaboration, innovation, and the future of global retail.\nShe highlighted Maison Pyramide’s approach to connecting brands with growth-driven ecosystems across EMEA, with a strong focus on the GCC.`
 	},
 	{
 		title: "Reem & Natalya Kanj listed as Middle East's Top 10 Talent Managers by Forbes",
