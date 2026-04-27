@@ -22,7 +22,7 @@ const industries = [
 			'We develop campaigns, content, and experiences across beauty and wellness that drive awareness and audience connection.',
 		image: p2,
 		offerings: [
-			'Product launches, hero campaigns ',
+			'Product launches and hero campaigns',
 			'Content production and social storytelling',
 			'Influencer and PR campaigns',
 			'Retail and mall activations',

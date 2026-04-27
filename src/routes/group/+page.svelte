@@ -1,5 +1,6 @@
 <script lang="ts">
 	import groupBanI from '$lib/assets/images/group-ban.png';
+	import cultureI from '$lib/assets/images/culture.png';
 	import Accordion from '$lib/components/accordion.svelte';
 	import agencies from '$lib/data/agencies';
 	import industries from '$lib/data/industries';
@@ -192,19 +193,20 @@
 
 	<section class="s-cult">
 		<span data-gs="tr" class="indx">04.</span>
-		<h2 data-ga="tr" class="ti">CULTURE</h2>
+		<h2 data-ga="tr" class="ti">OUR CULTURE</h2>
 
 		<div>
 			<span></span>
 			<figure data-ga="ir">
-				<img src="" alt="" />
+				<img src={cultureI} alt="" />
 			</figure>
 
 			<div class="p_">
 				<p data-ga="tr">
-					Maison Pyramide Group is an international platform supporting the pace of innovation and
-					growth of young emerging and established entities looking to speak the millennial language
-					and grow internationally.
+					Maison Pyramide fosters a culture where creativity and initiative are valued, and where
+					people are encouraged to grow through meaningful work. We believe a strong sense of
+					community is essential to how we work, shaping an environment defined by mutual respect,
+					collaboration, and care in everything we do.
 				</p>
 			</div>
 		</div>
@@ -232,7 +234,7 @@
 					<div class="swiper-wrapper">
 						{#each initiatives as initv}
 							<div class="swiper-slide">
-								<figure data-ga='ir'>
+								<figure data-ga="ir">
 									<img src={initv.image} alt="" />
 								</figure>
 							</div>
@@ -641,7 +643,7 @@
 		}
 
 		p {
-			max-width: 420rem;
+			max-width: 485rem;
 			font-size: 35rem;
 			line-height: 40rem;
 			@media (width < 770px) {

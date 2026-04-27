@@ -14,9 +14,7 @@
 	<div class="l">
 		<h2 data-ga="tr">KEEP UP WITH OUR LATEST NEWS</h2>
 		<p data-ga="tr">
-			As a 3D visualizer, you will play a crucial role in transforming architects' concepts into
-			vibrant reality. Your responsibilities will involve interpreting plans, architectural
-			illustrations, and
+		The latest from Maison Pyramide, from company updates to key milestones and industry moments.
 		</p>
 	</div>
 	<div class="r">
