@@ -73,13 +73,13 @@
 				</li>
 				<li>
 					<div class="y_">
-						<span class="g-numb">1000</span>+
+						<span class="g-numb">1500</span>+
 					</div>
 					<span class="g-numb-label">GLOBAL PARTNERS</span>
 				</li>
 				<li>
 					<div class="y_">
-						<span class="g-numb">200</span>+
+						<span class="g-numb">250</span>+
 					</div>
 					<span class="g-numb-label">EXPERIENCES</span>
 				</li>
