@@ -15,19 +15,20 @@
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import HAccordion from './components/HAccordion.svelte';
 
-	let activeIndex = $state(0);
+	let csrActiveIndex = $state(0);
+	let prtshActiveIndex = $state(0);
 
-	const initSwiper = () => {
-		const swiper = new Swiper('.swiper', {
+	const initSwiperCsr = () => {
+		const swiper = new Swiper('.s-imp .swiper', {
 			slidesPerView: 1.38,
 			spaceBetween: '24rem',
 			loop: true,
 			navigation: {
-				nextEl: '#swiper-next',
-				prevEl: '#swiper-prev'
+				nextEl: '.s-imp #swiper-next',
+				prevEl: '.s-imp #swiper-prev'
 			},
 			pagination: {
-				el: '.pg',
+				el: '.s-imp .pg',
 				type: 'fraction',
 				formatFractionCurrent: (number) => {
 					return number < 10 ? `0${number}` : number;
@@ -36,13 +37,39 @@
 		});
 
 		swiper.on('slideChange', function () {
-			activeIndex = this.realIndex;
+			csrActiveIndex = this.realIndex;
+		});
+	};
+
+	const initSwiperPrtsh = () => {
+		const swiper = new Swiper('.s-prtsh .swiper', {
+			slidesPerView: 1.38,
+			initialSlide: 7,
+			// slidesPerView: 1,
+			spaceBetween: '24rem',
+			loop: true,
+			navigation: {
+				nextEl: '.s-prtsh #swiper-next',
+				prevEl: '.s-prtsh #swiper-prev'
+			},
+			pagination: {
+				el: '.s-prtsh .pg',
+				type: 'fraction',
+				formatFractionCurrent: (number) => {
+					return number < 10 ? `0${number}` : number;
+				}
+			}
+		});
+
+		swiper.on('slideChange', function () {
+			prtshActiveIndex = this.realIndex;
 		});
 	};
 
 	onMount(() => {
-		animation();
-		initSwiper();
+		// animation();
+		initSwiperCsr();
+		initSwiperPrtsh();
 	});
 
 	let activeIndustry = $state(null);
@@ -52,7 +79,7 @@
 	};
 </script>
 
-<main id="p" style:opacity="0">
+<main id="p" style:opacity="1">
 	<section class="he">
 		<h1 class="g-he-ti">
 			SCALING BRANDS.
@@ -217,19 +244,19 @@
 		<h2 data-ga="tr" class="ti">CSR &<br />INITIATIVES</h2>
 		<div>
 			<div class="l">
-				<h3 data-ga="tr">Values and Giving</h3>
+				<p>
+					At Maison Pyramide, we believe in giving back in ways that create lasting impact and feel
+					both meaningful and empowering. This means supporting young talent through mentorship and
+					opportunity, while also standing behind those in need through community-led initiatives.
+				</p>
+				<h3 data-ga="tr">{initiatives[csrActiveIndex].name}</h3>
 				<p data-ga="tr">
 					We value individuality - and unity. Each person's unique input is important, but
 					collaboration is how we accomplish more, and make things bigger, better, extraordinary. We
-					carefully curate promising new ethical, purpose-led, and sustainable brands. We amplify
-					their reach at international showrooms and events. We also support several philanthropic
-					projects directly, often by donating proceeds from sales at events and pop-ups. One such
-					cause is Elisa Sednaoui Foundation's 'Funtasia', which provides learning opportunities for
-					children in local communities in Italy and Egypt.
+					carefully curate promising new ethical, purpose-led, and sustainable brands.
 				</p>
 			</div>
 			<div class="r">
-				<div class="pg"></div>
 				<div class="swiper">
 					<div class="swiper-wrapper">
 						{#each initiatives as initv}
@@ -242,7 +269,7 @@
 					</div>
 				</div>
 				<div class="b">
-					<h3>{initiatives[activeIndex].name}</h3>
+					<div class="pg"></div>
 					<nav>
 						<button id="swiper-prev">
 							<Ichev />
@@ -256,8 +283,53 @@
 		</div>
 	</section>
 
+	<section class="s-prtsh">
+		<span data-ga="re">06.</span>
+		<h2 data-ga="tr" class="ti">PARTNERSHIPS</h2>
+		<div>
+			<div class="l">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						{#each initiatives as initv}
+							<div class="swiper-slide">
+								<figure data-ga="ir">
+									<img src={initv.image} alt="" />
+								</figure>
+							</div>
+						{/each}
+					</div>
+					<div class="b">
+						<div class="pg"></div>
+						<nav>
+							<button id="swiper-prev">
+								<Ichev />
+							</button>
+							<button id="swiper-next">
+								<Ichev />
+							</button>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="r">
+				<p>
+					At Maison Pyramide, we believe in giving back in ways that create lasting impact and feel
+					both meaningful and empowering. This means supporting young talent through mentorship and
+					opportunity, while also standing behind those in need through community-led initiatives.
+				</p>
+				<h3 data-ga="tr">{initiatives[prtshActiveIndex].name}</h3>
+				<p data-ga="tr">
+					We value individuality - and unity. Each person's unique input is important, but
+					collaboration is how we accomplish more, and make things bigger, better, extraordinary. We
+					carefully curate promising new ethical, purpose-led, and sustainable brands.
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<section class="s-off">
-		<span data-ga="tr" class="indx">06.</span>
+		<span data-ga="tr" class="indx">07.</span>
 		<h2 data-ga="tr" class="ti">OFFICE NETWORK</h2>
 		<div class="off_co">
 			<figure data-ga="ir">
@@ -314,7 +386,6 @@
 			font-size: 32rem;
 		}
 	}
-
 	.he {
 		padding-inline: var(--p-i);
 		h1 {
@@ -379,7 +450,6 @@
 			} */
 		}
 	}
-
 	.ind {
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
@@ -655,7 +725,6 @@
 
 	.s-imp {
 		position: relative;
-		/* margin-top: 120rem; */
 		padding-block: 64rem 72rem;
 		padding-inline: var(--p-i);
 		background-color: black;
@@ -663,7 +732,6 @@
 		& > div {
 			display: flex;
 			gap: 24rem;
-			align-items: flex-end;
 			margin-top: 48rem;
 			@media (width < 770px) {
 				gap: 56rem;
@@ -675,11 +743,15 @@
 			width: 668rem;
 			flex-shrink: 0;
 			padding-bottom: 71rem;
+			display: flex;
+			flex-direction: column;
 			@media (width < 770px) {
 				width: unset;
 				padding-bottom: unset;
 			}
 			h3 {
+				max-width: 465rem;
+				margin-top: auto;
 				font-size: 32rem;
 				font-weight: 300;
 				@media (width < 770px) {
@@ -687,10 +759,12 @@
 				}
 			}
 			p {
-				margin-top: 24rem;
-				max-width: 520rem;
+				max-width: 465rem;
 				font-size: 18rem;
 				line-height: 1.4;
+			}
+			p:last-of-type {
+				margin-top: 24rem;
 			}
 		}
 
@@ -700,7 +774,6 @@
 				width: 100%;
 			}
 			:global(.swiper) {
-				margin-top: 24rem;
 				margin-right: calc(-1 * var(--p-i));
 				@media (width < 770px) {
 					/* margin-right: 0; */
@@ -709,13 +782,6 @@
 			figure {
 				/* width: 495rem; */
 				aspect-ratio: 4/5;
-			}
-			h3 {
-				font-size: 20rem;
-				font-weight: 500;
-				@media (width < 770px) {
-					font-size: 18rem;
-				}
 			}
 			.b {
 				margin-top: 40rem;
@@ -748,11 +814,104 @@
 			}
 			.pg {
 				width: fit-content;
-				margin-left: auto;
 				font-size: 18rem;
 				@media (width < 770px) {
 					font-size: 14rem;
 				}
+			}
+		}
+	}
+	.s-prtsh {
+		position: relative;
+		padding-block: 64rem 72rem;
+		padding-inline: var(--p-i);
+		background-color: black;
+		color: white;
+		& > div {
+			display: flex;
+			gap: 24rem;
+			margin-top: 48rem;
+			@media (width < 770px) {
+				gap: 56rem;
+				flex-direction: column;
+				margin-top: 40rem;
+			}
+		}
+		.l {
+			width: 668rem;
+			/* width: 478rem; */
+			@media (width < 770px) {
+				width: 100%;
+			}
+			figure {
+				/* width: 495rem; */
+				aspect-ratio: 4/5;
+			}
+			.b {
+				margin-top: 40rem;
+				display: flex;
+				justify-content: space-between;
+				@media (width < 770px) {
+					margin-top: 24rem;
+				}
+			}
+			nav {
+				display: flex;
+				gap: 12rem;
+				@media (width < 770px) {
+				}
+			}
+			button {
+				width: 24rem;
+				&:last-child :global(svg) {
+					transform: rotate(180deg);
+				}
+				@media (width < 770px) {
+					width: 24rem;
+				}
+			}
+			:global(svg path) {
+				fill: white;
+			}
+			:global(svg circle) {
+				stroke: white;
+			}
+			.pg {
+				width: fit-content;
+				font-size: 18rem;
+				@media (width < 770px) {
+					font-size: 14rem;
+				}
+			}
+		}
+		.r {
+			width: 668rem;
+			flex-shrink: 0;
+			padding-bottom: 71rem;
+			display: flex;
+			flex-direction: column;
+			@media (width < 770px) {
+				width: unset;
+				padding-bottom: unset;
+			}
+			p {
+				margin-inline: auto;
+				max-width: 465rem;
+				font-size: 18rem;
+				line-height: 1.4;
+			}
+			h3 {
+				width: 465rem;
+				margin-inline: auto;
+				margin-top: auto;
+				font-size: 32rem;
+				font-weight: 300;
+				@media (width < 770px) {
+					font-size: 25rem;
+				}
+			}
+			p:last-of-type {
+				margin-top: 24rem;
 			}
 		}
 	}
