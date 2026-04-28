@@ -67,7 +67,7 @@
 	};
 
 	onMount(() => {
-		// animation();
+		animation();
 		initSwiperCsr();
 		initSwiperPrtsh();
 	});
