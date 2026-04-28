@@ -1,4 +1,3 @@
-import newsI from '$lib/assets/images/news.png';
 import n1 from '$lib/assets/images/news/n1.png';
 import n2 from '$lib/assets/images/news/n2.png';
 import n3 from '$lib/assets/images/news/n3.png';
@@ -11,6 +10,7 @@ import n9 from '$lib/assets/images/news/n9.png';
 import n10 from '$lib/assets/images/news/n10.png';
 import n11 from '$lib/assets/images/news/n11.png';
 import n12 from '$lib/assets/images/news/n12.png';
+import n13 from '$lib/assets/images/news/n13.png';
 
 const news = [
 	{
@@ -97,7 +97,7 @@ const news = [
 	{
 		title: 'Maison Pyramide opens new office and hires key member to expand its Dubai presence',
 		date: 'September 2022',
-		image: newsI,
+		image: n13,
 		description: `Clare Holbrook is a senior communications and PR practitioner who brings more than 12 years of experience to the company’s growing team. Holbrook previously led communications for leading luxury and beauty brands, Tom Ford Beauty, Jo Malone London, Kilian Paris, Le Labo and Editions De Parfums Frederic Malle, as part of Estee Lauder Companies Middle East.`
 	},
 	{

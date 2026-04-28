@@ -7,7 +7,7 @@ import s6 from '$lib/assets/images/services/s6.png';
 import s7 from '$lib/assets/images/services/s7.png';
 import s8 from '$lib/assets/images/services/s8.png';
 import s9 from '$lib/assets/images/services/s9.png';
-// import s10 from '$lib/assets/images/services/s8.png';
+import s10 from '$lib/assets/images/services/s10.png';
 
 const services = [
 	{
@@ -127,7 +127,7 @@ const services = [
 		name: 'Sales & Distribution',
 		description:
 			'We develop sales and distribution strategies that help brands grow into new markets, secure the right opportunities, and expand through access to international buyers and our Paris showroom.',
-		image: s9,
+		image: s10,
 		sow: [
 			'Wholesale strategy',
 			'Retail and distribution',
