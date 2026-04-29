@@ -10,7 +10,7 @@
 		new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
-			autoplay:true,
+			autoplay: true,
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
@@ -36,11 +36,11 @@
 						<figure>
 							<img src={proj.image} alt="" />
 						</figure>
-						<p>PUMA SPEEDCAT LAUNCH</p>
 					</div>
 				{/each}
 			</div>
 		</div>
+		<p>PUMA SPEEDCAT LAUNCH</p>
 	</section>
 
 	<div>
@@ -60,6 +60,9 @@
 	.swiper {
 		position: relative;
 	}
+	.projects {
+		position: relative;
+	}
 	.swiper h1 {
 		font-size: 62rem;
 		line-height: 1;
@@ -69,11 +72,12 @@
 		font-weight: bold;
 		color: white;
 	}
-	.swiper p {
+	.projects p {
 		position: absolute;
 		right: 32rem;
 		bottom: 20rem;
 		color: white;
+		z-index: 2;
 	}
 	main {
 		padding-block: 40rem 32rem;
