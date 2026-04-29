@@ -80,7 +80,7 @@
 	};
 </script>
 
-<main id="p" style:opacity="1">
+<main id="p" style:opacity="0">
 	<section class="he">
 		<h1 class="g-he-ti">
 			SCALING BRANDS.
