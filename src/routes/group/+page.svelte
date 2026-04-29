@@ -23,6 +23,7 @@
 			slidesPerView: 1.38,
 			spaceBetween: '24rem',
 			loop: true,
+			autoplay:true,
 			navigation: {
 				nextEl: '.s-imp #swiper-next',
 				prevEl: '.s-imp #swiper-prev'
@@ -249,11 +250,9 @@
 					both meaningful and empowering. This means supporting young talent through mentorship and
 					opportunity, while also standing behind those in need through community-led initiatives.
 				</p>
-				<h3 data-ga="tr">{initiatives[csrActiveIndex].name}</h3>
-				<p data-ga="tr">
-					We value individuality - and unity. Each person's unique input is important, but
-					collaboration is how we accomplish more, and make things bigger, better, extraordinary. We
-					carefully curate promising new ethical, purpose-led, and sustainable brands.
+				<h3>{initiatives[csrActiveIndex].name}</h3>
+				<p>
+					{initiatives[csrActiveIndex].body}
 				</p>
 			</div>
 			<div class="r">
