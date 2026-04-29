@@ -753,6 +753,7 @@
 				margin-top: auto;
 				font-size: 32rem;
 				font-weight: 300;
+				text-transform: uppercase;
 				@media (width < 770px) {
 					font-size: 25rem;
 				}
