@@ -6,8 +6,10 @@
 	import Swiper from 'swiper/bundle';
 	import { onMount } from 'svelte';
 
+	// let activeIndex = $state(0);
+
 	onMount(() => {
-		new Swiper('.swiper', {
+		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
 			autoplay: true,
@@ -23,6 +25,10 @@
 				}
 			}
 		});
+
+		// swiper.on('slideChange', function () {
+		// 	activeIndex = this.realIndex;
+		// });
 	});
 </script>
 
@@ -32,15 +38,15 @@
 			<div class="swiper-wrapper">
 				{#each projects as proj}
 					<div class="swiper-slide">
-						<h1>BUILDING <br />EXPERIENCES</h1>
+						<h1>{proj.title}</h1>
 						<figure>
 							<img src={proj.image} alt="" />
 						</figure>
+						<p>{proj.description}</p>
 					</div>
 				{/each}
 			</div>
 		</div>
-		<p>PUMA SPEEDCAT LAUNCH</p>
 	</section>
 
 	<div>
@@ -57,9 +63,6 @@
 </main>
 
 <style>
-	.swiper {
-		position: relative;
-	}
 	.projects {
 		position: relative;
 	}
@@ -71,6 +74,8 @@
 		top: 55rem;
 		font-weight: bold;
 		color: white;
+		white-space: pre-wrap;
+		z-index: 2;
 	}
 	.projects p {
 		position: absolute;
@@ -78,6 +83,7 @@
 		bottom: 20rem;
 		color: white;
 		z-index: 2;
+		width: 350rem;
 	}
 	main {
 		padding-block: 40rem 32rem;

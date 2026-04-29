@@ -40,7 +40,8 @@ export default defineConfig(
 		rules: {
 			'svelte/no-navigation-without-resolve': 'off',
 			'svelte/require-each-key': 'off',
-			'@typescript-eslint/no-explicit-any': 'off'
+			'@typescript-eslint/no-explicit-any': 'off',
+			'no-unused-vars': 'off'
 		}
 	}
 );

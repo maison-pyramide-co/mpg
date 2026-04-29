@@ -8,27 +8,44 @@ import p6 from '$lib/assets/images/projects/p6.png';
 const projects = [
 	{
 		image: p1,
-		name: 'Name of the project 1'
+		title: 'SHAPING\nMOMENTS',
+		name: 'Name of the project 1',
+		description: 'Regional PR and content partner for The 1001 Seasons of Elie Saab'
 	},
 	{
 		image: p2,
-		name: 'Name of the project 2'
+		title: 'BUILDING\nINFLUENCE',
+		name: 'Name of the project 2',
+		description:
+			'Mohammed Al Turki for INFINITI Middle East, appointed the brand’s Chief Luxury Ambassador'
 	},
 	{
 		image: p3,
-		name: 'Name of the project 3'
+		title: 'CRAFTING\nIMPACT',
+		name: 'Name of the project 3',
+		description:
+			'Showroom representation for Burc Akyol, supporting the brand’s visibility during PFW'
 	},
 	{
 		image: p4,
-		name: 'Name of the project 4'
+		title: 'CHAMPIONING\nTALENT',
+		name: 'Name of the project 4',
+		description:
+			'Karen Wazen, the first Arab content creator invited to attend the 68th Grammy Awards'
 	},
 	{
 		image: p5,
-		name: 'Name of the project 5'
+		title: 'CREATING\nENERGY',
+		name: 'Name of the project 5',
+		description:
+			'Concept, production, and guest management for the Egypt launch of Puma’s iconic Speedcat'
 	},
 	{
 		image: p6,
-		name: 'Name of the project 6'
+		title: 'CONNECTING\nMARKETS',
+		name: 'Name of the project 6',
+		description:
+			'Inside the Maison Pyramide Showroom in Paris, connecting brands with international buyers and industry visibility'
 	}
 ];
 

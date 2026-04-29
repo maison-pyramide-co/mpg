@@ -14,6 +14,7 @@
 	import initiatives from '$lib/data/initiatives';
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import HAccordion from './components/HAccordion.svelte';
+	import partnerships from '$lib/data/partnerships';
 
 	let csrActiveIndex = $state(0);
 	let prtshActiveIndex = $state(0);
@@ -23,7 +24,6 @@
 			slidesPerView: 1.38,
 			spaceBetween: '24rem',
 			loop: true,
-			autoplay:true,
 			navigation: {
 				nextEl: '.s-imp #swiper-next',
 				prevEl: '.s-imp #swiper-prev'
@@ -44,8 +44,9 @@
 
 	const initSwiperPrtsh = () => {
 		const swiper = new Swiper('.s-prtsh .swiper', {
-			slidesPerView: 1.38,
-			initialSlide: 7,
+			// slidesPerView: 1.38,
+			slidesPerView: 1,
+			initialSlide: 6,
 			// slidesPerView: 1,
 			spaceBetween: '24rem',
 			loop: true,
@@ -289,10 +290,10 @@
 			<div class="l">
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						{#each initiatives as initv}
+						{#each partnerships as psh}
 							<div class="swiper-slide">
 								<figure data-ga="ir">
-									<img src={initv.image} alt="" />
+									<img src={psh.image} alt="" />
 								</figure>
 							</div>
 						{/each}
@@ -317,11 +318,9 @@
 					both meaningful and empowering. This means supporting young talent through mentorship and
 					opportunity, while also standing behind those in need through community-led initiatives.
 				</p>
-				<h3 data-ga="tr">{initiatives[prtshActiveIndex].name}</h3>
-				<p data-ga="tr">
-					We value individuality - and unity. Each person's unique input is important, but
-					collaboration is how we accomplish more, and make things bigger, better, extraordinary. We
-					carefully curate promising new ethical, purpose-led, and sustainable brands.
+				<h3>{partnerships[prtshActiveIndex].name}</h3>
+				<p>
+					{partnerships[prtshActiveIndex].body}
 				</p>
 			</div>
 		</div>
@@ -721,7 +720,6 @@
 			}
 		}
 	}
-
 	.s-imp {
 		position: relative;
 		padding-block: 64rem 72rem;
@@ -837,6 +835,11 @@
 				margin-top: 40rem;
 			}
 		}
+		.swiper {
+			width: 668rem;
+			margin-left: calc(-1 * var(--p-i));
+			padding-left: 120rem;
+		}
 		.l {
 			width: 668rem;
 			/* width: 478rem; */
@@ -915,7 +918,6 @@
 			}
 		}
 	}
-
 	.s-off {
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
