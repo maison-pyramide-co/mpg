@@ -34,18 +34,18 @@ const projects = [
 			'Karen Wazen, the first Arab content creator invited to attend the 68th Grammy Awards'
 	},
 	{
-		image: p5,
-		title: 'CREATING\nENERGY',
-		name: 'Name of the project 5',
+		title: 'CONNECTING\nMARKETS',
 		description:
-			'Concept, production, and guest management for the Egypt launch of Puma’s iconic Speedcat'
+			'Inside the Maison Pyramide Showroom in Paris, connecting brands with international buyers and industry visibility',
+		image: p5,
+		name: 'Name of the project 5'
 	},
 	{
 		image: p6,
-		title: 'CONNECTING\nMARKETS',
 		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
 		description:
-			'Inside the Maison Pyramide Showroom in Paris, connecting brands with international buyers and industry visibility'
+			'Concept, production, and guest management for the Egypt launch of Puma’s iconic Speedcat'
 	}
 ];
 

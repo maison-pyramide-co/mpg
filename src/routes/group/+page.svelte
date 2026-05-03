@@ -314,9 +314,9 @@
 
 			<div class="r">
 				<p>
-					At Maison Pyramide, we believe in giving back in ways that create lasting impact and feel
-					both meaningful and empowering. This means supporting young talent through mentorship and
-					opportunity, while also standing behind those in need through community-led initiatives.
+					Beyond client work, Maison Pyramide engages in partnerships with institutions and
+					organisations through initiatives designed to support talent, encourage learning, and
+					contribute to the growth of the wider creative ecosystem.
 				</p>
 				<h3>{partnerships[prtshActiveIndex].name}</h3>
 				<p>
@@ -367,23 +367,24 @@
 		@media (width < 770px) {
 			padding-block: 48rem;
 		}
-	}
-	.indx {
-		font-size: 20rem;
-		font-weight: 500;
-		line-height: 1;
-		@media (width < 770px) {
-			font-size: 14rem;
+		.indx {
+			font-size: 20rem;
+			font-weight: 500;
+			line-height: 1;
+			@media (width < 770px) {
+				font-size: 14rem;
+			}
+		}
+		.ti {
+			font-size: 80rem;
+			line-height: 1;
+			font-weight: bold;
+			@media (width < 770px) {
+				font-size: 32rem;
+			}
 		}
 	}
-	.ti {
-		font-size: 80rem;
-		line-height: 1;
-		font-weight: bold;
-		@media (width < 770px) {
-			font-size: 32rem;
-		}
-	}
+
 	.he {
 		padding-inline: var(--p-i);
 		h1 {
@@ -443,9 +444,10 @@
 			aspect-ratio: 4/2.5;
 			width: 810rem;
 			background-color: #ededed;
-			/* @media (width < 770px) {
+			@media (width < 770px) {
 				aspect-ratio: 3.5/2;
-			} */
+				width: unset;
+			}
 		}
 	}
 	.ind {
@@ -750,19 +752,28 @@
 				max-width: 465rem;
 				margin-top: auto;
 				font-size: 32rem;
-				font-weight: 300;
 				text-transform: uppercase;
 				@media (width < 770px) {
-					font-size: 25rem;
+					width: unset;
+					font-size: 18rem;
+					margin-top: 48rem;
+					margin-inline: unset;
 				}
 			}
 			p {
 				max-width: 465rem;
 				font-size: 18rem;
 				line-height: 1.4;
+				@media (width < 770px) {
+					width: unset;
+					font-size: 16rem;
+				}
 			}
 			p:last-of-type {
 				margin-top: 24rem;
+				@media (width < 770px) {
+					margin-top: 16rem;
+				}
 			}
 		}
 
@@ -825,13 +836,14 @@
 		padding-inline: var(--p-i);
 		background-color: black;
 		color: white;
+		margin-block: -1px;
 		& > div {
 			display: flex;
 			gap: 24rem;
 			margin-top: 48rem;
 			@media (width < 770px) {
 				gap: 56rem;
-				flex-direction: column;
+				flex-direction: column-reverse;
 				margin-top: 40rem;
 			}
 		}
@@ -839,6 +851,11 @@
 			width: 668rem;
 			margin-left: calc(-1 * var(--p-i));
 			padding-left: 120rem;
+			@media (width < 770px) {
+				width: 100%;
+				margin: unset;
+				padding: unset;
+			}
 		}
 		.l {
 			width: 668rem;
@@ -902,19 +919,29 @@
 				max-width: 465rem;
 				font-size: 18rem;
 				line-height: 1.4;
+				@media (width < 770px) {
+					font-size: 16rem;
+				}
 			}
 			h3 {
 				width: 465rem;
 				margin-inline: auto;
 				margin-top: auto;
 				font-size: 32rem;
-				font-weight: 300;
+				text-transform: uppercase;
+				/* font-weight: 300; */
 				@media (width < 770px) {
-					font-size: 25rem;
+					width: unset;
+					font-size: 18rem;
+					margin-top: 48rem;
+					margin-inline: unset;
 				}
 			}
 			p:last-of-type {
 				margin-top: 24rem;
+				@media (width < 770px) {
+					margin-top: 16rem;
+				}
 			}
 		}
 	}

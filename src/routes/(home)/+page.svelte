@@ -12,7 +12,7 @@
 		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
-			autoplay: true,
+			// autoplay: true,
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
@@ -63,7 +63,7 @@
 </main>
 
 <style>
-	.projects {
+	.swiper-slide {
 		position: relative;
 	}
 	.swiper h1 {
@@ -76,6 +76,11 @@
 		color: white;
 		white-space: pre-wrap;
 		z-index: 2;
+		@media (width < 770px) {
+			font-size: 24rem;
+			left: 16rem;
+			top: 24rem;
+		}
 	}
 	.projects p {
 		position: absolute;
@@ -84,6 +89,13 @@
 		color: white;
 		z-index: 2;
 		width: 350rem;
+		@media (width < 770px) {
+			width: 320rem;
+			right: unset;
+			left: 16rem;
+			bottom: 16rem;
+			font-size: 14rem;
+		}
 	}
 	main {
 		padding-block: 40rem 32rem;
