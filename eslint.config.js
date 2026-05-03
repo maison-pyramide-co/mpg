@@ -41,6 +41,7 @@ export default defineConfig(
 			'svelte/no-navigation-without-resolve': 'off',
 			'svelte/require-each-key': 'off',
 			'@typescript-eslint/no-explicit-any': 'off',
+			'@typescript-eslint/no-unused-vars': 'off',
 			'no-unused-vars': 'off'
 		}
 	}
