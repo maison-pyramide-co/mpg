@@ -63,7 +63,7 @@
 </main>
 
 <style>
-	.swiper-slide {
+	.projects {
 		position: relative;
 	}
 	.swiper h1 {
