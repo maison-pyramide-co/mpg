@@ -85,6 +85,7 @@
 			top: 0;
 			padding-top: 40rem;
 			padding-left: 30rem;
+			background: linear-gradient(180deg, #000000 -70%, rgba(255, 255, 255, 0) 100%);
 			/* background: linear-gradient(180deg, #000000 120%, rgba(0, 0, 0, 0) -7%); */
 		}
 	}
