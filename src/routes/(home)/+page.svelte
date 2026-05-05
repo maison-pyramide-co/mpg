@@ -89,8 +89,6 @@
 			top: 0;
 			padding-block: 24rem;
 			padding-inline: 16rem;
-			/* background: linear-gradient(180deg, #000000 120%, rgba(0, 0, 0, 0) -7%); */
-
 			background: linear-gradient(180deg, #000000 -70%, rgba(255, 255, 255, 0) 100%);
 		}
 	}
