@@ -38,12 +38,15 @@
 			<div class="swiper-wrapper">
 				{#each projects as proj}
 					<div class="swiper-slide">
-						<h1>{proj.title}</h1>
+						<h1 style:color={proj.titleC || '#fff'}>{proj.title}</h1>
 						<figure>
-							<img src={proj.image} alt="" />
+							<picture>
+								<source srcset={proj.image} media="(min-width: 770px)" />
+								<img src={proj.imageM} width="auto" height="auto" alt="logo" />
+							</picture>
 						</figure>
 						<div class="p_desc">
-							<p>{proj.description}</p>
+							<p style:color={proj.descC || '#fff'}>{proj.description}</p>
 						</div>
 					</div>
 				{/each}
@@ -79,13 +82,16 @@
 		white-space: pre-wrap;
 		z-index: 2;
 		@media (width < 770px) {
-			font-size: 40rem;
+			font-size: 36rem;
+			line-height: 40rem;
 			width: 100%;
 			left: 0;
 			top: 0;
-			padding-top: 40rem;
-			padding-left: 30rem;
+			padding-block: 24rem;
+			padding-inline: 16rem;
 			/* background: linear-gradient(180deg, #000000 120%, rgba(0, 0, 0, 0) -7%); */
+
+			background: linear-gradient(180deg, #000000 -70%, rgba(255, 255, 255, 0) 100%);
 		}
 	}
 	.p_desc {
@@ -95,10 +101,12 @@
 		padding-right: 48rem;
 		padding-bottom: 48rem;
 		z-index: 2;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7%, #000000 120%);
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
 		@media (width < 770px) {
-		padding-left: 30rem;
-		padding-bottom: 20rem;
+			font-size: 15rem;
+			line-height: 20rem;
+			padding-block: 24rem;
+			padding-inline: 16rem;
 		}
 	}
 	.projects p {
@@ -110,6 +118,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		@media (width < 770px) {
+			margin-left: unset;
 			width: 320rem;
 			font-size: 20rem;
 		}
