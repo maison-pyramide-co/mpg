@@ -101,8 +101,6 @@
 		z-index: 2;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
 		@media (width < 770px) {
-			font-size: 15rem;
-			line-height: 20rem;
 			padding-block: 24rem;
 			padding-inline: 16rem;
 		}
@@ -118,7 +116,8 @@
 		@media (width < 770px) {
 			margin-left: unset;
 			width: 320rem;
-			font-size: 20rem;
+			font-size: 15rem;
+			line-height: 20rem;
 		}
 	}
 	main {
