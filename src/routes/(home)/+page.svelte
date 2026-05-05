@@ -42,7 +42,9 @@
 						<figure>
 							<img src={proj.image} alt="" />
 						</figure>
-						<p>{proj.description}</p>
+						<div class="p_desc">
+							<p>{proj.description}</p>
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -63,8 +65,8 @@
 </main>
 
 <style>
-	.swiper-slide {
-		position: relative;
+	.swiper {
+		height: 100%;
 	}
 	.swiper h1 {
 		font-size: 62rem;
@@ -77,24 +79,39 @@
 		white-space: pre-wrap;
 		z-index: 2;
 		@media (width < 770px) {
-			font-size: 24rem;
-			left: 16rem;
-			top: 24rem;
+			font-size: 40rem;
+			width: 100%;
+			left: 0;
+			top: 0;
+			padding-top: 40rem;
+			padding-left: 30rem;
+			/* background: linear-gradient(180deg, #000000 120%, rgba(0, 0, 0, 0) -7%); */
+		}
+	}
+	.p_desc {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding-right: 48rem;
+		padding-bottom: 48rem;
+		z-index: 2;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7%, #000000 120%);
+		@media (width < 770px) {
+		padding-left: 30rem;
+		padding-bottom: 20rem;
 		}
 	}
 	.projects p {
-		position: absolute;
-		right: 32rem;
-		bottom: 20rem;
 		color: white;
-		z-index: 2;
-		width: 350rem;
+		max-width: 450rem;
+		margin-left: auto;
+		font-size: 20rem;
+		line-height: 22rem;
+		font-weight: 600;
+		text-transform: uppercase;
 		@media (width < 770px) {
 			width: 320rem;
-			right: unset;
-			left: 16rem;
-			bottom: 16rem;
-			font-size: 14rem;
+			font-size: 20rem;
 		}
 	}
 	main {

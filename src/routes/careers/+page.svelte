@@ -55,10 +55,14 @@
 
 	h1 {
 		font-size: 80rem;
-		margin-left: 360rem;
+		margin-left: calc(318rem + 30rem);
+
+		/* margin-left: 360rem; */
 		font-weight: 600;
 		@media (width < 770px) {
-			margin-left: calc(116rem - var(--p-i));
+			/* margin-left: calc(116rem - var(--p-i)); */
+			margin-left: auto;
+			width: 265rem;
 			font-size: 32rem;
 		}
 	}
@@ -98,6 +102,7 @@
 			@media (width < 770px) {
 				margin-top: 0;
 				max-width: 265rem;
+				flex-shrink: 0;
 			}
 		}
 	}

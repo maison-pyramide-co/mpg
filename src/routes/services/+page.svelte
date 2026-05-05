@@ -1,5 +1,6 @@
 <script lang="ts">
 	import srvcBanI from '$lib/assets/images/srvc-ban.png';
+	import srvcBanMI from '$lib/assets/images/srvc-ban-m.png';
 	import Accordion from '$lib/components/accordion.svelte';
 	import services from '$lib/data/services';
 	import { onMount } from 'svelte';
@@ -16,7 +17,10 @@
 <main id="p" style:opacity="0">
 	<div class="he">
 		<figure>
-			<img src={srvcBanI} alt="" />
+			<picture>
+				<source srcset={srvcBanI} media="(min-width: 770px)" />
+				<img src={srvcBanMI} width="auto" height="auto" alt="logo" />
+			</picture>
 		</figure>
 	</div>
 
@@ -64,6 +68,9 @@
 			background-color: #ededed;
 			@media (width < 770px) {
 				aspect-ratio: 3.5/2;
+				& img {
+					object-position: top left;
+				}
 			}
 		}
 	}
