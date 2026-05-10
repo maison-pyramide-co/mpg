@@ -163,7 +163,8 @@
 		}
 		button {
 			align-self: flex-start;
-			margin-top: auto;
+			/* margin-top: auto; */
+			margin-top: 40rem;
 			padding: 12rem 32rem;
 			border: 1px solid black;
 			border-radius: 40rem;

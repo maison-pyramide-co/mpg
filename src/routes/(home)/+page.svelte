@@ -38,15 +38,15 @@
 			<div class="swiper-wrapper">
 				{#each projects as proj}
 					<div class="swiper-slide">
-						<h1 style:color={proj.titleC || '#fff'}>{proj.title}</h1>
 						<figure>
 							<picture>
 								<source srcset={proj.image} media="(min-width: 770px)" />
 								<img src={proj.imageM} width="auto" height="auto" alt="logo" />
 							</picture>
 						</figure>
-						<div class="p_desc">
-							<p style:color={proj.descC || '#fff'}>{proj.description}</p>
+						<div class="p_info">
+							<h1>{proj.title}</h1>
+							<p>{proj.description}</p>
 						</div>
 					</div>
 				{/each}
@@ -71,53 +71,43 @@
 	.swiper {
 		height: 100%;
 	}
-	.swiper h1 {
-		font-size: 62rem;
-		line-height: 1;
-		position: absolute;
-		left: 32rem;
-		top: 55rem;
-		font-weight: bold;
-		color: white;
-		white-space: pre-wrap;
-		z-index: 2;
-		@media (width < 770px) {
-			font-size: 36rem;
-			line-height: 40rem;
-			width: 100%;
-			left: 0;
-			top: 0;
-			padding-block: 24rem;
-			padding-inline: 16rem;
-			background: linear-gradient(180deg, #000000 -70%, rgba(255, 255, 255, 0) 100%);
-		}
-	}
-	.p_desc {
+	.p_info {
+		padding: 24rem 32rem;
 		width: 100%;
 		position: absolute;
 		bottom: 0;
-		padding-right: 48rem;
-		padding-bottom: 48rem;
-		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		color: white;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
 		@media (width < 770px) {
-			padding-block: 24rem;
-			padding-inline: 16rem;
+			padding: 24rem 16rem;
+			flex-direction: column;
+			align-items: unset;
+			justify-content: unset;
+			gap: 16rem;
 		}
 	}
-	.projects p {
-		color: white;
+	.p_info h1 {
+		font-size: 60rem;
+		line-height: 1;
+		font-weight: bold;
+		white-space: pre-wrap;
+		@media (width < 770px) {
+			font-size: 36rem;
+			line-height: 40rem;
+		}
+	}
+	.p_info p {
 		max-width: 450rem;
-		margin-left: auto;
 		font-size: 20rem;
-		line-height: 22rem;
+		line-height: 120%;
 		font-weight: 600;
 		text-transform: uppercase;
 		@media (width < 770px) {
-			margin-left: unset;
 			width: 320rem;
-			font-size: 15rem;
-			line-height: 20rem;
+			font-size: 14rem;
 		}
 	}
 	main {
