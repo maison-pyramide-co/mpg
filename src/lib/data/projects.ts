@@ -24,8 +24,7 @@ const projects = [
 		imageM: p2m,
 		title: 'BUILDING\nINFLUENCE',
 		name: 'Name of the project 2',
-		description:
-			'Mohammed Al Turki for INFINITI Middle East, appointed the brand’s Chief Luxury Ambassador',
+		description: 'Mohammed Al Turki appointed INFINITI Middle East ambassador',
 
 		titleC: 'black'
 	},
@@ -34,8 +33,7 @@ const projects = [
 		imageM: p3m,
 		title: 'CRAFTING\nIMPACT',
 		name: 'Name of the project 3',
-		description:
-			'Showroom representation for Burc Akyol, supporting the brand’s visibility during PFW',
+		description: 'Showroom representation for Burc Akyol during Paris Fashion Week',
 
 		titleC: 'black'
 	},
@@ -44,17 +42,15 @@ const projects = [
 		imageM: p4m,
 		title: 'CHAMPIONING\nTALENT',
 		name: 'Name of the project 4',
-		description:
-			'Karen Wazen, the first Arab content creator invited to attend the 68th Grammy Awards'
+		description: 'Karen Wazen at the Grammys as the first Arab content creator invited'
 	},
 	{
 		title: 'CONNECTING\nMARKETS',
-		description:
-			'Inside the Maison Pyramide Showroom in Paris, connecting brands with international buyers and industry visibility',
+		description: 'Paris showroom for industry visibility and to connect brands with buyers',
 		image: p5,
 		imageM: p5m,
 		name: 'Name of the project 5',
-		titleC: 'black',
+		titleC: 'black'
 		// descC: 'black'
 	},
 	{
@@ -62,8 +58,7 @@ const projects = [
 		imageM: p6m,
 		name: 'Name of the project 6',
 		title: 'CREATING\nENERGY',
-		description:
-			'Concept, production, and guest management for the Egypt launch of Puma’s iconic Speedcat'
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
 	}
 ];
 

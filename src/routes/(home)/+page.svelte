@@ -100,7 +100,7 @@
 		}
 	}
 	.p_info p {
-		max-width: 450rem;
+		max-width: 440rem;
 		font-size: 20rem;
 		line-height: 120%;
 		font-weight: 600;
