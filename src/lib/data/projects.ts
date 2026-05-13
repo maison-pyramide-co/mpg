@@ -4,12 +4,12 @@ import p3m from '$lib/assets/images/projects/p3-m.png';
 import p4m from '$lib/assets/images/projects/p4-m.png';
 import p5m from '$lib/assets/images/projects/p5-m.png';
 import p6m from '$lib/assets/images/projects/p6-m.png';
-import p1 from '$lib/assets/images/projects/p1.png';
-import p2 from '$lib/assets/images/projects/p2.png';
-import p3 from '$lib/assets/images/projects/p3.png';
-import p4 from '$lib/assets/images/projects/p4.png';
-import p5 from '$lib/assets/images/projects/p5.png';
-import p6 from '$lib/assets/images/projects/p6.png';
+import p1 from '$lib/assets/images/projects/p1.webp';
+import p2 from '$lib/assets/images/projects/p2.webp';
+import p3 from '$lib/assets/images/projects/p3.webp';
+import p4 from '$lib/assets/images/projects/p4.webp';
+import p5 from '$lib/assets/images/projects/p5.webp';
+import p6 from '$lib/assets/images/projects/p6.webp';
 
 const projects = [
 	{
