@@ -7,13 +7,13 @@ import in6 from '$lib/assets/images/initiatives/in6.png';
 
 const initiatives = [
 	{
-		name: 'Harvey Nichols Pop-Up for the Elisa Sednaoui Foundation',
-		body: 'Maison Pyramide supported the Elisa Sednaoui Foundation through a Harvey Nichols pop-up initiative that contributed to its wider work in creative learning and educational development for children and young people in Egypt.',
+		name: 'Supporting Creative Education with the Elisa Sednaoui Foundation',
+		body: 'Maison Pyramide supported the Elisa Sednaoui Foundation through a Harvey Nichols London pop-up initiative and community visits that included creative activities and workshops with children in Cairo, contributing to the foundation’s work in youth empowerment and creative education in Egypt.',
 		image: in2
 	},
 	{
 		name: 'SUPPORTING INCLUSION WITH HELM EGYPT',
-		body: 'Maison Pyramide supported Helm Egypt through an initiative with Jessica Kahawaty that helped raise awareness around disability inclusion and contribute to the organisation’s work in expanding access, opportunity, and visibility for persons with disabilities in Egypt.',
+		body: 'Maison Pyramide collaborated with Jessica Kahawaty and Helm Egypt on an initiative dedicated to advancing disability inclusion and accessibility awareness in Egypt. Through a fundraising gala, awareness campaign, and community engagement activities, the initiative helped support Helm’s mission to expand access, employment opportunities, and social inclusion for persons with disabilities.',
 		image: in1
 	},
 	{
@@ -23,7 +23,7 @@ const initiatives = [
 	},
 	{
 		name: 'Empowering Girls with Banati Foundation',
-		body: 'Maison Pyramide collaborated with Banati Foundation on a creative initiative designed to raise awareness around the organisation’s work with girls at risk, supporting its mission to provide protection, rehabilitation, education, and psychological care in Egypt.',
+		body: 'Maison Pyramide collaborated with Banati Foundation on a creative fundraising initiative centered around a limited-edition notebook collection designed to amplify the foundation’s message and mission. The notebooks were created in support of Banati’s work providing protection, education and psychological care for girls at risk in Egypt.',
 		image: in4
 	},
 	{
