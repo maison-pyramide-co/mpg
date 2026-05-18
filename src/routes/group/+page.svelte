@@ -233,9 +233,11 @@
 			<div class="p_">
 				<p data-ga="tr">
 					Maison Pyramide fosters a culture where creativity and initiative are valued, and where
-					people are encouraged to grow through meaningful work. We believe a strong sense of
-					community is essential to how we work, shaping an environment defined by mutual respect,
-					collaboration, and care in everything we do.
+					people are encouraged to grow through meaningful work.
+				</p>
+				<p data-ga="tr">
+					We believe a strong sense of community is essential to how we work, shaping an environment
+					defined by mutual respect, collaboration, and care in everything we do.
 				</p>
 			</div>
 		</div>
@@ -685,7 +687,7 @@
 
 	.s-cult {
 		margin-top: 120rem;
-		padding-bottom: 80rem;
+		padding-bottom: 120rem;
 		padding-inline: var(--p-i);
 		background: white;
 		& > div {
@@ -703,7 +705,8 @@
 			font-size: 20rem;
 		}
 		figure {
-			aspect-ratio: 1;
+			max-width: 650rem;
+			aspect-ratio: 4/3;
 			flex: 4;
 			background-color: #ddd;
 		}
@@ -713,9 +716,13 @@
 		}
 
 		p {
-			max-width: 485rem;
-			font-size: 35rem;
+			max-width: 445rem;
+			font-size: 30rem;
+			letter-spacing: 0.5rem;
 			line-height: 40rem;
+			&:last-child {
+				margin-top: 40rem;
+			}
 			@media (width < 770px) {
 				font-size: 25rem;
 				line-height: 30rem;
