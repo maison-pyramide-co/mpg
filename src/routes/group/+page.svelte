@@ -231,11 +231,12 @@
 			</figure>
 
 			<div class="p_">
-				<p data-ga="tr">
+				<p>
 					Maison Pyramide fosters a culture where creativity and initiative are valued, and where
 					people are encouraged to grow through meaningful work.
 				</p>
-				<p data-ga="tr">
+				<!-- <p data-ga="tr"> -->
+				<p>
 					We believe a strong sense of community is essential to how we work, shaping an environment
 					defined by mutual respect, collaboration, and care in everything we do.
 				</p>
@@ -712,16 +713,18 @@
 		}
 		.p_ {
 			flex: 3;
-			align-self: center;
+			align-self: flex-end;
+			@media (width < 770px) {
+				align-self: center;
+			}
 		}
 
 		p {
-			max-width: 445rem;
-			font-size: 30rem;
-			letter-spacing: 0.5rem;
-			line-height: 40rem;
+			max-width: 417rem;
+			font-size: 16rem;
+			letter-height: 130%;
 			&:last-child {
-				margin-top: 40rem;
+				margin-top: 24rem;
 			}
 			@media (width < 770px) {
 				font-size: 25rem;
