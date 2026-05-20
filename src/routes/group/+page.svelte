@@ -231,12 +231,11 @@
 			</figure>
 
 			<div class="p_">
-				<p>
+				<p data-ga="tr">
 					Maison Pyramide fosters a culture where creativity and initiative are valued, and where
 					people are encouraged to grow through meaningful work.
 				</p>
-				<!-- <p data-ga="tr"> -->
-				<p>
+				<p data-ga="tr">
 					We believe a strong sense of community is essential to how we work, shaping an environment
 					defined by mutual respect, collaboration, and care in everything we do.
 				</p>
