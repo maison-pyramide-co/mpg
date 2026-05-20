@@ -164,6 +164,9 @@ const animation = async () => {
 	gsap.set('#p', {
 		autoAlpha: 1
 	});
+	gsap.set('#h', {
+		autoAlpha: 1
+	});
 	heA();
 	indA();
 	imagesA();

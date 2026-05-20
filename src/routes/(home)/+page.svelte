@@ -5,6 +5,8 @@
 	import 'swiper/css';
 	import Swiper from 'swiper/bundle';
 	import { onMount } from 'svelte';
+	import { hA } from '$lib/layout/header/_animation';
+	import animation from './_animation';
 
 	// let activeIndex = $state(0);
 
@@ -12,7 +14,7 @@
 		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
-			// autoplay: true,
+			autoplay: true,
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
@@ -26,13 +28,16 @@
 			}
 		});
 
+		animation();
+		hA();
+
 		// swiper.on('slideChange', function () {
 		// 	activeIndex = this.realIndex;
 		// });
 	});
 </script>
 
-<main>
+<main id="p" style:opacity="0">
 	<section class="projects">
 		<div class="swiper">
 			<div class="swiper-wrapper">

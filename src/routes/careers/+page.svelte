@@ -1,14 +1,20 @@
 <script lang="ts">
 	import Accordion from '$lib/components/accordion.svelte';
 	import positions from '$lib/data/positions';
+	import { onMount } from 'svelte';
+	import animation from './_animation';
 
 	let activeCareer = $state(null);
 	const toggleActiveCareer = (i: any) => {
 		activeCareer = activeCareer === i ? null : i;
 	};
+
+	onMount(() => {
+		animation();
+	});
 </script>
 
-<main>
+<main id="p" style:opacity="0">
 	<h1>JOIN THE TEAM</h1>
 	<div class="careers">
 		<aside>

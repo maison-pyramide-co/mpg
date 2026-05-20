@@ -9,16 +9,19 @@
 	});
 </script>
 
-<header>
-	<a href="/">
-		<img src={logoI} alt="MPG Logo" />
+<header id="h" style:opacity="0">
+	<a href="/" class="y_">
+		<img class="y" src={logoI} alt="MPG Logo" />
 	</a>
 	<button
+		class="y_"
 		onclick={() => {
 			menuOpened = !menuOpened;
 		}}
 	>
-		{menuOpened ? 'CLOSE' : 'MENU'}
+		<span class="y">
+			{menuOpened ? 'CLOSE' : 'MENU'}
+		</span>
 	</button>
 </header>
 
@@ -58,5 +61,9 @@
 		@media (width < 770px) {
 			font-size: 14rem;
 		}
+	}
+
+	button .y {
+		display: block;
 	}
 </style>

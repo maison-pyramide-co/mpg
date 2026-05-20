@@ -35,8 +35,28 @@ const navA = () => {
 	});
 };
 
+export const hA = () => {
+	const tl = gsap.timeline();
+
+	tl.from('#h a .y', {
+		yPercent: 100,
+		duration: 0.6,
+		ease: 'sine.inOut'
+	}).from(
+		'#h button .y',
+		{
+			yPercent: 100,
+			duration: 0.4,
+			ease: 'sine.inOut'
+		},
+		'< 0.3'
+	);
+};
+
+
 const animation = () => {
 	navA();
 	agnA();
 };
+
 export default animation;
