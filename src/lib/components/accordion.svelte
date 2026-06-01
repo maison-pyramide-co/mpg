@@ -1,6 +1,5 @@
 <script lang="ts">
 	const { title, sTitle = null, children, open, toggle } = $props();
-
 	let contentEl: any;
 	let contentHeight = $derived(open ? contentEl.offsetHeight : 0);
 </script>

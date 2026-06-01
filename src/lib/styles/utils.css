@@ -5,7 +5,7 @@
 	@media (width > 770px) {
 		--p-i: 40rem;
 		--h-h: 74rem;
-	--f-h: 40rem;
+		--f-h: 40rem;
 	}
 }
 
@@ -21,6 +21,9 @@
 *  UTILS  */
 /******************/
 
+.y {
+	display: block;
+}
 .y_ {
 	overflow: hidden;
 }

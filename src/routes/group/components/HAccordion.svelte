@@ -25,7 +25,13 @@
 		align-items: center;
 		padding-block: 20rem;
 		font-size: 20rem;
-        font-weight: 500;
+		font-weight: 500;
+		text-align: left;
+	}
+	button h3 {
+		@media (width < 770px) {
+			max-width: 250rem;
+		}
 	}
 	span {
 		font-weight: normal;

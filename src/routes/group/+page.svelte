@@ -15,6 +15,7 @@
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import HAccordion from './components/HAccordion.svelte';
 	import partnerships from '$lib/data/partnerships';
+	import Industries from './components/industries.svelte';
 
 	let csrActiveIndex = $state(0);
 	let prtshActiveIndex = $state(0);
@@ -120,6 +121,7 @@
 			</figure>
 		</div>
 	</section>
+	<Industries />
 
 	<section class="ind">
 		<span data-ga="tr" class="indx">01.</span>
@@ -139,11 +141,11 @@
 								{ind.description}
 							</p>
 
-							<ul>
+							<!-- <ul>
 								{#each ind.offerings as off}
 									<li>{off}</li>
 								{/each}
-							</ul>
+							</ul> -->
 						</div>
 					</HAccordion>
 				</li>
@@ -159,12 +161,11 @@
 						<p>
 							{ind.description}
 						</p>
-
-						<ul>
+						<!-- <ul>
 							{#each ind.offerings as off}
 								<li>{off}</li>
 							{/each}
-						</ul>
+						</ul> -->
 					</Accordion>
 					<figure>
 						<img src={ind.image} alt={ind.title} />
@@ -453,6 +454,7 @@
 		}
 	}
 	.ind {
+		display: none;
 		margin-top: 140rem;
 		padding-inline: var(--p-i);
 		@media (width < 770px) {

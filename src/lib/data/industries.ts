@@ -7,51 +7,32 @@ const industries = [
 	{
 		title: 'FASHION',
 		description:
-			'We work with fashion brands to build visibility, shape cultural relevance, and create campaigns that connect across retail, digital, and editorial touchpoints.',
-		image: p1,
-		offerings: [
-			'Brand launches and repositioning',
-			'Seasonal campaigns and collections',
-			'Retail activations and events',
-			'Influencer and media engagement'
-		]
+			'A strong understanding of image, timing, and cultural relevance shapes our approach to fashion, where visibility often moves across runway, retail, media, and contemporary culture at once.',
+		image: p1
 	},
 	{
 		title: 'BEAUTY & WELLNESS',
 		description:
-			'We develop campaigns, content, and experiences across beauty and wellness that drive awareness and audience connection.',
-		image: p2,
-		offerings: [
-			'Product launches and hero campaigns',
-			'Content production and social storytelling',
-			'Influencer and PR campaigns',
-			'Retail and mall activations',
-			'Brand partnerships and events'
-		]
+			'Beauty and wellness require a balance of aspiration, credibility, and everyday relevance, making audience connection and emotional resonance central to how these sectors grow.',
+		image: p2
 	},
 	{
-		title: 'HOSPITALITY & RETAIL',
+		title: 'HOSPITALITY & REAL ESTATE',
 		description:
-			'We create marketing, communications, and customer-facing experiences across hospitality and retail that drive traffic, engagement, and distinction.',
-		image: p3,
-		offerings: [
-			'Footfall-driving campaigns',
-			'Launches, openings, and seasonal moments',
-			'Guest experience and brand activations',
-			'Partnerships and cultural programming'
-		]
+			'Perception plays a defining role across hospitality and real estate, where destinations, developments, and spaces need to feel distinctive long before they are experienced in person.',
+		image: p3
 	},
 	{
-		title: 'REAL ESTATE',
+		title: 'RETAIL',
 		description:
-			'We develop positioning, campaigns, and experiences across real estate and destinations that drive visibility, generate demand, and shape perception.',
-		image: p4,
-		offerings: [
-			'Launches and lead-generation campaigns',
-			'Destination marketing and placemaking',
-			'Content production and social storytelling',
-			'Partnerships, events, and communications'
-		]
+			'Retail is driven by presence, experience, and the ability to turn attention into action, whether through a store environment, a campaign moment, or a broader cultural footprint.',
+		image: p4
+	},
+	{
+		title: 'ARTS & CULTURE',
+		description:
+			'Context, storytelling, and public relevance are essential across arts and culture, where initiatives often need to engage both core audiences and the wider conversation around them.',
+		image: p4
 	}
 ];
 

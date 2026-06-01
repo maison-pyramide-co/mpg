@@ -7,10 +7,12 @@
 	import { onMount } from 'svelte';
 	import { hA } from '$lib/layout/header/_animation';
 	import animation from './_animation';
+	import { gsap } from 'gsap';
 
 	// let activeIndex = $state(0);
 
 	onMount(() => {
+
 		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
@@ -26,6 +28,17 @@
 					return number < 10 ? `0${number}` : number;
 				}
 			}
+		});
+
+		swiper.on('realIndexChange', function () {
+			const activeSlide = this.slides[this.activeIndex];
+			const y = activeSlide.querySelector('.y');
+			gsap.from(y, {
+				y: 100,
+				duration: 0.8,
+				ease: 'power4.out'
+			});
+			// console.log('slide changed', activeSlide);
 		});
 
 		animation();
@@ -50,7 +63,11 @@
 							</picture>
 						</figure>
 						<div class="p_info">
-							<h1>{proj.title}</h1>
+							<h1 class="y_">
+								<span class="y">
+									{proj.title}
+								</span>
+							</h1>
 							<p>{proj.description}</p>
 						</div>
 					</div>
