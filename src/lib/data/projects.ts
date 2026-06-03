@@ -19,15 +19,7 @@ const projects = [
 		name: 'Name of the project 1',
 		description: 'Regional PR and content partner for The 1001 Seasons of Elie Saab'
 	},
-	{
-		image: p2,
-		imageM: p2m,
-		title: 'BUILDING\nINFLUENCE',
-		name: 'Name of the project 2',
-		description: 'Mohammed Al Turki appointed INFINITI Middle East ambassador',
 
-		titleC: 'black'
-	},
 	{
 		image: p3,
 		imageM: p3m,
@@ -59,6 +51,15 @@ const projects = [
 		name: 'Name of the project 6',
 		title: 'CREATING\nENERGY',
 		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
+	},
+	{
+		image: p2,
+		imageM: p2m,
+		title: 'BUILDING\nINFLUENCE',
+		name: 'Name of the project 2',
+		description: 'Mohammed Al Turki appointed INFINITI Middle East ambassador',
+
+		titleC: 'black'
 	}
 ];
 
