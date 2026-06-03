@@ -28,16 +28,17 @@ const services = [
 		]
 	},
 	{
-		name: 'Talent Booking & Management',
-		description:
-			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
+		name: 'Talent Management & Brand Partnerships',
+		description: `With deep expertise across culture, influence, and commerce, Ego & East connects brands with some of the region's most sought-after creators, celebrities, and public figures. Through talent management, commercial representation, influencer marketing, and strategic partnerships, we facilitate collaborations that align brand objectives with authentic talent storytelling.`,
 		image: s9,
 		sow: [
-			'Talent sourcing',
-			'Booking and negotiations',
-			'Campaign and event talent',
-			'Talent management',
-			'Influencer casting and partnerships'
+			'Talent Management',
+			'Celebrity & Creator Bookings',
+			'Commercial Representation',
+			'Talent Sourcing',
+			'Influencer Casting',
+			'Brand Partnerships',
+			'Negotiation & Contracting'
 		]
 	},
 	{
