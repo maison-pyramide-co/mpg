@@ -8,8 +8,13 @@ import p1 from '$lib/assets/images/projects/p1.webp';
 import p2 from '$lib/assets/images/projects/p2.webp';
 import p3 from '$lib/assets/images/projects/p3.webp';
 import p4 from '$lib/assets/images/projects/p4.webp';
-import p5 from '$lib/assets/images/projects/p5.webp';
+import p5 from '$lib/assets/images/projects/p5.png';
 import p6 from '$lib/assets/images/projects/p6.webp';
+import p7 from '$lib/assets/images/projects/p7.png';
+import p8 from '$lib/assets/images/projects/p8.png';
+import p9 from '$lib/assets/images/projects/p9.png';
+import p10 from '$lib/assets/images/projects/p10.png';
+import p11 from '$lib/assets/images/projects/p11.png';
 
 const projects = [
 	{
@@ -58,8 +63,42 @@ const projects = [
 		title: 'BUILDING\nINFLUENCE',
 		name: 'Name of the project 2',
 		description: 'Mohammed Al Turki appointed INFINITI Middle East ambassador',
-
 		titleC: 'black'
+	},
+	{
+		image: p7,
+		imageM: p6m,
+		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
+	},
+	{
+		image: p8,
+		imageM: p6m,
+		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
+	},
+	{
+		image: p9,
+		imageM: p6m,
+		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
+	},
+	{
+		image: p10,
+		imageM: p6m,
+		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
+	},
+	{
+		image: p11,
+		imageM: p6m,
+		name: 'Name of the project 6',
+		title: 'CREATING\nENERGY',
+		description: 'Concept, event and guest list for launch of Puma Speedcat in Egypt'
 	}
 ];
 
