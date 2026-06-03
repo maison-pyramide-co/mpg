@@ -34,7 +34,7 @@
 
 		swiper.on('realIndexChange', function () {
 			const activeSlide = this.slides[this.activeIndex];
-			const y = activeSlide.querySelector('.y');
+			const y = activeSlide.querySelectorAll('.y');
 			gsap.from(y, {
 				y: 100,
 				duration: 0.8,
