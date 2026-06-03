@@ -2,6 +2,7 @@ import p1 from '$lib/assets/images/industries/ind1.png';
 import p2 from '$lib/assets/images/industries/ind2.png';
 import p3 from '$lib/assets/images/industries/ind3.png';
 import p4 from '$lib/assets/images/industries/ind4.png';
+import p5 from '$lib/assets/images/industries/ind5.png';
 
 const industries = [
 	{
@@ -23,17 +24,18 @@ const industries = [
 		image: p3
 	},
 	{
-		title: 'RETAIL',
-		description:
-			'Retail is driven by presence, experience, and the ability to turn attention into action, whether through a store environment, a campaign moment, or a broader cultural footprint.',
-		image: p4
-	},
-	{
 		title: 'ARTS & CULTURE',
 		description:
 			'Context, storytelling, and public relevance are essential across arts and culture, where initiatives often need to engage both core audiences and the wider conversation around them.',
 		image: p4
-	}
+	},
+	{
+		title: 'RETAIL',
+		description:
+			'Retail is driven by presence, experience, and the ability to turn attention into action, whether through a store environment, a campaign moment, or a broader cultural footprint.',
+		image: p5
+	},
+
 ];
 
 export default industries;

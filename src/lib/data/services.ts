@@ -11,17 +11,47 @@ import s10 from '$lib/assets/images/services/s10.png';
 
 const services = [
 	{
-		name: 'Branding & Brand Strategy',
+		name: 'PR, Influencer and Communications',
 		description:
-			'We shape the core of a brand, from its positioning and identity to the way it is expressed and brought to life.',
-		image: s1,
+			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
+		image: s3,
 		sow: [
-			'Brand positioning',
-			'Brand identity',
-			'Brand architecture',
-			'Messaging and tone of voice',
-			'Audience and competitor analysis',
-			'Rebranding and go-to-market planning'
+			'PR strategy and communications planning',
+			// 'Strategic consulting and advisory',
+			'⁠Media relations and press office management',
+			'⁠Press materials and launch communications',
+			'⁠Influencer strategy and outreach',
+			'⁠Influencer campaign management',
+			'⁠Media and influencer gifting / seeding',
+			'⁠Founder and brand profiling',
+			'⁠Guest list curation and management'
+		]
+	},
+	{
+		name: 'Talent Booking & Management',
+		description:
+			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
+		image: s9,
+		sow: [
+			'Talent sourcing',
+			'Booking and negotiations',
+			'Campaign and event talent',
+			'Talent management',
+			'Influencer casting and partnerships'
+		]
+	},
+	{
+		name: 'Events & Experiential Activations',
+		description:
+			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
+		image: s8,
+		sow: [
+			'Event concepts',
+			'Brand activations and pop-ups',
+			'Launch events and VIP experiences',
+			'Panels, talks, and workshops',
+			'Guest-list curation',
+			'On-ground management'
 		]
 	},
 	{
@@ -39,23 +69,6 @@ const services = [
 		]
 	},
 	{
-		name: 'PR, Influencer and Communications',
-		description:
-			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
-		image: s3,
-		sow: [
-			'PR strategy and communications planning',
-			'Strategic consulting and advisory',
-			'⁠Media relations and press office management',
-			'⁠Press materials and launch communications',
-			'⁠Influencer strategy and outreach',
-			'⁠Influencer campaign management',
-			'⁠Media and influencer gifting / seeding',
-			'⁠Founder and brand profiling',
-			'⁠Guest list curation and management'
-		]
-	},
-	{
 		name: 'Digital & Social Media',
 		description:
 			'We manage digital and social presence end to end, from strategy and content planning to account management, paid media, and search visibility.',
@@ -67,33 +80,6 @@ const services = [
 			'Paid social and digital advertising',
 			'SEO support',
 			'Reporting and insights'
-		]
-	},
-	{
-		name: 'Talent Booking & Management',
-		description:
-			'We connect leading luxury, beauty, fashion, and lifestyle brands with the right talent across the Middle East. We specialize in talent management, celebrity bookings, brand strategy and influencer marketing.',
-		image: s9,
-		sow: [
-			'Talent sourcing',
-			'Booking and negotiations',
-			'Campaign and event talent',
-			'Talent management',
-			'Influencer casting and partnerships'
-		]
-	},
-	{
-		name: 'Creative & Design',
-		description:
-			'We translate brand thinking into visual worlds, campaign ideas, and design systems that are both distinctive and effective.',
-		image: s6,
-		sow: [
-			'Creative direction',
-			'Campaign concepts',
-			'Art direction and graphic design',
-			'Visual identity systems',
-			'Packaging and collateral',
-			'Presentations and branded materials'
 		]
 	},
 	{
@@ -110,17 +96,31 @@ const services = [
 		]
 	},
 	{
-		name: 'Events & Experiential Activations',
+		name: 'Branding & Brand Strategy',
 		description:
-			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
-		image: s8,
+			'We shape the core of a brand, from its positioning and identity to the way it is expressed and brought to life.',
+		image: s1,
 		sow: [
-			'Event concepts',
-			'Brand activations and pop-ups',
-			'Launch events and VIP experiences',
-			'Panels, talks, and workshops',
-			'Guest-list curation',
-			'On-ground management'
+			'Brand positioning',
+			'Brand identity',
+			'Brand architecture',
+			'Messaging and tone of voice',
+			'Audience and competitor analysis',
+			'Rebranding and go-to-market planning'
+		]
+	},
+	{
+		name: 'Creative & Design',
+		description:
+			'We translate brand thinking into visual worlds, campaign ideas, and design systems that are both distinctive and effective.',
+		image: s6,
+		sow: [
+			'Creative direction',
+			'Campaign concepts',
+			'Art direction and graphic design',
+			'Visual identity systems',
+			'Packaging and collateral',
+			'Presentations and branded materials'
 		]
 	},
 	{

@@ -12,11 +12,13 @@
 	// let activeIndex = $state(0);
 
 	onMount(() => {
-
 		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
-			autoplay: true,
+			autoplay: {
+				delay: 3000
+			},
+
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
@@ -68,7 +70,11 @@
 									{proj.title}
 								</span>
 							</h1>
-							<p>{proj.description}</p>
+							<p class="y_">
+								<span class="y">
+									{proj.description}
+								</span>
+							</p>
 						</div>
 					</div>
 				{/each}
