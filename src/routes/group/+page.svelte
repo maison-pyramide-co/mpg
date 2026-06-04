@@ -728,8 +728,8 @@
 				margin-top: 24rem;
 			}
 			@media (width < 770px) {
-				font-size: 25rem;
-				line-height: 30rem;
+				font-size: 18rem;
+				/* line-height: 30rem; */
 			}
 		}
 	}

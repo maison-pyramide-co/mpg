@@ -3,6 +3,11 @@ import p2m from '$lib/assets/images/projects/p2-m.png';
 import p3m from '$lib/assets/images/projects/p3-m.png';
 import p4m from '$lib/assets/images/projects/p4-m.png';
 import p6m from '$lib/assets/images/projects/p6-m.png';
+import p7m from '$lib/assets/images/projects/p7-m.webp';
+import p8m from '$lib/assets/images/projects/p8-m.webp';
+import p9m from '$lib/assets/images/projects/p9-m.webp';
+import p10m from '$lib/assets/images/projects/p10-m.webp';
+import p11m from '$lib/assets/images/projects/p11-m.webp';
 import p1 from '$lib/assets/images/projects/p1.webp';
 import p2 from '$lib/assets/images/projects/p2.webp';
 import p3 from '$lib/assets/images/projects/p3.webp';
@@ -48,31 +53,31 @@ const projects = [
 	},
 	{
 		image: p7,
-		imageM: p6m,
+		imageM: p7m,
 		title: 'AMPLIFYING\nCULTURE',
 		description: 'Regional PR for the 8th El Gouna Film Festival in 2025'
 	},
 	{
 		image: p8,
-		imageM: p6m,
+		imageM: p8m,
 		title: 'CHAMPIONING\nTALENT',
 		description: 'Management of the Saudi 100 Brands program by the Saudi Fashion Commission'
 	},
 	{
 		image: p9,
-		imageM: p6m,
+		imageM: p9m,
 		title: 'DRIVING\nPRESTIGE',
 		description: 'Securing and managing hosted international guests for Noor Riyadh'
 	},
 	{
 		image: p10,
-		imageM: p6m,
+		imageM: p10m,
 		title: 'SHAPING\nMOMENTS',
 		description: 'End-to-end Event Management for the Dolce & Gabbana takeover of Bujairi Terrace'
 	},
 	{
 		image: p11,
-		imageM: p6m,
+		imageM: p11m,
 		title: 'BUILDING\nPLATFORMS',
 		description: 'Full programme curation and management for Hia Hub Festival & Conference'
 	}
