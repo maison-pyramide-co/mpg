@@ -15,9 +15,9 @@
 		const swiper = new Swiper('.swiper', {
 			slidesPerView: 1,
 			loop: true,
-			autoplay: {
-				delay: 3000
-			},
+			// autoplay: {
+			// 	delay: 5000
+			// },
 
 			navigation: {
 				nextEl: '#swiper-next',
