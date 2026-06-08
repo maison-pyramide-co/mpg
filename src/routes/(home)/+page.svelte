@@ -108,13 +108,16 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		color: white;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
+		/* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%); */
+
+		background: linear-gradient(0deg, #000000 -156.26%, rgba(0, 0, 0, 0) 100.29%);
 		@media (width < 770px) {
 			padding: 24rem 16rem;
 			flex-direction: column;
 			align-items: unset;
 			justify-content: unset;
 			gap: 16rem;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
 		}
 	}
 	.p_info h1 {
