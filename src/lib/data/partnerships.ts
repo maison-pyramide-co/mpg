@@ -6,11 +6,7 @@ import i5 from '$lib/assets/images/partnerships/psh5.png';
 import i6 from '$lib/assets/images/partnerships/psh6.png';
 
 const partnerships = [
-	{
-		name: 'Beyond Stitch with EBRD',
-		body: 'Maison Pyramide partnered with the EBRD on Beyond Stitch, a programme designed to support women-led fashion businesses in Egypt through mentorship, practical guidance, and industry insight, helping participants build stronger foundations for growth.',
-		image: i1
-	},
+
 	{
 		name: 'Industry Session with Istituto Marangoni Dubai',
 		body: 'Maison Pyramide joined Istituto Marangoni Dubai for an industry session focused on digital and PR strategy, talent integration, and the realities of building impact for fashion businesses, bringing real industry perspective into the classroom.',
@@ -25,6 +21,11 @@ const partnerships = [
 		name: 'Strategic Partnership with MBFW Madrid',
 		body: 'Maison Pyramide partnered with Mercedes-Benz Fashion Week Madrid to connect Spanish and Latin American design talent with the Middle East and wider EMEA market. The collaboration also introduced the inaugural Maison Pyramide Award, offering Baro Lucas a full season at the MP Showroom in Paris.',
 		image: i5
+	},
+		{
+		name: 'Beyond Stitch with EBRD',
+		body: 'Maison Pyramide partnered with the EBRD on Beyond Stitch, a programme designed to support women-led fashion businesses in Egypt through mentorship, practical guidance, and industry insight, helping participants build stronger foundations for growth.',
+		image: i1
 	},
 	{
 		name: 'PR Partnership with Art D’Égypte',
