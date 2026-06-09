@@ -21,7 +21,7 @@ const partnerships = [
 		image: i1
 	},
 	{
-		name: 'Strategic Partnership with MBFWMadrid',
+		name: 'Strategic Partnership with MBFW Madrid',
 		body: 'Maison Pyramide partnered with Mercedes-Benz Fashion Week Madrid to connect Spanish and Latin American design talent with the Middle East and wider EMEA market. The collaboration also introduced the inaugural Maison Pyramide Award, offering Baro Lucas a full season at the MP Showroom in Paris.',
 		image: i5
 	},

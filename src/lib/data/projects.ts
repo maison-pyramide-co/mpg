@@ -49,7 +49,7 @@ const projects = [
 		image: p2,
 		imageM: p2m,
 		title: 'BUILDING\nINFLUENCE',
-		description: 'Mohammed Al Turki for INFINITI Middle East'
+		description: 'Mohammed Al Turki for INFINITI\nMiddle East'
 	},
 	{
 		image: p7,
@@ -61,7 +61,7 @@ const projects = [
 		image: p8,
 		imageM: p8m,
 		title: 'DRIVING\nGROWTH',
-		description: 'Management of the Saudi 100 Brands program by the Saudi Fashion Commission'
+		description: 'Management of the Saudi 100 Brands program by the Saudi\nFashion Commission'
 	},
 	{
 		image: p9,
@@ -79,7 +79,7 @@ const projects = [
 		image: p11,
 		imageM: p11m,
 		title: 'BUILDING\nPLATFORMS',
-		description: 'Full programme curation and management for Hia Hub Festival & Conference'
+		description: 'Full programme curation and management for Hia Hub\nFestival & Conference'
 	}
 ];
 

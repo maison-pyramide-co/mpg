@@ -131,7 +131,7 @@
 		}
 	}
 	.p_info p {
-		max-width: 440rem;
+		max-width: 490rem;
 		font-size: 20rem;
 		line-height: 120%;
 		font-weight: 600;
@@ -139,6 +139,7 @@
 		@media (width < 770px) {
 			width: 320rem;
 			font-size: 14rem;
+			white-space: pre-wrap;
 		}
 	}
 	main {
