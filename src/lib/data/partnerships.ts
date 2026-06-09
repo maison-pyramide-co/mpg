@@ -3,6 +3,7 @@ import i2 from '$lib/assets/images/partnerships/psh2.png';
 import i3 from '$lib/assets/images/partnerships/psh3.png';
 import i4 from '$lib/assets/images/partnerships/psh4.png';
 import i5 from '$lib/assets/images/partnerships/psh5.png';
+import i6 from '$lib/assets/images/partnerships/psh6.png';
 
 const partnerships = [
 	{
@@ -18,7 +19,7 @@ const partnerships = [
 	{
 		name: 'Luxury PR & Marketing Session with FAD Dubai',
 		body: 'Maison Pyramide hosted an educational session with students from FAD Dubai on PR and marketing in luxury fashion, sharing practical insight into data-led strategy, press relations, and talent and influencer collaborations.',
-		image: i1
+		image: i6
 	},
 	{
 		name: 'Strategic Partnership with MBFW Madrid',
