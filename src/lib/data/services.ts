@@ -17,7 +17,7 @@ const services = [
 		image: s3,
 		sow: [
 			'PR strategy and communications planning',
-			// 'Strategic consulting and advisory',
+			'Strategic consulting and advisory',
 			'⁠Media relations and press office management',
 			'⁠Press materials and launch communications',
 			'⁠Influencer strategy and outreach',
@@ -39,20 +39,6 @@ const services = [
 			'Influencer Casting',
 			'Brand Partnerships',
 			'Negotiation & Contracting'
-		]
-	},
-	{
-		name: 'Events & Experiential Activations',
-		description:
-			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
-		image: s8,
-		sow: [
-			'Event concepts',
-			'Brand activations and pop-ups',
-			'Launch events and VIP experiences',
-			'Panels, talks, and workshops',
-			'Guest-list curation',
-			'On-ground management'
 		]
 	},
 	{
@@ -125,30 +111,64 @@ const services = [
 		]
 	},
 	{
-		name: 'Sales & Distribution',
+		name: 'Events & Experiential Activations',
 		description:
-			'We develop sales and distribution strategies that help brands grow into new markets, secure the right opportunities, and expand through access to international buyers and our Paris showroom.',
-		image: s10,
+			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
+		image: s8,
 		sow: [
-			'Wholesale strategy',
-			'Retail and distribution',
-			'Market entry and expansion',
-			'Buyer access',
-			'Paris showroom',
-			'Digital showroom'
+			'Event concepts',
+			'Brand activations and pop-ups',
+			'Launch events and VIP experiences',
+			'Panels, talks, and workshops',
+			'Guest-list curation',
+			'On-ground management'
 		]
 	},
 	{
-		name: 'Brand Partnerships & Collaborations',
+		name: 'Platforms & Institutional Programmes',
 		description:
-			'We identify and develop partnerships that expand a brand’s reach, relevance, and cultural impact.',
-		image: s5,
+			'We partner with governments, foundations, and industry bodies to design, manage, and deliver fashion programmes that shape markets, develop talent, and build platforms with lasting impact. From national brand development programmes to international fashion week activations, we operate at the intersection of fashion, culture, and institutional strategy.',
+		image: s10,
 		sow: [
-			'Partnership strategy',
-			'Retail and venue partnerships',
-			'Media partnerships',
-			'Sponsorship support',
-			'Partnership outreach and negotiation'
+			'Programme design & management ',
+			'National brand development initiatives',
+			'Fashion week operations & creative direction',
+			'Global industry engagement & access',
+			'Jury, selection & awards programme support',
+			'Industry conference & summit programming',
+			'Institutional partnership development',
+			'Cross-border platform activation'
+		]
+	},
+	{
+		name: 'Wholesale & Brand Market Access',
+		description:
+			'Through our Paris-based showroom operations and global buyer network, we help brands enter new markets, build the right distribution, and grow commercially through wholesale partnerships. We work across seasonal market programming, buyer relations, commercial negotiation and account management, and the full back-office process from order to delivery.',
+		image: s10,
+		sow: [
+			'Wholesale strategy & territory development',
+			'Multi-market showroom representation (Paris, Dubai, Riyadh, Las Vegas)',
+			'Digital showroom & virtual market access',
+			'Seasonal market programming',
+			'Buyer relations & order management',
+			'Back-office & logistics coordination',
+			'MENA distribution access & management',
+			'Production financing against confirmed orders'
+		]
+	},
+	{
+		name: 'Retail & Destination Development',
+		description:
+			'We help real estate developers, hospitality groups, and asset operators build differentiated retail experiences working across strategy through to operations. Whether defining a unique tenant mix, recruiting the right brands, or managing the retail offer of a destination, we work across the full retail life cycle.',
+		image: s10,
+		sow: [
+			'Retail leasing strategy & leasing implementation',
+			'Retail activation strategy, programming, & activations',
+			'Retail concept development & management',
+			'Brand curation, reach-outs & onboarding ',
+			'Buying & brand assortment curation',
+			'Market-driven retail feasibility analysis',
+			'Retail unit setup, operations & brand management'
 		]
 	}
 ];

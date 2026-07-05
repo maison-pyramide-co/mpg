@@ -6,7 +6,7 @@ import p5 from '$lib/assets/images/industries/ind5.png';
 
 const industries = [
 	{
-		title: 'FASHION',
+		title: 'FASHION & LUXURY',
 		description:
 			'A strong understanding of image, timing, and cultural relevance shapes our approach to fashion, where visibility often moves across runway, retail, media, and contemporary culture at once.',
 		image: p1
@@ -24,18 +24,17 @@ const industries = [
 		image: p3
 	},
 	{
-		title: 'ARTS & CULTURE',
-		description:
-			'Context, storytelling, and public relevance are essential across arts and culture, where initiatives often need to engage both core audiences and the wider conversation around them.',
-		image: p4
-	},
-	{
 		title: 'RETAIL',
 		description:
 			'Retail is driven by presence, experience, and the ability to turn attention into action, whether through a store environment, a campaign moment, or a broader cultural footprint.',
 		image: p5
 	},
-
+	{
+		title: 'ARTS & CULTURE',
+		description:
+			'Context, storytelling, and public relevance are essential across arts and culture, where initiatives often need to engage both core audiences and the wider conversation around them.',
+		image: p4
+	}
 ];
 
 export default industries;
