@@ -30,14 +30,14 @@ const projects = [
 	{
 		image: p3,
 		imageM: p3m,
-		title: 'ELEVATING\nDESIGN',
+		title: 'CRAFTING\nIMPACT',
 		description: 'Showroom representation for Burc Akyol during Paris Fashion Week'
 	},
 	{
 		image: p4,
 		imageM: p4m,
 		title: 'CHAMPIONING\nTALENT',
-		description: 'Karen Wazen at the grammys in a milestone moment for arab talent'
+		description: 'Karen Wazen at the grammys as the first arab content creator invited'
 	},
 	{
 		image: p6,
@@ -49,7 +49,7 @@ const projects = [
 		image: p2,
 		imageM: p2m,
 		title: 'BUILDING\nINFLUENCE',
-		description: 'Mohammed Al Turki for INFINITI\nMiddle East'
+		description: 'Mohammed Al Turki for INFINITI\nMiddle East Ambassador'
 	},
 	{
 		image: p7,
@@ -60,19 +60,19 @@ const projects = [
 	{
 		image: p8,
 		imageM: p8m,
-		title: 'DRIVING\nGROWTH',
+		title: 'CHAMPIONING\nTALENT',
 		description: 'Management of the Saudi 100 Brands program by the Saudi\nFashion Commission'
 	},
 	{
 		image: p9,
 		imageM: p9m,
-		title: 'CURATING\nACCESS',
+		title: 'DRIVING\nPRESTIGE',
 		description: 'Securing and managing hosted international guests for Noor Riyadh'
 	},
 	{
 		image: p10,
 		imageM: p10m,
-		title: 'CREATING\nSPECTACLES',
+		title: 'SHAPING\nMOMENTS',
 		description: 'END-TO-END EVENT MANAGEMENT FOR DOLCE & GABBANA’S BUJAIRI TAKEOVER'
 	},
 	{
