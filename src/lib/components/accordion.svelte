@@ -1,60 +1,34 @@
 <script lang="ts">
-	const { title, sTitle = null, children, open, toggle } = $props();
+	const { children } = $props();
+	let open = $state(false);
 	let contentEl: any;
 	let contentHeight = $derived(open ? contentEl.offsetHeight : 0);
+	const togle = () => {
+		open = !open;
+	};
 </script>
 
 <div class="acc" class:active={open}>
-	<button type="button" onclick={toggle}>
-		<h3>{title}</h3>
-		{#if sTitle}
-			<div>{sTitle}</div>
-		{/if}
-		<span>+</span>
-	</button>
-
 	<div class="acc_b_" style="height: {contentHeight + 'px'}; ">
 		<div class="acc_b" bind:this={contentEl}>
 			{@render children()}
 		</div>
 	</div>
+	<button type="button" onclick={togle}>
+		{open ? 'VIEW LESS' : 'VIEW MORE'}
+	</button>
 </div>
 
 <style>
 	.acc {
 	}
-	.acc:global(.active) span {
-		transform: rotate(45deg);
-		transition: all 0.2s ease-out;
-	}
 	button {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding-block: 20rem;
-		font-size: 24rem;
-		font-weight: 600;
-		position: relative;
-
-		div {
-			position: absolute;
-			left: 520rem;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 14rem;
-			font-weight: normal;
-			/* opacity: 0.7; */
-
-			@media (width < 770px) {
-				display: none;
-				/* position: static; */
-			}
-		}
-		span {
-			font-weight: normal;
-			/* transition: all 0.2s ease-out; */
-		}
+		margin-top: 28rem;
+		padding: 12rem 44rem;
+		border: 1px solid black;
+		border-radius: 50rem;
+		text-transform: uppercase;
+		font-size: 14rem;
 	}
 	.acc_b_ {
 		height: 0;

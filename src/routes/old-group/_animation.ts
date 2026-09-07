@@ -167,13 +167,13 @@ const animation = async () => {
 	gsap.set('#h', {
 		autoAlpha: 1
 	});
-	// heA();
-	// indA();
-	// imagesA();
-	// textsA();
-	// anim();
-	// agenA();
-	// pinA();
+	heA();
+	indA();
+	imagesA();
+	textsA();
+	anim();
+	agenA();
+	pinA();
 };
 
 export default animation;

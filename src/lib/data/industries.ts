@@ -6,7 +6,7 @@ import p5 from '$lib/assets/images/industries/ind5.png';
 
 const industries = [
 	{
-		title: 'FASHION & LUXURY',
+		title: 'FASHION',
 		description:
 			'A strong understanding of image, timing, and cultural relevance shapes our approach to fashion, where visibility often moves across runway, retail, media, and contemporary culture at once.',
 		image: p1

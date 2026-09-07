@@ -14,14 +14,14 @@
 		<img class="y" src={logoI} alt="MPG Logo" />
 	</a>
 	<button
-		class="y_"
+		class={menuOpened ? 'y_ open' : 'y_'}
 		onclick={() => {
 			menuOpened = !menuOpened;
 		}}
+		aria-label="menu"
 	>
-		<span class="y">
-			{menuOpened ? 'CLOSE' : 'MENU'}
-		</span>
+		<span class="y"></span>
+		<span class="y"></span>
 	</button>
 </header>
 
@@ -40,7 +40,7 @@
 		padding-inline: var(--p-i);
 		padding-top: 24rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		mix-blend-mode: difference;
 		@media (width < 770px) {
@@ -48,22 +48,58 @@
 		}
 	}
 	a {
+		position: absolute;
 		width: 60rem;
 		@media (width < 770px) {
 			width: 35rem;
 		}
 	}
 	button {
-		font-size: 16rem;
-		font-weight: 600;
-		letter-spacing: 10%;
-		color: white;
-		@media (width < 770px) {
-			font-size: 14rem;
-		}
+		position: absolute;
+		top: 50%;
+		right: var(--p-i);
+		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		gap: 8rem;
+		overflow: visible !important;
+	}
+	button span {
+		width: 35rem;
+		height: 2rem;
+		background: white;
+		transform-origin: center;
+	}
+	button.open span:first-of-type {
+		animation: top 0.4s linear both;
+	}
+	button.open span:last-of-type {
+		animation: bottom 0.4s linear both;
 	}
 
 	button .y {
 		display: block;
+	}
+	@keyframes top {
+		0% {
+			transform: translateY(0) rotate(0);
+		}
+		50% {
+			transform: translateY(4px) rotate(0);
+		}
+		100% {
+			transform: translateY(4px) rotate(-25deg);
+		}
+	}
+	@keyframes bottom {
+		0% {
+			transform: translateY(0) rotate(0);
+		}
+		50% {
+			transform: translateY(-4px) rotate(0);
+		}
+		100% {
+			transform: translateY(-4px) rotate(35deg);
+		}
 	}
 </style>

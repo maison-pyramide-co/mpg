@@ -1,207 +1,209 @@
 <script lang="ts">
-	// import pI from '$lib/assets/images/slider.png';
-	import Ichev from '$lib/assets/icons/chev.svelte';
-	import projects from '$lib/data/projects';
-	import 'swiper/css';
-	import Swiper from 'swiper/bundle';
+	import heroBan from '$lib/assets/images/home-ban.png';
+	import indBan from '$lib/assets/images/ind-ban.png';
+	import agencies from '$lib/data/agencies';
 	import { onMount } from 'svelte';
-	import { hA } from '$lib/layout/header/_animation';
-	import animation from './_animation';
-	import { gsap } from 'gsap';
-
-	// let activeIndex = $state(0);
+	import animation from './_a';
+	import Test from './test.svelte';
+	let page: HTMLElement;
 
 	onMount(() => {
-		const swiper = new Swiper('.swiper', {
-			slidesPerView: 1,
-			loop: true,
-			// autoplay: {
-			// 	delay: 5000
-			// },
-
-			navigation: {
-				nextEl: '#swiper-next',
-				prevEl: '#swiper-prev'
-			},
-			pagination: {
-				el: '.pg',
-				type: 'fraction',
-				formatFractionCurrent: (number) => {
-					return number < 10 ? `0${number}` : number;
-				}
-			}
-		});
-
-		swiper.on('realIndexChange', function () {
-			const activeSlide = this.slides[this.activeIndex];
-			const y = activeSlide.querySelectorAll('.y');
-			gsap.from(y, {
-				y: 100,
-				duration: 0.8,
-				ease: 'power4.out'
-			});
-			// console.log('slide changed', activeSlide);
-		});
-
-		animation();
-		hA();
-
-		// swiper.on('slideChange', function () {
-		// 	activeIndex = this.realIndex;
-		// });
+		return animation(page);
 	});
 </script>
 
-<main id="p" style:opacity="0">
-	<section class="projects">
-		<div class="swiper">
-			<div class="swiper-wrapper">
-				{#each projects as proj}
-					<div class="swiper-slide">
-						<figure>
-							<picture>
-								<source srcset={proj.image} media="(min-width: 770px)" />
-								<img src={proj.imageM} width="auto" height="auto" alt="logo" />
-							</picture>
-						</figure>
-						<div class="p_info">
-							<h1 class="y_">
-								<span class="y">
-									{proj.title}
-								</span>
-							</h1>
-							<p class="y_">
-								<span class="y">
-									{proj.description}
-								</span>
-							</p>
-						</div>
-					</div>
-				{/each}
+<main id="p" style:opacity="0" bind:this={page}>
+	<section class="s-hero">
+		<figure>
+			<img src={heroBan} alt="MPG" />
+		</figure>
+	</section>
+	<div class="s-intro_">
+		<section class="s-intro">
+			<div>
+				<div class="t">MAISON PYRAMIDE GROUP</div>
+				<h1>
+					We bring strategy, creativity, and commercial thinking together in a culture-first
+					ecosystem.
+				</h1>
 			</div>
+			<div class="b">
+				<p>
+					We transform insight into stories,<br />
+					stories into experiences,<br />
+					and experiences into measurable value.
+				</p>
+				<a href="/group"> EXPLORE THE GROUP </a>
+			</div>
+		</section>
+	</div>
+
+	<Test />
+
+	<section class="s-ind">
+		<h2 data-ga="tr">CONNECTING CREATIVITY, COMMERCE, AND CULTURE TO BUILD WHAT MATTERS NEXT.</h2>
+		<div class="h">
+			<h3>our agencies</h3>
+			<a href="/group">EXPLORE THE GROUP</a>
+		</div>
+		<div class="agencies">
+			<figure>
+				<img src={indBan} alt="" />
+			</figure>
+			<ul>
+				{#each agencies as agency}
+					<li>
+						<img src={agency.logo} alt="" />
+						<p>{@html agency.bio}</p>
+						<a href={agency.link}>DISCOVER</a>
+					</li>
+				{/each}
+			</ul>
 		</div>
 	</section>
-
-	<div>
-		<div class="pg"></div>
-		<nav>
-			<button id="swiper-prev">
-				<Ichev />
-			</button>
-			<button id="swiper-next">
-				<Ichev />
-			</button>
-		</nav>
-	</div>
 </main>
 
-<style>
-	.swiper {
-		height: 100%;
-	}
-	.p_info {
-		padding: 24rem 32rem;
-		width: 100%;
-		position: absolute;
-		bottom: 0;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		color: white;
-		/* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%); */
-
-		background: linear-gradient(0deg, #000000 -156.26%, rgba(0, 0, 0, 0) 100.29%);
-		@media (width < 770px) {
-			padding: 24rem 16rem;
-			flex-direction: column;
-			align-items: unset;
-			justify-content: unset;
-			gap: 16rem;
-			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 120%);
+<style lang="scss">
+	.s-hero {
+		height: 100vh;
+		height: 100dvh;
+		figure {
+			width: 100%;
+			height: 100%;
 		}
 	}
-	.p_info h1 {
-		font-size: 60rem;
-		line-height: 1;
-		font-weight: bold;
-		white-space: pre-wrap;
-		@media (width < 770px) {
-			font-size: 36rem;
-			line-height: 40rem;
-		}
+	.s-intro_ {
+		height: 200vh;
+		height: 200dvh;
 	}
-	.p_info p {
-		max-width: 490rem;
-		font-size: 20rem;
-		line-height: 120%;
-		font-weight: 600;
-		text-transform: uppercase;
-		@media (width < 770px) {
-			width: 320rem;
-			font-size: 14rem;
-			white-space: pre-wrap;
-		}
-	}
-	main {
-		padding-block: 40rem 32rem;
-		padding-inline: var(--p-i);
-		height: calc(100vh - var(--h-h) - var(--f-h));
-		overflow: hidden;
+	.s-intro {
+		height: 100vh;
+		height: 100dvh;
+		background-color: #3f4018;
+		color: #f0e9cd;
 		display: flex;
 		flex-direction: column;
-		@media (width < 770px) {
-			padding-block: 32rem 40rem;
-		}
-	}
-	section {
-		flex-basis: 100%;
-		max-height: 582.8rem;
-		overflow: hidden;
-		@media (width < 770px) {
-			max-height: 640rem;
-		}
-	}
-	figure {
-		aspect-ratio: 7/3;
-		background-color: #ededed;
-		@media (width < 770px) {
-			aspect-ratio: 9/16;
-		}
-	}
-	main > div {
-		margin-top: 24rem;
+		align-items: center;
+		justify-content: center;
 		position: relative;
-		display: flex;
-		justify-content: space-between;
-		@media (width < 770px) {
-			margin-top: 16rem;
-			justify-content: space-between;
+		& > div:first-child {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
 			align-items: center;
 		}
-	}
-	.pg {
-		font-size: 16rem;
-		& :global(span:first-child) {
-			font-size: 32rem;
-			line-height: 40rem;
+		.t {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -100%);
+			font-size: 16rem;
+			line-height: 1;
+			top: -28rem;
 		}
-		@media (width < 770px) {
-			font-size: 12rem;
+		h1 {
+			/* width: 666rem; */
+			width: 700rem;
+			font-size: 40rem;
+			font-family: 'gt';
+			line-height: 100%;
+			text-transform: uppercase;
+			text-align: center;
+			font-kerning: none;
+			text-rendering: optimizeSpeed;
+		}
+		.b {
+			position: absolute;
+			bottom: 96rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			padding-inline: 96rem 112rem;
+			p {
+				font-size: 20rem;
+				line-height: 1;
+			}
+			a {
+				display: block;
+				padding: 12rem 48rem;
+				text-transform: uppercase;
+				border: 1px solid #f0e9cd;
+				color: inherit;
+				border-radius: 100rem;
+			}
 		}
 	}
-	nav {
-		display: flex;
-		gap: 12rem;
-		@media (width < 770px) {
+	.s-ind {
+		padding-top: 64rem;
+		position: relative;
+		h2 {
+			font-family: 'gt';
+			font-size: 40rem;
+			line-height: 1;
+			width: 1100rem;
+			margin-inline: auto;
+			text-align: center;
+			font-weight: 400;
 		}
-	}
-	nav button {
-		width: 30rem;
-		@media (width < 770px) {
-			width: 24rem;
+		.h {
+			margin-top: 144rem;
+			padding-inline: var(--p-i);
+			display: flex;
+			justify-content: space-between;
 		}
-	}
-	button:last-child {
-		transform: rotate(180deg);
+		h3 {
+			font-size: 30rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.h a {
+			display: block;
+			padding: 12rem 48rem;
+			text-transform: uppercase;
+			border: 1px solid black;
+			color: black;
+			border-radius: 100rem;
+		}
+		.agencies {
+			margin-top: 48rem;
+			position: relative;
+		}
+		.agencies figure {
+			width: 100%;
+		}
+		ul {
+			width: 100%;
+			padding-inline: 72rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			justify-content: space-between;
+			color: white;
+		}
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 30rem;
+		}
+		ul img {
+			width: auto;
+			height: 24rem;
+		}
+		ul p {
+			font-size: 15rem;
+			line-height: 1;
+			text-align: center;
+		}
+		ul a {
+			padding: 8rem 14rem;
+			border: 1px solid white;
+			border-radius: 50rem;
+			font-size: 14rem;
+		}
 	}
 </style>

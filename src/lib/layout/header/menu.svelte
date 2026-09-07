@@ -16,6 +16,10 @@
 			link: '/services' as const
 		},
 		{
+			title: 'expertise',
+			link: '/expertise' as const
+		},
+		{
 			title: 'news',
 			link: '/news' as const
 		},
@@ -63,17 +67,6 @@
 				</a>
 			{/each}
 		</nav>
-	</div>
-	<div class="b">
-		<p>2025 ALL RIGHTS RESERVED</p>
-		<div>
-			<a href="https://www.linkedin.com/company/maison-pyramide" target="_blank">
-				<Iin />
-			</a>
-			<a href="https://www.instagram.com/maisonpyramideshowroom" target="_blank">
-				<Iig />
-			</a>
-		</div>
 	</div>
 </div>
 
@@ -123,7 +116,7 @@
 		a div div {
 			font-size: 20rem;
 			line-height: 110%;
-			font-weight: 600;
+			font-weight: 500;
 			@media (width < 770px) {
 				font-size: 16rem;
 			}
@@ -138,7 +131,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
-		gap: 32rem;
+		gap: 20rem;
 		@media (width < 770px) {
 			width: 100%;
 			align-items: flex-start;
@@ -155,7 +148,7 @@
 			}
 		}
 		a .ti {
-			font-size: 60rem;
+			font-size: 50rem;
 			line-height: 1;
 			letter-spacing: 10%;
 			font-weight: 500;
@@ -172,26 +165,6 @@
 			@media (width < 770px) {
 				font-size: 14rem;
 			}
-		}
-	}
-
-	/* MENU BOTTOM */
-	.b {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 32rem;
-
-		p {
-			font-size: 10rem;
-			font-weight: 500;
-		}
-
-		div {
-			display: flex;
-			gap: 16rem;
-		}
-		a {
-			width: 16rem;
 		}
 	}
 </style>

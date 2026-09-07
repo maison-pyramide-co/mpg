@@ -37,6 +37,21 @@
 	font-style: normal;
 	font-display: swap;
 }
+/* // GT // */
+@font-face {
+	font-family: 'gt';
+	src: url('../assets/fonts/gt.woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'gt';
+	src: url('../assets/fonts/gt-i.woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
 
 /*
 * THIS FILES IS FOR RESETTING SOME OF THE DEFAULTS STYLES
