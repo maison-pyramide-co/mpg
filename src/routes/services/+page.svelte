@@ -1,13 +1,15 @@
 <script lang="ts">
 	import srvcBanI from '$lib/assets/images/srvc-ban.png';
-	import Accordion from '$lib/components/accordion.svelte';
+	import Accordion from './components/accordion.svelte';
 	import services from '$lib/data/services';
 	import { onMount } from 'svelte';
 	import animation from './_animation';
 	let activeService = $state(null);
+
 	const toggleActiveService = (i) => {
 		activeService = activeService === i ? null : i;
 	};
+
 	onMount(() => {
 		animation();
 	});
