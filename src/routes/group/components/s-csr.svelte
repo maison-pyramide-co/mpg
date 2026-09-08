@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import Swiper from 'swiper/bundle';
 	import Ichev from '$lib/assets/icons/chev.svelte';
-	import Accordion from '$lib/components/accordion.svelte';
+	import Accordion from './accordion.svelte';
 
 	// let csrActiveIndex = $state(0);
 	let swiperElement: HTMLDivElement;

@@ -49,6 +49,12 @@ const introA = () => {
 		scrollTrigger: {
 			trigger: '#s-intro h3',
 			start: 'top 90%'
+		},
+
+		onComplete: () => {
+			t_split.masks.forEach((mask: any) => {
+				mask.style.overflow = '';
+			});
 		}
 	});
 

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Map from '$lib/assets/icons/map.svelte';
-	import mapI from '$lib/assets/images/map.png';
-	let acitveCity = $state('cairo');
+	let acitveCity: any = $state(null);
 	const cities = {
 		dubai:
 			'In dubai, our permanent Sales & PR Showroom, supported by a digital E-Showroom, opens doors to international buyers and media, turning regional ambition into global scale.',
@@ -24,19 +23,13 @@
 		Our extensive office and showroom network connects regional strength with global opportunity.
 	</p>
 
-	<!-- <div class="locations">
-		<ul>
-			<li class="paris"></li>
-		</ul>
-		<figure>
-			<img src={mapI} alt="network" />
-		</figure>
-	</div> -->
 	<div class="map">
-		<div class="active-city">
-			<h3>{acitveCity}</h3>
-			<p>{cities[acitveCity]}</p>
-		</div>
+		{#if acitveCity}
+			<div class="active-city">
+				<h3>{acitveCity}</h3>
+				<p>{cities[acitveCity]}</p>
+			</div>
+		{/if}
 		<Map {changeCity} />
 	</div>
 </section>
@@ -44,6 +37,7 @@
 <style>
 	.map {
 		position: relative;
+		margin-top: 40rem;
 	}
 	.active-city {
 		max-width: 258rem;
@@ -62,26 +56,7 @@
 		line-height: 1;
 		font-weight: 300;
 	}
-	.locations {
-		position: relative;
-		width: 1000rem;
-		margin-inline: auto;
-		margin-top: 40rem;
-		ul {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-		}
-		span {
-			position: absolute;
-			right: 39%;
-			display: block;
-			background-color: red;
-			border-radius: 100rem;
-			width: 8rem;
-			aspect-ratio: 1;
-		}
-	}
+
 	section {
 		padding-top: 80rem;
 	}
