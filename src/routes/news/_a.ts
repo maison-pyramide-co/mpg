@@ -16,6 +16,10 @@ const animation = async () => {
 	gsap.set('#h', {
 		autoAlpha: 1
 	});
+
+	gsap.set('#h', {
+		mixBlendMode: 'difference'
+	});
 	imagesA();
 	textsA();
 };

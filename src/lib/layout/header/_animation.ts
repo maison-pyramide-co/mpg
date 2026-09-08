@@ -53,10 +53,13 @@ export const hA = () => {
 	);
 };
 
-
 const animation = () => {
 	navA();
 	agnA();
+
+	// gsap.set('#h', {
+	// 	mixBlendMode: 'difference'
+	// });
 };
 
 export default animation;

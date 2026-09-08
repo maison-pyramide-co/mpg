@@ -114,6 +114,9 @@ const animation = (page: HTMLElement) => {
 
 		if (h) {
 			gsap.set(h, { autoAlpha: 1 });
+			gsap.set(h, {
+				mixBlendMode: 'difference'
+			});
 		}
 
 		ctx = gsap.context(() => {
