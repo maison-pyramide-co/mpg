@@ -2,7 +2,7 @@
 	import Accordion from '$lib/components/accordion.svelte';
 	import positions from '$lib/data/positions';
 	import { onMount } from 'svelte';
-	import animation from './_animation';
+	import animation from './_a';
 
 	let activeCareer = $state(null);
 	const toggleActiveCareer = (i: any) => {
@@ -36,6 +36,7 @@
 								<p>{pos.description}</p>
 								<button class="d-o">APPLY NOW</button>
 							</div>
+
 							<div class="r">
 								<span>Requirements</span>
 								<ul>
@@ -55,14 +56,13 @@
 
 <style>
 	main {
-		padding-block: 80rem;
+		padding-block: calc(80rem + var(--h-h)) 80rem;
 		padding-inline: var(--p-i);
 	}
 
 	h1 {
-		font-size: 80rem;
+		font-size: 60rem;
 		margin-left: calc(318rem + 30rem);
-
 		/* margin-left: 360rem; */
 		font-weight: 600;
 		@media (width < 770px) {

@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<h1>CONTACT US</h1>
+	<h1>GET IN TOUCH</h1>
 	<div>
 		<ul>
 			{#each agencies as agn}
@@ -32,14 +32,13 @@
 
 <style>
 	main {
-		padding-block: 80rem;
+		padding-block: calc(80rem + var(--h-h));
 		padding-inline: var(--p-i);
-
 	}
 	h1 {
-		font-size: 80rem;
+		font-size: 60rem;
 		margin-left: 360rem;
-		font-weight: bold;
+		font-weight: 500;
 		@media (width < 770px) {
 			font-size: 32rem;
 			margin-left: 0;

@@ -4,8 +4,6 @@
 	import animation from './_a';
 	import Article from './c/article.svelte';
 
-	// const sorted = news.sort((a, b) => new Date(b.date) - new Date(a.date));
-	// console.log(sorted);
 	onMount(() => {
 		animation();
 	});

@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/state';
 	import logoI from '$lib/assets/images/mpg-logo-w.png';
+	import logoBI from '$lib/assets/images/mpg-logo.png';
 	import Menu from './menu.svelte';
 	let menuOpened = $state(false);
 
@@ -12,6 +13,7 @@
 <header id="h" style:opacity="0">
 	<a href="/" class="y_">
 		<img class="y" src={logoI} alt="MPG Logo" />
+		<!-- <img class="logo-b" src={logoBI} alt="MPG Logo" /> -->
 	</a>
 	<button
 		class={menuOpened ? 'y_ open' : 'y_'}
@@ -43,10 +45,23 @@
 		justify-content: center;
 		align-items: center;
 		mix-blend-mode: difference;
+		/* padding-bottom: 24rem; */
 		@media (width < 770px) {
 			padding-top: 20rem;
 		}
 	}
+
+	header.black-h {
+		background-color: white;
+		mix-blend-mode: unset;
+		& img:nth-child(1) {
+			display: none;
+		}
+		& button span {
+			background-color: black;
+		}
+	}
+
 	a {
 		position: absolute;
 		width: 60rem;
@@ -76,7 +91,6 @@
 	button.open span:last-of-type {
 		animation: bottom 0.4s linear both;
 	}
-
 	button .y {
 		display: block;
 	}

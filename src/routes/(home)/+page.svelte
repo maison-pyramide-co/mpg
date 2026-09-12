@@ -4,7 +4,8 @@
 	import agencies from '$lib/data/agencies';
 	import { onMount } from 'svelte';
 	import animation from './_a';
-	import Test from './test.svelte';
+	// import Test from './test.svelte';
+	import SSectors from '../test/sectors.svelte';
 	let page: HTMLElement;
 
 	onMount(() => {
@@ -38,9 +39,10 @@
 		</section>
 	</div>
 
-	<Test />
+	<!-- <Test /> -->
+	<SSectors />
 
-	<section class="s-ind">
+	<section class="s-agn">
 		<h2 data-ga="tr">CONNECTING CREATIVITY, COMMERCE, AND CULTURE TO BUILD WHAT MATTERS NEXT.</h2>
 		<div class="h">
 			<h3>our agencies</h3>
@@ -134,7 +136,7 @@
 			}
 		}
 	}
-	.s-ind {
+	.s-agn {
 		padding-top: 64rem;
 		position: relative;
 		h2 {
