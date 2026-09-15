@@ -8,21 +8,24 @@ const projects = [
 		name: 'SAUDI100 BRANDS',
 		image: w1,
 		category: 'real estate',
-		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+		services: ['platforms', 'institutional programs']
 	},
 	{
 		id: 2,
 		name: 'ELIE SAAB',
 		image: w2,
 		category: 'fashion & luxury',
-		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+		services: ['platforms', 'institutional programs']
 	},
 	{
 		id: 3,
 		name: 'DOLCE AND GABANNA',
 		image: w3,
 		category: 'retail',
-		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+		body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+		services: ['platforms', 'institutional programs']
 	}
 ];
 

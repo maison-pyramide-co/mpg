@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Iarrow from '$lib/assets/icons/diag-arrow.svelte';
-	import Iig from '$lib/assets/icons/ig.svelte';
-	import Iin from '$lib/assets/icons/in.svelte';
 	import agencies from '$lib/data/agencies';
 	import { onMount } from 'svelte';
 	import animation from './_animation';

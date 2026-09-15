@@ -13,9 +13,12 @@
 </script>
 
 <main id="p" style:opacity="0" bind:this={page}>
+
 	<SHero />
 	<SSectors />
 	<SWork />
 </main>
 
-<style></style>
+<style>
+
+</style>

@@ -98,8 +98,9 @@ const introA = () => {
 const logoA = () => {
 	const vh = window?.innerHeight;
 	const triggerEl = document.querySelector('.s-hero');
-	const targetEl = document.querySelector('#h > a');
-	const final_position = vh / 2 - 158 / 2;
+	const targetEl = document.querySelector('.s-hero .logo') as HTMLElement;
+	const headerEl = document.querySelector('#h') as HTMLElement;
+	const final_position = vh / 2 - targetEl?.clientHeight / 2;
 
 	const tl = gsap.timeline({
 		scrollTrigger: {
@@ -109,11 +110,21 @@ const logoA = () => {
 			scrub: 1
 		}
 	});
-	tl.from(targetEl, {
-		width: '190rem',
-		y: final_position,
-		duration: 1
+	tl.to(targetEl, {
+		width: '60rem',
+		top: '49rem',
+		ease: 'linear',
+		onComplete: () => {
+			targetEl.remove();
+			headerEl.style.opacity = '1';
+		}
 	});
+	// tl.from(targetEl, {
+	// 	width: '190rem',
+	// 	y: final_position,
+	// 	ease: 'linear',
+	// 	duration: 1
+	// });
 };
 /*
 const animation = async (page: HTMLElement) => {
@@ -148,12 +159,12 @@ const animation = (page: HTMLElement) => {
 		}
 
 		if (h) {
-			gsap.set(h, { autoAlpha: 1 });
+			// gsap.set(h, { autoAlpha: 1 });
 		}
 
 		ctx = gsap.context(() => {
 			logoA();
-			headerA();
+			// headerA();
 			introA();
 			textsA();
 		}, page);

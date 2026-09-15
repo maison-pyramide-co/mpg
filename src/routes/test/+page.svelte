@@ -5,6 +5,7 @@
 	import 'swiper/css';
 	import Inds from './sectors.svelte';
 	import Test from './test.svelte';
+	import Logos from './logos.svelte';
 
 	onMount(() => {
 		const swiper = new Swiper('.test.swiper', {
@@ -15,7 +16,7 @@
 	});
 </script>
 
-<Inds />
+<Logos />
 
 <!-- 
 <div class="test swiper">

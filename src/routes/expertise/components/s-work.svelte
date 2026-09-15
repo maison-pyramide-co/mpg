@@ -1,9 +1,9 @@
 <script lang="ts">
 	import projects from '$lib/data/work';
-	import Accordion from './accordion.svelte';
+	import Project from './project.svelte';
 
 	const categories = [
-		'arts and culture',
+		'arts & culture',
 		'beauty & wellness',
 		'fashion & luxury',
 		'real estate',
@@ -35,15 +35,7 @@
 	<ul>
 		{#each filteredProjects as proj, i}
 			<li>
-				<figure>
-					<img src={proj.image} alt="" />
-					<figcaption>{proj.category}</figcaption>
-				</figure>
-				<Accordion title={proj.name} open={activeProj == i} toggle={() => toggleActiveProj(i)}>
-					<p>
-						{proj.body}
-					</p>
-				</Accordion>
+				<Project {proj} open={activeProj == i} toggle={() => toggleActiveProj(i)} />
 			</li>
 		{/each}
 	</ul>
@@ -79,26 +71,5 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 20rem;
-	}
-	figure {
-		aspect-ratio: 4/2.5;
-		overflow: hidden;
-		position: relative;
-	}
-	figcaption {
-		position: absolute;
-		bottom: 24rem;
-		right: 24rem;
-		border: 1px solid white;
-		padding-block: 8rem;
-		color: white;
-		font-size: 10rem;
-		text-transform: uppercase;
-		border-radius: 100rem;
-		width: 125rem;
-		text-align: center;
-	}
-	p {
-		padding-top: 24rem;
 	}
 </style>

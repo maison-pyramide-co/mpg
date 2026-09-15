@@ -1,5 +1,6 @@
 <script lang="ts">
 	import heroBan from '$lib/assets/images/home-ban.png';
+	import logoI from '$lib/assets/images/log.png';
 	import indBan from '$lib/assets/images/ind-ban.png';
 	import agencies from '$lib/data/agencies';
 	import { onMount } from 'svelte';
@@ -18,6 +19,9 @@
 		<figure>
 			<img src={heroBan} alt="MPG" />
 		</figure>
+		<div class="logo">
+			<img src={logoI} alt="MPG" />
+		</div>
 	</section>
 	<div class="s-intro_">
 		<section class="s-intro">
@@ -72,6 +76,19 @@
 		figure {
 			width: 100%;
 			height: 100%;
+		}
+		div {
+			position: fixed;
+			width: 190rem;
+			top: 50%;
+			left: 50%;
+			/* transform: translate3d(-50%, -50%, 0); */
+			transform: translate(-50%, -50%);
+			/* width: 60rem;
+			top: 24rem;
+			left: 50%;
+			transform: translateX(-50%); */
+			z-index: 999;
 		}
 	}
 	.s-intro_ {
