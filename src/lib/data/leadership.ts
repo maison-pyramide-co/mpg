@@ -9,32 +9,32 @@ const partners = [
 	{
 		image: geoI,
 		name: 'Giovanina Attieh',
-		title: 'Co-Founder & Partner'
+		title: 'Chief Growth Officer (Managing Director KSA)'
 	},
 	{
 		image: marI,
 		name: 'Maria Munoz',
-		title: 'Co-Founder & Partner'
+		title: 'Chief Marketing Officer (Managing Director Egypt)'
 	},
 	{
 		image: nathI,
 		name: 'Nathalie Mroue',
-		title: 'Co-Founder & Partner'
+		title: 'Chief Executive Officer MP Group'
 	},
 	{
 		image: yanI,
 		name: 'Yann Pavie',
-		title: 'Co-Founder & Partner'
+		title: 'Executive Chairman'
 	},
 	{
 		image: reeI,
 		name: 'Reem Kanj',
-		title: 'Co-Founder & Partner'
+		title: 'Chief Executive Officer E&E'
 	},
 	{
 		image: nataI,
 		name: 'Natalya Kanj',
-		title: 'Co-Founder & Partner'
+		title: 'Chief Operating Officer E&E'
 	}
 ];
 

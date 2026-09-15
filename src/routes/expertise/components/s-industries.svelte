@@ -2,7 +2,7 @@
 	import industries from '$lib/data/industries';
 </script>
 
-<section>
+<section id="s-sectors">
 	<div class="h">
 		<h2>OUR SECTORS</h2>
 		<p>
@@ -25,7 +25,7 @@
 <style>
 	section {
 		padding-top: 120rem;
-        overflow: hidden;
+		overflow: hidden;
 	}
 	.h {
 		padding-inline: 24rem;
@@ -43,7 +43,7 @@
 		width: 355rem;
 	}
 	ul {
-        width: max-content;
+		width: max-content;
 		margin-top: 280rem;
 		display: flex;
 		gap: 24rem;
@@ -55,6 +55,6 @@
 	li div {
 		font-size: 20rem;
 		font-weight: 500;
-        margin-bottom: 24rem;
+		margin-bottom: 24rem;
 	}
 </style>

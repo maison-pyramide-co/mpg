@@ -1,5 +1,14 @@
 <script lang="ts">
 	import banI from '$lib/assets/images/expr-ban.png';
+
+	const goToSectors = () => {
+		const el = document.querySelector('#s-sectors');
+		el!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	};
+	const goToWork = () => {
+		const el = document.querySelector('#s-work');
+		el!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	};
 </script>
 
 <section>
@@ -9,8 +18,8 @@
 		<img src={banI} alt="MPG Expertise" />
 	</figure>
 	<nav>
-		<button>OUR SECTORS</button>
-		<button>VIEW OUR CASE STUDIES</button>
+		<button onclick={goToSectors}>OUR SECTORS</button>
+		<button onclick={goToWork}>VIEW OUR CASE STUDIES</button>
 	</nav>
 </section>
 

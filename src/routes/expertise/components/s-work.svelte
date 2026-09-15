@@ -25,7 +25,7 @@
 	);
 </script>
 
-<section>
+<section id="s-work">
 	<nav>
 		{#each categories as cat}
 			<button onclick={() => toggleActiveCategory(cat)} class:active={activeCategory === cat}>
@@ -47,7 +47,7 @@
 		padding-bottom: 80rem;
 	}
 	nav {
-		padding-block: 64rem;
+		padding-block: 96rem 64rem;
 		display: flex;
 		gap: 32rem;
 		justify-content: center;

@@ -4,6 +4,13 @@
 	import animation from './_a';
 	import Article from './c/article.svelte';
 
+	let activeFilter = $state(null);
+	let filteredNews = $derived(activeFilter ? news.filter((n) => n.type == activeFilter) : news);
+
+	const toggleActiveFilter = (filter: any) => {
+		activeFilter = activeFilter === filter ? null : filter;
+	};
+
 	onMount(() => {
 		animation();
 	});
@@ -13,8 +20,15 @@
 	<div class="l">
 		<h2 data-ga="tr">KEEP UP WITH OUR LATEST NEWS</h2>
 		<nav>
-			<button>IN THE PRESS</button>
-			<button>COMPANY UPDATES</button>
+			<button
+				onclick={() => toggleActiveFilter('in the press')}
+				class:active={activeFilter === 'in the press'}>IN THE PRESS</button
+			>
+			<button
+				onclick={() => toggleActiveFilter('company updates')}
+				class:active={activeFilter === 'company updates'}
+				>COMPANY UPDATES
+			</button>
 		</nav>
 		<p>
 			The latest from Maison Pyramide Group, from company updates to key milestones and industry
@@ -23,7 +37,7 @@
 	</div>
 	<div class="r">
 		<ul>
-			{#each news as article}
+			{#each filteredNews as article}
 				<li>
 					<Article {article} />
 				</li>
@@ -81,6 +95,14 @@
 		text-align: center;
 		border: 1px solid black;
 		border-radius: 100rem;
+	}
+	button:hover {
+		background-color: black;
+		color: white;
+	}
+	button.active {
+		background-color: black;
+		color: white;
 	}
 	p {
 		margin-top: 40rem;

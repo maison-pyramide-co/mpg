@@ -86,4 +86,8 @@
 			font-size: 16rem;
 		}
 	}
+	li:nth-child(1) p,
+	li:nth-child(2) p {
+		width: 200rem;
+	}
 </style>

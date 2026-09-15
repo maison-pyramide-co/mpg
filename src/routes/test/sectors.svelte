@@ -256,21 +256,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- 
-        <div class="info">
-			{#key currentIndex}
-				<div
-					class="info-inner"
-					in:fade={{ duration: 450, delay: 150 }}
-					out:fade={{ duration: 250 }}
-				>
-					<h3 class="info-title">{industries[currentIndex].title}</h3>
-					<p class="info-desc">{industries[currentIndex].description}</p>
-				</div>
-			{/key}
-		</div> 
-        -->
 </section>
 
 <style>
@@ -313,13 +298,14 @@
 	}
 	.industry {
 		position: absolute;
+		left: 320rem;
 		bottom: 48rem;
 		z-index: 9;
 		color: white;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		gap: 24rem;
 	}
 	.industry h3 {
@@ -402,7 +388,9 @@
 		width: 400rem;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		/* justify-content: space-between; */
+		justify-content: center;
+		gap: 40rem;
 	}
 	.arrow-btn {
 		width: 32rem;
@@ -410,13 +398,7 @@
 			transform: rotate(180deg);
 		}
 	}
-	.arrow-btn:active {
-		transform: scale(0.94);
-	}
-	.arrow-btn:focus-visible {
-		outline: 2px solid var(--accent);
-		outline-offset: 3px;
-	}
+
 	.arrow-btn:disabled {
 		opacity: 0.35;
 		cursor: default;
@@ -426,10 +408,6 @@
 		.gallery {
 			--gap: 18px;
 			--large-w: clamp(150px, 44vw, 240px);
-		}
-		.content-row {
-			flex-direction: column;
-			align-items: flex-start;
 		}
 	}
 </style>

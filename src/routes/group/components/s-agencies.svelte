@@ -95,6 +95,7 @@
 					Attention is earned. Impact is intentional. We create brands that turn attention into
 					action, and action into growth. Every great brand starts with a story
 				</p>
+				<a href={agency.link} target="_blank">DISCOVER</a>
 			</div>
 		</div>
 	{/each}
@@ -150,7 +151,9 @@
 	}
 
 	a {
-		padding: 8rem 14rem;
+		position: absolute;
+		bottom: 48rem;
+		padding: 6rem 20rem;
 		border: 1px solid white;
 		border-radius: 50rem;
 		font-size: 14rem;

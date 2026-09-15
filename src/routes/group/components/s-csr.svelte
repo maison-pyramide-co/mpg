@@ -13,6 +13,7 @@
 			slidesPerView: 1.5,
 			spaceBetween: '24rem',
 			loop: true,
+			autoplay: { delay: 3000 },
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
