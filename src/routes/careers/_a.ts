@@ -1,6 +1,5 @@
 import { gsap } from 'gsap/dist/gsap';
 
-
 const animation = async () => {
 	await document.fonts.ready;
 

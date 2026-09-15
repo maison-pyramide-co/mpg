@@ -56,14 +56,13 @@
 
 <style>
 	main {
-		padding-block: calc(80rem + var(--h-h)) 80rem;
+		padding-block: 194rem 80rem;
 		padding-inline: var(--p-i);
 	}
 
 	h1 {
 		font-size: 60rem;
 		margin-left: calc(318rem + 30rem);
-		/* margin-left: 360rem; */
 		font-weight: 600;
 		@media (width < 770px) {
 			/* margin-left: calc(116rem - var(--p-i)); */

@@ -100,6 +100,7 @@ const logoA = () => {
 	const triggerEl = document.querySelector('.s-hero');
 	const targetEl = document.querySelector('.s-hero .logo') as HTMLElement;
 	const headerEl = document.querySelector('#h') as HTMLElement;
+	gsap.set(headerEl, { autoAlpha: 0 });
 	const final_position = vh / 2 - targetEl?.clientHeight / 2;
 
 	const tl = gsap.timeline({
@@ -116,7 +117,7 @@ const logoA = () => {
 		ease: 'linear',
 		onComplete: () => {
 			targetEl.remove();
-			headerEl.style.opacity = '1';
+			gsap.set(headerEl, { autoAlpha: 1 });
 		}
 	});
 	// tl.from(targetEl, {

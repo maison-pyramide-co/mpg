@@ -45,7 +45,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
-		padding-top: calc(80rem + var(--h-h));
+		padding-top: 234rem;
 		padding-bottom: 40rem;
 		padding-left: var(--p-i);
 		background-color: white;
@@ -96,7 +96,7 @@
 		}
 	}
 	.r {
-		padding-top: 80rem;
+		padding-top: 194rem;
 		padding-right: var(--p-i);
 		padding-bottom: 40rem;
 		@media (width < 770px) {

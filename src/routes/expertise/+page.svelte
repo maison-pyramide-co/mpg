@@ -4,6 +4,8 @@
 	import SSectors from './components/s-sectors.svelte';
 	import SWork from './components/s-work.svelte';
 	import animation from './_a';
+	import SClients from './components/s-clients.svelte';
+	import SIndustries from './components/s-industries.svelte';
 
 	let page: HTMLElement;
 
@@ -13,12 +15,12 @@
 </script>
 
 <main id="p" style:opacity="0" bind:this={page}>
-
 	<SHero />
+	<SIndustries />
+	<SClients />
 	<SSectors />
 	<SWork />
 </main>
 
 <style>
-
 </style>

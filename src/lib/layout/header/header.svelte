@@ -65,42 +65,23 @@
 		flex-direction: column;
 		gap: 8rem;
 		overflow: visible !important;
+		--line-h: 2rem;
+		--gap: 8rem;
 	}
-	button span {
-		width: 35rem;
+
+	button .y {
+		display: block;
+		display: block;
+		width: 34rem;
 		height: 2rem;
 		background: white;
 		transform-origin: center;
+		transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 	}
-	button.open span:first-of-type {
-		animation: top 0.4s linear both;
+	button.open .y:first-of-type {
+		transform: translateY(calc(var(--gap) / 2 + var(--line-h) / 2)) rotate(35deg);
 	}
-	button.open span:last-of-type {
-		animation: bottom 0.4s linear both;
-	}
-	button .y {
-		display: block;
-	}
-	@keyframes top {
-		0% {
-			transform: translateY(0) rotate(0);
-		}
-		50% {
-			transform: translateY(4px) rotate(0);
-		}
-		100% {
-			transform: translateY(4px) rotate(-25deg);
-		}
-	}
-	@keyframes bottom {
-		0% {
-			transform: translateY(0) rotate(0);
-		}
-		50% {
-			transform: translateY(-4px) rotate(0);
-		}
-		100% {
-			transform: translateY(-4px) rotate(35deg);
-		}
+	button.open .y:last-of-type {
+		transform: translateY(calc(-1 * (var(--gap) / 2 + var(--line-h) / 2))) rotate(-35deg);
 	}
 </style>

@@ -1,9 +1,15 @@
 <script>
 	import agencies from '$lib/data/agencies';
 	import Iarrow from '$lib/assets/icons/diag-arrow.svelte';
+	import { onMount } from 'svelte';
+	import animation from './_a';
+
+	onMount(() => {
+		animation();
+	});
 </script>
 
-<main>
+<main id="p" style:opacity="0">
 	<h1>GET IN TOUCH</h1>
 	<div>
 		<ul>
@@ -32,7 +38,7 @@
 
 <style>
 	main {
-		padding-block: calc(80rem + var(--h-h));
+		padding-block: 194rem 80rem;
 		padding-inline: var(--p-i);
 	}
 	h1 {

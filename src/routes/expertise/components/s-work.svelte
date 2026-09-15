@@ -1,5 +1,6 @@
 <script lang="ts">
-	import projects from '$lib/data/work';
+	// import projects from '$lib/data/work';
+	import projects from '$lib/data/case-studies';
 	import Project from './project.svelte';
 
 	const categories = [
