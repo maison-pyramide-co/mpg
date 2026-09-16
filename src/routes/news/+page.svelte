@@ -59,7 +59,8 @@
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
-		padding-top: 234rem;
+		/* padding-top: 234rem; */
+		padding-top: 194rem;
 		padding-bottom: 40rem;
 		padding-left: var(--p-i);
 		background-color: white;
