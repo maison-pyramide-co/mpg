@@ -299,15 +299,17 @@
 	}
 	.industry {
 		position: absolute;
-		left: 320rem;
+		/* left: 320rem; */
 		bottom: 48rem;
 		z-index: 9;
 		color: white;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
 		gap: 24rem;
+		/* align-items: flex-start; */
+		align-items: center;
+		width: 100%;
 	}
 	.industry h3 {
 		font-size: 20rem;

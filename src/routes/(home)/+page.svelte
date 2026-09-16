@@ -43,7 +43,6 @@
 		</section>
 	</div>
 
-	<!-- <Test /> -->
 	<SSectors />
 
 	<section class="s-agn">
