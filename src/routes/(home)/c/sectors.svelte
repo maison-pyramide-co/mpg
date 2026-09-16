@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 	import { gsap } from 'gsap';
 	import industries from '$lib/data/industries';
@@ -60,6 +60,7 @@
 		img.alt = '';
 		img.draggable = false;
 		frame.appendChild(img);
+		// eslint-disable-next-line svelte/no-dom-manipulating
 		stageEl.appendChild(frame);
 		return frame;
 	}
@@ -67,7 +68,7 @@
 	function goNext() {
 		if (isAnimating) return;
 		isAnimating = true;
-		let content = document.querySelector('.industry');
+		let content = document.querySelector('.industry') as HTMLElement;
 
 		const r = measureRects();
 		const nextIndex = mod(currentIndex + 1, N);
@@ -79,9 +80,9 @@
 		const shrinkingLarge = largeEl;
 		const enteringLarge = createFrame(industries[nextIndex].image, enterRight);
 
-		exitingSmall.style.zIndex = 1;
-		shrinkingLarge.style.zIndex = 2;
-		enteringLarge.style.zIndex = 3;
+		exitingSmall.style.zIndex = '1';
+		shrinkingLarge.style.zIndex = '2';
+		enteringLarge.style.zIndex = '3';
 
 		currentIndex = nextIndex; // text/counter crossfade in parallel with the image move
 
@@ -92,7 +93,7 @@
 					exitingSmall.remove();
 					smallEl = shrinkingLarge;
 					largeEl = enteringLarge;
-					content.style.opacity = 1;
+					content.style.opacity = '1';
 					isAnimating = false;
 				}
 			})
@@ -126,9 +127,9 @@
 		const growingSmall = smallEl;
 		const enteringSmall = createFrame(industries[newSmallIndex].image, enterLeft);
 
-		enteringSmall.style.zIndex = 3;
-		growingSmall.style.zIndex = 2;
-		exitingLarge.style.zIndex = 1;
+		enteringSmall.style.zIndex = '3';
+		growingSmall.style.zIndex = '2';
+		exitingLarge.style.zIndex = '1';
 
 		currentIndex = newLargeIndex;
 
@@ -388,9 +389,8 @@
 		width: 400rem;
 		display: flex;
 		align-items: center;
-		/* justify-content: space-between; */
 		justify-content: center;
-		gap: 40rem;
+		gap: 24rem;
 	}
 	.arrow-btn {
 		width: 32rem;

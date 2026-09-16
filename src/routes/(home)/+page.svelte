@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import animation from './_a';
 	// import Test from './test.svelte';
-	import SSectors from '../test/sectors.svelte';
+	import SSectors from './c/sectors.svelte';
 	let page: HTMLElement;
 
 	onMount(() => {
@@ -82,12 +82,7 @@
 			width: 190rem;
 			top: 50%;
 			left: 50%;
-			/* transform: translate3d(-50%, -50%, 0); */
 			transform: translate(-50%, -50%);
-			/* width: 60rem;
-			top: 24rem;
-			left: 50%;
-			transform: translateX(-50%); */
 			z-index: 999;
 		}
 	}

@@ -21,7 +21,6 @@
 			<picture>
 				<source srcset={srvcBanI} media="(min-width: 770px)" />
 				<img src={srvcBanI} width="auto" height="auto" alt="mpg services" />
-				<!-- <img src={srvcBanMI} width="auto" height="auto" alt="logo" /> -->
 			</picture>
 		</figure>
 		<div>
@@ -29,7 +28,6 @@
 				We bring together insight, creativity and cultural intelligence to build brands with
 				relevance and impact.
 			</h1>
-			<button>view services</button>
 		</div>
 	</section>
 
@@ -97,20 +95,11 @@
 			font-size: 40rem;
 			line-height: 1;
 		}
-		button {
-			margin-top: 32rem;
-			margin-inline: auto;
-			padding: 8rem 16rem;
-			color: inherit;
-			border: 1px solid white;
-			border-radius: 50rem;
-			font-size: 14rem;
-			text-transform: uppercase;
-		}
 	}
 	main > ul {
 		margin-top: 120rem;
 		padding-inline: 214rem var(--p-i);
+
 		@media (width < 770px) {
 			margin-top: 40rem;
 			padding-inline: var(--p-i);

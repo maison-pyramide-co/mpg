@@ -10,7 +10,7 @@
 			thinking
 		</p>
 	</div>
-	<ul>
+	<ul class="h-s">
 		{#each industries as ind}
 			<li>
 				<div>{ind.title}</div>
@@ -43,13 +43,16 @@
 		width: 355rem;
 	}
 	ul {
-		width: max-content;
+		/* width: max-content; */
 		margin-top: 280rem;
 		display: flex;
 		gap: 24rem;
 		align-items: flex-start;
+		padding-inline: 24rem;
+		width: 100%;
 	}
 	li {
+		flex-shrink: 0;
 		width: 370rem;
 	}
 	li div {

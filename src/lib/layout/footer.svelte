@@ -34,6 +34,8 @@
 		padding-inline: var(--p-i);
 		padding-block: 48rem 32rem;
 		/* height: var(--f-h); */
+		border-top: 1px solid #ededed;
+		margin-top: 40rem;
 		@media (width < 770px) {
 			padding-bottom: 16rem;
 		}
