@@ -21,6 +21,7 @@
 
 		swiper.on('slideChange', function () {
 			prtshActiveIndex = swiper.realIndex;
+			console.log('pi', swiper.realIndex);
 		});
 
 		return () => {
@@ -52,9 +53,9 @@
 		</div>
 
 		<div class="r">
-			<h3>{partnerships[prtshActiveIndex].name}</h3>
+			<h3>{partnerships[prtshActiveIndex + 1].name}</h3>
 			<p>
-				{partnerships[prtshActiveIndex].body}
+				{partnerships[prtshActiveIndex + 1].body}
 			</p>
 			<nav>
 				<button id="swiper-prev">
