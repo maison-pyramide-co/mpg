@@ -88,7 +88,7 @@
 		font-family: 'gt';
 		font-size: 20rem;
 		line-height: 1;
-		/* text-transform: uppercase; */
+		text-transform: uppercase;
 	}
 	section > div {
 		display: flex;

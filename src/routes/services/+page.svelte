@@ -10,6 +10,11 @@
 		activeService = activeService === i ? null : i;
 	};
 
+	const goToServices = () => {
+		const el = document.querySelector('#services');
+		el!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	};
+
 	onMount(() => {
 		animation();
 	});
@@ -28,10 +33,11 @@
 				We bring together insight, creativity and cultural intelligence to build brands with
 				relevance and impact.
 			</h1>
+			<button onclick={goToServices}>view services</button>
 		</div>
 	</section>
 
-	<ul>
+	<ul id="services">
 		{#each services as srvc, i}
 			<li class="srvc">
 				<span class="line" />
@@ -95,9 +101,19 @@
 			font-size: 40rem;
 			line-height: 1;
 		}
+		button {
+			margin-top: 32rem;
+			margin-inline: auto;
+			padding: 8rem 16rem;
+			color: inherit;
+			border: 1px solid white;
+			border-radius: 50rem;
+			font-size: 14rem;
+			text-transform: uppercase;
+		}
 	}
 	main > ul {
-		margin-top: 120rem;
+		padding-top: 120rem;
 		padding-inline: 214rem var(--p-i);
 
 		@media (width < 770px) {
