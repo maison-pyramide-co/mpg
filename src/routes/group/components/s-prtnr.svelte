@@ -21,7 +21,6 @@
 
 		swiper.on('slideChange', function () {
 			prtshActiveIndex = swiper.realIndex;
-			console.log('pi', swiper.realIndex);
 		});
 
 		return () => {
@@ -89,7 +88,7 @@
 		font-family: 'gt';
 		font-size: 20rem;
 		line-height: 1;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 	}
 	section > div {
 		display: flex;

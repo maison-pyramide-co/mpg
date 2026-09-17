@@ -13,7 +13,10 @@
 	};
 
 	const changeCity = (city: string) => {
-		acitveCity = city;
+		if (city == null) acitveCity = null;
+		else {
+			acitveCity = city;
+		}
 	};
 </script>
 
@@ -73,7 +76,7 @@
 		font-size: 20rem;
 		line-height: 1.1;
 		text-align: center;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 	}
 	figure {
 	}

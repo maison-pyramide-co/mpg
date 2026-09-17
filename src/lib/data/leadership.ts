@@ -7,21 +7,6 @@ import yanI from '$lib/assets/images/partners/yan.png';
 
 const partners = [
 	{
-		image: geoI,
-		name: 'Giovanina Attieh',
-		title: 'Chief Growth Officer (Managing Director KSA)'
-	},
-	{
-		image: marI,
-		name: 'Maria Munoz',
-		title: 'Chief Marketing Officer (Managing Director Egypt)'
-	},
-	{
-		image: nathI,
-		name: 'Nathalie Mroue',
-		title: 'Chief Executive Officer MP Group'
-	},
-	{
 		image: yanI,
 		name: 'Yann Pavie',
 		title: 'Executive Chairman'
@@ -30,6 +15,21 @@ const partners = [
 		image: reeI,
 		name: 'Reem Kanj',
 		title: 'Chief Executive Officer E&E'
+	},
+	{
+		image: geoI,
+		name: 'Giovanina Attieh',
+		title: 'Chief Growth Officer Managing Director KSA'
+	},
+	{
+		image: nathI,
+		name: 'Nathalie Mroue',
+		title: 'Chief Executive Officer Maison Pyramide Group'
+	},
+	{
+		image: marI,
+		name: 'Maria Munoz',
+		title: 'Chief Marketing Officer Managing Director Egypt'
 	},
 	{
 		image: nataI,

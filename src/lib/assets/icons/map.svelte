@@ -5,6 +5,9 @@
 		const city = target.dataset.city;
 		changeCity(city);
 	};
+	const onMouseLeave = (e: any) => {
+		changeCity(null);
+	};
 </script>
 
 <svg
@@ -76,6 +79,7 @@
 		class="city"
 		data-city="paris"
 		onmouseenter={onMouseEnter}
+		onmouseleave={onMouseLeave}
 	/>
 	<ellipse
 		cx="822.336"
@@ -86,6 +90,7 @@
 		class="city"
 		data-city="cairo"
 		onmouseenter={onMouseEnter}
+		onmouseleave={onMouseLeave}
 	/>
 	<ellipse
 		cx="1024.72"
@@ -96,6 +101,7 @@
 		class="city"
 		data-city="riyadh"
 		onmouseenter={onMouseEnter}
+		onmouseleave={onMouseLeave}
 	/>
 	<ellipse
 		class="city"
@@ -106,6 +112,7 @@
 		fill="black"
 		data-city="dubai"
 		onmouseenter={onMouseEnter}
+		onmouseleave={onMouseLeave}
 	/>
 
 	<defs>

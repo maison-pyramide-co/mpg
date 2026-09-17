@@ -86,8 +86,15 @@
 			font-size: 16rem;
 		}
 	}
-	li:nth-child(1) p,
-	li:nth-child(2) p {
+	li p {
 		width: 200rem;
 	}
+	/* li:nth-child(1) p,
+	li:nth-child(2) p,
+	li:nth-child(3) p {
+		width: 200rem;
+	} */
+	/* li:nth-child(3) p {
+		width: 280rem;
+	} */
 </style>
