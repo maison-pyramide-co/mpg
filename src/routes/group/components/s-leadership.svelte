@@ -29,6 +29,9 @@
 <style>
 	section {
 		padding-block: 80rem 64rem;
+
+		@media (width < 770px) {
+		}
 	}
 	h2 {
 		text-align: right;
@@ -37,6 +40,11 @@
 		font-size: 50rem;
 		line-height: 1;
 		font-weight: 500;
+		@media (width < 770px) {
+			text-align: center;
+			font-size: 40rem;
+			margin: 0;
+		}
 	}
 	section > div {
 		margin-top: 80rem;
@@ -45,6 +53,11 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		position: relative;
+		@media (width < 770px) {
+			margin-top: 40rem;
+			padding-inline: var(--p-i);
+			flex-direction: column;
+		}
 	}
 	section > div > p {
 		width: 315rem;
@@ -53,6 +66,12 @@
 		padding-top: 275rem;
 		position: sticky;
 		top: 300rem;
+		@media (width < 770px) {
+			text-align: center;
+			margin-inline: auto;
+			padding-top: 0;
+			position: static;
+		}
 	}
 	ul {
 		width: 900rem;
@@ -61,12 +80,17 @@
 		flex-wrap: wrap;
 		gap: 32rem 28rem;
 		@media (width < 770px) {
-			margin-top: 24rem;
+			width: 240rem;
+			margin-top: 64rem;
+			margin-inline: auto;
 			gap: 40rem;
 		}
 	}
 	figure {
 		width: 275rem;
+		@media (width < 770px) {
+			width: 100%;
+		}
 	}
 	h3 {
 		margin-top: 10rem;
@@ -87,6 +111,7 @@
 			margin-top: 0;
 			text-align: center;
 			font-size: 16rem;
+			margin-inline: auto;
 		}
 	}
 	li p {

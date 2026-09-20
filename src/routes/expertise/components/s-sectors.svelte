@@ -25,6 +25,9 @@
 		height: 100dvh;
 		display: flex;
 		background: #bfb2a5;
+		@media (width < 770px) {
+
+		}
 	}
 	figure {
 		flex: 1 1 0;

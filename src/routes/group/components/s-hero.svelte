@@ -2,7 +2,7 @@
 	import groupBan from '$lib/assets/images/group-ban.png';
 </script>
 
-<section id='s-hero'>
+<section id="s-hero">
 	<figure>
 		<img src={groupBan} alt="MPG" />
 	</figure>
@@ -33,6 +33,11 @@
 		transform: translate(-50%, -50%);
 		width: 930rem;
 		color: #f2f0e6;
+
+		@media (width < 770px) {
+			width: 305rem;
+			transform: translate(-50%, -30%);
+		}
 	}
 	h1 {
 		font-family: 'gt';
@@ -40,6 +45,9 @@
 		line-height: 1;
 		text-transform: uppercase;
 		text-align: center;
+		@media (width < 770px) {
+			font-size: 30rem;
+		}
 	}
 	p {
 		margin-top: 30rem;
@@ -47,5 +55,8 @@
 		font-size: 30rem;
 		line-height: 1;
 		font-weight: 300;
+		@media (width < 770px) {
+			font-size: 20rem;
+		}
 	}
 </style>

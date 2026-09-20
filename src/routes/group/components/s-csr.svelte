@@ -10,13 +10,18 @@
 
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
-			slidesPerView: 1.5,
+			slidesPerView: 1,
 			spaceBetween: '24rem',
 			loop: true,
-			autoplay: { delay: 3000 },
+			// autoplay: { delay: 3000 },
 			navigation: {
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
+			},
+			breakpoints: {
+				770: {
+					slidesPerView: 1.5
+				}
 			}
 		});
 
@@ -34,7 +39,7 @@
 				At Maison Pyramide, we believe in giving back in ways that create lasting impact and feel
 				both meaningful and empowering.
 			</p>
-			<nav>
+			<nav class="d-o">
 				<button id="swiper-prev">
 					<Ichev />
 				</button>
@@ -57,13 +62,19 @@
 								<Accordion>
 									<p>{initv.body}</p>
 								</Accordion>
-
-								<!-- <button>view more</button> -->
 							</div>
 						</div>
 					{/each}
 				</div>
 			</div>
+			<nav class="m-o">
+				<button id="swiper-prev">
+					<Ichev />
+				</button>
+				<button id="swiper-next">
+					<Ichev />
+				</button>
+			</nav>
 		</div>
 	</div>
 </section>
@@ -76,16 +87,24 @@
 		background-color: white;
 		min-height: 100vh;
 		min-height: 100dvh;
+		@media (width < 770px) {
+			padding-inline: var(--p-i);
+			padding-block: 80rem;
+		}
 	}
 	h2 {
 		font-size: 40rem;
 		font-weight: 500;
+		@media (width < 770px) {
+			text-align: center;
+			line-height: 1;
+		}
 	}
 	section > div {
 		display: flex;
 		gap: 24rem;
 		@media (width < 770px) {
-			gap: 56rem;
+			gap: 48rem;
 			flex-direction: column;
 		}
 	}
@@ -98,6 +117,7 @@
 		flex-direction: column;
 		@media (width < 770px) {
 			width: unset;
+			height: unset;
 			padding-bottom: unset;
 		}
 	}
@@ -106,12 +126,27 @@
 		width: 395rem;
 		font-size: 20rem;
 		line-height: 1;
+		@media (width < 770px) {
+			margin-top: 40rem;
+			margin-inline: auto;
+			width: 340rem;
+			text-align: center;
+		}
 	}
 	nav {
 		margin-top: 64rem;
 		display: flex;
 		gap: 16rem;
+
 		@media (width < 770px) {
+			width: 100%;
+			margin-top: 0;
+			position: absolute;
+			top: 55%;
+			justify-content: space-between;
+			z-index: 2;
+			margin-inline: calc(-1 * var(--p-i));
+			padding-inline: 8rem;
 		}
 	}
 	nav button {
@@ -120,7 +155,7 @@
 			transform: rotate(180deg);
 		}
 		@media (width < 770px) {
-			width: 24rem;
+			width: 28rem;
 		}
 	}
 
@@ -129,16 +164,13 @@
 		@media (width < 770px) {
 			width: 100%;
 		}
-		:global(.swiper) {
-			/* margin-right: calc(-1 * var(--p-i)); */
-			/* margin-right: -56rem; */
-			@media (width < 770px) {
-				/* margin-right: 0; */
-			}
-		}
 	}
 	figure {
 		aspect-ratio: 4/5;
+		@media (width < 770px) {
+			width: 240rem;
+			margin-inline: auto;
+		}
 	}
 	h3 {
 		width: 410rem;
@@ -146,6 +178,11 @@
 		font-size: 20rem;
 		font-weight: 500;
 		text-transform: uppercase;
+		@media (width < 770px) {
+			width: unset;
+			font-size: 16rem;
+			text-align: center;
+		}
 	}
 	.r p {
 		padding-top: 40rem;

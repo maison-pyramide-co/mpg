@@ -43,8 +43,8 @@
 		justify-content: center;
 		align-items: center;
 		mix-blend-mode: difference;
-		/* padding-bottom: 24rem; */
 		@media (width < 770px) {
+			justify-content: space-between;
 			padding-top: 20rem;
 		}
 	}
@@ -53,7 +53,8 @@
 		position: absolute;
 		width: 60rem;
 		@media (width < 770px) {
-			width: 35rem;
+			position: unset;
+			width: 40rem;
 		}
 	}
 	button {
@@ -67,10 +68,13 @@
 		overflow: visible !important;
 		--line-h: 2rem;
 		--gap: 8rem;
+		@media (width < 770px) {
+			position: relative;
+			right: 0;
+		}
 	}
 
 	button .y {
-		display: block;
 		display: block;
 		width: 34rem;
 		height: 2rem;

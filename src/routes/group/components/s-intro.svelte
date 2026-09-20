@@ -1,7 +1,11 @@
 <script lang="ts"></script>
 
-<section id='s-intro'>
-	<h3>Scaling brands. Defining global relevance.</h3>
+<section id="s-intro">
+	<h3>
+		Scaling brands.
+		<br />
+		Defining global relevance.
+	</h3>
 
 	<ul>
 		<li>
@@ -35,6 +39,9 @@
 	section {
 		padding-block: 104rem;
 		padding-inline: var(--p-i);
+		@media (width < 770px) {
+			padding-block: 80rem;
+		}
 	}
 	h3 {
 		width: 340rem;
@@ -43,6 +50,10 @@
 		font-size: 30rem;
 		line-height: 1;
 		text-align: center;
+		@media (width < 770px) {
+			width: unset;
+			font-size: 25rem;
+		}
 	}
 	ul {
 		width: 1070rem;
@@ -52,6 +63,12 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 160rem;
+		@media (width < 770px) {
+			width: unset;
+			margin-top: 80rem;
+			flex-direction: column;
+			gap: 64rem;
+		}
 	}
 	li {
 		display: flex;

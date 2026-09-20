@@ -94,6 +94,7 @@
 			padding-top: 80rem;
 			flex-direction: column;
 			align-items: flex-start;
+			padding-bottom: 40rem;
 		}
 	}
 
@@ -152,7 +153,7 @@
 			font-weight: 500;
 			text-transform: uppercase;
 			@media (width < 770px) {
-				font-size: 38rem;
+				font-size: 30rem;
 			}
 		}
 		a .indx {

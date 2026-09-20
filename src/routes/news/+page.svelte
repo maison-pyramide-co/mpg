@@ -48,19 +48,23 @@
 
 <style>
 	main {
+		padding-top: 194rem;
 		@media (width < 770px) {
 			padding-inline: var(--p-i);
+			padding-top: 120rem;
 		}
 	}
 	.l {
 		position: fixed;
-		top: 0;
+		/* top: 0; */
+		top: 194rem;
 		left: 0;
+		bottom: 0;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		/* height: 100vh; */
 		/* padding-top: 234rem; */
-		padding-top: 194rem;
+		/* padding-top: 194rem; */
 		padding-bottom: 40rem;
 		padding-left: var(--p-i);
 		background-color: white;
@@ -70,9 +74,8 @@
 			width: unset;
 			position: static;
 			height: unset;
-			padding-top: 48rem;
-			padding-left: unset;
-			padding-bottom: 64rem;
+			padding-left: 0;
+			padding-bottom: 80rem;
 		}
 	}
 	h2 {
@@ -80,7 +83,8 @@
 		line-height: 1;
 		font-weight: 500;
 		@media (width < 770px) {
-			font-size: 32rem;
+			font-size: 40rem;
+			text-align: center;
 		}
 	}
 
@@ -89,6 +93,10 @@
 		max-width: 460rem;
 		display: flex;
 		justify-content: space-between;
+		@media (width < 770px) {
+			margin-top: 80rem;
+			gap: 16rem;
+		}
 	}
 	button {
 		width: 170rem;
@@ -96,6 +104,12 @@
 		text-align: center;
 		border: 1px solid black;
 		border-radius: 100rem;
+		font-size: 14rem;
+		@media (width < 770px) {
+			width: unset;
+			flex: 1;
+			padding-block: 6rem;
+		}
 	}
 	button:hover {
 		background-color: black;
@@ -112,14 +126,15 @@
 		line-height: 1;
 		font-family: 'gt';
 		@media (width < 770px) {
-			margin-top: 24rem;
-			width: 270rem;
-			margin-left: auto;
-			margin-right: 16rem;
+			margin-top: 40rem;
+			width: 280rem;
+			margin-inline: auto;
+			text-align: center;
+			max-width: unset;
 		}
 	}
 	.r {
-		padding-top: 194rem;
+		/* padding-top: 194rem; */
 		padding-right: var(--p-i);
 		padding-bottom: 40rem;
 		@media (width < 770px) {

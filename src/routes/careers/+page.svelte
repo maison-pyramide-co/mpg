@@ -21,6 +21,7 @@
 			<h3>OPEN POSITIONS</h3>
 			<p>With all application please ensure to attach your resume and portfolio</p>
 		</aside>
+
 		<ul class="pos-list">
 			{#each positions as pos, i}
 				<li>
@@ -58,6 +59,9 @@
 	main {
 		padding-block: 194rem 80rem;
 		padding-inline: var(--p-i);
+		@media (width < 770px) {
+			padding-block: 120rem 0;
+		}
 	}
 
 	h1 {
@@ -65,10 +69,9 @@
 		margin-left: calc(318rem + 30rem);
 		font-weight: 600;
 		@media (width < 770px) {
-			/* margin-left: calc(116rem - var(--p-i)); */
-			margin-left: auto;
-			width: 265rem;
-			font-size: 32rem;
+			margin-left: 0;
+			text-align: center;
+			font-size: 40rem;
 		}
 	}
 
@@ -77,8 +80,9 @@
 		display: flex;
 		gap: 30rem;
 		@media (width < 770px) {
-			margin-top: 24rem;
+			margin-top: 40rem;
 			flex-direction: column;
+			gap: 80rem;
 		}
 	}
 
@@ -87,28 +91,29 @@
 		flex-shrink: 0;
 		padding-top: 24rem;
 		@media (width < 770px) {
-			width: unset;
-			display: flex;
-			justify-content: space-between;
-			/* gap: 20rem; */
+			width: 270rem;
+			margin-inline: auto;
+			/* display: flex; */
+			/* justify-content: space-between; */
+			padding-top: 0;
+			text-align: center;
 		}
-
-		h3 {
-			font-size: 16rem;
-			font-weight: 600;
-			@media (width < 770px) {
-				font-size: 14rem;
-			}
-		}
-		p {
-			margin-top: 16rem;
-			max-width: 260rem;
+	}
+	aside h3 {
+		font-size: 16rem;
+		font-weight: 600;
+		@media (width < 770px) {
 			font-size: 14rem;
-			@media (width < 770px) {
-				margin-top: 0;
-				max-width: 265rem;
-				flex-shrink: 0;
-			}
+		}
+	}
+	aside p {
+		font-family: 'gt';
+		margin-top: 16rem;
+		max-width: 260rem;
+		font-size: 14rem;
+		@media (width < 770px) {
+			max-width: 265rem;
+			flex-shrink: 0;
 		}
 	}
 
@@ -119,17 +124,17 @@
 		}
 
 		@media (width < 770px) {
-			margin-left: calc(116rem - var(--p-i));
+			/* margin-left: calc(116rem - var(--p-i)); */
 		}
-		:global(button) {
-			padding-block: 24rem;
-			font-weight: normal;
+	}
+	.pos-list :global(button) {
+		padding-block: 24rem;
+		font-weight: normal;
 
-			@media (width < 770px) {
-				padding-block: 20rem;
-				font-size: 16rem;
-				font-weight: 600;
-			}
+		@media (width < 770px) {
+			padding-block: 20rem;
+			font-size: 16rem;
+			font-weight: 600;
 		}
 	}
 

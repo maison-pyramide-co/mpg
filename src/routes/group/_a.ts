@@ -107,6 +107,7 @@ const pinA = () => {
 const animation = (page: HTMLElement) => {
 	let ctx: gsap.Context | null = null;
 	let destroyed = false;
+	const isMobile = window.innerWidth < 770;
 
 	document.fonts.ready.then(() => {
 		if (destroyed) return;
@@ -126,7 +127,7 @@ const animation = (page: HTMLElement) => {
 		}
 
 		ctx = gsap.context(() => {
-			pinA();
+			if (!isMobile) pinA();
 			heroA();
 			introA();
 			imagesA();

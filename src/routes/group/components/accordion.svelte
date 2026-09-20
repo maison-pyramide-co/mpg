@@ -29,6 +29,11 @@
 		border-radius: 50rem;
 		text-transform: uppercase;
 		font-size: 14rem;
+		@media (width < 770px) {
+			margin-top: 32rem;
+			padding: 6rem 24rem;
+			margin-inline: auto;
+		}
 	}
 	.acc_b_ {
 		height: 0;

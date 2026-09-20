@@ -10,8 +10,13 @@
 
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
-			slidesPerView: 2,
+			slidesPerView: 1,
 			initialSlide: 6,
+			breakpoints: {
+				770: {
+					slidesPerView: 2
+				}
+			},
 			loop: true,
 			navigation: {
 				nextEl: '#s-partnerships #swiper-next',
@@ -49,6 +54,15 @@
 					{/each}
 				</div>
 			</div>
+
+			<nav class="m-o">
+				<button id="swiper-prev">
+					<Ichev />
+				</button>
+				<button id="swiper-next">
+					<Ichev />
+				</button>
+			</nav>
 		</div>
 
 		<div class="r">
@@ -56,7 +70,7 @@
 			<p>
 				{partnerships[prtshActiveIndex + 1].body}
 			</p>
-			<nav>
+			<nav class="d-o">
 				<button id="swiper-prev">
 					<Ichev />
 				</button>
@@ -74,11 +88,16 @@
 		padding-block: 64rem 56rem;
 		padding-inline: var(--p-i);
 		background-color: #f2f0e6;
+		@media (width < 770px) {
+			padding-block: 80rem;
+		}
 	}
 	h2 {
 		font-size: 40rem;
 		text-align: center;
 		font-weight: 500;
+		@media (width < 770px) {
+		}
 	}
 	section > p {
 		width: 870rem;
@@ -89,23 +108,26 @@
 		font-size: 20rem;
 		line-height: 1;
 		text-transform: uppercase;
+		@media (width < 770px) {
+			width: unset;
+			margin-bottom: 32rem;
+		}
 	}
 	section > div {
 		display: flex;
 		margin-top: 48rem;
 		@media (width < 770px) {
-			gap: 56rem;
-			flex-direction: column-reverse;
 			margin-top: 40rem;
+			flex-direction: column;
+			gap: 40rem;
 		}
 	}
 
 	.l {
 		width: 100%;
-		/* width: 668rem; */
-		/* width: 478rem; */
 		@media (width < 770px) {
 			width: 100%;
+			position: relative;
 		}
 	}
 
@@ -131,10 +153,12 @@
 		width: 100%;
 	}
 	figure {
-		/* width: 495rem; */
 		transition: width 0.6s linear;
 		width: 280rem;
 		aspect-ratio: 4/5;
+		@media (width < 770px) {
+			width: 300rem;
+		}
 	}
 	.r {
 		flex-shrink: 0;
@@ -146,13 +170,13 @@
 		display: flex;
 		flex-direction: column;
 		@media (width < 770px) {
-			width: unset;
+			margin-inline: auto;
+			height: unset;
+			width: 315rem;
 			padding-bottom: unset;
 		}
 	}
 	h3 {
-		/* width: 465rem;
-		margin-inline: auto; */
 		margin-top: auto;
 		font-size: 16rem;
 		line-height: 1;
@@ -161,18 +185,18 @@
 		@media (width < 770px) {
 			width: unset;
 			font-size: 18rem;
-			margin-top: 48rem;
+			margin-top: 0;
 			margin-inline: unset;
+			text-align: center;
 		}
 	}
 	.r p {
 		margin-top: 20rem;
-		/* margin-inline: auto;
-		max-width: 465rem; */
 		font-size: 14rem;
 		line-height: 1;
 		@media (width < 770px) {
 			font-size: 16rem;
+			text-align: center;
 		}
 	}
 	nav {
@@ -180,6 +204,16 @@
 		display: flex;
 		gap: 16rem;
 		@media (width < 770px) {
+			/* width: 100%; */
+			margin-top: 0;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			justify-content: space-between;
+			z-index: 2;
+			margin-inline: calc(-1 * var(--p-i));
+			padding-inline: 8rem;
 		}
 	}
 	button {
@@ -188,7 +222,7 @@
 			transform: rotate(180deg);
 		}
 		@media (width < 770px) {
-			width: 24rem;
+			width: 28rem;
 		}
 	}
 </style>

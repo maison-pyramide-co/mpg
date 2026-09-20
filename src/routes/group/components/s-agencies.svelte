@@ -104,6 +104,9 @@
 <style>
 	section {
 		display: flex;
+		@media (width < 770px) {
+			flex-direction: column;
+		}
 	}
 	.agency {
 		flex: 1;

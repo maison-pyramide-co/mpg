@@ -12,8 +12,10 @@
 </script>
 
 <section>
-	<h1>Our expertise spans Media, Public Affairs, Lifestyle.</h1>
-	<p>Building relevance. Creating Influence. Driving Growth.</p>
+	<div>
+		<h1>Our expertise spans Media, Public Affairs, Lifestyle.</h1>
+		<p>Building relevance.<br />Creating Influence.<br />Driving Growth.</p>
+	</div>
 	<figure>
 		<img src={banI} alt="MPG Expertise" />
 	</figure>
@@ -31,6 +33,16 @@
 		height: 100dvh;
 		position: relative;
 	}
+	div {
+		@media (width < 770px) {
+			width: 300rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
 	h1 {
 		font-family: 'gt';
 		font-weight: normal;
@@ -42,6 +54,12 @@
 		left: 40rem;
 		color: white;
 		z-index: 1;
+		@media (width < 770px) {
+			width: 300rem;
+			font-size: 30rem;
+			position: static;
+			text-align: center;
+		}
 	}
 	p {
 		width: 260rem;
@@ -54,6 +72,14 @@
 		right: 72rem;
 		color: white;
 		z-index: 1;
+		text-align: center;
+
+		@media (width < 770px) {
+			margin-top: 24rem;
+			width: unset;
+			font-size: 20rem;
+			position: static;
+		}
 	}
 
 	figure {
@@ -66,6 +92,11 @@
 		display: flex;
 		justify-content: center;
 		gap: 120rem;
+		@media (width < 770px) {
+			padding-inline: var(--p-i);
+			gap: unset;
+			justify-content: space-between;
+		}
 	}
 	button {
 		width: 172rem;

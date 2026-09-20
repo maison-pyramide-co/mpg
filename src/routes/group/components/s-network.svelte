@@ -1,5 +1,7 @@
 <script lang="ts">
+	import MapI from '$lib/assets/images/map-mobile.png';
 	import Map from '$lib/assets/icons/map.svelte';
+
 	let acitveCity: any = $state(null);
 	const cities = {
 		dubai:
@@ -25,8 +27,13 @@
 	<p>
 		Our extensive office and showroom network connects regional strength with global opportunity.
 	</p>
+	<div class="map m-o">
+		<figure>
+			<img src={MapI} alt="MPG Map" />
+		</figure>
+	</div>
 
-	<div class="map">
+	<div class="map d-o">
 		{#if acitveCity}
 			<div class="active-city">
 				<h3>{acitveCity}</h3>
@@ -62,6 +69,9 @@
 
 	section {
 		padding-top: 80rem;
+
+		@media (width < 770px) {
+		}
 	}
 	h2 {
 		font-size: 40rem;
@@ -77,6 +87,10 @@
 		line-height: 1.1;
 		text-align: center;
 		/* text-transform: uppercase; */
+		@media (width < 770px) {
+			width: 340rem;
+			margin-top: 24rem;
+		}
 	}
 	figure {
 	}
