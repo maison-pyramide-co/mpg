@@ -17,6 +17,9 @@
 					</figure>
 					<h3 data-ga="tr">{prt.name}</h3>
 					<p data-ga="tr">{prt.title}</p>
+					{#if prt.t2}
+						<p class="t2" data-ga="tr">{prt.t2}</p>
+					{/if}
 				</li>
 			{/each}
 		</ul>
@@ -88,6 +91,9 @@
 	}
 	li p {
 		width: 200rem;
+	}
+	.t2 {
+		font-size: 12rem;
 	}
 	/* li:nth-child(1) p,
 	li:nth-child(2) p,
