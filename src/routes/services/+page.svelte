@@ -1,5 +1,6 @@
 <script lang="ts">
-	import srvcBanI from '$lib/assets/images/srvc-ban.png';
+	import srvcBanI from '$lib/assets/images/services/srvc-ban.png';
+	import srvcBanMI from '$lib/assets/images/services/srvc-ban-m.png';
 	import Accordion from './components/accordion.svelte';
 	import services from '$lib/data/services';
 	import { onMount } from 'svelte';
@@ -25,7 +26,7 @@
 		<figure>
 			<picture>
 				<source srcset={srvcBanI} media="(min-width: 770px)" />
-				<img src={srvcBanI} width="auto" height="auto" alt="mpg services" />
+				<img src={srvcBanMI} width="auto" height="auto" alt="mpg services" />
 			</picture>
 		</figure>
 		<div>
@@ -94,12 +95,18 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			color: white;
+			@media (width < 770px) {
+				width: 300rem;
+			}
 		}
 		h1 {
 			font-family: 'gt';
 			text-align: center;
 			font-size: 40rem;
 			line-height: 1;
+			@media (width < 770px) {
+				font-size: 30rem;
+			}
 		}
 		button {
 			margin-top: 32rem;
@@ -110,6 +117,10 @@
 			border-radius: 50rem;
 			font-size: 14rem;
 			text-transform: uppercase;
+
+			@media (width < 770px) {
+				margin-top: 48rem;
+			}
 		}
 	}
 	main > ul {
@@ -117,7 +128,7 @@
 		padding-inline: 214rem var(--p-i);
 
 		@media (width < 770px) {
-			margin-top: 40rem;
+			padding-top: 40rem;
 			padding-inline: var(--p-i);
 		}
 	}

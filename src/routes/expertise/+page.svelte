@@ -16,10 +16,10 @@
 
 <main id="p" style:opacity="0" bind:this={page}>
 	<SHero />
-	<!-- <SIndustries />
-	<SClients /> -->
+	<!-- <SIndustries /> -->
+	<!-- <SClients /> -->
 	<SSectors />
-	<!-- <SWork /> -->
+	<SWork />
 </main>
 
 <style>

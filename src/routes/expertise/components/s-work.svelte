@@ -45,12 +45,19 @@
 <style>
 	section {
 		padding-bottom: 80rem;
+		@media (width < 770px) {
+		}
 	}
 	nav {
 		padding-block: 96rem 64rem;
 		display: flex;
 		gap: 32rem;
 		justify-content: center;
+		@media (width < 770px) {
+			padding-block: 64rem;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	button {
 		width: 190rem;
@@ -72,5 +79,10 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 20rem;
+		@media (width < 770px) {
+			padding-inline: var(--p-i);
+			grid-template-columns: 1fr;
+			gap: 48rem;
+		}
 	}
 </style>
