@@ -12,13 +12,15 @@
 </script>
 
 <section>
-	<div>
-		<h1>Our expertise spans Media, Public Affairs, Lifestyle.</h1>
-		<p>Building relevance.<br />Creating Influence.<br />Driving Growth.</p>
+	<div class="t">
+		<div class="intro">
+			<h1>Our expertise spans Media, Public Affairs, Lifestyle.</h1>
+			<p>Building relevance.<br />Creating Influence.<br />Driving Growth.</p>
+		</div>
+		<figure>
+			<img src={banI} alt="MPG Expertise" />
+		</figure>
 	</div>
-	<figure>
-		<img src={banI} alt="MPG Expertise" />
-	</figure>
 	<nav>
 		<button onclick={goToSectors}>OUR SECTORS</button>
 		<button onclick={goToWork}>VIEW OUR CASE STUDIES</button>
@@ -33,7 +35,12 @@
 		height: 100dvh;
 		position: relative;
 	}
-	div {
+	.t {
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+	}
+	.intro {
 		@media (width < 770px) {
 			width: 300rem;
 			position: absolute;
@@ -50,7 +57,7 @@
 		line-height: 1;
 		width: 480rem;
 		position: absolute;
-		top: 330rem;
+		top: 40%;
 		left: 40rem;
 		color: white;
 		z-index: 1;
@@ -68,7 +75,7 @@
 		line-height: 1;
 		position: absolute;
 		text-align: right;
-		top: 650rem;
+		bottom: 8%;
 		right: 72rem;
 		color: white;
 		z-index: 1;

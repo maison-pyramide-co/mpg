@@ -1,94 +1,233 @@
 <script lang="ts">
 	import industries from '$lib/data/industries';
-	import { onMount } from 'svelte';
-	import Swiper from 'swiper/bundle';
-	import 'swiper/css';
+	import Ichev from '$lib/assets/icons/chev.svelte';
+	import { gsap } from 'gsap';
 
-	let swiperElement: HTMLDivElement;
-	let activeIndex = $state(0);
-	let swiper;
+	// Assumes each item in `industries` has: image, title, description.
+	// Add a `description` field to your data if it isn't there yet.
 
-	onMount(() => {
-		swiper = new Swiper(swiperElement, {
-			slidesPerView: 1,
-			spaceBetween: '24rem',
-			loop: true,
-			navigation: {
-				nextEl: '#s-sectors #swiper-next',
-				prevEl: '#s-sectors #swiper-prev'
+	let currentIndex = $state(0);
+	let expanded = $state(false);
+	let isAnimating = $state(false);
+
+	const total = industries.length;
+
+	let slideWrap: HTMLDivElement;
+	let metaEl: HTMLDivElement;
+	let metaInner: HTMLDivElement;
+
+	function goTo(target: number, dir: 1 | -1) {
+		if (isAnimating) return;
+		isAnimating = true;
+
+		const idx = ((target % total) + total) % total;
+		const tl = gsap.timeline({
+			onComplete: () => {
+				isAnimating = false;
 			}
 		});
 
-		swiper.on('slideChange', function () {
-			activeIndex = swiper.realIndex;
-			const activeSlide = swiper.slides[swiper.activeIndex];
-			const prevIndex = swiper.previousIndex;
-			const prevSlide = swiper.slides[prevIndex];
-			const prevSlideInfo = prevSlide.querySelector('.info');
-			prevSlideInfo.classList.add('d-n');
-			console.log('dd');
-		});
+		// if the current slide's info panel is open, close it first
+		if (expanded) {
+			tl.to(metaEl, { height: 0, duration: 0.3, ease: 'power2.in' });
+		}
 
-		return () => {
-			swiper.destroy();
-		};
-	});
+		tl.to(
+			slideWrap,
+			{ autoAlpha: 0, x: dir * -30, duration: 0.3, ease: 'power2.in' },
+			expanded ? '-=0.05' : 0
+		)
+			.call(() => {
+				// swapping the data only happens once the old slide is fully hidden,
+				// and `expanded` resets here — this is what guarantees the old
+				// slide's text can never still be showing on the new slide
+				currentIndex = idx;
+				expanded = false;
+			})
+			.set(slideWrap, { x: dir * 30 })
+			.to(slideWrap, { autoAlpha: 1, x: 0, duration: 0.4, ease: 'power2.out' });
+	}
 
-	const handleClick = () => {
-		const activeSlide = swiper.slides[swiper.activeIndex];
-		const els = activeSlide.querySelector('.info');
-		els.classList.toggle('d-n');
-	};
+	function next() {
+		goTo(currentIndex + 1, 1);
+	}
+
+	function prev() {
+		goTo(currentIndex - 1, -1);
+	}
+
+	function toggleInfo() {
+		if (!metaEl) return;
+
+		if (!expanded) {
+			expanded = true;
+			// wait a frame so the meta content is in the DOM before we measure it
+			requestAnimationFrame(() => {
+				const h = metaInner.scrollHeight;
+				gsap.fromTo(
+					metaEl,
+					{ height: 0 },
+					{
+						height: h,
+						duration: 0.45,
+						ease: 'power2.out',
+						onComplete: () => gsap.set(metaEl, { height: 'auto' })
+					}
+				);
+			});
+		} else {
+			gsap.to(metaEl, {
+				height: 0,
+				duration: 0.35,
+				ease: 'power2.in',
+				onComplete: () => {
+					expanded = false;
+				}
+			});
+		}
+	}
 </script>
 
 <section id="s-sectors">
-	<div class="swiper" bind:this={swiperElement}>
-		<div class="swiper-wrapper">
-			{#each industries as ind, i}
-				<div class="swiper-slide">
-					<figure>
-						<img src={ind.image} alt="" />
-					</figure>
-					<div class="info d-n">
-						<h3>{ind.title}</h3>
-						<p>{ind.description}</p>
+	<div class="slide" bind:this={slideWrap}>
+		<div class="t">
+			<figure class:expanded>
+				<img src={industries[currentIndex].image} alt={industries[currentIndex].title} />
+				{#if !expanded}
+					<div class="overlay">
+						<h3>{industries[currentIndex].title}</h3>
+						<button type="button" onclick={toggleInfo}>READ MORE</button>
 					</div>
-					<button onclick={handleClick}>READ MORE</button>
-				</div>
-			{/each}
+				{/if}
+			</figure>
+			<nav>
+				<button type="button" onclick={prev} disabled={isAnimating} aria-label="Previous sector">
+					<Ichev />
+				</button>
+				<button type="button" onclick={next} disabled={isAnimating} aria-label="Next sector">
+					<Ichev />
+				</button>
+			</nav>
+		</div>
+
+		<div class="info_" bind:this={metaEl}>
+			<div class="info" bind:this={metaInner}>
+				<h3>{industries[currentIndex].title}</h3>
+				<p>{industries[currentIndex].description}</p>
+				<button type="button" onclick={toggleInfo}>READ LESS</button>
+			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	section {
-		padding-inline: 20rem;
+	#s-sectors {
+		width: 100%;
+		padding-block: 80rem;
+		overflow: hidden;
+		margin: 0 auto;
 	}
-	.info {
-		max-width: 300rem;
+
+	.slide {
+		width: 100%;
+	}
+	.t {
+		position: relative;
+	}
+
+	figure {
+		position: relative;
+		width: 300rem;
+		aspect-ratio: 4 / 3.6;
+		overflow: hidden;
 		margin-inline: auto;
 	}
-	.info h3 {
+
+	.overlay {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 20rem;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 24rem;
+	}
+
+	.overlay h3 {
+		color: #fff;
 		font-size: 20rem;
 		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.overlay button,
+	.info button {
+		padding: 6rem 24rem;
+		border-radius: 999px;
+		font-size: 12rem;
+	}
+	.overlay button {
+		color: white;
+		border: 1px solid #fff;
+	}
+
+	.info_ {
+		padding-inline: var(--p-i);
+		height: 0;
+		overflow: hidden;
+	}
+
+	.info {
+		padding-top: 40rem;
 		text-align: center;
 	}
+
+	.info h3 {
+		font-size: 16rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
 	.info p {
+		margin-top: 24rem;
 		font-size: 15rem;
 		line-height: 1;
-		margin-top: 32rem;
-		text-align: center;
 	}
-	button {
-		margin-top: 32rem;
+
+	.info button {
+		margin-top: 24rem;
 		margin-inline: auto;
-		display: block;
-		width: fit-content;
-		padding: 6rem 16rem;
-		font-size: 14rem;
-		text-transform: uppercase;
-		border: 1px solid black;
-		color: inherit;
-		border-radius: 100rem;
+		border: 1px solid #111;
+		color: #111;
+	}
+
+	nav {
+		padding-inline: 8rem;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 8;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		gap: 16rem;
+	}
+
+	nav button {
+		width: 28rem;
+		&:last-child :global(svg) {
+			transform: rotate(180deg);
+		}
+	}
+
+	nav button:disabled {
+		opacity: 0.4;
+		cursor: default;
+	}
+
+	nav button:hover:not(:disabled) {
+		background: rgba(0, 0, 0, 0.05);
 	}
 </style>
