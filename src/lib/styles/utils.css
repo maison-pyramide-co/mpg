@@ -54,6 +54,9 @@
 		display: none !important;
 	}
 }
+.d-n {
+	display: none !important;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;

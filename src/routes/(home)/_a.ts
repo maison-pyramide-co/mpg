@@ -120,34 +120,12 @@ const logoA = () => {
 			gsap.set(headerEl, { autoAlpha: 1 });
 		}
 	});
-	// tl.from(targetEl, {
-	// 	width: '190rem',
-	// 	y: final_position,
-	// 	ease: 'linear',
-	// 	duration: 1
-	// });
 };
-/*
-const animation = async (page: HTMLElement) => {
-	await document.fonts.ready;
 
-	// const ctx = gsap.context(() => {
-	gsap.set('#p', {
-		autoAlpha: 1
-	});
-	gsap.set('#h', {
-		autoAlpha: 1
-	});
-	logoA();
-	introA();
-	// }, page);
-
-	// return () => ctx.revert();
-};
-*/
 const animation = (page: HTMLElement) => {
 	let ctx: gsap.Context | null = null;
 	let destroyed = false;
+	const isMobile = window.innerWidth < 770;
 
 	document.fonts.ready.then(() => {
 		if (destroyed) return;
@@ -159,14 +137,16 @@ const animation = (page: HTMLElement) => {
 			gsap.set(p, { autoAlpha: 1 });
 		}
 
-		if (h) {
-			// gsap.set(h, { autoAlpha: 1 });
+		if (h && isMobile) {
+			gsap.set(h, { autoAlpha: 1 });
 		}
 
 		ctx = gsap.context(() => {
-			logoA();
-			// headerA();
-			introA();
+			if (!isMobile) {
+				logoA();
+				headerA();
+				introA();
+			}
 			textsA();
 		}, page);
 	});

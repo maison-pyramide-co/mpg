@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import Swiper from 'swiper/bundle';
 	import 'swiper/css';
-	import Inds from '../(home)/c/sectors.svelte';
+	import Inds from '../(home)/c/s-sectors.svelte';
 	import Test from './test.svelte';
 	import Logos from './logos.svelte';
 
