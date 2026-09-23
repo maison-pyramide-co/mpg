@@ -89,6 +89,7 @@
 </script>
 
 <section id="s-sectors">
+	<h2>OUR SECTORS</h2>
 	<div class="slide" bind:this={slideWrap}>
 		<div class="t">
 			<figure class:expanded>
@@ -127,8 +128,14 @@
 		overflow: hidden;
 		margin: 0 auto;
 	}
+	h2 {
+		text-align: center;
+		font-size: 30rem;
+		font-weight: 500;
+	}
 
 	.slide {
+		margin-top: 40rem;
 		width: 100%;
 	}
 	.t {

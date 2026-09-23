@@ -26,8 +26,7 @@
 		height: 200dvh;
 
 		@media (width < 770px) {
-			height: 100vh;
-			height: 100dvh;
+			height: unset;
 		}
 	}
 	section {
@@ -40,6 +39,10 @@
 		align-items: center;
 		justify-content: center;
 		position: relative;
+		@media (width < 770px) {
+			height: unset;
+			padding-block: 160rem 80rem;
+		}
 	}
 
 	section > div:first-child {
@@ -87,6 +90,8 @@
 		align-items: flex-end;
 		padding-inline: 96rem 112rem;
 		@media (width < 770px) {
+			margin-top: 120rem;
+			position: unset;
 			padding-inline: 0;
 			flex-direction: column;
 			align-items: center;

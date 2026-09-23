@@ -30,6 +30,10 @@
 <style>
 	section {
 		padding-block: 120rem;
+
+		@media (width < 770px) {
+			padding-block: 80rem;
+		}
 	}
 	h2 {
 		font-size: 30rem;
@@ -40,6 +44,9 @@
 	.marquee {
 		margin-top: 80rem;
 		overflow: hidden;
+		@media (width < 770px) {
+			margin-top: 40rem;
+		}
 	}
 	.marquee div {
 		display: flex;
@@ -61,7 +68,6 @@
 	li {
 		flex: 0 0 auto;
 	}
-
 
 	@keyframes marquee-scroll {
 		from {

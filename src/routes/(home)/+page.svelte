@@ -17,8 +17,12 @@
 <main id="p" style:opacity="0" bind:this={page}>
 	<SHero />
 	<SIntro />
-	<SSectorsM />
-	<!-- <SSectors /> -->
+	<div class="m-o">
+		<SSectorsM />
+	</div>
+	<div class="d-o">
+		<SSectors />
+	</div>
 	<SAgencies />
 </main>
 
