@@ -21,7 +21,7 @@
 			<a href="https://www.linkedin.com/company/maison-pyramide" target="_blank">
 				<Iin />
 			</a>
-			<a href="https://www.instagram.com/maisonpyramideshowroom" target="_blank">
+			<a href="https://www.instagram.com/maisonpyramide/" target="_blank">
 				<Iig />
 			</a>
 		</div>

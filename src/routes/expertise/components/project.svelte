@@ -41,7 +41,6 @@
 	ul {
 		display: flex;
 		gap: 18rem;
-		margin-top: 16rem;
 	}
 	li {
 		color: #666666;

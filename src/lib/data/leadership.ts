@@ -9,35 +9,42 @@ const partners = [
 	{
 		image: yanI,
 		name: 'Yann Pavie',
-		title: 'Executive Chairman'
-	},
-	{
-		image: reeI,
-		name: 'Reem Kanj',
-		title: 'Chief Executive Officer E&E'
-	},
-	{
-		image: geoI,
-		name: 'Giovanina Attieh',
-		title: 'Chief Growth Officer',
-		t2: 'Managing Director KSA'
+		title: 'Executive Chairman',
+		company: 'Maison Pyramide Group'
 	},
 	{
 		image: nathI,
 		name: 'Nathalie Mroue',
 		title: 'Chief Executive Officer',
-		t2: ' Maison Pyramide Group'
+		company: 'Maison Pyramide Group'
+	},
+	{
+		image: reeI,
+		name: 'Reem Kanj',
+		title: 'Chief Executive Officer',
+		company: 'Ego & East'
+	},
+	{
+		image: geoI,
+		name: 'Giovanina Attieh',
+		title: 'Chief Growth Officer',
+		company: 'Maison Pyramide',
+		t2: 'Managing Director - KSA',
+		c2: 'Maison Pyramide Group'
 	},
 	{
 		image: marI,
 		name: 'Maria Munoz',
 		title: 'Chief Marketing Officer',
-		t2: 'Managing Director Egypt'
+		company: 'Maison Pyramide',
+		t2: 'Managing Director - Egypt',
+		c2: 'Maison Pyramide Group'
 	},
 	{
 		image: nataI,
 		name: 'Natalya Kanj',
-		title: 'Chief Operating Officer E&E'
+		title: 'Chief Operating Officer',
+		company: 'Ego & East'
 	}
 ];
 

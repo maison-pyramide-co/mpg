@@ -79,13 +79,14 @@
 		right: 72rem;
 		color: white;
 		z-index: 1;
-		text-align: center;
+		text-align: right;
 
 		@media (width < 770px) {
 			margin-top: 24rem;
 			width: unset;
 			font-size: 20rem;
 			position: static;
+			text-align: center;
 		}
 	}
 

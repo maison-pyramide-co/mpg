@@ -16,9 +16,11 @@
 						<img src={prt.image} alt={prt.name} />
 					</figure>
 					<h3 data-ga="tr">{prt.name}</h3>
-					<p data-ga="tr">{prt.title}</p>
+					<h4 data-ga="tr">{prt.title}</h4>
+					<p data-ga="tr">{prt.company}</p>
 					{#if prt.t2}
-						<p class="t2" data-ga="tr">{prt.t2}</p>
+						<h4 data-ga="tr">{prt.t2}</h4>
+						<p data-ga="tr">{prt.c2}</p>
 					{/if}
 				</li>
 			{/each}
@@ -104,8 +106,15 @@
 			font-size: 20rem;
 		}
 	}
-	li p {
+	li h4 {
 		font-size: 15rem;
+		font-weight: 300;
+		&:nth-of-type(2) {
+			margin-top: 10rem;
+		}
+	}
+	li p {
+		font-size: 12rem;
 		font-weight: 300;
 		@media (width < 770px) {
 			margin-top: 0;
@@ -114,12 +123,9 @@
 			margin-inline: auto;
 		}
 	}
-	li p {
+	/* li p {
 		width: 200rem;
-	}
-	.t2 {
-		font-size: 12rem;
-	}
+	} */
 	/* li:nth-child(1) p,
 	li:nth-child(2) p,
 	li:nth-child(3) p {

@@ -40,14 +40,18 @@
 	main {
 		padding-block: 194rem 80rem;
 		padding-inline: var(--p-i);
+		@media (width < 770px) {
+			padding-top: 120rem;
+		}
 	}
 	h1 {
 		font-size: 60rem;
 		margin-left: 360rem;
 		font-weight: 500;
 		@media (width < 770px) {
-			font-size: 32rem;
+			font-size: 40rem;
 			margin-left: 0;
+			text-align: center;
 		}
 	}
 	main > div {
@@ -55,7 +59,6 @@
 		display: flex;
 		gap: 150rem;
 		@media (width < 770px) {
-			margin-top: 40rem;
 			gap: 60rem;
 			flex-direction: column;
 		}
@@ -128,7 +131,7 @@
 		@media (width < 770px) {
 			margin-left: unset;
 			width: fit-content;
-			padding: 10rem 24rem;
+			padding: 12rem 48rem;
 			font-size: 14rem;
 			margin-top: 24rem;
 		}

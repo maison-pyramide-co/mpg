@@ -1,20 +1,21 @@
-import s1 from '$lib/assets/images/services/s1.png';
-import s2 from '$lib/assets/images/services/s2.png';
-import s3 from '$lib/assets/images/services/s3.png';
-import s4 from '$lib/assets/images/services/s4.png';
-import s5 from '$lib/assets/images/services/s5.png';
-import s6 from '$lib/assets/images/services/s6.png';
-import s7 from '$lib/assets/images/services/s7.png';
-import s8 from '$lib/assets/images/services/s8.png';
 import s9 from '$lib/assets/images/services/s9.png';
-import s10 from '$lib/assets/images/services/s10.png';
+import branding from '$lib/assets/images/services/branding.webp';
+import digital from '$lib/assets/images/services/digital.webp';
+import events from '$lib/assets/images/services/events.webp';
+import retail from '$lib/assets/images/services/retail.webp';
+import wholesale from '$lib/assets/images/services/wholesale.webp';
+import platforms from '$lib/assets/images/services/platforms.webp';
+import production from '$lib/assets/images/services/production.webp';
+import pr from '$lib/assets/images/services/pr.webp';
+import creative from '$lib/assets/images/services/creative.webp';
+import marketing from '$lib/assets/images/services/marketing.webp';
 
 const services = [
 	{
 		name: 'PR, Influencer and Communications',
 		description:
 			'We shape how brands are seen, talked about, and remembered through media, storytelling, and carefully managed influencer campaigns.',
-		image: s3,
+		image: pr,
 		sow: [
 			'PR strategy and communications planning',
 			'Strategic consulting and advisory',
@@ -45,7 +46,7 @@ const services = [
 		name: 'Campaign Strategy & Marketing',
 		description:
 			'We create campaign and marketing strategies that bring brands to market through launches, awareness drives, and multi-channel activations.',
-		image: s2,
+		image: marketing,
 		sow: [
 			'Campaign strategy',
 			'Marketing planning',
@@ -59,7 +60,7 @@ const services = [
 		name: 'Digital & Social Media',
 		description:
 			'We manage digital and social presence end to end, from strategy and content planning to account management, paid media, and search visibility.',
-		image: s4,
+		image: digital,
 		sow: [
 			'Social media strategy',
 			'Content planning and calendars',
@@ -73,7 +74,7 @@ const services = [
 		name: 'Content Production',
 		description:
 			'We produce content that brings campaigns and brands to life across digital, social, retail, and editorial touchpoints.',
-		image: s7,
+		image: production,
 		sow: [
 			'Photography and videography',
 			'Campaign and social shoots',
@@ -86,7 +87,7 @@ const services = [
 		name: 'Branding & Brand Strategy',
 		description:
 			'We shape the core of a brand, from its positioning and identity to the way it is expressed and brought to life.',
-		image: s1,
+		image: branding,
 		sow: [
 			'Brand positioning',
 			'Brand identity',
@@ -100,7 +101,7 @@ const services = [
 		name: 'Creative & Design',
 		description:
 			'We translate brand thinking into visual worlds, campaign ideas, and design systems that are both distinctive and effective.',
-		image: s6,
+		image: creative,
 		sow: [
 			'Creative direction',
 			'Campaign concepts',
@@ -114,7 +115,7 @@ const services = [
 		name: 'Events & Experiential Activations',
 		description:
 			'We create experiences that turn brand stories into real-world moments designed to engage audiences and leave a lasting impression.',
-		image: s8,
+		image: events,
 		sow: [
 			'Event concepts',
 			'Brand activations and pop-ups',
@@ -128,7 +129,7 @@ const services = [
 		name: 'Platforms & Institutional Programmes',
 		description:
 			'We partner with governments, foundations, and industry bodies to design, manage, and deliver fashion programmes that shape markets, develop talent, and build platforms with lasting impact. From national brand development programmes to international fashion week activations, we operate at the intersection of fashion, culture, and institutional strategy.',
-		image: s10,
+		image: platforms,
 		sow: [
 			'Programme design & management ',
 			'National brand development initiatives',
@@ -144,7 +145,7 @@ const services = [
 		name: 'Wholesale & Brand Market Access',
 		description:
 			'Through our Paris-based showroom operations and global buyer network, we help brands enter new markets, build the right distribution, and grow commercially through wholesale partnerships. We work across seasonal market programming, buyer relations, commercial negotiation and account management, and the full back-office process from order to delivery.',
-		image: s10,
+		image: wholesale,
 		sow: [
 			'Wholesale strategy & territory development',
 			'Multi-market showroom representation (Paris, Dubai, Riyadh, Las Vegas)',
@@ -160,7 +161,7 @@ const services = [
 		name: 'Retail & Destination Development',
 		description:
 			'We help real estate developers, hospitality groups, and asset operators build differentiated retail experiences working across strategy through to operations. Whether defining a unique tenant mix, recruiting the right brands, or managing the retail offer of a destination, we work across the full retail life cycle.',
-		image: s10,
+		image: retail,
 		sow: [
 			'Retail leasing strategy & leasing implementation',
 			'Retail activation strategy, programming, & activations',

@@ -7,10 +7,10 @@ import i6 from '$lib/assets/images/partnerships/psh6.png';
 
 const partnerships = [
 	{
-		id: 0,
-		name: 'Industry Session with Istituto Marangoni Dubai',
-		body: 'Maison Pyramide joined Istituto Marangoni Dubai for an industry session focused on digital and PR strategy, talent integration, and the realities of building impact for fashion businesses, bringing real industry perspective into the classroom.',
-		image: i4
+		id: 2,
+		name: 'Strategic Partnership with MBFW Madrid',
+		body: 'Maison Pyramide partnered with Mercedes-Benz Fashion Week Madrid to connect Spanish and Latin American design talent with the Middle East and wider EMEA market. The collaboration also introduced the inaugural Maison Pyramide Award, offering Baro Lucas a full season at the MP Showroom in Paris.',
+		image: i5
 	},
 	{
 		id: 5,
@@ -19,16 +19,16 @@ const partnerships = [
 		image: i2
 	},
 	{
+		id: 0,
+		name: 'Industry Session with Istituto Marangoni Dubai',
+		body: 'Maison Pyramide joined Istituto Marangoni Dubai for an industry session focused on digital and PR strategy, talent integration, and the realities of building impact for fashion businesses, bringing real industry perspective into the classroom.',
+		image: i4
+	},
+	{
 		id: 1,
 		name: 'Luxury PR & Marketing Session with FAD Dubai',
 		body: 'Maison Pyramide hosted an educational session with students from FAD Dubai on PR and marketing in luxury fashion, sharing practical insight into data-led strategy, press relations, and talent and influencer collaborations.',
 		image: i6
-	},
-	{
-		id: 2,
-		name: 'Strategic Partnership with MBFW Madrid',
-		body: 'Maison Pyramide partnered with Mercedes-Benz Fashion Week Madrid to connect Spanish and Latin American design talent with the Middle East and wider EMEA market. The collaboration also introduced the inaugural Maison Pyramide Award, offering Baro Lucas a full season at the MP Showroom in Paris.',
-		image: i5
 	},
 	{
 		id: 3,

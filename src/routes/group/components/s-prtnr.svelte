@@ -8,10 +8,11 @@
 	let swiperElement: HTMLDivElement;
 	let prtshActiveIndex = $state(0);
 
+	const nextPartnership = $derived((prtshActiveIndex + 1) % partnerships.length);
+
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
 			slidesPerView: 1,
-			initialSlide: 6,
 			breakpoints: {
 				770: {
 					slidesPerView: 2
@@ -66,9 +67,9 @@
 		</div>
 
 		<div class="r">
-			<h3>{partnerships[prtshActiveIndex + 1].name}</h3>
+			<h3>{partnerships[nextPartnership].name}</h3>
 			<p>
-				{partnerships[prtshActiveIndex + 1].body}
+				{partnerships[nextPartnership].body}
 			</p>
 			<nav class="d-o">
 				<button id="swiper-prev">
