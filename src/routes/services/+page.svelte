@@ -189,7 +189,7 @@
 			font-size: 20rem;
 			font-weight: 500;
 			display: flex;
-			align-items: center;
+			/* align-items: center; */
 			gap: 14rem;
 			@media (width < 770px) {
 				font-size: 15rem;
@@ -199,6 +199,7 @@
 			display: block;
 			font-size: 16rem;
 			font-weight: 400;
+			padding-top: 2rem;
 			@media (width < 770px) {
 				font-size: 12rem;
 			}
