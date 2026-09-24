@@ -95,7 +95,7 @@
 				<h3>{agency.name}</h3>
 				<p>
 					Attention is earned. Impact is intentional. We create brands that turn attention into
-					action, and action into growth. Every great brand starts with a story
+					action, and action into growth. Every great brand starts with a story.
 				</p>
 				<a href={agency.link} target="_blank">DISCOVER</a>
 			</div>

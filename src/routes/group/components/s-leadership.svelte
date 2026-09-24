@@ -7,7 +7,7 @@
 	<div>
 		<p>
 			Attention is earned. Impact is intentional. We create brands that turn attention into action,
-			and action into growth. Every great brand starts with a story
+			and action into growth. Every great brand starts with a story.
 		</p>
 		<ul>
 			{#each partners as prt}

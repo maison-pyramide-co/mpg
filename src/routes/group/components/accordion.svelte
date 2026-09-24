@@ -40,4 +40,7 @@
 		overflow: hidden;
 		transition: height 0.2s ease-out;
 	}
+	.acc_b {
+		padding-bottom: 1rem;
+	}
 </style>

@@ -17,12 +17,17 @@ const heroA = () => {
 		mask: 'lines'
 	});
 
-	const tl = gsap.timeline();
+	const tl = gsap.timeline({});
 	tl.from(t_split1.lines, {
 		y: 100,
 		duration: 1,
 		ease: 'power4.out',
-		stagger: 0.05
+		stagger: 0.05,
+		onComplete: () => {
+			t_split1.masks.forEach((mask: any) => {
+				mask.style.overflow = '';
+			});
+		}
 	});
 	tl.from(
 		t_split2.lines,
@@ -30,7 +35,13 @@ const heroA = () => {
 			y: 100,
 			duration: 0.8,
 			ease: 'power4.out',
-			stagger: 0.05
+			stagger: 0.05,
+
+			onComplete: () => {
+				t_split2.masks.forEach((mask: any) => {
+					mask.style.overflow = '';
+				});
+			}
 		},
 		'<.5'
 	);

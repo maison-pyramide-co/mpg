@@ -7,7 +7,7 @@
 		<h2>OUR SECTORS</h2>
 		<p>
 			We navigate evolving industries with cultural fluency, strategic clarity and bold creative
-			thinking
+			thinking.
 		</p>
 	</div>
 	<ul class="h-s">
