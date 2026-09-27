@@ -94,6 +94,12 @@ const introA = () => {
 	);
 };
 const introAM = () => {
+	const t_split = SplitText.create('.s-intro h1', {
+		type: 'lines',
+		mask: 'lines'
+		// autoSplit: true
+	});
+
 	const t_split1 = SplitText.create('.s-intro .t', {
 		type: 'lines',
 		mask: 'lines'
@@ -101,6 +107,46 @@ const introAM = () => {
 	const t_split2 = SplitText.create('.s-intro .b p', {
 		type: 'lines',
 		mask: 'lines'
+	});
+
+	gsap.from(t_split.lines, {
+		y: 100,
+		duration: 0.6,
+		ease: 'power4.out',
+		stagger: 0.05,
+		scrollTrigger: {
+			trigger: '.s-intro h1',
+			start: 'top 80%'
+		}
+	});
+	gsap.from(t_split1.lines, {
+		y: 100,
+		duration: 0.6,
+		ease: 'power4.out',
+		stagger: 0.05,
+		scrollTrigger: {
+			trigger: '.s-intro .t',
+			start: 'top 80%'
+		}
+	});
+	gsap.from(t_split2.lines, {
+		y: 100,
+		duration: 0.6,
+		ease: 'power4.out',
+		stagger: 0.05,
+		scrollTrigger: {
+			trigger: '.s-intro .b p',
+			start: 'top 80%'
+		}
+	});
+	gsap.from('.s-intro .b a', {
+		autoAlpha: 0,
+		duration: 0.6,
+		ease: 'sine.in',
+		scrollTrigger: {
+			trigger: '.s-intro .b a',
+			start: 'top 80%'
+		}
 	});
 };
 
@@ -156,6 +202,8 @@ const animation = (page: HTMLElement) => {
 				logoA();
 				headerA();
 				introA();
+			} else {
+				introAM();
 			}
 			// introA();
 			textsA();

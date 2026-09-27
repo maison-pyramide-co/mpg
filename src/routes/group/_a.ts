@@ -48,6 +48,8 @@ const heroA = () => {
 };
 
 const introA = () => {
+	const isMobile = window.innerWidth < 770;
+
 	const t_split = SplitText.create('#s-intro h3', {
 		type: 'lines',
 		mask: 'lines'
@@ -78,7 +80,7 @@ const introA = () => {
 		// stagger: 0.2,
 		scrollTrigger: {
 			trigger: '#s-intro ul',
-			start: 'top 90%'
+			start: isMobile ? 'top 90%' : 'top 70%'
 		}
 	});
 };

@@ -49,26 +49,26 @@
 <style>
 	main {
 		padding-top: 194rem;
+		display: flex;
+		justify-content: space-between;
 		@media (width < 770px) {
 			padding-inline: var(--p-i);
 			padding-top: 120rem;
+			flex-direction: column;
 		}
 	}
 	.l {
-		position: fixed;
-		/* top: 0; */
+		width: 490rem;
+		height: calc(100vh - 194rem);
+		position: sticky;
 		top: 194rem;
 		left: 0;
 		bottom: 0;
 		display: flex;
 		flex-direction: column;
-		/* height: 100vh; */
-		/* padding-top: 234rem; */
-		/* padding-top: 194rem; */
 		padding-bottom: 40rem;
 		padding-left: var(--p-i);
 		background-color: white;
-		width: 490rem;
 
 		@media (width < 770px) {
 			width: unset;
@@ -134,21 +134,16 @@
 		}
 	}
 	.r {
-		/* padding-top: 194rem; */
+		width: 490rem;
 		padding-right: var(--p-i);
 		padding-bottom: 40rem;
 		@media (width < 770px) {
 			padding: 0;
 			padding-bottom: 80rem;
+			width: unset;
 		}
 	}
 	ul {
-		margin-left: auto;
-		width: 490rem;
-		@media (width < 770px) {
-			marigin: 0;
-			width: unset;
-		}
 	}
 	li {
 		margin-top: 64rem;

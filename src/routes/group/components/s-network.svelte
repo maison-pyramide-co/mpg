@@ -35,6 +35,14 @@
 		{/if}
 		<Map {changeCity} />
 	</div>
+	<ul class="cities m-o">
+		{#each Object.entries(cities) as [name, description]}
+			<li>
+				<h3>{name}</h3>
+				<p>{description}</p>
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <style>
@@ -83,5 +91,28 @@
 		font-size: 12rem;
 		line-height: 1;
 		font-weight: 300;
+	}
+	ul {
+		margin-top: 32rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24rem;
+		text-align: center;
+	}
+	li {
+		width: 300rem;
+	}
+	li h3 {
+		text-transform: uppercase;
+		font-size: 16rem;
+		font-weight: 500;
+	}
+
+	li p {
+		margin-top: 16rem;
+		font-size: 14rem;
+		font-weight: 300;
+		line-height: 1;
 	}
 </style>
