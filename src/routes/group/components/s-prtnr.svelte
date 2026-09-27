@@ -6,9 +6,9 @@
 	import 'swiper/css';
 
 	let swiperElement: HTMLDivElement;
-	let prtshActiveIndex = $state(0);
+	let activeIndex = $state(0);
 
-	const nextPartnership = $derived((prtshActiveIndex + 1) % partnerships.length);
+	const nextIndex = $derived((activeIndex + 1) % partnerships.length);
 
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
@@ -26,7 +26,7 @@
 		});
 
 		swiper.on('slideChange', function () {
-			prtshActiveIndex = swiper.realIndex;
+			activeIndex = swiper.realIndex;
 		});
 
 		return () => {
@@ -67,9 +67,13 @@
 		</div>
 
 		<div class="r">
-			<h3>{partnerships[nextPartnership].name}</h3>
-			<p>
-				{partnerships[nextPartnership].body}
+			<h3 class="m-o">{partnerships[activeIndex].name}</h3>
+			<p class="m-o">
+				{partnerships[activeIndex].body}
+			</p>
+			<h3 class="d-o">{partnerships[nextIndex].name}</h3>
+			<p class="d-o">
+				{partnerships[nextIndex].body}
 			</p>
 			<nav class="d-o">
 				<button id="swiper-prev">

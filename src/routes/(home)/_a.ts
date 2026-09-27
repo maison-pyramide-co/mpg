@@ -93,6 +93,16 @@ const introA = () => {
 		'<'
 	);
 };
+const introAM = () => {
+	const t_split1 = SplitText.create('.s-intro .t', {
+		type: 'lines',
+		mask: 'lines'
+	});
+	const t_split2 = SplitText.create('.s-intro .b p', {
+		type: 'lines',
+		mask: 'lines'
+	});
+};
 
 // Header logo animation
 const logoA = () => {
@@ -147,6 +157,7 @@ const animation = (page: HTMLElement) => {
 				headerA();
 				introA();
 			}
+			// introA();
 			textsA();
 		}, page);
 	});

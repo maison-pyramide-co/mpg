@@ -181,8 +181,9 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		@media (width < 770px) {
-			width: unset;
-			font-size: 16rem;
+			width: 320rem;
+			margin-inline: auto;
+			/* font-size: 16rem; */
 			text-align: center;
 		}
 	}
