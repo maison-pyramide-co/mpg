@@ -1,18 +1,9 @@
 <script lang="ts">
 	import MapI from '$lib/assets/images/map-mobile.png';
 	import Map from '$lib/assets/icons/map.svelte';
+	import cities from '$lib/data/network';
 
 	let acitveCity: any = $state(null);
-	const cities = {
-		dubai:
-			'In dubai, our permanent Sales & PR Showroom, supported by a digital E-Showroom, opens doors to international buyers and media, turning regional ambition into global scale.',
-		paris:
-			'In paris, our permanent Sales & PR Showroom, supported by a digital E-Showroom, opens doors to international buyers and media, turning regional ambition into global scale.',
-		cairo:
-			'In cairo, our permanent Sales & PR Showroom, supported by a digital E-Showroom, opens doors to international buyers and media, turning regional ambition into global scale.',
-		riyadh:
-			'In riyadh, our permanent Sales & PR Showroom, supported by a digital E-Showroom, opens doors to international buyers and media, turning regional ambition into global scale.'
-	};
 
 	const changeCity = (city: string) => {
 		if (city == null) acitveCity = null;
@@ -25,7 +16,9 @@
 <section>
 	<h2>OUR NETWORK</h2>
 	<p>
-		Our extensive office and showroom network connects regional strength with global opportunity.
+		Maison Pyramide Group operates through offices in Cairo, Riyadh and Dubai, alongside MP Showroom
+		in Paris. Together, our network connects regional market knowledge with international
+		opportunity.
 	</p>
 	<div class="map m-o">
 		<figure>
@@ -45,12 +38,37 @@
 </section>
 
 <style>
+	section {
+		padding-top: 80rem;
+
+		@media (width < 770px) {
+		}
+	}
+	h2 {
+		font-size: 40rem;
+		font-weight: 500;
+		text-align: center;
+	}
+	section > p {
+		width: 900rem;
+		margin-inline: auto;
+		margin-top: 18rem;
+		font-family: 'gt';
+		font-size: 20rem;
+		line-height: 1.1;
+		text-align: center;
+		/* text-transform: uppercase; */
+		@media (width < 770px) {
+			width: 340rem;
+			margin-top: 24rem;
+		}
+	}
 	.map {
 		position: relative;
 		margin-top: 40rem;
 	}
 	.active-city {
-		max-width: 258rem;
+		max-width: 300rem;
 		position: absolute;
 		top: 96rem;
 		right: 96rem;
@@ -65,33 +83,5 @@
 		font-size: 12rem;
 		line-height: 1;
 		font-weight: 300;
-	}
-
-	section {
-		padding-top: 80rem;
-
-		@media (width < 770px) {
-		}
-	}
-	h2 {
-		font-size: 40rem;
-		font-weight: 500;
-		text-align: center;
-	}
-	section > p {
-		width: 680rem;
-		margin-inline: auto;
-		margin-top: 18rem;
-		font-family: 'gt';
-		font-size: 20rem;
-		line-height: 1.1;
-		text-align: center;
-		/* text-transform: uppercase; */
-		@media (width < 770px) {
-			width: 340rem;
-			margin-top: 24rem;
-		}
-	}
-	figure {
 	}
 </style>

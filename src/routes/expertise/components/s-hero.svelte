@@ -14,8 +14,11 @@
 <section>
 	<div class="t">
 		<div class="intro">
-			<h1>Our expertise spans Media, Public Affairs, Lifestyle.</h1>
-			<p>Building relevance.<br />Creating Influence.<br />Driving Growth.</p>
+			<h1>Expertise that understands the context, not just the category.</h1>
+			<p>
+				Maison Pyramide Group combines sector knowledge with cultural intelligence, strategic
+				clarity and bold creative thinking to create work that resonates with audiences across EMEA.
+			</p>
 		</div>
 		<figure>
 			<img src={banI} alt="MPG Expertise" />
@@ -23,7 +26,7 @@
 	</div>
 	<nav>
 		<button onclick={goToSectors}>OUR SECTORS</button>
-		<button onclick={goToWork}>VIEW OUR CASE STUDIES</button>
+		<button onclick={goToWork}>SELECTED WORK</button>
 	</nav>
 </section>
 
@@ -42,9 +45,9 @@
 	}
 	.intro {
 		@media (width < 770px) {
-			width: 300rem;
+			width: 340rem;
 			position: absolute;
-			top: 50%;
+			top: 55%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -55,23 +58,24 @@
 		font-weight: normal;
 		font-size: 40rem;
 		line-height: 1;
-		width: 480rem;
+		width: 550rem;
 		position: absolute;
 		top: 40%;
 		left: 40rem;
 		color: white;
 		z-index: 1;
 		@media (width < 770px) {
-			width: 300rem;
+			width: unset;
 			font-size: 30rem;
 			position: static;
 			text-align: center;
 		}
 	}
 	p {
-		width: 260rem;
+		width: 540rem;
 		font-weight: 300;
-		font-size: 30rem;
+		/* font-size: 30rem; */
+		font-size: 20rem;
 		line-height: 1;
 		position: absolute;
 		text-align: right;
@@ -82,11 +86,13 @@
 		text-align: right;
 
 		@media (width < 770px) {
-			margin-top: 24rem;
-			width: unset;
-			font-size: 20rem;
+			margin-top: 32rem;
+			width: 330rem;
+			/* font-size: 20rem; */
+			font-size: 16rem;
 			position: static;
 			text-align: center;
+			margin-inline: auto;
 		}
 	}
 

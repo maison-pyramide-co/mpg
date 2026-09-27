@@ -1,4 +1,3 @@
-import s9 from '$lib/assets/images/services/s9.png';
 import branding from '$lib/assets/images/services/branding.webp';
 import digital from '$lib/assets/images/services/digital.webp';
 import events from '$lib/assets/images/services/events.webp';
@@ -9,6 +8,7 @@ import production from '$lib/assets/images/services/production.webp';
 import pr from '$lib/assets/images/services/pr.webp';
 import creative from '$lib/assets/images/services/creative.webp';
 import marketing from '$lib/assets/images/services/marketing.webp';
+import talent from '$lib/assets/images/services/talent.webp';
 
 const services = [
 	{
@@ -31,7 +31,7 @@ const services = [
 	{
 		name: 'Talent Management & Brand Partnerships',
 		description: `With deep expertise across culture, influence, and commerce, Ego & East connects brands with some of the region's most sought-after creators, celebrities, and public figures. Through talent management, commercial representation, influencer marketing, and strategic partnerships, we facilitate collaborations that align brand objectives with authentic talent storytelling.`,
-		image: s9,
+		image: talent,
 		sow: [
 			'Talent Management',
 			'Celebrity & Creator Bookings',

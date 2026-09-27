@@ -8,24 +8,27 @@ import showroomCover from '$lib/assets/images/showroom-cover.png';
 const agencies = [
 	{
 		name: 'MAISON PYRAMIDE',
-		bio: '360° brand consultancy agency <br/> across disciplines.',
-		description: '360° brand consultancy agency across disciplines.',
+		bio: 'Where strategy meets culture.',
+		description:
+			'The Group’s communications and marketing arm, working across public relations, integrated marketing, content and social media, events and experiential activations.',
 		link: 'https://www.maisonpyramide.com/',
 		logo: mpLogo,
 		cover: mpCover
 	},
 	{
 		name: 'MP SHOWROOM',
-		bio: 'Wholesale and retail strategy, sales,<br/> and distribution platform. ',
-		description: 'Wholesale and retail strategy, sales, and distribution platform.',
+		bio: 'Connecting international brands to the markets that matter.',
+		description:
+			'The Group’s sales, distribution and brand development business, supporting international fashion and luxury brands with wholesale development, regional distribution, retailer relationships, market expansion and long-term commercial development.',
 		link: 'https://showroom.maisonpyramide.com/',
 		logo: showroomLogo,
 		cover: showroomCover
 	},
 	{
 		name: 'EGO & EAST',
-		bio: 'A talent management agency<br/> representing artists, celebrities & influencers.',
-		description: 'Leading talent management and procurement agency.',
+		bio: "Representing the region's most influential voices.",
+		description:
+			'The Group’s luxury talent management and representation agency, working with selected talent across regional and international markets.',
 		link: 'https://www.egoandeast.com/',
 		logo: eeLogo,
 		cover: eeCover

@@ -39,7 +39,7 @@ const caseStudies = [
 		id: 1,
 		name: 'Westfield',
 		image: westfield,
-		category: 'retail',
+		category: 'hospitality & destinations',
 		description:
 			'As Westfield’s lead marketing partner for Riyadh and Jeddah, we are shaping the brand’s first presence in Saudi Arabia. Maison Pyramide leads destination marketing strategy, social media and content, paid media, influencer partnerships, and cultural programming, positioning both developments as lifestyle destinations with distinct city identities.',
 		services: ['strategy', 'production', 'design', 'digital', 'social']
@@ -48,7 +48,7 @@ const caseStudies = [
 		id: 2,
 		name: 'Jabal AlQurain Avenue',
 		image: jaqa,
-		category: 'retail', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'Appointed by Diriyah Company, we are leading the brand and retail development of Jabal Al Qurain Avenue, a landmark cultural district in Diriyah. Across more than 79 retail units, we oversee brand curation, tenant clustering, leasing and partnerships to create a vibrant destination rooted in Saudi excellence, Arab heritage and global cultural exchange.',
 		services: ['Retail Strategy', 'Brand Curation', 'Partnerships']
@@ -57,7 +57,7 @@ const caseStudies = [
 		id: 3,
 		name: 'Mall of the Emirates',
 		image: moe,
-		category: 'retail', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'For a standout fashion showcase at Mall of the Emirates, we created an elevated runway experience combining fashion, music and immersive scenography. The activation engaged media, VIPs and shoppers, transforming the mall into a contemporary fashion stage.',
 		services: ['experiential']
@@ -66,7 +66,7 @@ const caseStudies = [
 		id: 4,
 		name: 'Sodic',
 		image: sodic,
-		category: 'real estate', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'As SODIC’s exclusive PR partner, we lead its regional communications strategy, managing media relations and press office activity to strengthen visibility and reinforce its premium market position.',
 		services: ['Marketing', 'PR']
@@ -75,7 +75,7 @@ const caseStudies = [
 		id: 5,
 		name: 'Soma Bay',
 		image: somaBay,
-		category: 'real estate', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'As Soma Bay’s press office partner, we manage regional and international communications, media relations and hosted press visits. We also curate talent and influencer stays that generate authentic coverage and strengthen its position as a leading lifestyle destination.',
 		services: ['Marketing', 'PR', 'Influencer']
@@ -84,7 +84,7 @@ const caseStudies = [
 		id: 6,
 		name: 'Qatari Diar',
 		image: qatariDiar,
-		category: 'real estate', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'For Qatari Diar’s Alam Al Roum project, we developed luxury PR boxes, leading the creative concept, design and presentation. We curated the gifting elements and sourced selected pieces internationally to create a distinctive experience aligned with the project’s premium identity.',
 		services: ['Design', 'PR']
@@ -93,7 +93,7 @@ const caseStudies = [
 		id: 7,
 		name: 'Taiba',
 		image: taiba,
-		category: 'real estate', // TODO: add image import/path
+		category: 'hospitality & destinations',
 		description:
 			'We manage TAIBA’s social media presence across LinkedIn, Instagram and X, covering strategy, content planning, copywriting, production and paid media. Our work supports the company’s positioning as a leader in Saudi Arabia’s hospitality sector.',
 		services: ['Digital', 'Social Media', 'Content', 'Production']
@@ -102,7 +102,7 @@ const caseStudies = [
 		id: 8,
 		name: 'Nobu',
 		image: nobu,
-		category: 'real estate', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'Ahead of Nobu’s debut on Egypt’s North Coast, we led the communications, media and talent strategy surrounding its market entry. A curated retreat at Nobu Hotel Ibiza Bay introduced regional tastemakers to the brand and generated premium coverage across key markets.',
 		services: ['experiential', 'pr']
@@ -111,7 +111,7 @@ const caseStudies = [
 		id: 9,
 		name: 'One and Only',
 		image: oneAndOnly,
-		category: 'real estate', // TODO: no category data in source sheet
+		category: 'hospitality & destinations',
 		description:
 			'To celebrate the opening of One&Only One Za’abeel, we produced an exclusive private dinner across two locations. The experience introduced the Dubai hotel to selected guests through an intimate expression of the brand’s luxury hospitality.',
 		services: ['experiential']
@@ -174,7 +174,7 @@ const caseStudies = [
 		id: 16,
 		name: 'Saudi 100 Brands',
 		image: s100,
-		category: 'fashioin & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'In partnership with Elovation Consulting, we helped deliver Saudi 100 Brands, a Saudi Fashion Commission initiative supporting local designers. The program combined expert-led learning, one-to-one mentorship and retail and wholesale activations to prepare brands for international expansion.',
 		services: ['Programming', 'Brand Development', 'Retail Activation']
@@ -183,7 +183,7 @@ const caseStudies = [
 		id: 17,
 		name: 'Riyadh Fashion Week',
 		image: rfw,
-		category: '', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'We led press, showroom, sales and talent management for Riyadh Fashion Week, covering media strategy, buyer invitations, guest curation, brand assets and on-ground operations. The integrated program connected Saudi designers with international media, buyers and cultural talent.',
 		services: ['PR', 'Showroom', 'Sales', 'Talent Management']
@@ -192,7 +192,7 @@ const caseStudies = [
 		id: 18,
 		name: 'Madrid Fashion Week',
 		image: mbfw,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'Through our ongoing partnership with MBFWMadrid, we connect emerging Spanish designers with buyers, editors and industry leaders across MEA, Europe and the UK. The MP Showroom Prize recognizes designers across Commercial Potential, Creative Identity and Responsible Design, providing access to the Paris market, PR visibility and strategic commercial guidance.',
 		services: ['Brand Development', 'Showroom & Sales', 'Guest Management']
@@ -201,7 +201,7 @@ const caseStudies = [
 		id: 19,
 		name: 'Fashion Trust Arabia',
 		image: fta,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'Through our partnership with Fashion Trust Arabia, we supported award-winning MENA designers with digital and physical showroom representation, wholesale development and PR consultancy. The program connected them with international buyers, media and talent, building visibility and supporting global growth.',
 		services: ['Brand Development', 'Showroom Representation', 'PR']
@@ -210,7 +210,7 @@ const caseStudies = [
 		id: 20,
 		name: 'Puma',
 		image: puma,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'For Puma’s Speedcat launch in Egypt, we reimagined the iconic sneaker through a distinctly local cultural lens. An immersive journey from the ancient goddess Bastet to the modern Speedcat combined storytelling, product discovery and a high-energy launch experience.',
 		services: ['experiential', 'guest list', 'comms']
@@ -219,7 +219,7 @@ const caseStudies = [
 		id: 21,
 		name: 'Adidas',
 		image: addidas,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'For adidas’ “You Got This” World Cup campaign, we brought the story to life in Cairo through a 13-metre mural celebrating Mohamed Salah. We led the design, artist curation, execution and documentary content, transforming District 5 into a public extension of the campaign.',
 		services: ['Experiential', 'PR', 'Production']
@@ -237,7 +237,7 @@ const caseStudies = [
 		id: 23,
 		name: 'Elie Saab',
 		image: elieSaab,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'For Elie Saab’s 45-year celebration at Riyadh Season, we led regional PR, media planning, guest management and content development. The campaign generated more than 1,000 articles, 34 million impressions and over 75 original content assets.',
 		services: ['pr', 'social media', 'content']
@@ -246,7 +246,7 @@ const caseStudies = [
 		id: 24,
 		name: 'Stella McCartney x H&M',
 		image: stella,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'To launch the Stella McCartney x H&M collection in Riyadh and Dubai, we produced exclusive pre-sale events for influencers and cultural tastemakers. Immersive retail design, branded installations and interactive content brought the collaboration’s creative identity to life.',
 		services: ['experiential', 'guest list', 'pr']
@@ -255,7 +255,7 @@ const caseStudies = [
 		id: 25,
 		name: 'Gucci x Assouline',
 		image: gucciXAssouline,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'For the regional launch of Gucci x Assouline’s Art of Silk, we hosted an intimate dinner at Bujairi Terrace in Riyadh. The experience brought together voices from fashion, culture and publishing through thoughtful design and storytelling rooted in Diriyah’s heritage.',
 		services: ['experiential']
@@ -264,7 +264,7 @@ const caseStudies = [
 		id: 26,
 		name: 'Dolce & Gabanna',
 		image: dg,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'We celebrated the opening of Dolce & Gabbana’s first regional concept store with an experiential launch at Bujairi Terrace. Creative programming and a strong PR presence generated engagement while respecting Diriyah’s distinctive cultural identity.',
 		services: ['experiential']
@@ -273,7 +273,7 @@ const caseStudies = [
 		id: 27,
 		name: 'Bottega Veneta',
 		image: bottegaVeneta,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'We facilitated Zeyne’s performance at Bottega Veneta’s Waves event in Dubai, bringing together regional talent and an international luxury house for a significant cultural collaboration.',
 		services: ['Talent Management']
@@ -282,7 +282,7 @@ const caseStudies = [
 		id: 28,
 		name: 'Infiniti',
 		image: infiniti,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'We facilitated the partnership appointing Saudi film producer and entrepreneur Mo Al-Turki as INFINITI Middle East’s first regional Chief Luxury Ambassador. The collaboration created a strong connection between regional cultural influence and luxury automotive positioning.',
 		services: ['Talent Management']
@@ -291,7 +291,7 @@ const caseStudies = [
 		id: 29,
 		name: 'Breitling',
 		image: breitling,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'To celebrate the opening of Breitling Kitchen in Riyadh, we produced an intimate launch for the brand’s community, media and influencers. Hospitality, live music and a bespoke illustration activation created an engaging expression of Breitling’s identity.',
 		services: ['experiential']
@@ -300,7 +300,7 @@ const caseStudies = [
 		id: 30,
 		name: 'Boucheron',
 		image: boucheron,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'For Ramadan, we created an intimate Suhoor experience for Boucheron’s VIP clients. Set against the sound of the sea and illuminated by candlelight, the evening elevated the luxury house’s regional presence through an atmospheric guest experience.',
 		services: ['experiential']
@@ -309,7 +309,7 @@ const caseStudies = [
 		id: 31,
 		name: 'Chopard',
 		image: chopard,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'luxury & fashion',
 		description:
 			'We conceptualized and produced Chopard’s annual Suhoor for VIP clients, media and influencers. The experience brought together the luxury house’s elegant identity and regional cultural traditions in a memorable Ramadan setting.',
 		services: ['experiential']
@@ -327,7 +327,7 @@ const caseStudies = [
 		id: 33,
 		name: 'L’Oreal Group',
 		image: loreal,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'beauty & wellness', // TODO: no category data in source sheet
 		description:
 			'For more than five years, we have partnered with L’Oréal Group across Lancôme, Armani Beauty and YSL Beauty. Our work spans marketing strategy, public relations, content creation, social media design and e-commerce assets, supporting each brand across key digital and consumer touchpoints.',
 		services: ['Social Media', 'Influencers', 'PR', 'Events']
@@ -336,7 +336,7 @@ const caseStudies = [
 		id: 34,
 		name: 'Jo Malone',
 		image: joMalone,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
+		category: 'beauty & wellness', // TODO: no category data in source sheet
 		description:
 			'To launch Jo Malone London’s Taif Rose fragrance, we conceived and produced a Ramadan Suhoor inspired by the timeless character of the rose. The immersive experience carried the fragrance story from creative concept through to full execution.',
 		services: ['experiential', 'guest list', 'comms']

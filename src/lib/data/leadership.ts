@@ -26,7 +26,7 @@ const partners = [
 	},
 	{
 		image: geoI,
-		name: 'Giovanina Attieh',
+		name: 'Giovanina Atieh',
 		title: 'Chief Growth Officer',
 		company: 'Maison Pyramide',
 		t2: 'Managing Director - KSA',

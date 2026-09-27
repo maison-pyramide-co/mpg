@@ -114,7 +114,7 @@
 		<div class="info_" bind:this={metaEl}>
 			<div class="info" bind:this={metaInner}>
 				<h3>{industries[currentIndex].title}</h3>
-				<p>{industries[currentIndex].description}</p>
+				<p>{industries[currentIndex].bio}</p>
 				<button type="button" onclick={toggleInfo}>READ LESS</button>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
 
 	figure {
 		position: relative;
-		width: 300rem;
+		width: 320rem;
 		aspect-ratio: 4 / 3.6;
 		overflow: hidden;
 		margin-inline: auto;
@@ -164,7 +164,8 @@
 
 	.overlay h3 {
 		color: #fff;
-		font-size: 20rem;
+		/* font-size: 20rem; */
+		font-size: 18rem;
 		font-weight: 500;
 		text-transform: uppercase;
 	}
@@ -192,15 +193,20 @@
 	}
 
 	.info h3 {
-		font-size: 16rem;
+		/* font-size: 16rem; */
+		font-size: 18rem;
 		font-weight: 500;
 		text-transform: uppercase;
 	}
 
 	.info p {
+		width: 300rem;
+		margin-inline: auto;
 		margin-top: 24rem;
-		font-size: 15rem;
+		/* font-size: 16rem; */
+		font-size: 18rem;
 		line-height: 1;
+		/* padding-inline: 8rem; */
 	}
 
 	.info button {

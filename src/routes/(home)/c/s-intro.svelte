@@ -5,25 +5,21 @@
 		<div>
 			<div class="t">MAISON PYRAMIDE GROUP</div>
 			<h1>
-				We bring strategy, creativity, and commercial thinking together in a culture-first
-				ecosystem.
+				WE ARE A COMMUNICATIONS, COMMERCE AND TALENT GROUP SHAPING THE LIFESTYLE ECONOMY ACROSS
+				EMEA.
 			</h1>
 		</div>
 		<div class="b">
-			<p>
-				We transform insight into stories,<br />
-				stories into experiences,<br />
-				and experiences into measurable value.
-			</p>
-			<a href="/group"> EXPLORE THE GROUP </a>
+			<p>We turn regional insight and international reach into lasting relevance and momentum.</p>
+			<a href="/group">EXPLORE THE GROUP</a>
 		</div>
 	</section>
 </div>
 
 <style>
 	.s-intro_ {
-		height: 200vh;
-		height: 200dvh;
+		height: 150vh;
+		height: 150dvh;
 
 		@media (width < 770px) {
 			height: unset;
@@ -99,6 +95,7 @@
 		}
 	}
 	.b p {
+		width: 305rem;
 		font-size: 20rem;
 		line-height: 1;
 		@media (width < 770px) {
@@ -114,5 +111,9 @@
 		border: 1px solid #f0e9cd;
 		color: inherit;
 		border-radius: 100rem;
+		@media (width < 770px) {
+			padding-block: 10rem;
+			font-size: 14rem;
+		}
 	}
 </style>

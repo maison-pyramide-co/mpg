@@ -38,8 +38,8 @@
 <section id="s-partnerships">
 	<h2>PARTNERSHIPS</h2>
 	<p>
-		Beyond client work, MPG develops initiatives and partnerships that support talent, learning, and
-		the wider creative ecosystem.
+		Beyond client work, Maison Pyramide Group develops initiatives and partnerships that support
+		talent, learning, and the wider creative ecosystem.
 	</p>
 
 	<div>
@@ -108,7 +108,7 @@
 		font-family: 'gt';
 		font-size: 20rem;
 		line-height: 1;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		@media (width < 770px) {
 			width: unset;
 			margin-bottom: 32rem;

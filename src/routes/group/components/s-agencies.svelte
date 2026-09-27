@@ -76,11 +76,9 @@
 			}
 		};
 	}
-
 </script>
 
 <section>
-
 	{#each agencies as agency}
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="agency" use:agencyHover>
@@ -94,14 +92,12 @@
 			<div class="agency_info">
 				<h3>{agency.name}</h3>
 				<p>
-					Attention is earned. Impact is intentional. We create brands that turn attention into
-					action, and action into growth. Every great brand starts with a story.
+					{agency.description}
 				</p>
 				<a href={agency.link} target="_blank">DISCOVER</a>
 			</div>
 		</div>
 	{/each}
-
 </section>
 
 <style>
@@ -134,7 +130,7 @@
 		width: 100%;
 		height: 100%;
 		display: flex;
-		padding-inline: 80rem;
+		padding-inline: 60rem;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

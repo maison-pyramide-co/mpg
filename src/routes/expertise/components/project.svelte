@@ -35,7 +35,7 @@
 		font-size: 10rem;
 		text-transform: uppercase;
 		border-radius: 100rem;
-		width: 125rem;
+		width: 170rem;
 		text-align: center;
 	}
 	ul {

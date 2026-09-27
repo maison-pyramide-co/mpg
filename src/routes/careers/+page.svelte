@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Accordion from '$lib/components/accordion.svelte';
+	import Accordion from '$lib/components/old-accordion.svelte';
 	import positions from '$lib/data/positions';
 	import { onMount } from 'svelte';
 	import animation from './_a';
@@ -103,7 +103,7 @@
 		font-size: 16rem;
 		font-weight: 600;
 		@media (width < 770px) {
-			font-size: 14rem;
+			font-size: 18rem;
 		}
 	}
 	aside p {
@@ -112,6 +112,7 @@
 		max-width: 260rem;
 		font-size: 14rem;
 		@media (width < 770px) {
+			font-size: 16rem;
 			max-width: 265rem;
 			flex-shrink: 0;
 		}
@@ -182,7 +183,7 @@
 			font-weight: 500;
 			letter-spacing: 1%;
 			@media (width < 770px) {
-				margin-top: 20rem;
+				margin-top: 24rem;
 				padding: 8rem 24rem;
 				font-size: 12rem;
 			}

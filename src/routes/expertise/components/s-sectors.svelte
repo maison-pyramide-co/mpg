@@ -9,14 +9,15 @@
 		<img src={sectorsmI} width="auto" height="auto" alt="logo" />
 	</picture>
 	<div>
-		<p>OUR WORK</p>
+		<p>SELECTED WORK</p>
 		<h2>
 			We partner with ambitious brands, destinations and institutions to create work with lasting
 			relevance and impact.
 		</h2>
 		<p>
-			Different briefs.
-			<br />One standard.
+			Different contexts.
+			<br />
+			One standard.
 		</p>
 	</div>
 </section>

@@ -81,5 +81,6 @@
 	li > span {
 		font-size: 15rem;
 		font-weight: 300;
+		margin-left: -20rem;
 	}
 </style>

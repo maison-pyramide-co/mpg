@@ -3,12 +3,12 @@
 
 	const {
 		header,
-		body,
+		children,
 		open,
 		toggle
 	}: {
 		header: Snippet;
-		body: Snippet;
+		children: Snippet;
 		open: boolean;
 		toggle: () => void;
 	} = $props();
@@ -24,7 +24,7 @@
 
 	<div class="acc_b_" style="height: {contentHeight}px;">
 		<div class="acc_b" bind:this={contentEl}>
-			{@render body()}
+			{@render children()}
 		</div>
 	</div>
 </div>
@@ -34,7 +34,7 @@
 		transform: rotate(45deg);
 		transition: all 0.2s ease-out;
 	}
-	/* button {
+	button {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -43,7 +43,7 @@
 		font-size: 24rem;
 		font-weight: 600;
 		position: relative;
-	} */
+	}
 	.acc_b_ {
 		height: 0;
 		overflow: hidden;

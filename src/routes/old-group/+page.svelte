@@ -1,7 +1,7 @@
 <script lang="ts">
 	import groupBanI from '$lib/assets/images/group-ban.png';
 	import cultureI from '$lib/assets/images/culture.png';
-	import Accordion from '$lib/components/accordion.svelte';
+	import Accordion from '$lib/components/old-accordion.svelte';
 	import agencies from '$lib/data/agencies';
 	import industries from '$lib/data/industries';
 	import partners from '$lib/data/leadership';

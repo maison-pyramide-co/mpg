@@ -1,11 +1,11 @@
 <script>
-	import indBanI from '$lib/assets/images/ind-ban.png';
-	import indBanMI from '$lib/assets/images/ind-ban-m.png';
+	import agenBanI from '$lib/assets/images/agen-ban.png';
+	import agenBanMI from '$lib/assets/images/agen-ban-m.png';
 	import agencies from '$lib/data/agencies';
 </script>
 
 <section class="s-agn">
-	<h2 data-ga="tr">CONNECTING CREATIVITY, COMMERCE, AND CULTURE TO BUILD WHAT MATTERS NEXT.</h2>
+	<h2 data-ga="tr">WE BUILD RELEVANCE FOR A WORLD IN CONSTANT MOTION.</h2>
 	<div class="h">
 		<h3>our agencies</h3>
 		<a href="/group">EXPLORE THE GROUP</a>
@@ -13,8 +13,8 @@
 	<div class="agencies">
 		<figure>
 			<picture>
-				<source srcset={indBanI} media="(min-width: 770px)" />
-				<img src={indBanMI} width="auto" height="auto" alt="logo" />
+				<source srcset={agenBanI} media="(min-width: 770px)" />
+				<img src={agenBanMI} width="auto" height="auto" alt="logo" />
 			</picture>
 		</figure>
 		<ul>
@@ -33,15 +33,15 @@
 	section {
 		padding-top: 64rem;
 		position: relative;
-
 		@media (width < 770px) {
+			padding-top: 40rem;
 		}
 	}
 	h2 {
 		font-family: 'gt';
 		font-size: 40rem;
 		line-height: 1;
-		width: 1100rem;
+		width: 720rem;
 		margin-inline: auto;
 		text-align: center;
 		font-weight: 400;
@@ -74,6 +74,10 @@
 		border: 1px solid black;
 		color: black;
 		border-radius: 100rem;
+		@media (width < 770px) {
+			padding-block: 10rem;
+			font-size: 14rem;
+		}
 	}
 	.agencies {
 		margin-top: 48rem;
@@ -121,7 +125,7 @@
 		text-align: center;
 	}
 	ul a {
-		padding: 8rem 14rem;
+		padding: 6rem 20rem;
 		border: 1px solid white;
 		border-radius: 50rem;
 		font-size: 14rem;

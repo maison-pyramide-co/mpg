@@ -11,7 +11,7 @@
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
 			slidesPerView: 1,
-			spaceBetween: '24rem',
+			spaceBetween: '80rem',
 			loop: true,
 			// autoplay: { delay: 3000 },
 			navigation: {
@@ -36,8 +36,8 @@
 		<div class="l">
 			<h2>CSR AND INITIATIVES</h2>
 			<p>
-				At Maison Pyramide, we believe in giving back in ways that create lasting impact and feel
-				both meaningful and empowering.
+				At Maison Pyramide Group, we believe in giving back in ways that create lasting impact and
+				feel both meaningful and empowering.
 			</p>
 			<nav class="d-o">
 				<button id="swiper-prev">
@@ -103,6 +103,7 @@
 	section > div {
 		display: flex;
 		gap: 24rem;
+		justify-content: space-between;
 		@media (width < 770px) {
 			gap: 48rem;
 			flex-direction: column;
@@ -123,7 +124,7 @@
 	}
 	.l p {
 		margin-top: auto;
-		width: 395rem;
+		width: 420rem;
 		font-size: 20rem;
 		line-height: 1;
 		@media (width < 770px) {
@@ -160,7 +161,8 @@
 	}
 
 	.r {
-		width: 692rem;
+		/* width: 692rem; */
+		width: 600rem;
 		@media (width < 770px) {
 			width: 100%;
 		}
@@ -188,5 +190,8 @@
 		padding-top: 40rem;
 		line-height: 1;
 		font-size: 16rem;
+		@media (width < 770px) {
+			text-align: center;
+		}
 	}
 </style>

@@ -1,19 +1,36 @@
-<script>
+<script lang="ts">
+	import Accordion from '$lib/components/accordion.svelte';
 	import industries from '$lib/data/industries';
+
+	let openIndex = $state<any>(null);
 </script>
 
 <section id="s-sectors">
 	<div class="h">
 		<h2>OUR SECTORS</h2>
 		<p>
-			We navigate evolving industries with cultural fluency, strategic clarity and bold creative
-			thinking.
+			Deep knowledge of each industry allows us to create work that is specific to its market and
+			meaningful to its audience.
 		</p>
 	</div>
-	<ul class="h-s">
-		{#each industries as ind}
+	<ul class="h-s" data-lenis-prevent>
+		{#each industries as ind, i}
 			<li>
-				<div>{ind.title}</div>
+				<h3>{ind.title}</h3>
+				<Accordion open={openIndex === i} toggle={() => (openIndex = openIndex === i ? null : i)}>
+					{#snippet header()}
+						<div class="acc_h">
+							READ MORE
+							<span>+</span>
+						</div>
+					{/snippet}
+
+					{#snippet body()}
+						<div class="acc_b">
+							{ind.description}
+						</div>
+					{/snippet}
+				</Accordion>
 				<figure>
 					<img src={ind.image} alt={ind.title} />
 				</figure>
@@ -48,10 +65,12 @@
 		}
 	}
 	p {
+		padding-inline: var(--p-i);
 		text-align: right;
-		font-size: 20rem;
+		/* font-size: 20rem; */
+		font-size: 18rem;
 		line-height: 1;
-		width: 355rem;
+		width: 410rem;
 		@media (width < 770px) {
 			text-align: center;
 		}
@@ -71,13 +90,28 @@
 	li {
 		flex-shrink: 0;
 		width: 370rem;
+		height: 420rem;
+		overflow: hidden;
 		@media (width < 770px) {
 			width: 300rem;
+			height: 340rem;
 		}
 	}
-	li div {
+	li h3 {
 		font-size: 20rem;
 		font-weight: 500;
-		margin-bottom: 24rem;
+	}
+	.acc_h {
+		padding-top: 8rem;
+		font-size: 12rem;
+		display: flex;
+		gap: 16rem;
+	}
+
+	.acc_b {
+		padding-block: 24rem;
+	}
+	figure {
+		margin-top: 16rem;
 	}
 </style>

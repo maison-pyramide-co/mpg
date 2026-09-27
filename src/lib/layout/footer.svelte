@@ -21,7 +21,7 @@
 			<a href="https://www.linkedin.com/company/maison-pyramide" target="_blank">
 				<Iin />
 			</a>
-			<a href="https://www.instagram.com/maisonpyramide/" target="_blank">
+			<a href="https://www.instagram.com/maisonpyramidegroup/" target="_blank">
 				<Iig />
 			</a>
 		</div>
@@ -62,7 +62,7 @@
 			width: 100%;
 			flex-shrink: 0;
 			flex: unset;
-			margin-bottom: 32rem;
+			margin-bottom: 24rem;
 		}
 	}
 	.c img {

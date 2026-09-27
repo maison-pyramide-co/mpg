@@ -1,7 +1,7 @@
 <script lang="ts">
 	import industries from '$lib/data/industries';
 	import HAccordion from './HAccordion.svelte';
-	import Accordion from '$lib/components/accordion.svelte';
+	import Accordion from '$lib/components/old-accordion.svelte';
 	//
 	let activeIndustry = $state(null);
 	//

@@ -112,6 +112,9 @@
 		&:nth-of-type(2) {
 			margin-top: 10rem;
 		}
+		@media (width < 770px) {
+			text-align: center;
+		}
 	}
 	li p {
 		font-size: 12rem;
@@ -119,7 +122,6 @@
 		@media (width < 770px) {
 			margin-top: 0;
 			text-align: center;
-			font-size: 16rem;
 			margin-inline: auto;
 		}
 	}

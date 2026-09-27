@@ -184,6 +184,9 @@
 			flex-direction: column;
 			gap: 16rem;
 			padding-left: 24rem;
+			@media (width < 770px) {
+				padding-left: 0;
+			}
 		}
 		li {
 			font-size: 20rem;

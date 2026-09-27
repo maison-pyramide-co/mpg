@@ -4,11 +4,10 @@
 	import Project from './project.svelte';
 
 	const categories = [
-		'arts & culture',
+		'luxury & fashion',
 		'beauty & wellness',
-		'fashion & luxury',
-		'real estate',
-		'retail'
+		'hospitality & destinations',
+		'arts & culture'
 	];
 
 	let activeCategory = $state(null);
@@ -60,7 +59,7 @@
 		}
 	}
 	button {
-		width: 190rem;
+		width: 250rem;
 		padding-block: 6rem;
 		border: 1px solid black;
 		border-radius: 100rem;

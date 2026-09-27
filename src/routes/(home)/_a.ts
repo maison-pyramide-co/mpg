@@ -55,14 +55,14 @@ const introA = () => {
 
 	// Text Animation
 	const t_split = SplitText.create('.s-intro h1', {
-		type: 'lines,chars',
-		mask: 'chars',
-		autoSplit: true
+		type: 'lines',
+		mask: 'lines'
+		// autoSplit: true
 	});
 
-	tl.from(t_split.chars, {
-		x: 100,
-		duration: 1.2,
+	tl.from(t_split.lines, {
+		y: 100,
+		duration: 1,
 		ease: 'power4.out',
 		stagger: 0.05
 	});

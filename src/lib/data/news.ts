@@ -9,7 +9,7 @@ import n8 from '$lib/assets/images/news/n8.png';
 import n9 from '$lib/assets/images/news/n9.png';
 import n10 from '$lib/assets/images/news/n10.png';
 import n11 from '$lib/assets/images/news/n11.png';
-import n12 from '$lib/assets/images/news/n12.png';
+import n12 from '$lib/assets/images/news/n12.webp';
 import n13 from '$lib/assets/images/news/n13.png';
 
 const news = [

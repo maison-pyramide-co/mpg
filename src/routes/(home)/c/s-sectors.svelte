@@ -252,7 +252,7 @@
 			<div class="slot slot-large" bind:this={ghostLargeEl}></div>
 			<div class="sector_info" bind:this={infoEl}>
 				<h4>{industries[currentIndex].title}</h4>
-				<p>{industries[currentIndex].description}</p>
+				<p>{industries[currentIndex].bio}</p>
 				<button onclick={ReadLess}>READ LESS</button>
 			</div>
 		</div>
