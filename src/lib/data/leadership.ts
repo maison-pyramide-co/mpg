@@ -1,4 +1,4 @@
-import geoI from '$lib/assets/images/partners/geo.png';
+import ninaI from '$lib/assets/images/partners/nina.webp';
 import marI from '$lib/assets/images/partners/mar.png';
 import nataI from '$lib/assets/images/partners/nata.png';
 import nathI from '$lib/assets/images/partners/nath.png';
@@ -25,7 +25,7 @@ const partners = [
 		company: 'Ego & East'
 	},
 	{
-		image: geoI,
+		image: ninaI,
 		name: 'Giovanina Atieh',
 		title: 'Chief Growth Officer',
 		company: 'Maison Pyramide',
