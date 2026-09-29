@@ -23,7 +23,7 @@ import nobu from '$lib/assets/images/case studies/NOBU.webp';
 import noorRiyadh from '$lib/assets/images/case studies/NOOR RIYADH.webp';
 import oneAndOnly from '$lib/assets/images/case studies/O&O.webp';
 import puma from '$lib/assets/images/case studies/PUMA.webp';
-import qatariDiar from '$lib/assets/images/case studies/Qatari Diar.webp';
+import qatariDiar from '$lib/assets/images/case studies/Qatari-Diar.webp';
 import rfw from '$lib/assets/images/case studies/RFW.webp';
 import s100 from '$lib/assets/images/case studies/S100.webp';
 import sodic from '$lib/assets/images/case studies/SODIC.webp';
