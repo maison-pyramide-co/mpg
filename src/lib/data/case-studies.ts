@@ -14,7 +14,7 @@ import gucciXAssouline from '$lib/assets/images/case studies/GUCCI X ASSOULINE.w
 import hiaHub from '$lib/assets/images/case studies/HIA HUB.webp';
 import infiniti from '$lib/assets/images/case studies/Infiniti.webp';
 import jaqa from '$lib/assets/images/case studies/JAQA.webp';
-import joMalone from '$lib/assets/images/case studies/Jo Malone.webp';
+import joMalone from '$lib/assets/images/case studies/Jo-Malone.webp';
 import layaliDiriyah from '$lib/assets/images/case studies/LAYALI DIRIYAH.webp';
 import loreal from '$lib/assets/images/case studies/LOREAL.webp';
 import mbfw from '$lib/assets/images/case studies/MBFW.webp';
