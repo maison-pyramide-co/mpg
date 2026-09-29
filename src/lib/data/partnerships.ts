@@ -15,19 +15,19 @@ const partnerships = [
 	{
 		id: 5,
 		name: 'Supporting Emerging Designers with Fashion Trust Arabia',
-		body: 'Maison Pyramide Showroom partnered with Fashion Trust Arabia as an official prize partner, providing winners with showroom representation and PR consultancy to help expand their visibility and access to international markets.',
+		body: 'For four consecutive years, MP Showroom served as Fashion Trust Arabia’s official showroom and prize partner, supporting award-winning MENA designers with showroom representation during Paris Fashion Week and tailored PR consultancy. The partnership connected regional talent with international buyers, media and market opportunities, strengthening global visibility and supporting long-term brand development.',
 		image: i2
 	},
 	{
 		id: 0,
 		name: 'Industry Session with Istituto Marangoni Dubai',
-		body: 'Maison Pyramide joined Istituto Marangoni Dubai for an industry session focused on digital and PR strategy, talent integration, and the realities of building impact for fashion businesses, bringing real industry perspective into the classroom.',
+		body: 'Maison Pyramide joined Istituto Marangoni Dubai for a series of industry sessions focused on digital and PR strategy, talent integration, and the realities of building impact for fashion businesses, bringing real industry perspective into the classroom.',
 		image: i4
 	},
 	{
 		id: 1,
 		name: 'Luxury PR & Marketing Session with FAD Dubai',
-		body: 'Maison Pyramide hosted an educational session with students from FAD Dubai on PR and marketing in luxury fashion, sharing practical insight into data-led strategy, press relations, and talent and influencer collaborations.',
+		body: 'Maison Pyramide hosted a series of educational sessions with students from FAD Dubai on PR and Marketing in luxury fashion, sharing practical insight into data-led strategy, press relations, and talent and influencer collaborations.',
 		image: i6
 	},
 	{

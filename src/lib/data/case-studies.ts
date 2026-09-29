@@ -1,12 +1,11 @@
 import addidas from '$lib/assets/images/case studies/ADIDAS.webp';
-import bottegaVeneta from '$lib/assets/images/case studies/BOTTEGA VENETA.webp';
+import bottegaVeneta from '$lib/assets/images/case studies/BOTTEGA.webp';
 import boucheron from '$lib/assets/images/case studies/BOUCHERON.webp';
 import breitling from '$lib/assets/images/case studies/BREITLING.webp';
 import cadillac from '$lib/assets/images/case studies/CADILLAC.webp';
 import cdw from '$lib/assets/images/case studies/CDW.webp';
 import chopard from '$lib/assets/images/case studies/CHOPARD.webp';
 import dg from '$lib/assets/images/case studies/D&G.webp';
-import edition from '$lib/assets/images/case studies/EDITION.webp';
 import elieSaab from '$lib/assets/images/case studies/ELIE SAAB.webp';
 import fcr from '$lib/assets/images/case studies/FCR.webp';
 import fta from '$lib/assets/images/case studies/FTA.webp';
@@ -15,16 +14,16 @@ import gucciXAssouline from '$lib/assets/images/case studies/GUCCI X ASSOULINE.w
 import hiaHub from '$lib/assets/images/case studies/HIA HUB.webp';
 import infiniti from '$lib/assets/images/case studies/Infiniti.webp';
 import jaqa from '$lib/assets/images/case studies/JAQA.webp';
-import joMalone from '$lib/assets/images/case studies/JO MALONE.webp';
+import joMalone from '$lib/assets/images/case studies/Jo Malone.webp';
 import layaliDiriyah from '$lib/assets/images/case studies/LAYALI DIRIYAH.webp';
 import loreal from '$lib/assets/images/case studies/LOREAL.webp';
 import mbfw from '$lib/assets/images/case studies/MBFW.webp';
 import moe from '$lib/assets/images/case studies/MOE.webp';
 import nobu from '$lib/assets/images/case studies/NOBU.webp';
 import noorRiyadh from '$lib/assets/images/case studies/NOOR RIYADH.webp';
-import oneAndOnly from '$lib/assets/images/case studies/ONE&ONLY.webp';
+import oneAndOnly from '$lib/assets/images/case studies/O&O.webp';
 import puma from '$lib/assets/images/case studies/PUMA.webp';
-import qatariDiar from '$lib/assets/images/case studies/QATARI DIAR.webp';
+import qatariDiar from '$lib/assets/images/case studies/Qatari Diar.webp';
 import rfw from '$lib/assets/images/case studies/RFW.webp';
 import s100 from '$lib/assets/images/case studies/S100.webp';
 import sodic from '$lib/assets/images/case studies/SODIC.webp';
@@ -35,6 +34,24 @@ import westfield from '$lib/assets/images/case studies/Westfield.webp';
 import whoop from '$lib/assets/images/case studies/WHOOP.webp';
 
 const caseStudies = [
+	{
+		id: 26,
+		name: 'Dolce & Gabanna',
+		image: dg,
+		category: 'luxury & fashion',
+		description:
+			'We celebrated the opening of Dolce & Gabbana’s first regional concept store with an experiential launch at Bujairi Terrace. Creative programming and a strong PR presence generated engagement while respecting Diriyah’s distinctive cultural identity.',
+		services: ['experiential']
+	},
+	{
+		id: 31,
+		name: 'Chopard',
+		image: chopard,
+		category: 'luxury & fashion',
+		description:
+			'We conceptualized and produced Chopard’s annual Suhoor for VIP clients, media and influencers. The experience brought together the luxury house’s elegant identity and regional cultural traditions in a memorable Ramadan setting.',
+		services: ['experiential']
+	},
 	{
 		id: 1,
 		name: 'Westfield',
@@ -63,6 +80,24 @@ const caseStudies = [
 		services: ['experiential']
 	},
 	{
+		id: 6,
+		name: 'Qatari Diar',
+		image: qatariDiar,
+		category: 'hospitality & destinations',
+		description:
+			'For Qatari Diar’s Alam Al Roum project, we developed luxury PR boxes, leading the creative concept, design and presentation. We curated the gifting elements and sourced selected pieces internationally to create a distinctive experience aligned with the project’s premium identity.',
+		services: ['Design', 'PR']
+	},
+	{
+		id: 11,
+		name: 'Hia Hub',
+		image: hiaHub,
+		category: 'arts & culture', // TODO: no category data in source sheet
+		description:
+			'For four consecutive years, we led Hia Hub from creative concept and production to programming, guest experience and VIP curation. Its 2024 edition brought together 117 speakers and talents alongside masterclasses, workshops, talks and panel discussions over five days.',
+		services: ['experiential', 'talent', 'programming', 'partnerships']
+	},
+	{
 		id: 4,
 		name: 'Sodic',
 		image: sodic,
@@ -80,15 +115,7 @@ const caseStudies = [
 			'As Soma Bay’s press office partner, we manage regional and international communications, media relations and hosted press visits. We also curate talent and influencer stays that generate authentic coverage and strengthen its position as a leading lifestyle destination.',
 		services: ['Marketing', 'PR', 'Influencer']
 	},
-	{
-		id: 6,
-		name: 'Qatari Diar',
-		image: qatariDiar,
-		category: 'hospitality & destinations',
-		description:
-			'For Qatari Diar’s Alam Al Roum project, we developed luxury PR boxes, leading the creative concept, design and presentation. We curated the gifting elements and sourced selected pieces internationally to create a distinctive experience aligned with the project’s premium identity.',
-		services: ['Design', 'PR']
-	},
+
 	{
 		id: 7,
 		name: 'Taiba',
@@ -124,15 +151,6 @@ const caseStudies = [
 		description:
 			'As regional PR partner for the eighth Gouna Film Festival, we led international and regional communications, media strategy, talent relations and on-ground press operations. The campaign strengthened the festival’s global profile and positioned El Gouna as a leading cultural destination.',
 		services: ['PR', 'Media Relations']
-	},
-	{
-		id: 11,
-		name: 'Hia Hub',
-		image: hiaHub,
-		category: 'arts & culture', // TODO: no category data in source sheet
-		description:
-			'For four consecutive years, we led Hia Hub from creative concept and production to programming, guest experience and VIP curation. Its 2024 edition brought together 117 speakers and talents alongside masterclasses, workshops, talks and panel discussions over five days.',
-		services: ['experiential', 'talent', 'programming', 'partnerships']
 	},
 	{
 		id: 12,
@@ -198,6 +216,24 @@ const caseStudies = [
 		services: ['Brand Development', 'Showroom & Sales', 'Guest Management']
 	},
 	{
+		id: 25,
+		name: 'Gucci x Assouline',
+		image: gucciXAssouline,
+		category: 'luxury & fashion',
+		description:
+			'For the regional launch of Gucci x Assouline’s Art of Silk, we hosted an intimate dinner at Bujairi Terrace in Riyadh. The experience brought together voices from fashion, culture and publishing through thoughtful design and storytelling rooted in Diriyah’s heritage.',
+		services: ['experiential']
+	},
+	{
+		id: 23,
+		name: 'Elie Saab',
+		image: elieSaab,
+		category: 'luxury & fashion',
+		description:
+			'For Elie Saab’s 45-year celebration at Riyadh Season, we led regional PR, media planning, guest management and content development. The campaign generated more than 1,000 articles, 34 million impressions and over 75 original content assets.',
+		services: ['pr', 'social media', 'content']
+	},
+	{
 		id: 19,
 		name: 'Fashion Trust Arabia',
 		image: fta,
@@ -224,24 +260,7 @@ const caseStudies = [
 			'For adidas’ “You Got This” World Cup campaign, we brought the story to life in Cairo through a 13-metre mural celebrating Mohamed Salah. We led the design, artist curation, execution and documentary content, transforming District 5 into a public extension of the campaign.',
 		services: ['Experiential', 'PR', 'Production']
 	},
-	{
-		id: 22,
-		name: 'Cadillac',
-		image: cadillac,
-		category: 'fashion & luxury', // TODO: no category data in source sheet
-		description:
-			'For Cadillac’s market entry into Egypt, we lead the PR and communications strategy in partnership with Mansour Automotive. Our scope spans media relations, guest curation and talent management, positioning Cadillac as a leading luxury automotive brand.',
-		services: ['PR', 'Guest list', 'Talent Management']
-	},
-	{
-		id: 23,
-		name: 'Elie Saab',
-		image: elieSaab,
-		category: 'luxury & fashion',
-		description:
-			'For Elie Saab’s 45-year celebration at Riyadh Season, we led regional PR, media planning, guest management and content development. The campaign generated more than 1,000 articles, 34 million impressions and over 75 original content assets.',
-		services: ['pr', 'social media', 'content']
-	},
+
 	{
 		id: 24,
 		name: 'Stella McCartney x H&M',
@@ -251,24 +270,7 @@ const caseStudies = [
 			'To launch the Stella McCartney x H&M collection in Riyadh and Dubai, we produced exclusive pre-sale events for influencers and cultural tastemakers. Immersive retail design, branded installations and interactive content brought the collaboration’s creative identity to life.',
 		services: ['experiential', 'guest list', 'pr']
 	},
-	{
-		id: 25,
-		name: 'Gucci x Assouline',
-		image: gucciXAssouline,
-		category: 'luxury & fashion',
-		description:
-			'For the regional launch of Gucci x Assouline’s Art of Silk, we hosted an intimate dinner at Bujairi Terrace in Riyadh. The experience brought together voices from fashion, culture and publishing through thoughtful design and storytelling rooted in Diriyah’s heritage.',
-		services: ['experiential']
-	},
-	{
-		id: 26,
-		name: 'Dolce & Gabanna',
-		image: dg,
-		category: 'luxury & fashion',
-		description:
-			'We celebrated the opening of Dolce & Gabbana’s first regional concept store with an experiential launch at Bujairi Terrace. Creative programming and a strong PR presence generated engagement while respecting Diriyah’s distinctive cultural identity.',
-		services: ['experiential']
-	},
+
 	{
 		id: 27,
 		name: 'Bottega Veneta',
@@ -306,15 +308,6 @@ const caseStudies = [
 		services: ['experiential']
 	},
 	{
-		id: 31,
-		name: 'Chopard',
-		image: chopard,
-		category: 'luxury & fashion',
-		description:
-			'We conceptualized and produced Chopard’s annual Suhoor for VIP clients, media and influencers. The experience brought together the luxury house’s elegant identity and regional cultural traditions in a memorable Ramadan setting.',
-		services: ['experiential']
-	},
-	{
 		id: 32,
 		name: 'Whoop',
 		image: whoop,
@@ -324,15 +317,6 @@ const caseStudies = [
 		services: ['Talent Management']
 	},
 	{
-		id: 33,
-		name: 'L’Oreal Group',
-		image: loreal,
-		category: 'beauty & wellness', // TODO: no category data in source sheet
-		description:
-			'For more than five years, we have partnered with L’Oréal Group across Lancôme, Armani Beauty and YSL Beauty. Our work spans marketing strategy, public relations, content creation, social media design and e-commerce assets, supporting each brand across key digital and consumer touchpoints.',
-		services: ['Social Media', 'Influencers', 'PR', 'Events']
-	},
-	{
 		id: 34,
 		name: 'Jo Malone',
 		image: joMalone,
@@ -340,6 +324,24 @@ const caseStudies = [
 		description:
 			'To launch Jo Malone London’s Taif Rose fragrance, we conceived and produced a Ramadan Suhoor inspired by the timeless character of the rose. The immersive experience carried the fragrance story from creative concept through to full execution.',
 		services: ['experiential', 'guest list', 'comms']
+	},
+	{
+		id: 22,
+		name: 'Cadillac',
+		image: cadillac,
+		category: 'fashion & luxury', // TODO: no category data in source sheet
+		description:
+			'For Cadillac’s market entry into Egypt, we lead the PR and communications strategy in partnership with Mansour Automotive. Our scope spans media relations, guest curation and talent management, positioning Cadillac as a leading luxury automotive brand.',
+		services: ['PR', 'Guest list', 'Talent Management']
+	},
+	{
+		id: 33,
+		name: 'L’Oreal Group',
+		image: loreal,
+		category: 'beauty & wellness', // TODO: no category data in source sheet
+		description:
+			'For more than five years, we have partnered with L’Oréal Group across Lancôme, Armani Beauty and YSL Beauty. Our work spans marketing strategy, public relations, content creation, social media design and e-commerce assets, supporting each brand across key digital and consumer touchpoints.',
+		services: ['Social Media', 'Influencers', 'PR', 'Events']
 	}
 ];
 
