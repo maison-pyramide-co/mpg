@@ -14,7 +14,7 @@
 		</p>
 	</div>
 	<ul class="h-s" data-lenis-prevent>
-		{#each industries as ind, i}
+		{#each [...industries.slice(1), industries[0]] as ind, i}
 			<li>
 				<h3>{ind.title}</h3>
 				<Accordion open={openIndex === i} toggle={() => (openIndex = openIndex === i ? null : i)}>
