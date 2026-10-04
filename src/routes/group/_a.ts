@@ -1,4 +1,5 @@
 import { imagesA, textsA } from '$lib/utils/animation';
+import { resetScroll } from '$lib/utils/lenis';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { SplitText } from 'gsap/dist/SplitText';
@@ -87,34 +88,16 @@ const introA = () => {
 
 // SECTION PINNING ANIMATION
 const pinA = () => {
-	/*
-	ScrollTrigger.create({
-		trigger: '#s-leadership',
-		start: 'bottom bottom',
-		end: 'top top',
-		endTrigger: '#s-culture',
-		pin: true,
-		pinSpacing: false
-	});
-    */
 	ScrollTrigger.create({
 		trigger: '#s-culture',
 		start: 'bottom bottom',
 		end: 'top top',
 		endTrigger: '#s-csr',
 		pin: true,
-		pinSpacing: false
+		pinSpacing: false,
+		anticipatePin: 1,
+		invalidateOnRefresh: true
 	});
-	/*
-	ScrollTrigger.create({
-		trigger: '#s-csr',
-		start: 'bottom bottom',
-		end: 'top top',
-		endTrigger: '#s-partnerships',
-		pin: true,
-		pinSpacing: false
-	});
-   */
 };
 
 const animation = (page: HTMLElement) => {
@@ -133,10 +116,7 @@ const animation = (page: HTMLElement) => {
 		}
 
 		if (h) {
-			gsap.set(h, { autoAlpha: 1 });
-			// gsap.set(h, {
-			// 	mixBlendMode: 'difference'
-			// });
+			gsap.set(h, { autoAlpha: 1, mixBlendMode: 'difference' });
 		}
 
 		ctx = gsap.context(() => {
@@ -147,6 +127,8 @@ const animation = (page: HTMLElement) => {
 			textsA();
 		}, page);
 	});
+	// Recalculate pin positions after initialization
+	ScrollTrigger.refresh(true);
 
 	return () => {
 		destroyed = true;

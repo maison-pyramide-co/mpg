@@ -62,6 +62,7 @@
 
 	figure {
 		width: 420rem;
+		aspect-ratio: 1;
 		@media (width < 770px) {
 			margin-top: 40rem;
 			width: 240rem;

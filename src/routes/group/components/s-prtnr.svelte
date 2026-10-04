@@ -19,6 +19,10 @@
 				}
 			},
 			loop: true,
+			mousewheel: {
+				releaseOnEdges: true, // Allows page scrolling when reaching the first/last slide
+				sensitivity: 1
+			},
 			navigation: {
 				nextEl: '#s-partnerships #swiper-next',
 				prevEl: '#s-partnerships #swiper-prev'

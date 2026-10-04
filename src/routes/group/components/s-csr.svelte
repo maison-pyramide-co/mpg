@@ -18,6 +18,10 @@
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
 			},
+			mousewheel: {
+				releaseOnEdges: true, // Allows page scrolling when reaching the first/last slide
+				sensitivity: 1
+			},
 			breakpoints: {
 				770: {
 					slidesPerView: 1.5
