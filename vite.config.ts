@@ -8,8 +8,8 @@ export default defineConfig({
 	server: {
 		host: true,
 		port: 5173
-	},
-	ssr: {
-		noExternal: ['gsap']
 	}
+	// ssr: {
+	// 	noExternal: ['gsap']
+	// }
 });

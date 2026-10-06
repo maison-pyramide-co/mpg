@@ -114,6 +114,7 @@
 	.agency figure {
 		width: 100%;
 		height: auto;
+		aspect-ratio: 15/19;
 	}
 	.agency_title {
 		overflow: hidden;
