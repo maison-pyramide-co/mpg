@@ -16,7 +16,7 @@
 <section>
 	<h2>OUR NETWORK</h2>
 	<p>
-		Maison Pyramide Group operates through offices in Cairo, Riyadh and Dubai, alongside MP Showroom
+		Maison Pyramide Group operates through offices in Dubai, Riyadh and Cairo, alongside MP Showroom
 		in Paris. Together, our network connects regional market knowledge with international
 		opportunity.
 	</p>
