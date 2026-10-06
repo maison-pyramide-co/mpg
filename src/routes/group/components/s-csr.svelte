@@ -18,10 +18,6 @@
 				nextEl: '#swiper-next',
 				prevEl: '#swiper-prev'
 			},
-			mousewheel: {
-				releaseOnEdges: true, // Allows page scrolling when reaching the first/last slide
-				sensitivity: 1
-			},
 			breakpoints: {
 				770: {
 					slidesPerView: 1.5
@@ -130,7 +126,8 @@
 	.l p {
 		margin-top: auto;
 		width: 420rem;
-		font-size: 20rem;
+		/* font-size: 20rem; */
+		font-size: 18rem;
 		line-height: 1;
 		@media (width < 770px) {
 			margin-top: 40rem;
@@ -180,9 +177,10 @@
 		}
 	}
 	h3 {
-		width: 410rem;
+		/* width: 410rem; */
 		margin-top: 28rem;
-		font-size: 20rem;
+		/* font-size: 20rem; */
+		font-size: 18rem;
 		font-weight: 500;
 		text-transform: uppercase;
 		@media (width < 770px) {

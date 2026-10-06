@@ -90,6 +90,7 @@
 	}
 	figure {
 		width: 275rem;
+		aspect-ratio: 5/6;
 		@media (width < 770px) {
 			width: 100%;
 		}

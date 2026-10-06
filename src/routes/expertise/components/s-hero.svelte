@@ -1,5 +1,5 @@
 <script lang="ts">
-	import banI from '$lib/assets/images/expr-ban.png';
+	import banI from '$lib/assets/images/expertise/expr-ban.webp';
 
 	const goToSectors = () => {
 		const el = document.querySelector('#s-sectors');

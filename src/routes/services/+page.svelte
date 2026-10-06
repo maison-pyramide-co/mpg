@@ -1,5 +1,5 @@
 <script lang="ts">
-	import srvcBanI from '$lib/assets/images/services/srvc-ban.png';
+	import banI from '$lib/assets/images/services/ban.webp';
 	import srvcBanMI from '$lib/assets/images/services/srvc-ban-m.png';
 	import Accordion from './components/accordion.svelte';
 	import services from '$lib/data/services';
@@ -25,7 +25,7 @@
 	<section class="s-he">
 		<figure>
 			<picture>
-				<source srcset={srvcBanI} media="(min-width: 770px)" />
+				<source srcset={banI} media="(min-width: 770px)" />
 				<img src={srvcBanMI} width="auto" height="auto" alt="mpg services" />
 			</picture>
 		</figure>

@@ -13,15 +13,20 @@
 			meaningful to its audience.
 		</p>
 	</div>
-	<ul class="h-s" data-lenis-prevent>
+	<ul>
 		{#each [...industries.slice(1), industries[0]] as ind, i}
 			<li>
 				<h3>{ind.title}</h3>
 				<Accordion open={openIndex === i} toggle={() => (openIndex = openIndex === i ? null : i)}>
 					{#snippet header()}
 						<div class="acc_h">
-							READ MORE
-							<span>+</span>
+							{#if openIndex === i}
+								READ LESS
+								<span>-</span>
+							{:else}
+								READ MORE
+								<span>+</span>
+							{/if}
 						</div>
 					{/snippet}
 
@@ -88,9 +93,11 @@
 		}
 	}
 	li {
-		flex-shrink: 0;
-		width: 370rem;
-		height: 420rem;
+		/* flex-shrink: 0;
+		width: 370rem; */
+		/* height: 420rem; */
+		width: 100%;
+		height: 370rem;
 		overflow: hidden;
 		@media (width < 770px) {
 			width: 300rem;

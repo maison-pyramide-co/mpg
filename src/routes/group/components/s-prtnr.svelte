@@ -18,11 +18,11 @@
 					slidesPerView: 2
 				}
 			},
-			loop: true,
-			mousewheel: {
-				releaseOnEdges: true, // Allows page scrolling when reaching the first/last slide
-				sensitivity: 1
+			autoplay: {
+				delay: 3000
 			},
+			loop: true,
+
 			navigation: {
 				nextEl: '#s-partnerships #swiper-next',
 				prevEl: '#s-partnerships #swiper-prev'
