@@ -88,7 +88,8 @@
 		position: relative;
 		padding-block: 96rem 56rem;
 		padding-left: 56rem;
-		background-color: white;
+		/* background-color: white; */
+		background-color: red;
 		min-height: 100vh;
 		min-height: 100dvh;
 		@media (width < 770px) {

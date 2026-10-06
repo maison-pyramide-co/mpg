@@ -31,7 +31,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		position: relative;
+		/* position: relative; */
 		@media (width < 770px) {
 			padding-inline: var(--p-i);
 			height: unset;
