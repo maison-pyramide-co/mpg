@@ -9,7 +9,7 @@
 
 	let { children } = $props();
 
-	// onMount(() => initLenis());
+	onMount(() => initLenis());
 </script>
 
 <svelte:head>
