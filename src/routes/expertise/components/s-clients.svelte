@@ -1,5 +1,5 @@
 <script>
-	let speed = 32;
+	let speed = 40;
 	let logoHeight = 32;
 	import clients from '$lib/data/clients';
 </script>
@@ -51,8 +51,9 @@
 	.marquee div {
 		display: flex;
 		width: max-content;
-		animation: marquee-scroll 32s linear infinite;
+		animation: marquee-scroll 40s linear infinite;
 		animation-direction: normal;
+		gap: 64rem;
 	}
 	.marquee:hover div {
 		animation-play-state: paused;
@@ -61,12 +62,10 @@
 		display: flex;
 		align-items: center;
 		gap: 64rem;
-		&:first-of-type {
-			margin-right: 64rem;
-		}
 	}
 	li {
 		flex: 0 0 auto;
+		width: 100rem;
 	}
 
 	@keyframes marquee-scroll {
