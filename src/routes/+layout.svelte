@@ -4,12 +4,26 @@
 	import Header from '$lib/layout/header/header.svelte';
 	import '$lib/styles/reset.css';
 	import '$lib/styles/utils.css';
-	import { getLenis, initLenis } from '$lib/utils/lenis';
+	// import { getLenis, initLenis } from '$lib/utils/lenis';
 	import { onMount } from 'svelte';
 
 	let { children } = $props();
 
-	onMount(() => initLenis());
+	// onMount(() => initLenis());
+	onMount(() => {
+		let destroy: (() => void) | undefined;
+		let cancelled = false;
+
+		import('$lib/utils/lenis').then(({ initLenis }) => {
+			if (cancelled) return;
+			destroy = initLenis();
+		});
+
+		return () => {
+			cancelled = true;
+			destroy?.();
+		};
+	});
 </script>
 
 <svelte:head>

@@ -1,5 +1,4 @@
 import { imagesA, textsA } from '$lib/utils/animation';
-import { resetScroll } from '$lib/utils/lenis';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { SplitText } from 'gsap/dist/SplitText';
