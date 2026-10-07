@@ -44,6 +44,33 @@ const caseStudies = [
 		services: ['experiential']
 	},
 	{
+		id: 34,
+		name: 'Fendi',
+		image: dg,
+		category: 'luxury & fashion',
+		description:
+			'For Fendi, we conceptualized and produced an intimate Ramadan Suhoor in Riyadh. From the creative direction to guest curation, every detail expressed the luxury house’s identity through a culturally relevant Saudi lens.',
+		services: ['Events & Experiential', 'Creative Concept', 'Guest List']
+	},
+	{
+		id: 35,
+		name: 'Nars',
+		image: dg,
+		category: 'beauty & wellness',
+		description:
+			'For NARS, we created an immersive daytime beauty launch centred on discovery, education and hands-on engagement. Editorial-inspired activations, content moments, a live makeup artist masterclass and curated hospitality gave influencers an elevated and memorable brand experience.',
+		services: ['Events & Experiential', 'Influencer Marketing', 'Content Production']
+	},
+	{
+		id: 36,
+		name: 'Kérastase',
+		image: dg,
+		category: 'beauty & wellness',
+		description:
+			'For Kérastase, we conceptualized and produced an intimate private dinner at an iconic historic venue in Cairo to launch the brand’s refillable hair oil. Our scope covered creative development, event planning and full production, alongside ongoing guest-list management for Kérastase activations at El Gouna Film Festival.',
+		services: ['Events & Experiential', 'Creative Concept', 'Guest List Management']
+	},
+	{
 		id: 31,
 		name: 'Chopard',
 		image: chopard,
@@ -145,9 +172,9 @@ const caseStudies = [
 	},
 	{
 		id: 10,
-		name: 'GFF',
+		name: 'El Gouna Film Festival',
 		image: gff,
-		category: 'arts & culture', // TODO: no category data in source sheet
+		category: 'arts & culture',
 		description:
 			'As regional PR partner for the eighth Gouna Film Festival, we led international and regional communications, media strategy, talent relations and on-ground press operations. The campaign strengthened the festival’s global profile and positioned El Gouna as a leading cultural destination.',
 		services: ['PR', 'Media Relations']
@@ -208,7 +235,7 @@ const caseStudies = [
 	},
 	{
 		id: 18,
-		name: 'Madrid Fashion Week',
+		name: 'Mercedes-Benz Fashion Week Madrid',
 		image: mbfw,
 		category: 'luxury & fashion',
 		description:
@@ -338,7 +365,7 @@ const caseStudies = [
 		id: 33,
 		name: 'L’Oreal Group',
 		image: loreal,
-		category: 'beauty & wellness', // TODO: no category data in source sheet
+		category: 'beauty & wellness',
 		description:
 			'For more than five years, we have partnered with L’Oréal Group across Lancôme, Armani Beauty and YSL Beauty. Our work spans marketing strategy, public relations, content creation, social media design and e-commerce assets, supporting each brand across key digital and consumer touchpoints.',
 		services: ['Social Media', 'Influencers', 'PR', 'Events']
