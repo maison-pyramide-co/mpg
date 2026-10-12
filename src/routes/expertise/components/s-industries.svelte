@@ -13,7 +13,7 @@
 			meaningful to its audience.
 		</p>
 	</div>
-	<ul>
+	<ul class="h-s">
 		{#each [...industries.slice(1), industries[0]] as ind, i}
 			<li>
 				<h3>{ind.title}</h3>
@@ -100,6 +100,7 @@
 		height: 370rem;
 		overflow: hidden;
 		@media (width < 770px) {
+			flex-shrink: 0;
 			width: 300rem;
 			height: 340rem;
 		}

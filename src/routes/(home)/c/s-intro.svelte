@@ -10,8 +10,8 @@
 			</h1>
 		</div>
 		<div class="b">
-			<p>We turn regional insight and international reach into lasting relevance and momentum.</p>
-			<a href="/group">EXPLORE THE GROUP</a>
+			<p>We turn cultural insight and connected expertise into lasting relevance and momentum.</p>
+			<a class="btn" href="/group">EXPLORE THE GROUP</a>
 		</div>
 	</section>
 </div>

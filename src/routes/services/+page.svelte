@@ -34,7 +34,7 @@
 				We bring together insight, creativity and cultural intelligence to build brands with
 				relevance and impact.
 			</h1>
-			<button onclick={goToServices}>view services</button>
+			<button class="btn" onclick={goToServices}>view services</button>
 		</div>
 	</section>
 

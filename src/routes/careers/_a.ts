@@ -7,7 +7,8 @@ const animation = async () => {
 		autoAlpha: 1
 	});
 	gsap.set('#h', {
-		autoAlpha: 1
+		autoAlpha: 1,
+		mixBlendMode: 'difference'
 	});
 };
 

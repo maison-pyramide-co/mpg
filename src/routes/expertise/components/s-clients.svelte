@@ -62,10 +62,16 @@
 		display: flex;
 		align-items: center;
 		gap: 64rem;
+		@media (width < 770px) {
+			gap: 40rem;
+		}
 	}
 	li {
 		flex: 0 0 auto;
 		width: 100rem;
+		@media (width < 770px) {
+			width: 60rem;
+		}
 	}
 
 	@keyframes marquee-scroll {

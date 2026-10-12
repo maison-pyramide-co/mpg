@@ -13,7 +13,7 @@
 	{#if article.link}
 		<div>
 			<span data-ga="tr">{article.date}</span>
-			<a target="_blank" href={article.link}>READ FULL ARTICLE</a>
+			<a class="btn" target="_blank" href={article.link}>READ FULL ARTICLE</a>
 		</div>
 	{:else}
 		<Accordion date={article.date}>

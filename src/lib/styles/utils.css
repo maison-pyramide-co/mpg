@@ -1,6 +1,6 @@
 :root {
 	--p-i: 20rem;
-	--h-h: 50rem;
+	--h-h: 54rem;
 	--f-h: 30rem;
 	@media (width > 770px) {
 		--p-i: 40rem;
@@ -67,4 +67,11 @@
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border: 0;
+}
+@media (hover: hover) and (pointer: fine) {
+	.btn:hover {
+		background: black;
+		border-color: black !important;
+		color: white !important;
+	}
 }

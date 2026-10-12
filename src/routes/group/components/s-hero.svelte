@@ -10,8 +10,8 @@
 		<h1>BUILT ON DIFFERENT PERSPECTIVES. UNITED BY SHARED AMBITION.</h1>
 
 		<p>
-			Maison Pyramide Group operates across EMEA, connecting brand communications with commercial
-			development and talent management.
+			Operating across EMEA, Maison Pyramide Group brings together specialized expertise in brand
+			communications, market development and talent management.
 		</p>
 	</div>
 </section>

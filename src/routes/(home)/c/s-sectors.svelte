@@ -247,13 +247,13 @@
 		<div class="r">
 			<div class="industry" bind:this={thumbEl}>
 				<h3>{industries[currentIndex].title}</h3>
-				<button onclick={onReadMore}>READ MORE</button>
+				<button class="btn" onclick={onReadMore}>READ MORE</button>
 			</div>
 			<div class="slot slot-large" bind:this={ghostLargeEl}></div>
 			<div class="sector_info" bind:this={infoEl}>
 				<h4>{industries[currentIndex].title}</h4>
 				<p>{industries[currentIndex].bio}</p>
-				<button onclick={ReadLess}>READ LESS</button>
+				<button class="btn" onclick={ReadLess}>READ LESS</button>
 			</div>
 		</div>
 	</div>

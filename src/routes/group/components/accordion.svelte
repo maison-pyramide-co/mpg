@@ -14,7 +14,7 @@
 			{@render children()}
 		</div>
 	</div>
-	<button type="button" onclick={togle}>
+	<button class="btn" type="button" onclick={togle}>
 		{open ? 'VIEW LESS' : 'VIEW MORE'}
 	</button>
 </div>

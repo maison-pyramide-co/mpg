@@ -80,7 +80,8 @@
 		gap: 20rem;
 		@media (width < 770px) {
 			padding-inline: var(--p-i);
-			grid-template-columns: 1fr;
+			display: flex;
+			flex-direction: column;
 			gap: 48rem;
 		}
 	}

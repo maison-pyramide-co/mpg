@@ -30,7 +30,7 @@
 				<input type="text" placeholder="Name" />
 				<input type="email" placeholder="Email Address" />
 				<textarea name="Message" placeholder="Message"></textarea>
-				<button type="submit">SEND</button>
+				<button class="btn" type="submit">SEND</button>
 			</form>
 		</div>
 	</div>

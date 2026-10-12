@@ -15,7 +15,10 @@ const animation = (page: HTMLElement) => {
 		}
 
 		if (h) {
-			gsap.set(h, { autoAlpha: 1 });
+			gsap.set(h, {
+				autoAlpha: 1,
+				mixBlendMode: 'difference'
+			});
 		}
 
 		ctx = gsap.context(() => {}, page);

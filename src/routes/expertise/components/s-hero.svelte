@@ -25,8 +25,8 @@
 		</figure>
 	</div>
 	<nav>
-		<button onclick={goToSectors}>OUR SECTORS</button>
-		<button onclick={goToWork}>SELECTED WORK</button>
+		<button class="btn" onclick={goToSectors}>OUR SECTORS</button>
+		<button class="btn" onclick={goToWork}>SELECTED WORK</button>
 	</nav>
 </section>
 

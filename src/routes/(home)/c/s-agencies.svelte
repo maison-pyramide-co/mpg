@@ -8,7 +8,7 @@
 	<h2 data-ga="tr">WE BUILD RELEVANCE FOR A WORLD IN CONSTANT MOTION.</h2>
 	<div class="h">
 		<h3>our agencies</h3>
-		<a href="/group">EXPLORE THE GROUP</a>
+		<a class="btn" href="/group">EXPLORE THE GROUP</a>
 	</div>
 	<div class="agencies">
 		<figure>
@@ -22,7 +22,7 @@
 				<li>
 					<img src={agency.logo} alt="" />
 					<p>{@html agency.bio}</p>
-					<a href={agency.link}>DISCOVER</a>
+					<a class="btn" href={agency.link}>DISCOVER</a>
 				</li>
 			{/each}
 		</ul>

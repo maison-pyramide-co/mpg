@@ -42,8 +42,8 @@
 <section id="s-partnerships">
 	<h2>PARTNERSHIPS</h2>
 	<p>
-		Beyond client work, Maison Pyramide Group develops initiatives and partnerships that support
-		talent, learning, and the wider creative ecosystem.
+		At Maison Pyramide Group, we care deeply about supporting talent, sharing knowledge and
+		strengthening the creative industries through meaningful partnerships and initiatives.
 	</p>
 
 	<div>

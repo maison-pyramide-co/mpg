@@ -1,10 +1,23 @@
 <script lang="ts">
+
 	import Accordion from '$lib/components/old-accordion.svelte';
 	import positions from '$lib/data/positions';
 	import { onMount } from 'svelte';
 	import animation from './_a';
+	import Popup from './c/popup.svelte';
 
+	let popup = $state('');
 	let activeCareer = $state(null);
+
+	const closePopup = () => {
+		popup = '';
+	};
+
+	const openPopup = (title: string) => {
+		popup = title;
+		// console.log('popup', title);
+	};
+
 	const toggleActiveCareer = (i: any) => {
 		activeCareer = activeCareer === i ? null : i;
 	};
@@ -12,14 +25,19 @@
 	onMount(() => {
 		animation();
 	});
+
 </script>
 
 <main id="p" style:opacity="0">
 	<h1>JOIN THE TEAM</h1>
+
 	<div class="careers">
+
 		<aside>
 			<h3>OPEN POSITIONS</h3>
-			<p>With all application please ensure to attach your resume and portfolio</p>
+			<p>
+				Discover opportunities to do ambitious work, grow your craft and help shape what comes next.
+			</p>
 		</aside>
 
 		<ul class="pos-list">
@@ -35,7 +53,7 @@
 							<div class="l">
 								<span>Description</span>
 								<p>{pos.description}</p>
-								<button class="d-o">APPLY NOW</button>
+								<button class="d-o" onclick={() => openPopup(pos.title)}>APPLY NOW</button>
 							</div>
 
 							<div class="r">
@@ -45,7 +63,7 @@
 										<li>{req}</li>
 									{/each}
 								</ul>
-								<button class="m-o">APPLY NOW</button>
+								<button class="m-o" onclick={() => openPopup(pos.title)}>APPLY NOW</button>
 							</div>
 						</div>
 					</Accordion>
@@ -53,6 +71,9 @@
 			{/each}
 		</ul>
 	</div>
+	{#if popup}
+		<Popup close={closePopup} position={popup} />
+	{/if}
 </main>
 
 <style>

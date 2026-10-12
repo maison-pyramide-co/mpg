@@ -390,7 +390,7 @@ import gucciXAssouline from '$lib/assets/images/case studies/GUCCI X ASSOULINE.w
 import hiaHub from '$lib/assets/images/case studies/HIA HUB.webp';
 import infiniti from '$lib/assets/images/case studies/Infiniti.webp';
 import jaqa from '$lib/assets/images/case studies/JAQA.webp';
-import joMalone from '$lib/assets/images/case studies/Jo-Malone.webp';
+import joMalone from '$lib/assets/images/case studies/Jo malone.webp';
 import layaliDiriyah from '$lib/assets/images/case studies/LAYALI DIRIYAH.webp';
 import loreal from '$lib/assets/images/case studies/LOREAL.webp';
 import mbfw from '$lib/assets/images/case studies/MBFW.webp';
@@ -410,6 +410,12 @@ import westfield from '$lib/assets/images/case studies/Westfield.webp';
 import whoop from '$lib/assets/images/case studies/WHOOP.webp';
 import samsung from '$lib/assets/images/case studies/SAMSUNG.webp';
 import fendi from '$lib/assets/images/case studies/fendi.webp';
+import nars from '$lib/assets/images/case studies/nars.webp';
+import jamalouki from '$lib/assets/images/case studies/Jamalouki.webp';
+import kerastase from '$lib/assets/images/case studies/KERASTASE.webp';
+import lancom from '$lib/assets/images/case studies/lancome.webp';
+import armani from '$lib/assets/images/case studies/ysl.webp';
+import via from '$lib/assets/images/case studies/via.png';
 
 const caseStudies = [
 	{
@@ -830,7 +836,7 @@ const caseStudies = [
 	{
 		id: 38,
 		name: 'VIA Riyadh',
-		image: dg, // TODO: placeholder image, add asset
+		image: via,
 		category: 'hospitality & destinations',
 		description:
 			'Maison Pyramide’s longstanding work with VIA Riyadh encompassed integrated marketing and a multi-channel digital strategy for the Saudi luxury retail destination. The approach evolved alongside the brand’s growth, supporting its digital presence and audience engagement.',
@@ -854,7 +860,7 @@ const caseStudies = [
 	{
 		id: 40,
 		name: 'Armani Beauty',
-		image: loreal, // TODO: placeholder (L’Oréal Group image), add brand asset
+		image: armani,
 		category: 'beauty & wellness',
 		description:
 			'As part of Maison Pyramide’s wider work with L’Oréal Group, the Armani Beauty scope has encompassed marketing strategy, public relations, social media, e-commerce creative and brand experiences. Event work has covered concept development, venue scouting, entertainment, influencer relations and guest-list management.',
@@ -869,7 +875,7 @@ const caseStudies = [
 	{
 		id: 41,
 		name: 'Lancôme',
-		image: loreal, // TODO: placeholder (L’Oréal Group image), add brand asset
+		image: lancom,
 		category: 'beauty & wellness',
 		description:
 			'As part of Maison Pyramide’s wider work with L’Oréal Group, the Lancôme scope has combined integrated marketing, public relations, content, social media and e-commerce creative. Brand experiences have extended from concept development and venue selection to guest-list management and visual content moments.',
@@ -884,7 +890,7 @@ const caseStudies = [
 	{
 		id: 42,
 		name: 'Jamalouki',
-		image: dg, // TODO: placeholder image, add asset
+		image: jamalouki,
 		category: 'arts & culture',
 		description:
 			'To mark Jamalouki’s 40th anniversary, Maison Pyramide reimagined the regional fashion and lifestyle publication’s visual identity across print and digital. The new logo, typography, visual system and social media templates created a bold, flexible editorial language that honors the title’s legacy while expressing its evolution.',
@@ -908,7 +914,7 @@ const caseStudies = [
 	{
 		id: 44,
 		name: 'Nars',
-		image: dg, // TODO: placeholder image, add asset
+		image: nars,
 		category: 'beauty & wellness',
 		description:
 			'For NARS, Maison Pyramide created an immersive daytime beauty launch centered on product discovery, education and hands-on engagement. Editorial activations, content moments, a live makeup artist masterclass and curated hospitality provided influencers with an elevated brand experience.',
@@ -917,7 +923,7 @@ const caseStudies = [
 	{
 		id: 4,
 		name: 'Kérastase',
-		image: dg, // TODO: placeholder image, add asset
+		image: kerastase,
 		category: 'beauty & wellness',
 		description:
 			'As part of Maison Pyramide’s wider work with L’Oréal Group, the Kérastase scope included an intimate Cairo launch dinner at an iconic historic venue. Creative development, event planning and full production were complemented by guest-list management for Kérastase activations at El Gouna Film Festival.',
