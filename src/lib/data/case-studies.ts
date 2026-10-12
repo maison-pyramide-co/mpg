@@ -410,7 +410,7 @@ import westfield from '$lib/assets/images/case studies/Westfield.webp';
 import whoop from '$lib/assets/images/case studies/WHOOP.webp';
 import samsung from '$lib/assets/images/case studies/SAMSUNG.webp';
 import fendi from '$lib/assets/images/case studies/fendi.webp';
-import nars from '$lib/assets/images/case studies/nars.webp';
+import nars from '$lib/assets/images/case studies/Nars.webp';
 import jamalouki from '$lib/assets/images/case studies/Jamalouki.webp';
 import kerastase from '$lib/assets/images/case studies/KERASTASE.webp';
 import lancom from '$lib/assets/images/case studies/lancome.webp';
