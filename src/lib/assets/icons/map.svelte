@@ -137,7 +137,45 @@
 		max-width: 1000rem;
 		margin-inline: auto;
 	}
-	.city {
+	/* .city {
 		cursor: pointer;
+		pointer-events: fill; 
+		animation: pulse 2s ease-out infinite;
+	} */
+	.city {
+		transform-box: fill-box;
+		transform-origin: center;
+		animation: pulse 3s ease-out infinite;
 	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+		70% {
+			transform: scale(1.5);
+			opacity: 0.8;
+		}
+		100% {
+			transform: scale(1);
+			opacity: 0.8;
+		}
+	}
+	/* @keyframes pulse {
+		0% {
+			stroke-width: 0;
+			stroke-opacity: 0.5;
+		}
+		100% {
+			stroke-width: 24;
+			stroke-opacity: 0;
+		}
+	} */
+
+	/* @media (prefers-reduced-motion: reduce) {
+		.city {
+			animation: none;
+		}
+	} */
 </style>
