@@ -75,7 +75,7 @@
 		/* font-size: 20rem; */
 		font-size: 18rem;
 		line-height: 1;
-		width: 410rem;
+		width: 420rem;
 		@media (width < 770px) {
 			text-align: center;
 		}

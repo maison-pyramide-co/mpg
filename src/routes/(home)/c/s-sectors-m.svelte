@@ -1,7 +1,9 @@
 <script lang="ts">
-	import industries from '$lib/data/industries';
+	import ind from '$lib/data/industries';
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import { gsap } from 'gsap';
+
+	let industries = [...ind.slice(1), ind[0]];
 
 	// Assumes each item in `industries` has: image, title, description.
 	// Add a `description` field to your data if it isn't there yet.

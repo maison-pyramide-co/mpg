@@ -21,18 +21,18 @@ const industries = [
 		image: p1
 	},
 	{
-		title: 'HOSPITALITY & DESTINATIONS',
-		bio: 'We shape how hotels, resorts, branded residences and destinations are positioned and experienced. Our work helps hospitality, real estate and retail developments build identity, attract audiences and create lasting value.',
-		description:
-			'Hospitality and destinations are defined by the experiences they create and the sense of place they establish. We understand how local culture and audience expectations shape hotels, resorts, branded residences and retail destinations, helping each development establish a distinctive position with regional and international appeal.',
-		image: p3
-	},
-	{
 		title: 'BEAUTY & WELLNESS',
 		bio: 'We help beauty and wellness brands build trust and lasting audience connection. Across skincare, fragrance, cosmetics and fitness, our work translates product stories into culturally relevant consumer experiences.',
 		description:
 			'The beauty and wellness landscape is shaped by trust, aspiration and evolving consumer behaviour. We understand how cultural context influences discovery and loyalty, creating work that feels credible, distinctive and relevant to regional audiences.',
 		image: p2
+	},
+	{
+		title: 'HOSPITALITY & DESTINATIONS',
+		bio: 'We shape how hotels, resorts, branded residences and destinations are positioned and experienced. Our work helps hospitality, real estate and retail developments build identity, attract audiences and create lasting value.',
+		description:
+			'Hospitality and destinations are defined by the experiences they create and the sense of place they establish. We understand how local culture and audience expectations shape hotels, resorts, branded residences and retail destinations, helping each development establish a distinctive position with regional and international appeal.',
+		image: p3
 	}
 	// {
 	// 	title: 'RETAIL',

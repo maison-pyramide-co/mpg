@@ -18,9 +18,9 @@
 					slidesPerView: 2
 				}
 			},
-			autoplay: {
-				delay: 3000
-			},
+			// autoplay: {
+			// 	delay: 3000
+			// },
 			loop: true,
 
 			navigation: {
@@ -42,8 +42,8 @@
 <section id="s-partnerships">
 	<h2>PARTNERSHIPS</h2>
 	<p>
-		At Maison Pyramide Group, we care deeply about supporting talent, sharing knowledge and
-		strengthening the creative industries through meaningful partnerships and initiatives.
+		We are committed to supporting talent, sharing knowledge and strengthening the creative
+		industries through meaningful partnerships and collaborative initiatives.
 	</p>
 
 	<div>

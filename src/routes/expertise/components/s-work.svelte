@@ -76,7 +76,9 @@
 	ul {
 		padding-inline: 25rem;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		/* grid-template-columns: 1fr 1fr 1fr; */
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+
 		gap: 20rem;
 		@media (width < 770px) {
 			padding-inline: var(--p-i);

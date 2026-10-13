@@ -11,7 +11,7 @@
 		</div>
 		<div class="b">
 			<p>We turn cultural insight and connected expertise into lasting relevance and momentum.</p>
-			<a class="btn" href="/group">EXPLORE THE GROUP</a>
+			<a href="/group">EXPLORE THE GROUP</a>
 		</div>
 	</section>
 </div>

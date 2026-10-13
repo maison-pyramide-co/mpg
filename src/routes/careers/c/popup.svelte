@@ -87,17 +87,15 @@
 		const h = document.querySelector('header');
 		h?.classList.remove('hidden');
 	});
-
 </script>
 
 <section data-lenis-prevent>
 	<div>
 		<div class="l">
+			<h2>{position}</h2>
 			<button type="button" onclick={close}>Back</button>
-			<p>Please attach your résumé and portfolio, where relevant, when applying.</p>
 		</div>
 		<div class="r">
-			<h2>{position}</h2>
 			<form>
 				<div class="t">
 					<input name="first-name" type="text" placeholder="First Name" />
@@ -170,38 +168,42 @@
 		@media (width < 770px) {
 			padding-block: 80rem;
 			flex-direction: column;
-			gap: 80rem;
+			gap: 40rem;
 		}
 	}
 	section .l {
-		width: 318rem;
+		width: 500rem;
 		flex-shrink: 0;
 		padding-top: 24rem;
-		line-height: 1;
-	}
-	.l button {
-		padding: 8rem 24rem;
-		border: 1px solid black;
-		border-radius: 40rem;
-		font-size: 12rem;
-		font-weight: 500;
-		margin-bottom: 48rem;
-	}
-	section .r {
-		width: 880rem;
-
+		display: flex;
+		flex-direction: column;
+		gap: 40rem;
+		align-items: flex-start;
 		@media (width < 770px) {
 			width: unset;
+			/* gap: unset; */
 		}
 	}
 	h2 {
 		font-size: 60rem;
+		line-height: 70rem;
 		font-weight: 450;
 		@media (width < 770px) {
 			font-size: 40rem;
 			line-height: 1;
 		}
 	}
+	.l button {
+		padding-bottom: 2rem;
+		border-bottom: 1px solid black;
+	}
+	section .r {
+		width: 880rem;
+		@media (width < 770px) {
+			width: unset;
+		}
+	}
+
 	form {
 		margin-top: 64rem;
 	}

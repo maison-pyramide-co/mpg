@@ -28,7 +28,7 @@ const agencies = [
 		name: 'EGO & EAST',
 		bio: "Representing the region's most influential voices.",
 		description:
-			'The Group’s luxury talent management and representation agency, working with selected talent across regional and international markets.',
+			'The Group’s influencer and talent management agency, connecting leading luxury, fashion, beauty and lifestyle brands with regional and international talent through talent representation, celebrity bookings, brand partnerships, influencer marketing and strategic brand development.',
 		link: 'https://www.egoandeast.com/',
 		logo: eeLogo,
 		cover: eeCover

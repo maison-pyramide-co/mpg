@@ -112,7 +112,7 @@
 	}
 	.l {
 		width: 668rem;
-		height: 673rem;
+		height: 620rem;
 		flex-shrink: 0;
 		padding-bottom: 71rem;
 		display: flex;
