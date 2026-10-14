@@ -54,7 +54,7 @@
 				<div class="swiper-wrapper">
 					{#if isMobile.current}
 						{#each partnerships as psh}
-							<div class="swiper-slide" style:background="red">
+							<div class="swiper-slide">
 								<figure data-ga="ir">
 									<img src={psh.image} alt="" />
 								</figure>
@@ -83,10 +83,6 @@
 		</div>
 
 		<div class="r">
-			<!-- <h3 class="m-o">{partnerships[activeIndex].name}</h3>
-			<p class="m-o">
-				{partnerships[activeIndex].body}
-			</p> -->
 			<h3>{partnerships[activeIndex].name}</h3>
 			<p>
 				{partnerships[activeIndex].body}
