@@ -30,7 +30,6 @@
 			// 	delay: 3000
 			// },
 			loop: true,
-
 			navigation: {
 				nextEl: '#s-partnerships #swiper-next',
 				prevEl: '#s-partnerships #swiper-prev'
