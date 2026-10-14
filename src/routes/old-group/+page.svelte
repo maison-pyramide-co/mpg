@@ -1,5 +1,5 @@
 <script lang="ts">
-	import groupBanI from '$lib/assets/images/group-ban.png';
+	import groupBanI from '$lib/assets/images/group-ban.webp';
 	import cultureI from '$lib/assets/images/culture.png';
 	import Accordion from '$lib/components/old-accordion.svelte';
 	import agencies from '$lib/data/agencies';

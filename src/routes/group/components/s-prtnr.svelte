@@ -4,19 +4,13 @@
 	import Swiper from 'swiper/bundle';
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import { MediaQuery } from 'svelte/reactivity';
-
 	import 'swiper/css';
 
 	let swiperElement: HTMLDivElement;
 	let activeIndex = $state(0);
-
 	const isMobile = new MediaQuery('max-width: 770px');
 
-	let partnershipsM = [...par.slice(1), par[0]];
-	let partnerships = [...par];
-	const part = $derived(isMobile.current ? partnershipsM : partnerships);
-
-	const nextIndex = $derived((activeIndex + 1) % partnerships.length);
+	let partnerships = [...par.slice(1), par[0]];
 
 	onMount(() => {
 		const swiper = new Swiper(swiperElement, {
@@ -48,6 +42,7 @@
 
 <section id="s-partnerships">
 	<h2>PARTNERSHIPS</h2>
+
 	<p>
 		We are committed to supporting talent, sharing knowledge and strengthening the creative
 		industries through meaningful partnerships and collaborative initiatives.
@@ -57,13 +52,23 @@
 		<div class="l">
 			<div class="swiper" bind:this={swiperElement}>
 				<div class="swiper-wrapper">
-					{#each part as psh}
-						<div class="swiper-slide">
-							<figure data-ga="ir">
-								<img src={psh.image} alt="" />
-							</figure>
-						</div>
-					{/each}
+					{#if isMobile.current}
+						{#each partnerships as psh}
+							<div class="swiper-slide" style:background="red">
+								<figure data-ga="ir">
+									<img src={psh.image} alt="" />
+								</figure>
+							</div>
+						{/each}
+					{:else}
+						{#each par as psh}
+							<div class="swiper-slide">
+								<figure data-ga="ir">
+									<img src={psh.image} alt="" />
+								</figure>
+							</div>
+						{/each}
+					{/if}
 				</div>
 			</div>
 
@@ -78,13 +83,13 @@
 		</div>
 
 		<div class="r">
-			<h3 class="m-o">{partnerships[activeIndex].name}</h3>
+			<!-- <h3 class="m-o">{partnerships[activeIndex].name}</h3>
 			<p class="m-o">
 				{partnerships[activeIndex].body}
-			</p>
-			<h3 class="d-o">{partnerships[nextIndex].name}</h3>
-			<p class="d-o">
-				{partnerships[nextIndex].body}
+			</p> -->
+			<h3>{partnerships[activeIndex].name}</h3>
+			<p>
+				{partnerships[activeIndex].body}
 			</p>
 			<nav class="d-o">
 				<button id="swiper-prev">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import groupBan from '$lib/assets/images/group-ban.png';
+	import groupBan from '$lib/assets/images/group-ban.webp';
 </script>
 
 <section id="s-hero">
