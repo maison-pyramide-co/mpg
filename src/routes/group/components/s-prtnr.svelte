@@ -3,12 +3,18 @@
 	import par from '$lib/data/partnerships';
 	import Swiper from 'swiper/bundle';
 	import Ichev from '$lib/assets/icons/chev.svelte';
+	import { MediaQuery } from 'svelte/reactivity';
+
 	import 'swiper/css';
 
 	let swiperElement: HTMLDivElement;
 	let activeIndex = $state(0);
 
-	let partnerships = [...par.slice(1), par[0]];
+	const isMobile = new MediaQuery('max-width: 770px');
+
+	let partnershipsM = [...par.slice(1), par[0]];
+	let partnerships = [...par];
+	const part = $derived(isMobile.current ? partnershipsM : partnerships);
 
 	const nextIndex = $derived((activeIndex + 1) % partnerships.length);
 
@@ -52,7 +58,7 @@
 		<div class="l">
 			<div class="swiper" bind:this={swiperElement}>
 				<div class="swiper-wrapper">
-					{#each partnerships as psh}
+					{#each part as psh}
 						<div class="swiper-slide">
 							<figure data-ga="ir">
 								<img src={psh.image} alt="" />
