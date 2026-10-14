@@ -1,6 +1,6 @@
 import branding from '$lib/assets/images/services/branding.webp';
 import digital from '$lib/assets/images/services/digital.webp';
-import events from '$lib/assets/images/services/events.webp';
+import events from '$lib/assets/images/services/events.png';
 import retail from '$lib/assets/images/services/retail.webp';
 import wholesale from '$lib/assets/images/services/wholesale.webp';
 import platforms from '$lib/assets/images/services/platforms.webp';

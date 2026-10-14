@@ -165,6 +165,7 @@
 		overflow: auto;
 		display: flex;
 		justify-content: space-between;
+		gap: 80rem;
 		@media (width < 770px) {
 			padding-block: 80rem;
 			flex-direction: column;
@@ -205,7 +206,7 @@
 	}
 
 	form {
-		margin-top: 64rem;
+		margin-top: 32rem;
 	}
 	form .t {
 		display: grid;

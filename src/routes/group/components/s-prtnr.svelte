@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import partnerships from '$lib/data/partnerships';
+	import par from '$lib/data/partnerships';
 	import Swiper from 'swiper/bundle';
 	import Ichev from '$lib/assets/icons/chev.svelte';
 	import 'swiper/css';
 
 	let swiperElement: HTMLDivElement;
 	let activeIndex = $state(0);
+
+	let partnerships = [...par.slice(1), par[0]];
 
 	const nextIndex = $derived((activeIndex + 1) % partnerships.length);
 

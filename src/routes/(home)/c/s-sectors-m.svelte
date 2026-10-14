@@ -4,6 +4,7 @@
 	import { gsap } from 'gsap';
 
 	let industries = [...ind.slice(1), ind[0]];
+6
 
 	// Assumes each item in `industries` has: image, title, description.
 	// Add a `description` field to your data if it isn't there yet.

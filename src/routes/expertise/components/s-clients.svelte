@@ -70,7 +70,7 @@
 		flex: 0 0 auto;
 		width: 100rem;
 		@media (width < 770px) {
-			width: 60rem;
+			width: 80rem;
 		}
 	}
 
