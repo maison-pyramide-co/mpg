@@ -47,5 +47,15 @@ const partners = [
 		company: 'Ego & East'
 	}
 ];
+const order = [
+	'Yann Pavie',
+	'Nathalie Mroue',
+	'Giovanina Atieh',
+	'Maria Munoz',
+	'Reem Kanj',
+	'Natalya Kanj'
+];
 
-export default partners;
+const partnersM = [...partners].sort((a, b) => order.indexOf(a.name) - order.indexOf(b.name));
+
+export { partners, partnersM };

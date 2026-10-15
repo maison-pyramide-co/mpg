@@ -1,5 +1,9 @@
 <script lang="ts">
-	import partners from '$lib/data/leadership';
+	import { partnersM, partners } from '$lib/data/leadership';
+	import { MediaQuery } from 'svelte/reactivity';
+
+	const isMobile = new MediaQuery('max-width: 770px');
+	const partnersList = $derived(isMobile.current ? partnersM : partners);
 </script>
 
 <section id="s-leadership">
@@ -10,7 +14,7 @@
 			and action into growth. Every great brand starts with a story.
 		</p>
 		<ul>
-			{#each partners as prt}
+			{#each partnersList as prt}
 				<li>
 					<figure data-ga="ir">
 						<img src={prt.image} alt={prt.name} />
