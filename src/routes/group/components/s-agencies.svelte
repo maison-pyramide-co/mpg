@@ -40,7 +40,8 @@
 	}
 
 	function agencyHover(node: HTMLElement) {
-		const titleEl = node.querySelector('.agency_cover');
+		// const titleEl = node.querySelector('.agency_cover');
+		const coverEl = node.querySelector('.agency_cover_');
 		const infoEl = node.querySelector('.agency_info');
 
 		const tl = gsap.timeline({
@@ -50,8 +51,8 @@
 			}
 		});
 
-		tl.to(titleEl, {
-			y: '150%',
+		tl.to(coverEl, {
+			y: '100%',
 			duration: 0.4
 		}).to(
 			infoEl,
@@ -86,10 +87,12 @@
 				<img src={agency.cover} alt="" />
 			</figure>
 			<div class="agency_cover">
-				<div class="agency_title">
-					<h3>{agency.name}</h3>
+				<div class="agency_cover_">
+					<div class="agency_title">
+						<h3>{agency.name}</h3>
+					</div>
+					<button class="m-o">DISCOVER</button>
 				</div>
-				<button class="m-o" href="#" target="_blank">DISCOVER</button>
 			</div>
 
 			<div class="agency_info">
@@ -129,6 +132,8 @@
 		@media (width < 770px) {
 			bottom: 32rem;
 		}
+	}
+	.agency_cover_ {
 	}
 	button {
 		padding: 6rem 20rem;
