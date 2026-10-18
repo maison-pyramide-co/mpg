@@ -1,9 +1,9 @@
 import mpLogo from '$lib/assets/images/mp-logo.png';
 import eeLogo from '$lib/assets/images/ee-logo.png';
 import showroomLogo from '$lib/assets/images/showroom-logo.png';
-import mpCover from '$lib/assets/images/mp-cover.png';
-import eeCover from '$lib/assets/images/ee-cover.png';
-import showroomCover from '$lib/assets/images/showroom-cover.png';
+import mpCover from '$lib/assets/images/mp-cover.webp';
+import eeCover from '$lib/assets/images/ee-cover.webp';
+import showroomCover from '$lib/assets/images/showroom-cover.webp';
 
 const agencies = [
 	{

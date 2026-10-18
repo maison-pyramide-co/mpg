@@ -1,11 +1,9 @@
 <script>
-	import poster from '$lib/assets/images/home-ban.png';
+	import poster from '$lib/assets/images/home-ban.webp';
 	import logoI from '$lib/assets/images/log.png';
 	import vd from '$lib/assets/videos/v.mp4';
 
-
 	let mounted = $state(false);
-
 
 	$effect(() => {
 		mounted = true;

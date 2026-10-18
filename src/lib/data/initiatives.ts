@@ -1,9 +1,9 @@
-import in1 from '$lib/assets/images/initiatives/in1.png';
-import in2 from '$lib/assets/images/initiatives/in2.png';
-import in3 from '$lib/assets/images/initiatives/in3.png';
-import in4 from '$lib/assets/images/initiatives/in4.png';
-import in5 from '$lib/assets/images/initiatives/in5.png';
-import in6 from '$lib/assets/images/initiatives/in6.png';
+import in1 from '$lib/assets/images/initiatives/in1.webp';
+import in2 from '$lib/assets/images/initiatives/in2.webp';
+import in3 from '$lib/assets/images/initiatives/in3.webp';
+import in4 from '$lib/assets/images/initiatives/in4.webp';
+import in5 from '$lib/assets/images/initiatives/in5.webp';
+import in6 from '$lib/assets/images/initiatives/in6.webp';
 
 const initiatives = [
 	{

@@ -1,5 +1,5 @@
 <script>
-	import agenBanI from '$lib/assets/images/agen-ban.png';
+	import agenBanI from '$lib/assets/images/agen-ban.webp';
 	import agenBanMI from '$lib/assets/images/agen-ban-m.png';
 	import agencies from '$lib/data/agencies';
 </script>

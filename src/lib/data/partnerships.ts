@@ -1,9 +1,9 @@
-import i1 from '$lib/assets/images/partnerships/psh1.png';
-import i2 from '$lib/assets/images/partnerships/psh2.png';
-import i3 from '$lib/assets/images/partnerships/psh3.png';
-import i4 from '$lib/assets/images/partnerships/psh4.png';
-import i5 from '$lib/assets/images/partnerships/psh5.png';
-import i6 from '$lib/assets/images/partnerships/psh6.png';
+import i1 from '$lib/assets/images/partnerships/psh1.webp';
+import i2 from '$lib/assets/images/partnerships/psh2.webp';
+import i3 from '$lib/assets/images/partnerships/psh3.webp';
+import i4 from '$lib/assets/images/partnerships/psh4.webp';
+import i5 from '$lib/assets/images/partnerships/psh5.webp';
+import i6 from '$lib/assets/images/partnerships/psh6.webp';
 
 const partnerships = [
 	{

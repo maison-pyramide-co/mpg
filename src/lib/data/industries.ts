@@ -1,8 +1,7 @@
-import p1 from '$lib/assets/images/industries/ind1.png';
-import p2 from '$lib/assets/images/industries/ind2.png';
-import p3 from '$lib/assets/images/industries/ind3.png';
-// import p4 from '$lib/assets/images/industries/ind4.png';
-import p5 from '$lib/assets/images/industries/ind5.png';
+import p1 from '$lib/assets/images/industries/ind1.webp';
+import p2 from '$lib/assets/images/industries/ind2.webp';
+import p3 from '$lib/assets/images/industries/ind3.webp';
+import p5 from '$lib/assets/images/industries/ind5.webp';
 
 const industries = [
 	{
