@@ -18,6 +18,7 @@
 // import p9 from '$lib/assets/images/projects/p9.webp';
 // import p10 from '$lib/assets/images/projects/p10.webp';
 // import p11 from '$lib/assets/images/projects/p11.webp';
+
 // const projects = [
 // 	{
 // 		image: p1,

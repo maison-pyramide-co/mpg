@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import pI from '$lib/assets/images/slider.png';
 	import Ichev from '$lib/assets/icons/chev.svelte';
-	import projects from '$lib/data/projects';
+	// import projects from '$lib/data/projects';
 	import 'swiper/css';
 	import Swiper from 'swiper/bundle';
 	import { onMount } from 'svelte';
@@ -50,36 +50,34 @@
 		// 	activeIndex = this.realIndex;
 		// });
 	});
-
 </script>
 
 <main id="p" style:opacity="0">
-
 	<section class="projects">
 		<div class="swiper">
 			<div class="swiper-wrapper">
-				{#each projects as proj}
-					<div class="swiper-slide">
-						<figure>
-							<picture>
-								<source srcset={proj.image} media="(min-width: 770px)" />
-								<img src={proj.imageM} width="auto" height="auto" alt="logo" />
-							</picture>
-						</figure>
-						<div class="p_info">
-							<h1 class="y_">
-								<span class="y">
-									{proj.title}
-								</span>
-							</h1>
-							<p class="y_">
-								<span class="y">
-									{proj.description}
-								</span>
-							</p>
-						</div>
+				<!-- {#each projects as proj} -->
+				<!-- <div class="swiper-slide">
+					<figure>
+						<picture>
+							<source srcset={proj.image} media="(min-width: 770px)" />
+							<img src={proj.imageM} width="auto" height="auto" alt="logo" />
+						</picture>
+					</figure>
+					<div class="p_info">
+						<h1 class="y_">
+							<span class="y">
+								{proj.title}
+							</span>
+						</h1>
+						<p class="y_">
+							<span class="y">
+								{proj.description}
+							</span>
+						</p>
 					</div>
-				{/each}
+				</div> -->
+				<!-- {/each} -->
 			</div>
 		</div>
 	</section>
@@ -95,7 +93,6 @@
 			</button>
 		</nav>
 	</div>
-
 </main>
 
 <style>
