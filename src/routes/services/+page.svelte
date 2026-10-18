@@ -1,6 +1,6 @@
 <script lang="ts">
 	import banI from '$lib/assets/images/services/ban.webp';
-	import srvcBanMI from '$lib/assets/images/services/srvc-ban-m.png';
+	import srvcBanMI from '$lib/assets/images/services/ban-m.webp';
 	import Accordion from './components/accordion.svelte';
 	import services from '$lib/data/services';
 	import { onMount } from 'svelte';
