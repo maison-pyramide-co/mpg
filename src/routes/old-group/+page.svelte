@@ -4,7 +4,7 @@
 	import Accordion from '$lib/components/old-accordion.svelte';
 	import agencies from '$lib/data/agencies';
 	import industries from '$lib/data/industries';
-	import partners from '$lib/data/leadership';
+	// import partners from '$lib/data/leadership';
 	import mapI from '$lib/assets/images/map.png';
 	import offices from '$lib/data/offices';
 	import { onMount } from 'svelte';
@@ -80,6 +80,7 @@
 	const toggleActiveIndustry = (i: any) => {
 		activeIndustry = activeIndustry === i ? null : i;
 	};
+
 </script>
 
 <main id="p" style:opacity="0">
@@ -121,6 +122,7 @@
 			</figure>
 		</div>
 	</section>
+
 	<Industries />
 
 	<section class="ind">
@@ -205,7 +207,7 @@
 		</div>
 	</section>
 
-	<section class="prt">
+	<!-- <section class="prt">
 		<span data-ga="tr" class="indx">03.</span>
 		<h2 data-ga="tr" class="ti">LEADERSHIP<br />TEAM</h2>
 		<ul>
@@ -219,7 +221,7 @@
 				</li>
 			{/each}
 		</ul>
-	</section>
+	</section> -->
 
 	<section class="s-cult">
 		<span data-gs="tr" class="indx">04.</span>
