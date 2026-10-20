@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import Accordion from '$lib/components/old-accordion.svelte';
 	import positions from '$lib/data/positions';
 	import { onMount } from 'svelte';
@@ -25,14 +24,12 @@
 	onMount(() => {
 		animation();
 	});
-
 </script>
 
 <main id="p" style:opacity="0">
 	<h1>JOIN THE TEAM</h1>
 
 	<div class="careers">
-
 		<aside>
 			<h3>OPEN POSITIONS</h3>
 			<p>
@@ -99,7 +96,7 @@
 	.careers {
 		margin-top: 80rem;
 		display: flex;
-		gap: 30rem;
+		/* gap: 30rem; */
 		@media (width < 770px) {
 			margin-top: 40rem;
 			flex-direction: column;
@@ -108,7 +105,7 @@
 	}
 
 	aside {
-		width: 318rem;
+		width: 340rem;
 		flex-shrink: 0;
 		padding-top: 24rem;
 		@media (width < 770px) {
@@ -159,6 +156,9 @@
 			font-weight: 600;
 		}
 	}
+	li :global(h3) {
+		/* font-size: 30rem; */
+	}
 
 	.acc_b {
 		padding-block: 0 40rem;
@@ -178,7 +178,7 @@
 			/* gap: 24rem; */
 		}
 		span {
-			font-size: 14rem;
+			font-size: 15rem;
 			font-weight: 600;
 			/* opacity: 0.8; */
 		}

@@ -1,7 +1,8 @@
 <script>
 	import poster from '$lib/assets/images/home-ban.webp';
 	import logoI from '$lib/assets/images/log.png';
-	import vd from '$lib/assets/videos/v.mp4';
+	import vd from '$lib/assets/videos/vd.mp4';
+	import vm from '$lib/assets/videos/vm.mp4';
 
 	let mounted = $state(false);
 
@@ -12,8 +13,8 @@
 
 	const isMobile = new MediaQuery('max-width: 770px');
 
-	const currentSrc = $derived(isMobile.current && vd ? vd : vd);
-	const currentPoster = $derived(isMobile.current && vd ? poster : poster);
+	const currentSrc = $derived(isMobile.current ? vm : vd);
+	const currentPoster = $derived(isMobile.current? poster : poster);
 </script>
 
 <section class="s-hero">
