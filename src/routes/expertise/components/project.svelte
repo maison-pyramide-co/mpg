@@ -44,7 +44,7 @@
 	}
 	li {
 		color: #666666;
-		font-size: 12rem;
+		font-size: 10rem;
 		text-transform: capitalize;
 	}
 	p {
