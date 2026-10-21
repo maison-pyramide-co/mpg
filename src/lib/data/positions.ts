@@ -1,7 +1,8 @@
 const positions = [
 	{
 		title: 'Senior Events Manager',
-		company: 'Cairo',
+		company: 'Maison Pyramide',
+		location: 'cairo',
 		description: `The Senior Events Manager will play a pivotal role in driving business development, client relationships, and event execution at the highest level. This role is suited for an individual with a strong network in the industry, capable of securing new business opportunities while leading the end-to-end execution of high-profile events.\n
 A Senior Events Manager, will develop and implement innovative event concepts, ensuring that each project aligns with Maison Pyramide’s standards and enhances client brand positioning. You will be hands-on with both strategy and execution, working closely with cross-functional teams to deliver exceptional event experiences.
 `,
@@ -17,7 +18,8 @@ A Senior Events Manager, will develop and implement innovative event concepts, e
 	},
 	{
 		title: 'Senior Social Media Executive',
-		company: 'Cairo',
+		company: 'Maison Pyramide',
+		location: 'cairo',
 		description: `The Senior Social Media Executive will support the planning and execution of digital strategies for Maison Pyramide’s clients, ensuring a strong, culturally relevant, and engaging online presence across platforms. This role blends hands-on execution with strategic contribution, supporting content planning, campaign rollout, and performance tracking to drive engagement, brand growth, and measurable impact. The Senior Social Media Executive will work closely with internal teams and clients to translate business objectives into effective social media activities, while continuously monitoring performance and identifying opportunities to enhance digital presence.`,
 		requirements: [
 			'3–5 years of experience in social media, digital marketing, or agency environment.',
@@ -33,7 +35,8 @@ A Senior Events Manager, will develop and implement innovative event concepts, e
 	},
 	{
 		title: 'Video Editor',
-		company: 'Cairo',
+		company: 'Maison Pyramide',
+		location: 'cairo',
 		description: `The Video Editor is responsible for editing and producing engaging video content for digital and social media platforms while ensuring alignment with brand guidelines and creative direction. This role works closely with the creative, content, and marketing teams to deliver high-quality visual content that supports campaigns, brand storytelling, and platform engagement.\n
 The ideal candidate has around 2 years of professional editing experience, a strong eye for detail and pacing, a good understanding of digital content trends, and the ability to manage multiple projects in a fast-paced environment.
 `,
@@ -54,7 +57,8 @@ The ideal candidate has around 2 years of professional editing experience, a str
 	},
 	{
 		title: 'Senior Graphic Designer',
-		company: 'Cairo',
+		company: 'Maison Pyramide',
+		location: 'cairo',
 		description: `The Senior Graphic Designer is responsible for leading the development and delivery of high-impact visual content across a variety of platforms for both retainer clients and strategic brand initiatives. This role is central to transforming creative concepts into visually compelling executions that reflect the brand’s identity and meet client objectives.\n
 					Collaborating closely with cross-functional teams, you will ensure that every design output is thoughtful, on-brand, and delivered on time. The role demands a strong command of design principles, a sharp eye for detail, and the ability to adapt visuals across digital, print, and experiential formats.\n
 					The ideal candidate will combine creative leadership with hands-on design expertise, bringing a deep understanding of visual storytelling, traditional and contemporary design practices, and an awareness of evolving trends across digital and social media landscapes.
@@ -77,7 +81,8 @@ The ideal candidate has around 2 years of professional editing experience, a str
 	},
 	{
 		title: 'Generative AI Video & Motion Designer',
-		company: 'Cairo',
+		company: 'Maison Pyramide',
+		location: 'cairo',
 		description: `The Generative AI Video & Motion Designer is responsible for creating high-quality, realistic AI-generated video and visual content across Maison Pyramide’s portfolio of clients, with a strong focus on social media, digital campaigns and branded content.
 The role combines advanced generative AI video creation with video editing, motion design and social-first storytelling to transform creative concepts, static assets, photography, existing footage and AI-generated material into polished, engaging content.
 A key focus of the role is the creation of realistic, visually sophisticated AI-generated content. The candidate should be able to generate and refine believable people, products, environments and movement while maintaining visual consistency and minimising obvious AI artefacts.
@@ -98,7 +103,8 @@ A key focus of the role is the creation of realistic, visually sophisticated AI-
 	},
 	{
 		title: 'Events Concept Designer',
-		company: 'Dubai',
+		company: 'Maison Pyramide',
+		location: 'Dubai',
 		description: `
 		The Events Concept Designer is responsible for crafting unique, immersive, and visually
 engaging event concepts that reflect the client’s brand identity and objectives. This role blends
@@ -117,7 +123,8 @@ ideas to life.
 	},
 	{
 		title: 'Senior Events Executive',
-		company: 'Dubai',
+		company: 'Maison Pyramide',
+		location: 'Dubai',
 		description: `
 		The Senior Events Executive plays a key role in the planning and execution of high-profile
 events and projects, ensuring all operational, logistical, and creative requirements are delivered
@@ -140,7 +147,8 @@ mentoring junior team members and supporting the overall development of the even
 	},
 	{
 		title: 'PR Manager',
-		company: 'Riyadh',
+		company: 'Maison Pyramide',
+		location: 'Riyadh',
 		description: `
 		The PR Manager is responsible for managing at full capacity, the communication strategies
 and initiatives for existing and new retainer clients and strategic events. As PR Manager you
@@ -160,7 +168,8 @@ and have a deep understanding of the ever-evolving digital and social media land
 	},
 	{
 		title: 'Senior Social Media Executive',
-		company: 'Riyadh',
+		company: 'Maison Pyramide',
+		location: 'Riyadh',
 		description: `
 		The Senior Social Media Executive will support the planning and execution of digital
 strategies for Maison Pyramide’s clients, ensuring a strong, culturally relevant, and engaging
@@ -181,7 +190,8 @@ performance and identifying opportunities to enhance digital presence.
 	},
 	{
 		title: 'Senior Marketing Manager',
-		company: 'Riyadh',
+		company: 'Maison Pyramide',
+		location: 'Riyadh',
 		description: `
 
 		The Marketing Manager will lead end-to-end marketing efforts across the agency and for

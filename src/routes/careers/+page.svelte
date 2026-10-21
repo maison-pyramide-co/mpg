@@ -97,6 +97,7 @@
 		margin-top: 80rem;
 		display: flex;
 		/* gap: 30rem; */
+
 		@media (width < 770px) {
 			margin-top: 40rem;
 			flex-direction: column;
@@ -117,6 +118,7 @@
 			text-align: center;
 		}
 	}
+
 	aside h3 {
 		font-size: 16rem;
 		font-weight: 600;
@@ -124,11 +126,13 @@
 			font-size: 18rem;
 		}
 	}
+
 	aside p {
 		font-family: 'gt';
 		margin-top: 16rem;
 		max-width: 260rem;
 		font-size: 14rem;
+		line-height: 1;
 		@media (width < 770px) {
 			font-size: 16rem;
 			max-width: 265rem;
@@ -146,6 +150,7 @@
 			/* margin-left: calc(116rem - var(--p-i)); */
 		}
 	}
+
 	.pos-list :global(button) {
 		padding-block: 24rem;
 		font-weight: normal;
@@ -156,6 +161,7 @@
 			font-weight: 600;
 		}
 	}
+
 	li :global(h3) {
 		/* font-size: 30rem; */
 	}
@@ -184,8 +190,8 @@
 		}
 		p {
 			margin-top: 8rem;
-			font-size: 16rem;
-			line-height: 25rem;
+			font-size: 14rem;
+			line-height: 17rem;
 			padding-bottom: 24rem;
 			@media (width < 770px) {
 				padding-bottom: 0;
@@ -213,9 +219,9 @@
 			margin-top: 8rem;
 		}
 		li {
-			font-size: 16rem;
-			line-height: 22rem;
-			margin-top: 22rem;
+			font-size: 15rem;
+			line-height: 18rem;
+			margin-top: 18rem;
 			font-weight: 300;
 			&:first-child {
 				margin-top: 0;
