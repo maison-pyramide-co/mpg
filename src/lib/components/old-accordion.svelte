@@ -39,7 +39,7 @@
 
 		div {
 			position: absolute;
-			left: 520rem;
+			left: 530rem;
 			top: 50%;
 			transform: translateY(-50%);
 			font-size: 14rem;
