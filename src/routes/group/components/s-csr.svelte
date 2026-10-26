@@ -114,7 +114,7 @@
 		width: 668rem;
 		height: 610rem;
 		flex-shrink: 0;
-		padding-bottom: 71rem;
+		//padding-bottom: 71rem;
 		display: flex;
 		flex-direction: column;
 		@media (width < 770px) {
