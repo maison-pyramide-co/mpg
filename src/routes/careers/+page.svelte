@@ -1,9 +1,12 @@
 <script lang="ts">
+
 	import Accordion from '$lib/components/old-accordion.svelte';
 	import positions from '$lib/data/positions';
 	import { onMount } from 'svelte';
+
 	import animation from './_a';
 	import Popup from './c/popup.svelte';
+
 
 	let popup = $state('');
 	let activeCareer = $state(null);
@@ -24,6 +27,7 @@
 	onMount(() => {
 		animation();
 	});
+
 </script>
 
 <main id="p" style:opacity="0">
@@ -68,6 +72,7 @@
 			{/each}
 		</ul>
 	</div>
+
 	{#if popup}
 		<Popup close={closePopup} position={popup} />
 	{/if}
