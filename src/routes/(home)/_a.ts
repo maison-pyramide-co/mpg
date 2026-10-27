@@ -152,6 +152,9 @@ const introAM = () => {
 
 // Header logo animation
 const logoA = () => {
+	const mq = window.matchMedia('(width < 770px)');
+	const isMobile = mq.matches;
+
 	const vh = window?.innerHeight;
 	const triggerEl = document.querySelector('.s-hero');
 	const targetEl = document.querySelector('.s-hero .logo') as HTMLElement;
@@ -164,17 +167,26 @@ const logoA = () => {
 			trigger: triggerEl,
 			start: 'top top',
 			end: 'bottom top',
-			scrub: 1
+			scrub: 1,
+			// markers: true,
+			onLeave: () => {
+				gsap.set(targetEl, { autoAlpha: 0 });
+				gsap.set(headerEl, { autoAlpha: 1 });
+			},
+			onEnterBack: () => {
+				gsap.set(targetEl, { autoAlpha: 1 });
+				gsap.set(headerEl, { autoAlpha: 0 });
+			}
 		}
 	});
 	tl.to(targetEl, {
-		width: '60rem',
-		top: '49rem',
-		ease: 'linear',
-		onComplete: () => {
-			targetEl.remove();
-			gsap.set(headerEl, { autoAlpha: 1 });
-		}
+		width: isMobile ? '40rem' : '60rem',
+		top: isMobile ? '40rem' : '49rem',
+		ease: 'linear'
+		// onComplete: () => {
+		// 	targetEl.remove();
+		// 	gsap.set(headerEl, { autoAlpha: 1 });
+		// }
 	});
 };
 
@@ -203,6 +215,7 @@ const animation = (page: HTMLElement) => {
 				headerA();
 				introA();
 			} else {
+				logoA();
 				introAM();
 			}
 			// introA();

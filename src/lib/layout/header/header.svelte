@@ -6,6 +6,8 @@
 	let menuOpened = $state(false);
 	let headerHidden = $state(false);
 
+	const isHome = $derived(page.url.pathname === '/');
+
 	$effect(() => {
 		if (page.url.pathname) menuOpened = false;
 	});
@@ -30,7 +32,7 @@
 	});
 </script>
 
-<header id="h" style:opacity="0" class:hidden={headerHidden && !menuOpened}>
+<header id="h" class:home={isHome} style:opacity="0" class:hidden={headerHidden && !menuOpened}>
 	<a href="/" class="y_">
 		<img class="y" src={logoI} alt="MPG Logo" />
 	</a>
@@ -51,6 +53,15 @@
 {/if}
 
 <style>
+	.home {
+		@media (width < 770px) {
+			justify-content: center;
+			& button {
+				position: absolute;
+				right: var(--p-i);
+			}
+		}
+	}
 	header {
 		height: var(--h-h);
 		position: fixed;

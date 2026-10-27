@@ -14,7 +14,7 @@
 	const isMobile = new MediaQuery('max-width: 770px');
 
 	const currentSrc = $derived(isMobile.current ? vm : vd);
-	const currentPoster = $derived(isMobile.current? poster : poster);
+	const currentPoster = $derived(isMobile.current ? poster : poster);
 </script>
 
 <section class="s-hero">
@@ -30,7 +30,7 @@
 			preload="metadata"
 		></video>
 	</figure>
-	<div class="logo d-o">
+	<div class="logo">
 		<img src={logoI} alt="MPG Logo" />
 	</div>
 </section>
@@ -51,5 +51,8 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 999;
+		@media (width < 770px) {
+			width: 100rem;
+		}
 	}
 </style>
