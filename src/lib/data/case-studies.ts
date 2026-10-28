@@ -67,7 +67,7 @@ const caseStudies = [
 		image: samsung,
 		category: 'arts & culture',
 		description:
-			'Through Ego & East, Maison Pyramide facilitated the appointment of Karen Wazen as Brand Ambassador for Samsung Electronics MENA. The partnership connects a leading regional digital personality with a global technology brand, strengthening Samsung’s relevance and audience connection across the Middle East and North Africa.',
+			'Ego & East brought Samsung Electronics MENA and Karen Wazen together for a regional brand ambassadorship. The partnership connected a global technology brand with a leading digital personality, strengthening Samsung’s relevance and audience connection across the Middle East and North Africa.',
 		services: ['Talent Management', 'Brand Partnerships']
 	},
 	{
