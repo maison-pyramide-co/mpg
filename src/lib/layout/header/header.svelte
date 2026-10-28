@@ -82,6 +82,7 @@
 	}
 	header.hidden {
 		transform: translateY(-100%);
+		opacity: 0;
 	}
 
 	a {
