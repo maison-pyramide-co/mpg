@@ -38,7 +38,7 @@
 <style>
 	section {
 		height: 100vh;
-		height: 100dvh;
+		height: 100svh;
 	}
 	figure {
 		width: 100%;
