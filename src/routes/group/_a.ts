@@ -2,6 +2,7 @@ import { imagesA, textsA } from '$lib/utils/animation';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { SplitText } from 'gsap/dist/SplitText';
+import { resetScroll } from '$lib/utils/lenis';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -50,6 +51,7 @@ const heroA = () => {
 const introA = () => {
 	const isMobile = window.innerWidth < 770;
 
+	// TEXT
 	const t_split = SplitText.create('#s-intro h3', {
 		type: 'lines',
 		mask: 'lines'
@@ -61,7 +63,7 @@ const introA = () => {
 		stagger: 0.05,
 		scrollTrigger: {
 			trigger: '#s-intro h3',
-			start: 'top 90%'
+			start: isMobile ? 'top 80%' : 'top 90%'
 		},
 
 		onComplete: () => {
@@ -71,6 +73,24 @@ const introA = () => {
 		}
 	});
 
+	// NUMBERS
+	gsap.utils.toArray('#s-intro div span').forEach((span: any) => {
+		gsap.from(span, {
+			opacity: 0,
+			textContent: 0,
+			duration: 1,
+			ease: 'power1.out',
+			snap: { textContent: 1 },
+			scrollTrigger: {
+				trigger: span, // or span.closest('div') if the span is tiny/inline
+				start: isMobile ? 'top 90%' : 'top 70%',
+				//once: true // optional: play once, don't replay on scroll back
+				invalidateOnRefresh: true
+			}
+		});
+	});
+
+	/*
 	gsap.from('#s-intro div span', {
 		opacity: 0,
 		textContent: 0,
@@ -80,9 +100,11 @@ const introA = () => {
 		// stagger: 0.2,
 		scrollTrigger: {
 			trigger: '#s-intro ul',
-			start: isMobile ? 'top 90%' : 'top 70%'
+			start: isMobile ? 'top 90%' : 'top 70%',
+			markers: true
 		}
 	});
+	*/
 };
 
 // SECTION PINNING ANIMATION
@@ -103,6 +125,7 @@ const animation = (page: HTMLElement) => {
 	let ctx: gsap.Context | null = null;
 	let destroyed = false;
 	const isMobile = window.innerWidth < 770;
+	resetScroll();
 
 	document.fonts.ready.then(() => {
 		if (destroyed) return;

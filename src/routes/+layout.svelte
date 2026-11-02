@@ -24,7 +24,6 @@
 			destroy?.();
 		};
 	});
-
 </script>
 
 <svelte:head>

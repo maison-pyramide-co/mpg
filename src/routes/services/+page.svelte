@@ -4,7 +4,7 @@
 	import Accordion from './components/accordion.svelte';
 	import services from '$lib/data/services';
 	import { onMount } from 'svelte';
-	import animation from './_animation';
+	import animation from './_a';
 	let activeService = $state(null);
 
 	const toggleActiveService = (i) => {

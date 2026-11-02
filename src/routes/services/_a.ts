@@ -7,6 +7,30 @@ import { GSDevTools } from 'gsap/dist/GSDevTools';
 
 gsap.registerPlugin(SplitText, ScrollTrigger, GSDevTools);
 
+const heroA = () => {
+	const t_split1 = SplitText.create('.s-he h1', {
+		type: 'lines',
+		mask: 'lines'
+	});
+
+	const tl = gsap.timeline({});
+	tl.from(t_split1.lines, {
+		y: 100,
+		duration: 1,
+		ease: 'power4.out',
+		stagger: 0.05,
+		onComplete: () => {
+			t_split1.masks.forEach((mask: any) => {
+				mask.style.overflow = '';
+			});
+		}
+	}).from('.s-he button', {
+		autoAlpha: 0,
+		duration: 0.6,
+		ease: 'power4.out'
+	});
+};
+
 const srvcA = () => {
 	const srvc_tl = gsap.timeline();
 
@@ -62,6 +86,7 @@ const animation = async () => {
 	gsap.set('#h', {
 		autoAlpha: 1
 	});
+	heroA();
 	srvcA();
 };
 
