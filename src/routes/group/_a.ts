@@ -125,7 +125,7 @@ const animation = (page: HTMLElement) => {
 	let ctx: gsap.Context | null = null;
 	let destroyed = false;
 	const isMobile = window.innerWidth < 770;
-	// resetScroll();
+	resetScroll();
 
 	document.fonts.ready.then(() => {
 		if (destroyed) return;
