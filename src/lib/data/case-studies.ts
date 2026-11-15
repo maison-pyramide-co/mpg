@@ -275,7 +275,7 @@ const caseStudies = [
 		image: rfw,
 		category: 'luxury & fashion',
 		description:
-			'For the 2024 Riyadh Fashion Week, Maison Pyramide led press, showroom, sales, talent and event operations across the six-day program. The integrated scope covered media strategy, buyer invitations, guest and talent curation, brand assets and logistics, connecting Saudi designers with international media, buyers and cultural talent.',
+			'For the 2024 Riyadh Fashion Week, Maison Pyramide led press, showroom, sales, talent and guest management across the six-day program. The integrated scope covered media strategy, buyer invitations, guest and talent curation, brand assets and logistics, connecting Saudi designers with international media, buyers and cultural talent.',
 		services: [
 			'Public Relations',
 			'Communications',
