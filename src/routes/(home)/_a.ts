@@ -152,6 +152,7 @@ const introAM = () => {
 
 // Header logo animation
 const logoA = () => {
+
 	const mq = window.matchMedia('(width < 770px)');
 	const isMobile = mq.matches;
 
@@ -182,11 +183,11 @@ const logoA = () => {
 	tl.to(targetEl, {
 		width: isMobile ? '40rem' : '60rem',
 		top: isMobile ? '40rem' : '49rem',
-		ease: 'linear'
-		// onComplete: () => {
-		// 	targetEl.remove();
-		// 	gsap.set(headerEl, { autoAlpha: 1 });
-		// }
+		ease: 'linear',
+		onComplete: () => {
+			targetEl.remove();
+			gsap.set(headerEl, { autoAlpha: 1 });
+		}
 	});
 };
 
