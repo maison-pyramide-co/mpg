@@ -22,7 +22,7 @@
 				<li>
 					<img src={agency.logo} alt="" />
 					<p>{@html agency.bio}</p>
-					<a class="btn" href={agency.link}>DISCOVER</a>
+					<a class="btn" href={agency.link} target='_blank'>DISCOVER</a>
 				</li>
 			{/each}
 		</ul>

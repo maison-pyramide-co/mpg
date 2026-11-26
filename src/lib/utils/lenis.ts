@@ -33,3 +33,22 @@ export const resetScroll = () => {
 	if (l) l.scrollTo(0, { immediate: true, force: true });
 	else window.scrollTo(0, 0);
 };
+
+export const scrollToBottom = (opts: { duration?: number; immediate?: boolean } = {}) => {
+	const { duration = 1.2, immediate = false } = opts;
+	const l = getLenis();
+
+	if (l) {
+		l.resize(); // recalc height in case content changed since the last measure
+		l.scrollTo(l.limit, {
+			duration,
+			immediate,
+			easing: (t) => t // linear: constant speed, no ease in/out
+		});
+	} else {
+		window.scrollTo({
+			top: document.documentElement.scrollHeight,
+			behavior: immediate ? 'auto' : 'smooth'
+		});
+	}
+};

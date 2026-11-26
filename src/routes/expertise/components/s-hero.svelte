@@ -11,11 +11,11 @@
 	};
 </script>
 
-<section>
+<section >
 	<div class="t">
 		<div class="intro">
-			<h1>Expertise that understands the context, not just the category.</h1>
-			<p>
+			<h1 data-ga="tr">Expertise that understands the context, not just the category.</h1>
+			<p data-ga="tr">
 				Maison Pyramide Group combines sector knowledge with cultural intelligence, strategic
 				clarity and bold creative thinking to create work that resonates with audiences across EMEA.
 			</p>

@@ -17,7 +17,7 @@
 	const currentPoster = $derived(isMobile.current ? poster : poster);
 </script>
 
-<section class="s-hero">
+<section>
 	<figure>
 		<!-- <img src={poster} alt="MPG" /> -->
 		<video

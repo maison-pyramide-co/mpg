@@ -1,3 +1,4 @@
+import { textsA } from '$lib/utils/animation';
 import { gsap } from 'gsap/dist/gsap';
 
 const animation = (page: HTMLElement) => {
@@ -20,6 +21,7 @@ const animation = (page: HTMLElement) => {
 				mixBlendMode: 'difference'
 			});
 		}
+		textsA()
 
 		ctx = gsap.context(() => {}, page);
 	});

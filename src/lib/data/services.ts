@@ -150,13 +150,13 @@ const services = [
 		image: wholesale,
 		sow: [
 			'Wholesale strategy & territory development',
-			'Multi-market showroom representation (Paris, Dubai, Riyadh, Las Vegas)',
+			'Multi-market showroom representation',
 			'Digital showroom & virtual market access',
 			'Seasonal market programming',
 			'Buyer relations & order management',
 			'Back-office & logistics coordination',
 			'MENA distribution access & management',
-			'Production financing against confirmed orders'
+			'Production financing'
 		]
 	},
 	{
